@@ -1,0 +1,618 @@
+[TabIC Carrier4 XYT]
+Ready_X=250.500015
+Ready_Y=-14.400000
+Ready_T=0.000500
+Load_X=90.500015
+Load_Y=-14.400000
+Load_T=0.000500
+Prealign_X=-165.499970
+Prealign_Y=29.500005
+Prealign_T=-180.000000
+Unload_X=-385.660000
+Unload_Y=0.000000
+Unload_T=-180.000000
+TabRemove_X=0.000015
+TabRemove_Y=448.450000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=510.000000
+Escape_T=90.000000
+LoadStart_X=-240.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[TabIC Carrier1 XYT]
+Ready_X=-61.799985
+Ready_Y=-14.000000
+Ready_T=0.000000
+Load_X=-61.799985
+Load_Y=-14.000000
+Load_T=0.000000
+Prealign_X=-244.999970
+Prealign_Y=29.499808
+Prealign_T=-180.000400
+Unload_X=-625.660000
+Unload_Y=0.000000
+Unload_T=-180.000000
+TabRemove_X=0.000015
+TabRemove_Y=178.450000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=279.000000
+Escape_T=90.000000
+LoadStart_X=0.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[TabIC Carrier2 XYT]
+Ready_X=90.500015
+Ready_Y=-14.400000
+Ready_T=0.000500
+Load_X=90.500015
+Load_Y=-14.400000
+Load_T=0.000500
+Prealign_X=-165.499970
+Prealign_Y=29.500005
+Prealign_T=-180.000000
+Unload_X=-545.660000
+Unload_Y=0.000000
+Unload_T=-180.000000
+TabRemove_X=0.000015
+TabRemove_Y=268.450000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=356.000000
+Escape_T=90.000000
+LoadStart_X=-80.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[TabIC Carrier3 XYT]
+Ready_X=170.500015
+Ready_Y=-14.400000
+Ready_T=0.000500
+Load_X=-61.799985
+Load_Y=-14.000000
+Load_T=0.000000
+Prealign_X=-244.999970
+Prealign_Y=29.499808
+Prealign_T=-180.000400
+Unload_X=-465.660000
+Unload_Y=0.000000
+Unload_T=-180.000000
+TabRemove_X=0.000015
+TabRemove_Y=358.450000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=433.000000
+Escape_T=90.000000
+LoadStart_X=-160.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[RTabIC Carrier4 XYT]
+Ready_X=-15.500000
+Ready_Y=-520.550000
+Ready_T=0.000000
+Load_X=-15.500000
+Load_Y=-520.550000
+Load_T=0.000000
+Prealign_X=-0.000061
+Prealign_Y=-101.000000
+Prealign_T=0.000000
+Unload_X=-9.800000
+Unload_Y=375.000000
+Unload_T=-0.000440
+TabRemove_X=0.000015
+TabRemove_Y=523.290376
+TabRemove_T=0.000000
+[RTabIC Carrier3 XYT]
+Ready_X=-15.500000
+Ready_Y=-592.550000
+Ready_T=0.000000
+Load_X=-15.500000
+Load_Y=-520.550000
+Load_T=0.000000
+Prealign_X=-0.000061
+Prealign_Y=-101.000000
+Prealign_T=0.000000
+Unload_X=-9.800000
+Unload_Y=303.000000
+Unload_T=-0.000440
+TabRemove_X=0.000015
+TabRemove_Y=433.290376
+TabRemove_T=0.000000
+[RTabIC Carrier2 XYT]
+Ready_X=-15.500000
+Ready_Y=-664.550000
+Ready_T=0.000000
+Load_X=-15.500000
+Load_Y=-520.550000
+Load_T=0.000000
+Prealign_X=-0.000061
+Prealign_Y=-101.000000
+Prealign_T=0.000000
+Unload_X=-9.800000
+Unload_Y=231.000000
+Unload_T=-0.000440
+TabRemove_X=0.000015
+TabRemove_Y=343.290376
+TabRemove_T=0.000000
+[RTabIC Carrier1 XYT]
+Ready_X=-15.500000
+Ready_Y=-736.550000
+Ready_T=0.000000
+Load_X=-15.500000
+Load_Y=-520.550000
+Load_T=0.000000
+Prealign_X=-0.000061
+Prealign_Y=-101.000000
+Prealign_T=0.000000
+Unload_X=-9.800000
+Unload_Y=159.000000
+Unload_T=-0.000440
+TabRemove_X=0.000015
+TabRemove_Y=253.290376
+TabRemove_T=0.000000
+[F_Tab Press Z]
+Up_Z=0.000000
+Ready_Z=0.000000
+Down_Z=-171.000000
+[R_Tab Press Z]
+Up_Z=0.000000
+Ready_Z=0.000000
+Down_Z=-160.000000
+[F_Feeder Supplier Z]
+Ready_Y=-15.094421
+Work_Y=-15.094376
+Supply_Y=-15.094254
+[Feeder Supplier Z]
+Ready_Y=-11.628479
+Work_Y=-11.628479
+Supply_Y=-11.628479
+[Backup1 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=5.000000
+[Backup2 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=5.000000
+[Backup3 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=5.000000
+[Backup4 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=5.000000
+[Backup Move X]
+Ready_X=0.000000
+Work_X=-2.900000
+[TabMounter1 Y]
+Ready_Y=397.500300
+Load_Y=397.500300
+RLoad_Y=725.199500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=253.000500
+Escape_Y=397.500300
+[TabMounter2 Y]
+Ready_Y=477.500300
+Load_Y=477.500300
+RLoad_Y=797.199500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=253.000500
+Escape_Y=477.500300
+[TabMounter3 Y]
+Ready_Y=557.500300
+Load_Y=557.500300
+RLoad_Y=869.199500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=253.000500
+Escape_Y=557.500300
+[TabMounter4 Y]
+Ready_Y=637.500300
+Load_Y=637.500300
+RLoad_Y=941.199500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=253.000500
+Escape_Y=637.500300
+[TabMounter5 Y]
+Ready_Y=1005.199500
+Load_Y=725.199500
+RLoad_Y=-1123.260500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=671.000000
+[TabMounter6 Y]
+Ready_Y=1069.199500
+Load_Y=797.199500
+RLoad_Y=-1051.260500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=671.000000
+[TabMounter7 Y]
+Ready_Y=1133.199500
+Load_Y=869.199500
+RLoad_Y=-979.260500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=671.000000
+[TabMounter8 Y]
+Ready_Y=1197.199500
+Load_Y=941.199500
+RLoad_Y=-907.260500
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=671.000000
+[TabMounter1 Z]
+Move_Z=10.000000
+Load_Z=0.600000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.500000
+Remove_Z=-6.500000
+Spare_Z=0.000000
+[TabMounter2 Z]
+Move_Z=10.000000
+Load_Z=0.600000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.500000
+Remove_Z=-6.500000
+Spare_Z=0.000000
+[TabMounter3 Z]
+Move_Z=10.000000
+Load_Z=0.600000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.500000
+Remove_Z=-6.500000
+Spare_Z=0.000000
+[TabMounter4 Z]
+Move_Z=10.000000
+Load_Z=0.600000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.500000
+Remove_Z=-6.500000
+Spare_Z=0.000000
+[TabMounter5 Z]
+Move_Z=7.000000
+Load_Z=-3.000000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-4.800000
+Remove_Z=0.000000
+[TabMounter6 Z]
+Move_Z=7.000000
+Load_Z=-3.000000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-4.800000
+Remove_Z=0.000000
+[TabMounter7 Z]
+Move_Z=7.000000
+Load_Z=-3.000000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-4.800000
+Remove_Z=0.000000
+[TabMounter8 Z]
+Move_Z=7.000000
+Load_Z=-3.000000
+RLoad_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-4.800000
+Remove_Z=0.000000
+[Panel Transfer Out X]
+Load_X=-1635.400000
+Unload_X=-133.478923
+[Panel Transfer Center X]
+Load_X=-1231.000000
+Unload_X=-122.300000
+[Panel Transfer In X]
+Load_X=-849.000000
+Unload_X=-69.000000
+Wait_X=0.000000
+[Panel Aligner XYT]
+Load_X=-1194.499662
+Load_Y=-2.600004
+Load_T=-0.174879
+FiduMark_Xu_X=-344.348857
+FiduMark_Xu_Y=0.000000
+FiduMark_Xu_T=0.000000
+FiduMark_Yl_X=0.000000
+FiduMark_Yl_Y=0.000000
+FiduMark_Yl_T=0.000000
+FiduMark_Yr_X=0.000000
+FiduMark_Yr_Y=0.000000
+FiduMark_Yr_T=0.000000
+SubMark_Xu_X=0.000000
+SubMark_Xu_Y=0.000000
+SubMark_Xu_T=0.000000
+SubMark_Yl_X=0.000000
+SubMark_Yl_Y=0.000000
+SubMark_Yl_T=0.000000
+SubMark_Yr_X=0.000000
+SubMark_Yr_Y=0.000000
+SubMark_Yr_T=0.000000
+Press_Xu_X=4.528000
+Press_Xu_Y=-0.001000
+Press_Xu_T=-0.000034
+Press_Yl_X=0.000000
+Press_Yl_Y=0.000000
+Press_Yl_T=0.000000
+Press_Yr_X=0.000000
+Press_Yr_Y=0.000000
+Press_Yr_T=0.000000
+Inspect_Xu_X=-344.348857
+Inspect_Xu_Y=0.000000
+Inspect_Xu_T=0.000000
+Inspect_Yl_X=0.000000
+Inspect_Yl_Y=0.000000
+Inspect_Yl_T=0.000000
+Inspect_Yr_X=0.000000
+Inspect_Yr_Y=0.000000
+Inspect_Yr_T=0.000000
+Unload_X=-10.000341
+Unload_Y=2.000000
+Unload_T=-0.299995
+FirstMark_X=1278.473031
+FirstMark_Y=0.000000
+FirstMark_T=0.000002
+SecondMark_X=1278.473031
+SecondMark_Y=0.000000
+SecondMark_T=0.000000
+Press_1_X=0.000000
+Press_1_Y=0.000000
+Press_1_T=0.000000
+Press_2_X=0.000000
+Press_2_Y=0.000000
+Press_2_T=0.000000
+Inspection_1_X=1278.473031
+Inspection_1_Y=0.000000
+Inspection_1_T=0.000000
+Inspection_2_X=1278.473031
+Inspection_2_Y=0.000000
+Inspection_2_T=0.000000
+Inspection_3_X=0.000000
+Inspection_3_Y=0.000000
+Inspection_3_T=0.000000
+[Panel Aligner Z]
+Down_Z=-7.000000
+LoadUp_Z=0.000000
+MoveUp_Z=1.500000
+Work_Z=0.000000
+[Inspect Camera1 Y]
+FiduMark_Y=673.154800
+SubMark_Y=673.154800
+LeadMark_Y=673.154800
+FiduMark_Z=500.000000
+SubMark_Z=500.000000
+LeadMark_Z=500.000000
+[Inspect Camera2 Y]
+FiduMark_Y=305.798857
+SubMark_Y=305.798857
+LeadMark_Y=305.798857
+FiduMark_Z=500.000000
+SubMark_Z=500.000000
+LeadMark_Z=500.000000
+[Inspect Camera3 Y]
+FiduMark_Y=113.048857
+SubMark_Y=113.048857
+LeadMark_Y=113.048857
+FiduMark_Z=500.000000
+SubMark_Z=500.000000
+LeadMark_Z=500.000000
+[Inspect Camera4 Y]
+FiduMark_Y=673.154800
+SubMark_Y=673.154800
+LeadMark_Y=673.154800
+FiduMark_Z=500.000000
+SubMark_Z=500.000000
+LeadMark_Z=500.000000
+[F_Molding UpDown Z]
+PinRelease_Z=0.000000
+PinFix_Z=15.000000
+[R_Molding UpDown Z]
+PinRelease_Z=0.000000
+PinFix_Z=15.000000
+[Model Change Y1]
+Init_Y=0.000000
+Model_Y=0.000301
+PanelAlign_Y=-0.000300
+[Model Change Y2]
+Init_Y=0.000000
+Model_Y=0.000200
+PanelAlign_Y=-0.000027
+[TabMounter Gantry Y]
+Load1_Y=34.800000
+Inspection_Y=0.000222
+Mount_Y=2.500091
+TabRemove_Y=46.500000
+[R_TabMounter2 Y]
+Ready_Y=441.500000
+Load_Y=441.500000
+Escape_Y=441.500000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+[R_TabMounter2 Z]
+Move_Z=10.000000
+Load_Z=-1.000000
+Spare_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.000000
+Remove_Z=0.000000
+[R_TabMounter Gantry Y]
+Load1_Y=-55.000000
+Inspection_Y=0.000271
+Mount_Y=-2.000028
+TabRemove_Y=0.000000
+[R_Inspect Camera1 Y]
+FiduMark_Y=-22.126800
+SubMark_Y=-22.126800
+LeadMark_Y=-22.126800
+[R_Backup1 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=0.000000
+[R_TabIC Carrier2 XYT]
+Ready_X=0.000000
+Ready_Y=-39.249800
+Ready_T=0.000000
+Load_X=-45.000000
+Load_Y=-39.249800
+Load_T=0.000000
+Prealign_X=-205.000000
+Prealign_Y=55.700000
+Prealign_T=-180.000000
+Unload_X=-547.000000
+Unload_Y=19.700000
+Unload_T=-180.000000
+Escape_X=0.000000
+Escape_Y=366.000000
+Escape_T=90.000000
+LoadStart_X=-80.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_TabIC Carrier1 XYT]
+Ready_X=0.000000
+Ready_Y=-39.249800
+Ready_T=0.000000
+Load_X=-45.000000
+Load_Y=-39.249800
+Load_T=0.000000
+Prealign_X=-205.000000
+Prealign_Y=55.700000
+Prealign_T=-180.000000
+Unload_X=-547.000000
+Unload_Y=19.700000
+Unload_T=-180.000000
+Escape_X=0.000000
+Escape_Y=289.000000
+Escape_T=90.000000
+LoadStart_X=0.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_TabMounter1 Y]
+Ready_Y=361.500000
+Load_Y=361.500000
+Escape_Y=361.500000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+[R_TabMounter1 Z]
+Move_Z=10.000000
+Load_Z=-1.000000
+Spare_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.000000
+Remove_Z=0.000000
+[R_Backup2 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=0.000000
+[R_TabMounter4 Y]
+Ready_Y=601.500000
+Load_Y=601.500000
+Escape_Y=601.500000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+[R_TabMounter3 Y]
+Ready_Y=521.500000
+Load_Y=521.500000
+Escape_Y=521.500000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+[R_TabMounter3 Z]
+Move_Z=10.000000
+Load_Z=-1.000000
+Spare_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.000000
+Remove_Z=0.000000
+[R_TabMounter4 Z]
+Move_Z=10.000000
+Load_Z=-1.000000
+Spare_Z=0.000000
+Inspection_Z=-4.300000
+Mount_Z=-5.000000
+Remove_Z=0.000000
+[R_TabIC Carrier4 XYT]
+Ready_X=0.000000
+Ready_Y=-39.249800
+Ready_T=0.000000
+Load_X=-205.000000
+Load_Y=-39.249800
+Load_T=0.000000
+Prealign_X=-365.000000
+Prealign_Y=55.700000
+Prealign_T=-180.000000
+Unload_X=-547.000000
+Unload_Y=19.700000
+Unload_T=-180.000000
+Escape_X=0.000000
+Escape_Y=520.000000
+Escape_T=90.000000
+LoadStart_X=-240.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_TabIC Carrier3 XYT]
+Ready_X=0.000000
+Ready_Y=-39.249800
+Ready_T=0.000000
+Load_X=-205.000000
+Load_Y=-39.249800
+Load_T=0.000000
+Prealign_X=-365.000000
+Prealign_Y=55.700000
+Prealign_T=-180.000000
+Unload_X=-547.000000
+Unload_Y=19.700000
+Unload_T=-180.000000
+Escape_X=0.000000
+Escape_Y=443.000000
+Escape_T=90.000000
+LoadStart_X=-160.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_Inspect Camera2 Y]
+FiduMark_Y=113.048857
+SubMark_Y=113.048857
+LeadMark_Y=113.048857
+[R_Inspect Camera3 Y]
+FiduMark_Y=113.048857
+SubMark_Y=113.048857
+LeadMark_Y=113.048857
+[R_Inspect Camera4 Y]
+FiduMark_Y=-746.000000
+SubMark_Y=-746.000000
+LeadMark_Y=-746.000000
+[R_Backup4 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=0.000000
+[R_Backup3 Z]
+Down_Z=0.000000
+Vision_Z=5.000000
+Up_Z=0.000000
+[TabIC Carrier Z]
+Down_Z=0.000000
+Up_Z=33.000000
+[R_TabIC Carrier Z]
+Down_Z=0.000000
+Up_Z=33.000000
+[THandler XT]
+Load_X=0.000000
+Load_Y=0.000000
+Load_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+[THandler Z]
+Up_Z=0.000000
+Down_Z=-7.000000

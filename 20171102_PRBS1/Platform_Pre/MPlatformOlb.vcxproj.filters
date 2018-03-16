@@ -1,0 +1,2256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7dd968a4-e21c-4dd3-bef9-750b70e4481c}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8d4d434d-70ed-4de7-a9e8-c47518b113a3}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{5d99cebf-5ae7-44b6-8fad-05ea5decb783}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="System">
+      <UniqueIdentifier>{83a0253f-1b9b-4443-b03a-ebbe36e500fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Data">
+      <UniqueIdentifier>{570584e5-25a2-40df-858a-18f336ba74df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Inf">
+      <UniqueIdentifier>{19385b91-ba9e-457e-9e97-aed590186e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{08ea01b9-40c7-4cfc-a28d-e25d1b87dfd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MFileUtil">
+      <UniqueIdentifier>{f9142130-a9cd-47dd-85b5-debc62bf023b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MLog">
+      <UniqueIdentifier>{58441800-d872-4d6f-aa37-73888d10505d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MPosition">
+      <UniqueIdentifier>{db9d0507-8e71-4ee5-8d61-9c88b131fb23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MTickTimer">
+      <UniqueIdentifier>{21a0cff3-02d9-44c8-958a-5722bc32c06a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MFileManager">
+      <UniqueIdentifier>{24d971d4-f627-44d8-b3c7-44965f94311e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MViewUtil">
+      <UniqueIdentifier>{2c7522d8-4efa-44c1-96d4-f9916805530e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MEtcUtil">
+      <UniqueIdentifier>{7970f02d-1b81-4927-8a7e-50f48826018c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="I_COMMON">
+      <UniqueIdentifier>{56efa924-6fce-4763-b8e9-5a3ad6b730f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer">
+      <UniqueIdentifier>{3000993b-f1e9-4cfd-9a3c-6cc2b47da32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsJog">
+      <UniqueIdentifier>{27a0997c-3d00-42da-9966-8c257c600526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsTabFeeder">
+      <UniqueIdentifier>{aa3a3c5b-5a8d-4553-9ee8-84c8291c0573}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsTabMounter">
+      <UniqueIdentifier>{b740458c-3e17-4b0f-ba64-f7ec415aabbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsTabCarrier">
+      <UniqueIdentifier>{9918fd67-bf1b-4613-b1e7-ea4638d3beaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsPanelTransfer">
+      <UniqueIdentifier>{6d122837-63f3-4c6a-8779-54ea18376bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsPanelAligner">
+      <UniqueIdentifier>{6054550d-0c78-40bf-8786-8ab172ca0084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsAutoManager">
+      <UniqueIdentifier>{efd14251-ebf1-4b09-a557-863b1cc91370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsInspectionCamera">
+      <UniqueIdentifier>{114d843e-1cdc-4f24-b893-857d82da018d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer">
+      <UniqueIdentifier>{8baa52d3-5de4-4c37-92be-44b00d60d8b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_ManageOpPanel">
+      <UniqueIdentifier>{7416c466-1c97-4398-bc0b-bdbd35d75ea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_VisionCalibration">
+      <UniqueIdentifier>{b4b80e74-9539-417d-bbe5-659324ce0fa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_CtrlTabFeeder">
+      <UniqueIdentifier>{1a70e28c-5a15-48a5-941b-7ceba0c83666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_CtrlTabCarrier">
+      <UniqueIdentifier>{6a9b7882-2cd9-4358-8757-ed05f20a3fff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_CtrlTabMounter">
+      <UniqueIdentifier>{eb7e2bc6-3dbd-47bd-8f90-b08ba98f14d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_CtrlInspectionCamera">
+      <UniqueIdentifier>{a71a837f-f7d4-43b1-a007-bd8edc5c88be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_CtrlPanelAligner">
+      <UniqueIdentifier>{196e5d16-9c5f-482b-90c4-2f37ad2f366b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer">
+      <UniqueIdentifier>{6ff3a903-81f8-4302-b790-02e8d7ed1771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_OpPanel">
+      <UniqueIdentifier>{1c4a417c-cfb8-4dc2-b5bd-7682dbd6fb2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_TabCarrier">
+      <UniqueIdentifier>{ca545bf2-fccf-4f7b-ab2e-0062e3fef1a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_TabFeeder">
+      <UniqueIdentifier>{a7dba962-9cc1-4316-a736-ce64c3e1aa38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_CameraCarrier">
+      <UniqueIdentifier>{4b14d4eb-9373-4806-842c-b49da575d0c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_RollerConveyor">
+      <UniqueIdentifier>{51140926-5e28-46dc-802b-c4fb9d0f55f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_TabMounter">
+      <UniqueIdentifier>{596354bb-bd25-4c0e-a54d-696e2d42c4c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_TabAligner">
+      <UniqueIdentifier>{155f0d7d-773e-4cad-a9f0-30af766c66df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_PanelTransfer">
+      <UniqueIdentifier>{69ba0a5e-1a42-4eb8-9e6a-828d22b024f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_PanelAligner">
+      <UniqueIdentifier>{a6b5db6b-9a93-45f1-aae9-ba5e7d8ecccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_ModelChange">
+      <UniqueIdentifier>{985fe2c6-545c-4e83-a705-d8e062e9d45a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_RFID">
+      <UniqueIdentifier>{0604e5f6-aa3f-4bbe-80c9-16ed6c68aaa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_Online">
+      <UniqueIdentifier>{f4dc6614-d279-499b-a8b3-530b03706051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer">
+      <UniqueIdentifier>{c8c1905a-4a8d-427c-9fc0-afaa439ec850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Motion">
+      <UniqueIdentifier>{78f700b2-adfc-4614-ae92-386e5348b0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Motion\H_SERCOS">
+      <UniqueIdentifier>{6cebca5f-07e7-4dca-917f-5a85257fdc87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Motion\H_MMC">
+      <UniqueIdentifier>{d123dc96-d285-4f90-9e6f-71dd19790db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Motion\H_ACS">
+      <UniqueIdentifier>{152ce9ad-c7d5-4452-80c7-0b5043fa05b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Motion\H_CAN">
+      <UniqueIdentifier>{c1d0bf58-4930-4dda-8af2-6a9217f465be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Serial">
+      <UniqueIdentifier>{e5dec71d-6407-44ce-b3ef-405ea1ae99f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Actuator">
+      <UniqueIdentifier>{ce227894-2904-4584-8fdc-3e0024d0ca92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_IO">
+      <UniqueIdentifier>{e06cabc8-2a3c-4b85-97d2-fde8ced2669d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Vision">
+      <UniqueIdentifier>{5350643c-f769-4d77-826d-127808aa28a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_MelsecNet">
+      <UniqueIdentifier>{459e8a7d-bd43-4f2d-803a-7e2ea66201a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Lighting">
+      <UniqueIdentifier>{45041841-9be3-4cd2-bda5-9b62e235ea55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Inverter">
+      <UniqueIdentifier>{40ebf23d-6009-4d39-a565-bf4f1862ae37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{87bc8813-8234-45e3-ac59-403c8a19c5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\DeviceNet">
+      <UniqueIdentifier>{f86fa70d-48b6-4d6b-84c8-465a6138bbea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\MIL">
+      <UniqueIdentifier>{c59e1923-0bf0-4948-a4f0-2870ef689526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\MIL\include">
+      <UniqueIdentifier>{3bb71fa9-a819-4184-a139-625897132c7b}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="Lib\MIL\library">
+      <UniqueIdentifier>{d044680e-1053-4b20-ba8a-7eaf215593d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\NMC">
+      <UniqueIdentifier>{0ba76859-f655-45ea-8994-301921f5d73d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\MMC">
+      <UniqueIdentifier>{6c60e5b5-7684-4cce-8f07-7c30bfd529e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\ACS">
+      <UniqueIdentifier>{f685b696-5c50-440a-ad2a-90c4340f4d51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\CAN">
+      <UniqueIdentifier>{8da1f239-639f-4d5a-a5b2-c8dde33f945c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Message">
+      <UniqueIdentifier>{d368994c-32fa-499a-895b-0c699f82ce90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hardware Layer\H_Motion\H_RSNMC">
+      <UniqueIdentifier>{c3b7d2d0-6f0b-4ab7-9afc-b11aaba2a81c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib\MRS_NMC">
+      <UniqueIdentifier>{01e901ff-171b-4429-8164-bd8571618a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\MGQue">
+      <UniqueIdentifier>{3a38aac8-771c-4c79-81b6-1edc24166ffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mechanical Layer\M_Handler">
+      <UniqueIdentifier>{69bcb5e2-fa6c-4b68-bd87-b69a4c231c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsPanelTransferCenter">
+      <UniqueIdentifier>{7f4a6221-163d-41ad-8dad-b155da935134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsPanelTransferOut">
+      <UniqueIdentifier>{1fba2fca-6c48-4408-b235-d858d272c204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process Layer\P_TrsTHandler">
+      <UniqueIdentifier>{4a85358f-472a-412c-97ee-7ae8f1a1cf7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control Layer\C_CtrlHandler">
+      <UniqueIdentifier>{0396162b-363b-483a-b649-ac2f49891dd2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoDoorStateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoElapseTimeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoMainForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoMaterialCmdGroupDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoMaterialInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoModeSelectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoMotorOriginDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoNSMCInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoOperationCmdGroupDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoPanelMarkManualSearchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoRepairTabSelectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoScrapGlassDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoStepDispDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoTabICInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoZigInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BottomForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="btnenh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonErrMsgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonEStopNotifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonGetNumDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonGetValueDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonMatCodeCheckDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonMsgDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonNotifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonOPCallDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonPendantNotifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonSelectUserGroupDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonStepStopNotifyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataActuatorSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCommonDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataFuncOnOffDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataMainForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataMatchingTableDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModelChangeDistDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModelIDList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataMoldInfoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPanelAlignerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataPanelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTabICDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTabICImageDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTabICOffsetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTabMounterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataToolOffsetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogConfigDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFileSelectDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogMainForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualCameraExpShrDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualIOMonitoringDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualLimitSensorDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualMainForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualPanelAlignerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualTabCarrierDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualTabFeederDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualTabMounterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MLCNetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MNetHDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPlatformOlb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPlatformOlbDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MPlatformOlbView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msflexgrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiViewSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="picture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rowcursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemThreeBtnDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachBadTabDetectorDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachCameraCarrierDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachCarrierDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachMainForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachModelChangeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachPanelAlignerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachPanelAlignerOffsetDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachPressDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachTabMounterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textdescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionCalibDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionIlluminationDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionJogKeyDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMonitorDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionOptionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionSearchAreaDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionSelectMarkDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionViewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MPlatformOlbSystem.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MPanelData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MPreBonderData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MProcessData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MProductInfoData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MSystemData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MSystemInfo.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MTabData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MTabOffsetData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MTeachingInfo.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MTeachingPosData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\MFileUtil\MFileUtil.cpp">
+      <Filter>Common\MFileUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\MLog\MLog.cpp">
+      <Filter>Common\MLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\MTickTimer\MTickTimer.cpp">
+      <Filter>Common\MTickTimer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\FileManager\MFileManager.cpp">
+      <Filter>Common\MFileManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\Gradient.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\LedButton.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\MyMsgWnd.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\MyProgressWnd.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\Mywnd.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\Splash.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ViewUtil\TBalloon.cpp">
+      <Filter>Common\MViewUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ETC_Util\Common.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_CommonIF\ICommon.cpp">
+      <Filter>I_COMMON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\P_TrsJog\MTrsJog.cpp">
+      <Filter>Process Layer\P_TrsJog</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsTabFeeder\MTrsTabFeeder.cpp">
+      <Filter>Process Layer\P_TrsTabFeeder</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsTabMounter\MTrsTabMounter.cpp">
+      <Filter>Process Layer\P_TrsTabMounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsTabCarrier\MTrsTabCarrier.cpp">
+      <Filter>Process Layer\P_TrsTabCarrier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\P_TrsPanelTransfer\MTrsPanelTransfer.cpp">
+      <Filter>Process Layer\P_TrsPanelTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsPanelAligner\MTrsPanelAligner.cpp">
+      <Filter>Process Layer\P_TrsPanelAligner</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsAutoManager\MTrsAutoManager.cpp">
+      <Filter>Process Layer\P_TrsAutoManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsInspectionCamera\MTrsInspectionCamera.cpp">
+      <Filter>Process Layer\P_TrsInspectionCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\C_ManageOpPanel\MManageOpPanel.cpp">
+      <Filter>Control Layer\C_ManageOpPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\C_VisionCalibration\MVisionCalibration.cpp">
+      <Filter>Control Layer\C_VisionCalibration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\C_VisionCalibration\MVisionCalibrationData.cpp">
+      <Filter>Control Layer\C_VisionCalibration</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\C_CtrlTabFeeder\MCtrlTabFeeder.cpp">
+      <Filter>Control Layer\C_CtrlTabFeeder</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\C_CtrlTabCarrier\MCtrlTabCarrier.cpp">
+      <Filter>Control Layer\C_CtrlTabCarrier</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\C_CtrlTabMounter\MCtrlTabMounter.cpp">
+      <Filter>Control Layer\C_CtrlTabMounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\C_CtrlInspectionCamera\MCtrlInspectionCamera.cpp">
+      <Filter>Control Layer\C_CtrlInspectionCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\C_CtrlPanelAligner\MCtrlPanelAligner.cpp">
+      <Filter>Control Layer\C_CtrlPanelAligner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_OpPanel\MOpPanel.cpp">
+      <Filter>Mechanical Layer\M_OpPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_TabCarrier\MTabCarrier.cpp">
+      <Filter>Mechanical Layer\M_TabCarrier</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_TabFeeder\MTabFeeder.cpp">
+      <Filter>Mechanical Layer\M_TabFeeder</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_CameraCarrier\MCameraCarrier.cpp">
+      <Filter>Mechanical Layer\M_CameraCarrier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_RollerConveyor\MRollerConveyor.cpp">
+      <Filter>Mechanical Layer\M_RollerConveyor</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_TabMounter\MTabMounter.cpp">
+      <Filter>Mechanical Layer\M_TabMounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_TabAligner\MTabAligner.cpp">
+      <Filter>Mechanical Layer\M_TabAligner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_PanelTransfer\MPanelTransfer.cpp">
+      <Filter>Mechanical Layer\M_PanelTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_PanelAligner\MPanelAligner.cpp">
+      <Filter>Mechanical Layer\M_PanelAligner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_ModelChange\MModelChange.cpp">
+      <Filter>Mechanical Layer\M_ModelChange</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_RFID\MRFID.cpp">
+      <Filter>Mechanical Layer\M_RFID</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_Online\MLCNet.cpp">
+      <Filter>Mechanical Layer\M_Online</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_Online\MLCNetData.cpp">
+      <Filter>Mechanical Layer\M_Online</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\M_Online\xnet.cpp">
+      <Filter>Mechanical Layer\M_Online</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_SERCOS\MSercosAxis.cpp">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_SERCOS\MSercosMultiAxis.cpp">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_SERCOS\MSercosSetup.cpp">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_MMC\MMotionBoard.cpp">
+      <Filter>Hardware Layer\H_Motion\H_MMC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_ACS\MACSAxis.cpp">
+      <Filter>Hardware Layer\H_Motion\H_ACS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Serial\CQueue.cpp">
+      <Filter>Hardware Layer\H_Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Serial\MComThread.cpp">
+      <Filter>Hardware Layer\H_Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Actuator\MCylinder.cpp">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Actuator\MCylinderData.cpp">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Actuator\MVacuum.cpp">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Actuator\MVacuumData.cpp">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_IO\MHilscherDnet.cpp">
+      <Filter>Hardware Layer\H_IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\Mdisplay.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\MdisplayThread.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\MdisplayWnd.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\Msystem.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\Msystem_meteor.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\Msystem_solios.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Vision\MVision.cpp">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Melsec\BtnST.cpp">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Melsec\MNetH.cpp">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Melsec\MNetHData.cpp">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Lighting\MLighting.cpp">
+      <Filter>Hardware Layer\H_Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Inverter\MInverter.cpp">
+      <Filter>Hardware Layer\H_Inverter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Amp.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpFile.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpFW.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpParam.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpPDO.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpPVT.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpStruct.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\AmpUnits.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Can.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\can_copley.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\can_kvaser.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\CanOpen.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\CML.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\CopleyNode.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Error.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\EventMap.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Filter.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Firmware.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Geometry.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\IOmodule.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Linkage.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\LSS.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Node.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Path.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\PDO.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\SDO.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Threads.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Threads_w32.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\TrjScurve.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LIB\CAN\Utils.cpp">
+      <Filter>Lib\CAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\MAxisData.cpp">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_MRS_NMC\MRS_NMC_Setup.cpp">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_MRS_NMC\MRS_NMCLib.cpp">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_MRS_NMC\MRSNMCAxis.cpp">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Motion\H_MRS_NMC\MRSNMCMultiAxis.cpp">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ETC_Util\LanguageManager.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ETC_Util\MDebug.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ETC_Util\MString.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\ETC_Util\UtilManager.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\MGQue\MGQUE.CPP">
+      <Filter>Common\MGQue</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\AdoControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\TabICLoss\DBTabLoss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_Handler\MHandler.cpp">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\M_Handler\MHandlerCommon.cpp">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MTowerLampData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\System\MAutoAlignData.cpp">
+      <Filter>System\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\P_TrsPanelTransferCenter\MTrsPanelTransferCenter.cpp">
+      <Filter>Process Layer\P_TrsPanelTransferCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\P_TrsPanelTransferOut\MTrsPanelTransferOut.cpp">
+      <Filter>Process Layer\P_TrsPanelTransferOut</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\P_TrsTHandler\MTrsTHandler.cpp">
+      <Filter>Process Layer\P_TrsTHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\C_CtrlHandler\MCtrlHandler.cpp">
+      <Filter>Control Layer\C_CtrlHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSheetMaterial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFixedVision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageMaterialInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageMCodeInfo2ND.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageMCodeInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductPlanDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoInspectJudgeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataECDBDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataModelDlgNew.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTabOffsetImageDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataTowerLampDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSheetTactTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataSearchMajorSpec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTabICLoss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTabOffsetTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgViewWorkSchedule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EqStopCodeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorNotSendDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualHandlerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualMarkRecogDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualPanelTransferDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialChangeDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelNDeviceIDListDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModulePortIDDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MoldZigInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simpleAdo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="webbrowser2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XHeaderCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageEtcTact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageTabCarrierTact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PageTabMounterTact.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanelValidationCheckDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlateVacModelDataDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PMFullDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductCreateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemFourBtnDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachCarrierCameraExpandDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachHandlerDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachMoldPinDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeachTransferDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionDisplayDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionBlobThresholdDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\H_Lighting\MLighting_ONI.cpp">
+      <Filter>Hardware Layer\H_Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemBtnDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MDataDouble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MStackTrace.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\src\_Utility\CListCtrlEx\MsgHook.cpp">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MPlatformOlb.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoDoorStateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoElapseTimeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoMainForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoMaterialCmdGroupDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoMaterialInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoModeSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoMotorOriginDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoNSMCInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoOperationCmdGroupDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoPanelMarkManualSearchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoRepairTabSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoScrapGlassDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoStepDispDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoTabICInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoZigInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="btnenh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonErrMsgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonEStopNotifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonGetNumDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonGetValueDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMatCodeCheckDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonMsgDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonNotifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonOPCallDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonPendantNotifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonSelectUserGroupDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonStepStopNotifyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataActuatorSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCommonDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataFuncOnOffDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataMainForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataMatchingTableDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModelChangeDistDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModelIDList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataMoldInfoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPanelAlignerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataPanelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTabICDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTabICImageDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTabICOffsetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTabMounterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataToolOffsetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogConfigDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFileSelectDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMainForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualCameraExpShrDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualIOMonitoringDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualLimitSensorDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualMainForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualPanelAlignerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualTabCarrierDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualTabFeederDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualTabMounterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MLCNetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MNetHDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPlatformOlb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPlatformOlbDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MPlatformOlbView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msflexgrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiViewSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="picture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rowcursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemThreeBtnDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachBadTabDetectorDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachCameraCarrierDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachCarrierDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachMainForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachModelChangeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachPanelAlignerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachPanelAlignerOffsetDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachPressDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachTabMounterDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="textdescriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleForm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionCalibDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionIlluminationDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionJogKeyDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionMonitorDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionOptionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionSearchAreaDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionSelectMarkDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionViewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\DefActuatorPreBonder.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\DefAxisPreBonder.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\DefIOAddrPreBonder.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\DefSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\DefSystemConfig.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MPlatformOlbSystem.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MPanelData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MPreBonderData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MProcessData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MProductInfoData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MSystemData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MSystemInfo.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MTabData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MTabOffsetData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MTeachingInfo.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MTeachingPosData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MFileUtil\MFileUtil.h">
+      <Filter>Common\MFileUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MLog\MLog.h">
+      <Filter>Common\MLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MPosition\MPos_XY.h">
+      <Filter>Common\MPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MPosition\MPos_XYT.h">
+      <Filter>Common\MPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MPosition\MPos_XYTZ.h">
+      <Filter>Common\MPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MTickTimer\MTickTimer.h">
+      <Filter>Common\MTickTimer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\FileManager\MFileManager.h">
+      <Filter>Common\MFileManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\Gradient.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\LedButton.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\MyMsgWnd.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\MyProgressWnd.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\Mywnd.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\Splash.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ViewUtil\TBalloon.h">
+      <Filter>Common\MViewUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ETC_Util\common.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_CommonIF\ICommon.h">
+      <Filter>I_COMMON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsJog\MTrsJog.h">
+      <Filter>Process Layer\P_TrsJog</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTabFeeder\ITI_TabFeeder.h">
+      <Filter>Process Layer\P_TrsTabFeeder</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTabFeeder\MTrsTabFeeder.h">
+      <Filter>Process Layer\P_TrsTabFeeder</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTabMounter\ITI_TabMounter.h">
+      <Filter>Process Layer\P_TrsTabMounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTabMounter\MTrsTabMounter.h">
+      <Filter>Process Layer\P_TrsTabMounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTabCarrier\ITI_TabCarrier.h">
+      <Filter>Process Layer\P_TrsTabCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTabCarrier\MTrsTabCarrier.h">
+      <Filter>Process Layer\P_TrsTabCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsPanelTransfer\ITI_PanelTransfer.h">
+      <Filter>Process Layer\P_TrsPanelTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsPanelTransfer\MTrsPanelTransfer.h">
+      <Filter>Process Layer\P_TrsPanelTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsPanelAligner\ITI_PanelAligner.h">
+      <Filter>Process Layer\P_TrsPanelAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsPanelAligner\MTrsPanelAligner.h">
+      <Filter>Process Layer\P_TrsPanelAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsAutoManager\MTrsAutoManager.h">
+      <Filter>Process Layer\P_TrsAutoManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsInspectionCamera\ITI_InspectionCamera.h">
+      <Filter>Process Layer\P_TrsInspectionCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsInspectionCamera\MTrsInspectionCamera.h">
+      <Filter>Process Layer\P_TrsInspectionCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\C_ManageOpPanel\DefManageOpPanel.h">
+      <Filter>Control Layer\C_ManageOpPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\C_ManageOpPanel\MManageOpPanel.h">
+      <Filter>Control Layer\C_ManageOpPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\C_VisionCalibration\MVisionCalibration.h">
+      <Filter>Control Layer\C_VisionCalibration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\C_VisionCalibration\MVisionCalibrationData.h">
+      <Filter>Control Layer\C_VisionCalibration</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\C_CtrlTabFeeder\MCtrlTabFeeder.h">
+      <Filter>Control Layer\C_CtrlTabFeeder</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\C_CtrlTabCarrier\MCtrlTabCarrier.h">
+      <Filter>Control Layer\C_CtrlTabCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\C_CtrlTabMounter\MCtrlTabMounter.h">
+      <Filter>Control Layer\C_CtrlTabMounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\C_CtrlInspectionCamera\MCtrlInspectionCamera.h">
+      <Filter>Control Layer\C_CtrlInspectionCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\C_CtrlPanelAligner\MCtrlPanelAligner.h">
+      <Filter>Control Layer\C_CtrlPanelAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_OpPanel\DefOpPanel.h">
+      <Filter>Mechanical Layer\M_OpPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_OpPanel\IOpPanel.h">
+      <Filter>Mechanical Layer\M_OpPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_OpPanel\MOpPanel.h">
+      <Filter>Mechanical Layer\M_OpPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabCarrier\DefTabCarrier.h">
+      <Filter>Mechanical Layer\M_TabCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabCarrier\IStateTabCarrier.h">
+      <Filter>Mechanical Layer\M_TabCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabCarrier\MTabCarrier.h">
+      <Filter>Mechanical Layer\M_TabCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabFeeder\DefTabFeeder.h">
+      <Filter>Mechanical Layer\M_TabFeeder</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabFeeder\IStateTabFeeder.h">
+      <Filter>Mechanical Layer\M_TabFeeder</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabFeeder\MTabFeeder.h">
+      <Filter>Mechanical Layer\M_TabFeeder</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_CameraCarrier\DefCameraCarrier.h">
+      <Filter>Mechanical Layer\M_CameraCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_CameraCarrier\IStateCameraCarrier.h">
+      <Filter>Mechanical Layer\M_CameraCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_CameraCarrier\MCameraCarrier.h">
+      <Filter>Mechanical Layer\M_CameraCarrier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_RollerConveyor\DefRollerConveyor.h">
+      <Filter>Mechanical Layer\M_RollerConveyor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_RollerConveyor\IStateRollerConveyor.h">
+      <Filter>Mechanical Layer\M_RollerConveyor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_RollerConveyor\MRollerConveyor.h">
+      <Filter>Mechanical Layer\M_RollerConveyor</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabMounter\DefTabMounter.h">
+      <Filter>Mechanical Layer\M_TabMounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabMounter\IStateTabMounter.h">
+      <Filter>Mechanical Layer\M_TabMounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabMounter\MTabMounter.h">
+      <Filter>Mechanical Layer\M_TabMounter</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabAligner\DefTabAligner.h">
+      <Filter>Mechanical Layer\M_TabAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabAligner\IStateTabAligner.h">
+      <Filter>Mechanical Layer\M_TabAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_TabAligner\MTabAligner.h">
+      <Filter>Mechanical Layer\M_TabAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_PanelTransfer\DefPanelTransfer.h">
+      <Filter>Mechanical Layer\M_PanelTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_PanelTransfer\IStatePanelTransfer.h">
+      <Filter>Mechanical Layer\M_PanelTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_PanelTransfer\MPanelTransfer.h">
+      <Filter>Mechanical Layer\M_PanelTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_PanelAligner\DefPanelAligner.h">
+      <Filter>Mechanical Layer\M_PanelAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_PanelAligner\IStatePanelAligner.h">
+      <Filter>Mechanical Layer\M_PanelAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_PanelAligner\MPanelAligner.h">
+      <Filter>Mechanical Layer\M_PanelAligner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_ModelChange\DefModelChange.h">
+      <Filter>Mechanical Layer\M_ModelChange</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_ModelChange\IStateModelChange.h">
+      <Filter>Mechanical Layer\M_ModelChange</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_ModelChange\MModelChange.h">
+      <Filter>Mechanical Layer\M_ModelChange</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_RFID\DefRFID.h">
+      <Filter>Mechanical Layer\M_RFID</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_RFID\IRFID.h">
+      <Filter>Mechanical Layer\M_RFID</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_RFID\MRFID.h">
+      <Filter>Mechanical Layer\M_RFID</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_Online\MLCNet.h">
+      <Filter>Mechanical Layer\M_Online</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_Online\MLCNetData.h">
+      <Filter>Mechanical Layer\M_Online</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\M_Online\xnet.h">
+      <Filter>Mechanical Layer\M_Online</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\DefCommonMotion.h">
+      <Filter>Hardware Layer\H_Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\DefMotionStruct.h">
+      <Filter>Hardware Layer\H_Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\DefMotionValue.h">
+      <Filter>Hardware Layer\H_Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\IAxis.h">
+      <Filter>Hardware Layer\H_Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_SERCOS\ISercosMultiAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_SERCOS\ISercosSetup.h">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_SERCOS\MSercosAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_SERCOS\MSercosMultiAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_SERCOS\MSercosSetup.h">
+      <Filter>Hardware Layer\H_Motion\H_SERCOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MMC\IMotionLib.h">
+      <Filter>Hardware Layer\H_Motion\H_MMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MMC\MMotionBoard.h">
+      <Filter>Hardware Layer\H_Motion\H_MMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_ACS\MACSAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_ACS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Serial\CQueue.h">
+      <Filter>Hardware Layer\H_Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Serial\DefSerialValue.h">
+      <Filter>Hardware Layer\H_Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Serial\IComThread.h">
+      <Filter>Hardware Layer\H_Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Serial\MComThread.h">
+      <Filter>Hardware Layer\H_Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Actuator\ICylinder.h">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Actuator\IVacuum.h">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Actuator\MCylinder.h">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Actuator\MCylinderData.h">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Actuator\MVacuum.h">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Actuator\MVacuumData.h">
+      <Filter>Hardware Layer\H_Actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_IO\IIO.h">
+      <Filter>Hardware Layer\H_IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_IO\MHilscherDnet.h">
+      <Filter>Hardware Layer\H_IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\DefVision.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\DefVisionExt.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\IVision.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\Mdisplay.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\MdisplayThread.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\MdisplayWnd.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\Msystem.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\Msystem_meteor.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\Msystem_solios.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Vision\MVision.h">
+      <Filter>Hardware Layer\H_Vision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Melsec\BtnST.h">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Melsec\Mdfunc.h">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Melsec\MNetH.h">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Melsec\MNetHData.h">
+      <Filter>Hardware Layer\H_MelsecNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Lighting\ILighting.h">
+      <Filter>Hardware Layer\H_Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Lighting\MLighting.h">
+      <Filter>Hardware Layer\H_Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Inverter\IInverter.h">
+      <Filter>Hardware Layer\H_Inverter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Inverter\MInverter.h">
+      <Filter>Hardware Layer\H_Inverter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\HilscherDnet\CIFUSER.H">
+      <Filter>Lib\DeviceNet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\Mil.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\Mildec.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\MilDyn.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\Milerr.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\MilFunc.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\milfuncll.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\Milos.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\Milproto.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MIL\include\Milsetup.h">
+      <Filter>Lib\MIL\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\NMC\smmcdef.h">
+      <Filter>Lib\NMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MMC\MMCDEF.H">
+      <Filter>Lib\MMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MMC\MMCWFP40.H">
+      <Filter>Lib\MMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MMC\MMCWHP10.h">
+      <Filter>Lib\MMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\can_copley.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\can_kvaser.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\INC\canlib.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Amp.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_AmpDef.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_AmpStruct.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Can.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_CanOpen.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Copley.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Error.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_ErrorCodes.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_EventMap.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Filter.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Firmware.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Geometry.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_IO.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Linkage.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Node.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Path.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_PDO.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_SDO.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Settings.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Threads.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Trajectory.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_TrjScurve.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\CML_Utils.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\CAN\copley_internal.h">
+      <Filter>Lib\CAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MRS_NMC\IRSNMCMultiAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\MAxisData.h">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MRS_NMC\MRS_NMC_Setup.h">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MRS_NMC\MRS_NMCLib.h">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MRS_NMC\MRSNMCAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\H_MRS_NMC\MRSNMCMultiAxis.h">
+      <Filter>Hardware Layer\H_Motion\H_RSNMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MRS_NMC\CIPobjEcatSlave.h">
+      <Filter>Lib\MRS_NMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MRS_NMC\CIPobjEeprom.h">
+      <Filter>Lib\MRS_NMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MRS_NMC\NMC_Motion.h">
+      <Filter>Lib\MRS_NMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\MRS_NMC\CIPobjEcatMaster.h">
+      <Filter>Lib\MRS_NMC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\DefMotionError.h">
+      <Filter>Hardware Layer\H_Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Motion\IMotionLibNMC.h">
+      <Filter>Hardware Layer\H_Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ETC_Util\LanguageManager.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ETC_Util\MDebug.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ETC_Util\MString.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\ETC_Util\UtilManager.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\MGQue\MGQUE.H">
+      <Filter>Common\MGQue</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\AdoControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\TabICLoss\DBTabLoss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_Handler\DefHandlerCommon.h">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_Handler\IStateHandler.h">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_Handler\MHandler.h">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_Handler\MHandlerCommon.h">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\M_Handler\DefHandler.h">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MTowerLampData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\System\MAutoAlignData.h">
+      <Filter>System\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsPanelTransferCenter\ITI_PanelTransferCenter.h">
+      <Filter>Process Layer\P_TrsPanelTransferCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsPanelTransferCenter\MTrsPanelTransferCenter.h">
+      <Filter>Process Layer\P_TrsPanelTransferCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsPanelTransferOut\ITI_PanelTransferOut.h">
+      <Filter>Process Layer\P_TrsPanelTransferOut</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\P_TrsPanelTransferOut\MTrsPanelTransferOut.h">
+      <Filter>Process Layer\P_TrsPanelTransferOut</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTHandler\ITI_THandler.h">
+      <Filter>Process Layer\P_TrsTHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\P_TrsTHandler\MTrsTHandler.h">
+      <Filter>Process Layer\P_TrsTHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\C_CtrlHandler\MCtrlHandler.h">
+      <Filter>Control Layer\C_CtrlHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSheetMaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFixedVision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageMaterialInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageMCodeInfo2ND.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageMCodeInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductPlanDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoInspectJudgeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataECDBDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModelDlgNew.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTabOffsetImageDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTowerLampDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSheetTactTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataSearchMajorSpec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTabICLoss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTabOffsetTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgViewWorkSchedule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EqStopCodeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorNotSendDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualHandlerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualMarkRecogDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualPanelTransferDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialChangeDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelNDeviceIDListDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModulePortIDDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MoldZigInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simpleado.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="webbrowser2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XHeaderCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageEtcTact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageTabCarrierTact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PageTabMounterTact.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanelValidationCheckDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlateVacModelDataDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PMFullDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProductCreateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemFourBtnDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachCarrierCameraExpandDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachHandlerDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachMoldPinDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeachTransferDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionDisplayDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionBlobThresholdDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\H_Lighting\MLighting_ONI.h">
+      <Filter>Hardware Layer\H_Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemBtnDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LIB\Acs\ACSC.h">
+      <Filter>Lib\ACS</Filter>
+    </ClInclude>
+    <ClInclude Include="MDataDouble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MStackTrace.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\src\_Utility\CListCtrlEx\MsgHook.h">
+      <Filter>Common\MEtcUtil</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\erricon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\infoicon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LedOff.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\LedOn.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MPlatformOlb.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\quesicon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\stopicon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\X변.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Y변.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\전부선택.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Info\IO_Gate.dat">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\IO_Gate_2nd.dat">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\IO_Source.dat">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\IO_Source_2nd.dat">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\PosInfoPreBonder_Gate.inf">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\PosInfoPreBonder_Source.inf">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\PosInfoPreBonder_Source_2nd.inf">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="Info\VisionMark.inf">
+      <Filter>System\Inf</Filter>
+    </None>
+    <None Include="..\Common\LIB\HilscherDnet\Cif32dll.dll">
+      <Filter>Lib\DeviceNet</Filter>
+    </None>
+    <None Include="Info\ErrorMessage_Chinese.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\ErrorMessage_English.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\ErrorMessage_Korean.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\ErrorMessage_Slovak.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\Language_Chinese.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\Language_English.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\Language_Korean.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="Info\Language_Slovak.dat">
+      <Filter>Message</Filter>
+    </None>
+    <None Include="History.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="..\Common\LIB\MRS_NMC\NMC_Comm.dll">
+      <Filter>Lib\MRS_NMC</Filter>
+    </None>
+    <None Include="..\Common\LIB\MRS_NMC\NMC_Driver.dll">
+      <Filter>Lib\MRS_NMC</Filter>
+    </None>
+    <None Include="..\Common\LIB\MRS_NMC\NMC_Motion.dll">
+      <Filter>Lib\MRS_NMC</Filter>
+    </None>
+    <None Include="..\Common\LIB\MRS_NMC\NMCMotionSDK.cs">
+      <Filter>Lib\MRS_NMC</Filter>
+    </None>
+    <None Include="Component\M_Handler\MVC1.tmp">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </None>
+    <None Include="Component\M_Handler\MVC2.tmp">
+      <Filter>Mechanical Layer\M_Handler</Filter>
+    </None>
+    <None Include="msado15.tlh">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="msado15.tli">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="..\Common\LIB\Acs\ACSCL.dll">
+      <Filter>Lib\ACS</Filter>
+    </None>
+    <None Include="..\Common\LIB\Acs\ACSCL_x86.dll">
+      <Filter>Lib\ACS</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Info\test.inf">
+      <Filter>System\Inf</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\Common\src\H_Melsec\MdFunc32.lib">
+      <Filter>Lib</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\HilscherDnet\CIF32DLL.LIB">
+      <Filter>Lib\DeviceNet</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\mil.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milblob.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milcal.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milcode.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milim.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milmeas.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milmon.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\milpat.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MIL\lib\MilStr.lib">
+      <Filter>Lib\MIL\library</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\NMC\SERCOSLib.lib">
+      <Filter>Lib\NMC</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MMC\MMCWHP10.lib">
+      <Filter>Lib\MMC</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MMC\VC60FP40.LIB">
+      <Filter>Lib\MMC</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MRS_NMC\NMC_Comm.lib">
+      <Filter>Lib\MRS_NMC</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MRS_NMC\NMC_Driver.lib">
+      <Filter>Lib\MRS_NMC</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\MRS_NMC\NMC_Motion.lib">
+      <Filter>Lib\MRS_NMC</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\Acs\ACSCL.LIB">
+      <Filter>Lib\ACS</Filter>
+    </Library>
+    <Library Include="..\Common\LIB\Acs\ACSCL_x86.LIB">
+      <Filter>Lib\ACS</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

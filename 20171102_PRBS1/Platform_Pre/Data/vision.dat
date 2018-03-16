@@ -1,0 +1,9 @@
+[CONFIG]
+CPU_Count=3
+System0Type=solios
+System1Type=solios
+System2Type=solios
+CameraCount=24
+ErrorPrint=0
+SaveImage=1
+CameraChangeTime=0

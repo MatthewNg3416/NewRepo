@@ -1,0 +1,1795 @@
+[MAIN_AUTO]
+// AutoElapseTimeDlg.cpp
+AutoElapseTimeDlg_1=Cylinder Operation Time Display
+
+// AutoMainForm.cpp
+AutoMainForm_1=Begin automatic operation by pressing OP Panel's@@START Key.@@Pressing STOP Key cancels automatic operation.
+AutoMainForm_2=By user's request, work is discontinued.
+AutoMainForm_3=Critical error occured. Reboot computer.
+AutoMainForm_4=Critical error occured. Reboot computer.
+AutoMainForm_5=Unit Initialization is completed.
+AutoMainForm_6=Do you reset Product Qty to zero?
+AutoMainForm_7=Product Info
+AutoMainForm_8=Running Info
+AutoMainForm_9=Unit Info
+AutoMainForm_10=Panel Model
+AutoMainForm_11=Eq Tact Time
+AutoMainForm_12=Line Tact Time
+AutoMainForm_13=Product Qty
+AutoMainForm_14=Op Status
+AutoMainForm_15=Op Mode
+AutoMainForm_16=Press Time
+AutoMainForm_17=Select@@Run Mode
+AutoMainForm_18=Axis Origin@@Return
+AutoMainForm_19=Unit@@Initialization
+AutoMainForm_20=Stand By
+AutoMainForm_21=Panel In@@Stop
+AutoMainForm_22=Material@@Cmd Group
+AutoMainForm_23=Eq InterLock
+AutoMainForm_24 = There is a Panel in the facility. Please select how the Panel works
+AutoMainForm_25 = Please select the TabIC removal unit in the equipment.
+AutoMainForm_26=EQ State
+AutoMainForm_27=EQP State
+AutoMainForm_28 = Do you reset panel in product qty to zero?
+AutoMainForm_29 = Do you reset panel scrap product qty to zero?
+AutoMainForm_30 = Input/Scrap Qty
+
+// AutoMaterialCmdGroupDlg.cpp
+AutoMaterialCmdGroupDlg_1=Material Exchange
+AutoMaterialCmdGroupDlg_2=Exit
+AutoMaterialCmdGroupDlg_3=Production@@information
+
+// AutoMaterialInfoDlg.cpp
+AutoMaterialInfoDlg_1=TabIC Insert (inquiry)
+AutoMaterialInfoDlg_2=TabIC Remove
+AutoMaterialInfoDlg_3=Removal Complete
+AutoMaterialInfoDlg_4=TabIC Insert (inquiry)
+AutoMaterialInfoDlg_5=TabIC Remove
+AutoMaterialInfoDlg_6=Removal Complete
+AutoMaterialInfoDlg_7=TabIC Insert (inquiry)
+AutoMaterialInfoDlg_8=TabIC Remove
+AutoMaterialInfoDlg_9=Removal Complete
+AutoMaterialInfoDlg_10=TabIC Insert (inquiry)
+AutoMaterialInfoDlg_11=TabIC Remove
+AutoMaterialInfoDlg_12=Removal Complete
+AutoMaterialInfoDlg_13=Zig Insert (inquiry)
+AutoMaterialInfoDlg_14=Zig Remove
+AutoMaterialInfoDlg_15=Removal Complete
+AutoMaterialInfoDlg_16=Zig Insert (inquiry)
+AutoMaterialInfoDlg_17=Zig Remove
+AutoMaterialInfoDlg_18=Removal Complete
+AutoMaterialInfoDlg_19=Exit
+
+// AutoModeSelectDlg.cpp
+AutoModeSelectDlg_1=Run Mode Selection
+AutoModeSelectDlg_2=Exit
+
+// AutoMotorOriginDlg.cpp
+AutoMotorOriginDlg_1=Axis Origin Return
+AutoMotorOriginDlg_2=Select@@All
+AutoMotorOriginDlg_3=Unselect@@All
+AutoMotorOriginDlg_4=Forced Origin Return
+AutoMotorOriginDlg_5=Servo@@ON
+AutoMotorOriginDlg_6=Servo@@OFF
+AutoMotorOriginDlg_7=Return@@Origin
+AutoMotorOriginDlg_8=Exit
+
+// AutoOperationCmdGroupDlg.cpp
+AutoOperationCmdGroupDlg_1=Move to TabMounter Ready Pos
+AutoOperationCmdGroupDlg_2=Gantry work Pos
+AutoOperationCmdGroupDlg_3=Remove TabIC
+AutoOperationCmdGroupDlg_4=Exit
+
+//AutoPanelMarkManualSearchDlg.cpp
+AutoPanelMarkManualSearchDlg_1=Panel Remove
+AutoPanelMarkManualSearchDlg_2=Run
+AutoPanelMarkManualSearchDlg_3=Click Run Button after Confirm Panel Mark with JogMove. (if mark is damaged, Click Remove Button)
+
+// AutoRepairTabSelectDlg.cpp
+AutoRepairTabSelectDlg_1=Next@@WorkSide
+AutoRepairTabSelectDlg_2=Repair@@Continue
+
+// AutoScrapGlassDlg.cpp
+AutoScrapGlassDlg_1=Panel Data
+AutoScrapGlassDlg_2=Save
+AutoScrapGlassDlg_3=Exit
+AutoScrapGlassDlg_4=Doors are open. Close the doors.
+AutoScrapGlassDlg_5=Doors are open. Close the doors.
+
+// AutoStepDispDlg.cpp
+AutoStepDispDlg_1=Hide
+
+// AutoTabICInfoDlg.cpp
+AutoTabICInfoDlg_1=Feeder Number
+AutoTabICInfoDlg_2=Dock In Start
+AutoTabICInfoDlg_3=Dock In Cancel
+AutoTabICInfoDlg_4=Exit
+AutoTabICInfoDlg_5=TabIC Data Input [Input Data sequentially using BarCode Gun]
+AutoTabICInfoDlg_6=TabIC Data (that is already established)
+AutoTabICInfoDlg_7=Select maker.
+AutoTabICInfoDlg_8=Key In
+AutoTabICInfoDlg_9=Input total TabIC Quantity.
+
+// AutoZigInfoDlg.cpp
+AutoZigInfoDlg_1=Item
+AutoZigInfoDlg_2=Value
+AutoZigInfoDlg_3=Zig ID
+AutoZigInfoDlg_4=Regrinding Quantity
+AutoZigInfoDlg_5=Regrinding Date
+AutoZigInfoDlg_6=MATCODE
+AutoZigInfoDlg_7=Total Quantity Limit
+AutoZigInfoDlg_8=Zig Total Used Quantity
+AutoZigInfoDlg_9=Quantity Limit After Regrinding
+AutoZigInfoDlg_10=Quantity After Regrinding"
+AutoZigInfoDlg_11=Exit
+
+//ProductPlanDlg.cpp
+ProductPlanDlg_1=Initial Production Quantity
+ProductPlanDlg_2=Final Production Quantity
+ProductPlanDlg_3=Request
+ProductPlanDlg_4=Create
+ProductPlanDlg_5=Remove
+ProductPlanDlg_6=Modify
+ProductPlanDlg_7=Exit
+
+
+//ProductCreateDlg.cpp
+ProductCreateDlg_1=Initial Production Quantity
+ProductCreateDlg_2=Final Production Quantity
+ProductCreateDlg_3=Save
+ProductCreateDlg_4=Exit
+
+//PanelValidationCheckDlg.cpp
+PanelValidationCheckDlg_1=Save
+PanelValidationCheckDlg_2=Exit
+
+
+//VersionDisplayDlg.cpp
+VersionDisplayDlg_1=Exit
+
+//DataMatchingTableDlg.cpp
+DataMatchingTableDlg_1=Add@@Matching info
+DataMatchingTableDlg_2=Modify@@Matching info
+DataMatchingTableDlg_3=Delete@@Matching info
+DataMatchingTableDlg_4=Exit
+DataMatchingTableDlg_5=UP
+DataMatchingTableDlg_6=DOWN
+
+//AutoNSMCInfoDlg.cpp
+AutoNSMCInfoDlg_1=Exit
+
+[MAIN_MANUAL]
+// ManualCameraExpShrDlg.cpp
+ManualCameraExpShrDlg_1=Exit
+
+// ManualConveyorDlg.cpp
+ManualConveyorDlg_1=Exit
+
+// ManualIOMonitoringDlg.cpp
+ManualIOMonitoringDlg_1=Prev.
+ManualIOMonitoringDlg_2=Next
+ManualIOMonitoringDlg_3=Top
+ManualIOMonitoringDlg_4=Bottom
+ManualIOMonitoringDlg_5=Prev.
+ManualIOMonitoringDlg_6=Next
+ManualIOMonitoringDlg_7=Top
+ManualIOMonitoringDlg_8=Bottom
+ManualIOMonitoringDlg_9=Exit
+ManualIOMonitoringDlg_10=Input/Ouput Point of Contact
+
+// ManualLimitSensorDlg.cpp
+ManualLimitSensorDlg_1=Prev.
+ManualLimitSensorDlg_2=Next
+ManualLimitSensorDlg_3=Exit
+
+// ManualMainForm.cpp
+ManualMainForm_1=I/O Check
+ManualMainForm_2=Manual Initialization
+ManualMainForm_3=Batch Job
+ManualMainForm_4=Unit Job
+ManualMainForm_5=In/Out Check
+ManualMainForm_6=Limit Sensor@@Check
+ManualMainForm_7=Axis Origin@@Return
+ManualMainForm_8=Panel Load, Align, Unload
+ManualMainForm_9=Select the form of TabIC Loading
+ManualMainForm_10=Whole Loading
+ManualMainForm_11=Tab No Select
+ManualMainForm_12=It's batch action. Wait for one moment...
+ManualMainForm_13=It's batch action. Wait for one moment...
+ManualMainForm_14=It's batch action. Wait for one moment...
+ManualMainForm_15=batch action achievement prohibition as is Dry Run Mode established state.
+ManualMainForm_16=It's batch action.@@ Wait for one moment...
+ManualMainForm_17=Panel Aligner is not adsorbing Panel.
+ManualMainForm_18=It's batch action.@@ Wait for one moment...
+ManualMainForm_19=It's batch action.@@ Wait for one moment...
+ManualMainForm_20=It's batch action.@@ Wait for one moment...
+ManualMainForm_21=It's batch action.@@ Wait for one moment...
+ManualMainForm_22=It's batch action.@@ Wait for one moment...
+ManualMainForm_23=batch action achievement prohibition as is Dry Run Mode established state.
+ManualMainForm_24=Panel Aligner is not absorbing a Panel.
+ManualMainForm_25=batch action achievement prohibition as is Dry Run Mode established state.
+ManualMainForm_26=batch action achievement prohibition as is Dry Run Mode established state.
+ManualMainForm_27=It's batch action.@@ Wait for one moment...
+ManualMainForm_28=It's Heater Power Reset output flickering.@@ Wait for one moment...
+ManualMainForm_29=It's batch action.@@ Wait for one moment...
+ManualMainForm_30=Motion Network@@Initialization
+ManualMainForm_31 = You have completed a series of operations.
+ManualMainForm_32 = Please select a location to move.
+ManualMainForm_33 = Please select a carrier to supply.
+
+
+// ManualPanelAlignerDlg.cpp
+ManualPanelAlignerDlg_1=Exit
+
+// ManualTabCarrierDlg.cpp
+ManualTabCarrierDlg_1=Exit
+
+// ManualTabFeederDlg.cpp
+ManualTabFeederDlg_1=Remove Press Mold
+ManualTabFeederDlg_2=Forced Homing
+ManualTabFeederDlg_3=Remove Reel
+ManualTabFeederDlg_4=Exit
+
+//ManualTabMounterDlg.cpp
+ManualTabMounterDlg_1=Exit
+ManualTabMounterDlg_2=Cylinder (Front)
+ManualTabMounterDlg_3=Cylinder (Rear)
+ManualTabMounterDlg_4=Vacuum (Front)
+ManualTabMounterDlg_5=Vacuum (Rear)
+ManualTabMounterDlg_6=Backup (Front)	
+ManualTabMounterDlg_7=Backup (Rear)
+
+//EqStopCodeDlg.cpp
+CEqStopCodeDlg_1=Enter lost@@reporting
+CEqStopCodeDlg_2=Save
+CEqStopCodeDlg_3=Missing code
+CEqStopCodeDlg_4=Contents of loss
+CEqStopCodeDlg_5=Edit Missing Item
+CEqStopCodeDlg_6=Enter / Edit Equipment loss reporting code
+
+//DlgSheetTactTime.cpp
+DlgSheetTactTime_1=Exit
+
+//PMFullDisplay.cpp
+PMFullDisplay_1=Exit
+
+[MAIN_DATA]
+// DataActuatorSettingDlg.cpp 
+DataActuatorSettingDlg_1=Prev.
+DataActuatorSettingDlg_2=Next
+DataActuatorSettingDlg_3=Batch@@Input
+DataActuatorSettingDlg_4=Save
+DataActuatorSettingDlg_5=Exit
+DataActuatorSettingDlg_6=Motor Velocity/Acceleration Setting Dialog
+DataActuatorSettingDlg_7=Motor Vel
+DataActuatorSettingDlg_8=Motor Acc
+DataActuatorSettingDlg_9=Motor Slow Vel
+DataActuatorSettingDlg_10=Motor Origin Velocity/Acceleration Setting Dialog
+DataActuatorSettingDlg_11=Origin Fast
+DataActuatorSettingDlg_12=Origin Slow
+DataActuatorSettingDlg_13=Origin Acceleration
+DataActuatorSettingDlg_14=Origin Offset
+DataActuatorSettingDlg_15=Jog Velocity Setting Dialog
+DataActuatorSettingDlg_16=Slow Velocity
+DataActuatorSettingDlg_17=Fast Velocity
+DataActuatorSettingDlg_18=Motor S/W Limit Setting Dialog	
+DataActuatorSettingDlg_19=+ Limit	
+DataActuatorSettingDlg_20=- Limit	
+DataActuatorSettingDlg_21=Tolerance Setting Dialog	
+DataActuatorSettingDlg_22=Tolerace	
+DataActuatorSettingDlg_23=Motor Delay Setting Dialog	
+DataActuatorSettingDlg_24=Moving Limit Time	
+DataActuatorSettingDlg_25=After Wait Time	
+DataActuatorSettingDlg_26=Origin Limit Time	
+DataActuatorSettingDlg_27=Cylinder Delay Setting Dialog
+DataActuatorSettingDlg_28=Moving Limit Time	
+DataActuatorSettingDlg_29=After Wait Time1	
+DataActuatorSettingDlg_30=After Wait Time2	
+DataActuatorSettingDlg_31=No Sensor Wait Time	
+DataActuatorSettingDlg_32=Vacuum Delay Setting Dialog	
+DataActuatorSettingDlg_33=Operation Limit Time	
+DataActuatorSettingDlg_34=After Vac On Wait Time	
+DataActuatorSettingDlg_35=After Vac Off Wait Time
+DataActuatorSettingDlg_36=Create EC Data
+
+// DataCommonDlg.cpp
+DataCommonDlg_1=Using Language
+DataCommonDlg_2=Mold RFID Writing Period
+DataCommonDlg_3=Mold Blow Period
+DataCommonDlg_4=Mold Blow Time
+DataCommonDlg_5=Save
+DataCommonDlg_6=Exit
+DataCommonDlg_7=Select using language.
+
+// DataConveyorSpeedDlg.cpp
+DataConveyorSpeedDlg_1=Save
+DataConveyorSpeedDlg_2=Exit
+
+// DataFuncOnOffDlg.cpp
+DataFuncOnOffDlg_1=Use Fiducial Mark Auto Search
+DataFuncOnOffDlg_2=Use Plate Vacuum
+DataFuncOnOffDlg_3=Panel Mark Manual Search
+DataFuncOnOffDlg_4=Material Exhaustion Pre-Alarm
+DataFuncOnOffDlg_5=Use Buzzer
+DataFuncOnOffDlg_6=Use HeaterAlarm
+DataFuncOnOffDlg_7=Use Safety Module
+DataFuncOnOffDlg_8=Use After Inspection
+DataFuncOnOffDlg_9=Panel Validation Check
+DataFuncOnOffDlg_10=Use Panel Absorb Offset
+DataFuncOnOffDlg_11=R/Y Lamp Off Buzzer Off
+DataFuncOnOffDlg_12=Use Mold Blow
+DataFuncOnOffDlg_13=Save
+DataFuncOnOffDlg_14=Exit
+DataFuncOnOffDlg_15=Function On/Off Dialog
+DataFuncOnOffDlg_16=Select Feeder
+DataFuncOnOffDlg_17=Select Use Feeder
+//DataFuncOnOffDlg_22=Use TabMount Switching
+DataFuncOnOffDlg_22=1Feeder AllMount
+ 
+// DataMainForm.cpp 
+DataMainForm_1=Model Configuration
+DataMainForm_2=Delay Time Configuration
+DataMainForm_3=Motion Parameter Configuration
+DataMainForm_4=Process Configuration
+DataMainForm_5=Velocity /Accel@@Time
+DataMainForm_6=Origin Vel/Accel@@Time
+DataMainForm_7=Jog Velocity
+DataMainForm_8=Process Option@@On/Off
+DataMainForm_9=Mold 1 Manage Data
+DataMainForm_10=Mold 2 Manage Data
+
+// DataModelChangeDistDlg.cpp
+DataModelChangeDistDlg_1=Align1 Cam center distance from Stage center X
+DataModelChangeDistDlg_2=Align1 Cam center distance from Stage center Y
+DataModelChangeDistDlg_3=Align2 Cam center distance from Stage center X
+DataModelChangeDistDlg_4=Align2 Cam center distance from Stage center Y
+DataModelChangeDistDlg_5=Distance between Stage Center Pad
+DataModelChangeDistDlg_6=Distance of BadTab Origin(Front)
+DataModelChangeDistDlg_7=Distance of BadTab Origin(Rear)
+DataModelChangeDistDlg_8=Fixed position X @@of the F Inspect Camera 
+
+DataModelChangeDistDlg_9=Distance between the origin of the PanelAligner at the Gantry origin.(Front)
+DataModelChangeDistDlg_10=Distance between the origin of the PanelAligner at the Gantry origin.(Rear)
+DataModelChangeDistDlg_11=Distance of Positive Inspect Camera(Front)
+DataModelChangeDistDlg_12=Distance of Negative Inspect Camera(Front)
+DataModelChangeDistDlg_13=Distance of Positive Inspect Camera(Rear)
+DataModelChangeDistDlg_14=Distance of Negative Inspect Camera(Rear)
+DataModelChangeDistDlg_15=Fixed position X @@of R Inspect Camera X
+
+DataModelChangeDistDlg_16=Save
+DataModelChangeDistDlg_17=Exit
+
+
+// DataModelDlg.cpp
+DataModelDlg_1=Model List
+DataModelDlg_2=Current Model
+DataModelDlg_3=Selected Model
+DataModelDlg_4=Up
+DataModelDlg_5=Down
+DataModelDlg_6=Page@@Up
+DataModelDlg_7=Page@@Down
+DataModelDlg_8=Create Model
+DataModelDlg_9=Delete Model
+DataModelDlg_10=Select Model
+DataModelDlg_11=Exit
+//DataModelDlgNew.cpp
+DataModelDlgNew_1 = Device ID All List
+DataModelDlgNew_2 = Current production model
+DataModelDlgNew_3 = Selected model
+DataModelDlgNew_4 = Up
+DataModelDlgNew_5 = Down
+DataModelDlgNew_6 = Page @@ Up
+DataModelDlgNew_7 = Page @@ Down
+DataModelDlgNew_8 = Create model
+DataModelDlgNew_9 = Delete model
+DataModelDlgNew_10 = Select model
+DataModelDlgNew_11 = Exit
+DataModelDlgNew_12a = current model
+DataModelDlgNew_12b = Directory does not exist.
+DataModelDlgNew_13 = Current production model
+DataModelDlgNew_14= Modify model
+DataModelDlgNew_15= Search Data
+DataModelDlgNew_16 = Current Device ID List
+
+// DataMoldInfoDlg.cpp
+DataMoldInfoDlg_1=Feeder #1 Mold Info
+DataMoldInfoDlg_2=Feeder #2 Mold Info
+DataMoldInfoDlg_3=Zig ID
+DataMoldInfoDlg_4=Regrinding Quantity
+DataMoldInfoDlg_5=Regrinding Date
+DataMoldInfoDlg_6=MATCODE
+DataMoldInfoDlg_7=Total Quantity Limit
+DataMoldInfoDlg_8=Zig Total Used Quantity	
+DataMoldInfoDlg_9=Quantity Limit After Regrinding
+DataMoldInfoDlg_10=Quantity After Regrinding
+DataMoldInfoDlg_11=Zig ID
+DataMoldInfoDlg_12=Select Data Item Number
+DataMoldInfoDlg_13=Data Writing
+DataMoldInfoDlg_14=Data Reading
+DataMoldInfoDlg_15=Exit
+
+// DataPanelAlignerDlg.cpp
+DataPanelAlignerDlg_1=Reference Distance for Low Speed
+DataPanelAlignerDlg_2=Ref. Aligner X
+DataPanelAlignerDlg_3=Ref. Aligner Y
+DataPanelAlignerDlg_4=Auto Search Panel Mark Distance
+DataPanelAlignerDlg_5=Air Plate Blow On Delay (sec)
+DataPanelAlignerDlg_6=Save
+DataPanelAlignerDlg_7=Exit
+DataPanelAlignerDlg_8=Distance between the Align and the rotating cylinder X
+DataPanelAlignerDlg_9=Distance between the Align and the rotating cylinder Y
+
+// DataPanelDlg.cpp
+DataPanelDlg_1=Save
+DataPanelDlg_2=Exit
+
+// DataTabICDlg.cpp
+DataTabICDlg_1=the Number of Using Sensor
+DataTabICDlg_2=a Kind Of@@TabIC
+DataTabICDlg_3=TabIC Data Setting
+DataTabICDlg_4=Batch@@Input
+DataTabICDlg_5=Prev.
+DataTabICDlg_6=Next
+DataTabICDlg_7=Save
+DataTabICDlg_8=Exit
+DataTabICDlg_9=Previous @@Work Side
+DataTabICDlg_10=Next @@Work Side
+DataTabICDlg_11=Previous @@Tab Page
+DataTabICDlg_12=Next @@Tab Page
+DataTabICDlg_13=SR Line@@Tolerence
+DataTabICDlg_14=Tab EndLine@@Tolerence
+DataTabICDlg_15=Tab EndLine@@No Offset diff
+
+// DataTabICOffsetDlg.cpp
+DataTabICOffsetDlg_1=X Batch@@Input
+DataTabICOffsetDlg_2=Y Batch@@Input
+DataTabICOffsetDlg_3=Prev.
+DataTabICOffsetDlg_4=Next
+DataTabICOffsetDlg_5=Save
+DataTabICOffsetDlg_6=Exit
+DataTabICOffsetDlg_7=T Batch@@Input
+DataTabICOffsetDlg_8=Previous@@Tab Page
+DataTabICOffsetDlg_9=Next@@Tab Page
+
+// DataTabMounterDlg.cpp
+DataTabMounterDlg_1=Save
+DataTabMounterDlg_2=Exit
+
+// DataTowerLampDlg.cpp
+DataTowerLampDlg_1=Save
+DataTowerLampDlg_2=Exit
+
+// DataECDBDlg.cpp
+DataECDBDlg_1=Add Data
+DataECDBDlg_2=Modify Data
+DataECDBDlg_3=Delete Data
+DataECDBDlg_4=Modify@@mode	
+DataECDBDlg_5=Exit
+
+// ErrorNotSendDlg.cpp
+ErrorNotSendDlg_1=Save
+ErrorNotSendDlg_2=Exit
+
+
+//PlateVacModelDataDlg.cc
+PlateVacModelDataDlg_1=Exit
+PlateVacModelDataDlg_2=Save
+
+
+// ModulePortIDDlg.cpp
+ModulePortIDDlg_1=Save
+ModulePortIDDlg_2=Exit
+
+[MAIN_TEACH]
+//TeachBackUpDlg.cpp
+TeachBackUpDlg_1=BackUp Z Model Coordinates Teaching
+TeachBackUpDlg_2=BackUp Z Fixed Coordinates Teaching
+TeachBackUpDlg_3=Axis
+TeachBackUpDlg_4=Z Axis
+TeachBackUpDlg_5=Target Position
+TeachBackUpDlg_6=Fixed Coordinates
+TeachBackUpDlg_7=Offset Coordinates
+TeachBackUpDlg_8=Current Position
+TeachBackUpDlg_9=Difference Value
+TeachBackUpDlg_10=Move to@@Target Position
+TeachBackUpDlg_11=Make Target Position@@to Current Value
+TeachBackUpDlg_12=Save
+TeachBackUpDlg_13=Exit
+
+// TeachBadTabDetectorDlg.cpp 
+TeachBadTabDetectorDlg_1=BadTab Detector1 X Model Coordinate Teaching
+TeachBadTabDetectorDlg_2=BadTab Detector2 X Model Coordinate Teaching
+TeachBadTabDetectorDlg_3=Axis
+TeachBadTabDetectorDlg_4=X Axis
+TeachBadTabDetectorDlg_5=Target Pos
+TeachBadTabDetectorDlg_6=Model Pos
+TeachBadTabDetectorDlg_7=Offset Pos
+TeachBadTabDetectorDlg_8=Current Pos
+TeachBadTabDetectorDlg_9=Difference
+TeachBadTabDetectorDlg_10=Move to Target Pos
+TeachBadTabDetectorDlg_11=Make Target by Current
+TeachBadTabDetectorDlg_12=Save
+TeachBadTabDetectorDlg_13=Exit
+TeachBadTabDetectorDlg_14=Change Cutting Length(Unit:mm)
+TeachBadTabDetectorDlg_15=Check Cutting Length
+
+// TeachCameraCarrierDlg.cpp 
+TeachCameraCarrierDlg_1=CameraCarrier@@Model Coordinate@@Teaching
+TeachCameraCarrierDlg_2=CameraCarrier Fixed Coordinate Teaching
+TeachCameraCarrierDlg_3=Target Pos
+TeachCameraCarrierDlg_4=Fixed Pos
+TeachCameraCarrierDlg_5=Model Pos
+TeachCameraCarrierDlg_6=Offset Pos
+TeachCameraCarrierDlg_7=Current Pos
+TeachCameraCarrierDlg_8=Difference
+TeachCameraCarrierDlg_9=Camera Carrier Number
+TeachCameraCarrierDlg_10=Move to@@Target Pos
+TeachCameraCarrierDlg_11=Make Target@@by Current
+TeachCameraCarrierDlg_12=Move (+1) Tab Distance
+TeachCameraCarrierDlg_13=Move (-1) Tab Distance
+TeachCameraCarrierDlg_14=Get Origin Return Offset
+TeachCameraCarrierDlg_15=Save
+TeachCameraCarrierDlg_16=Exit
+TeachCameraCarrierDlg_17=Tab number of the moving position
+
+// TeachCarrierDlg.cpp
+TeachCarrierDlg_1=TabIC Carrier Model Coordinate Teaching
+TeachCarrierDlg_2=TabIC Carrier Model Coordinate Teaching
+TeachCarrierDlg_3=Jog Axis
+TeachCarrierDlg_4=X Axis
+TeachCarrierDlg_5=Y Axis
+TeachCarrierDlg_6=Target Pos
+TeachCarrierDlg_7=Fixed Pos
+TeachCarrierDlg_8=Model Pos	
+TeachCarrierDlg_9=Offset Pos	
+TeachCarrierDlg_10=Current Pos	
+TeachCarrierDlg_11=Difference	
+TeachCarrierDlg_12=Move to@@Target Pos
+TeachCarrierDlg_13=Make Target@@by Current
+TeachCarrierDlg_14=Save
+TeachCarrierDlg_15=Exit
+TeachCarrierDlg_16=Revision@@Value
+TeachCarrierDlg_17=Get origin offset
+TeachCarrierDlg_18=Select TabCarrier number
+TeachCarrierDlg_19=T Axis
+TeachCarrierDlg_20=Z Axis
+
+
+// TeachCarrierCameraExpandDlg.cpp
+TeachCarrierCameraExpandDlg_1 = Jog axis
+TeachCarrierCameraExpandDlg_2 = X Axis
+TeachCarrierCameraExpandDlg_3 = Target Pos
+TeachCarrierCameraExpandDlg_4 = Fixed Pos
+TeachCarrierCameraExpandDlg_5 = Model Pos
+TeachCarrierCameraExpandDlg_6 = Offset Pos
+TeachCarrierCameraExpandDlg_7 = Current Pos
+TeachCarrierCameraExpandDlg_8 = Difference
+TeachCarrierCameraExpandDlg_9 = Move to Target Pos
+TeachCarrierCameraExpandDlg_10 = Make Target by Current
+TeachCarrierCameraExpandDlg_11 = Save
+TeachCarrierCameraExpandDlg_12 = Exit
+TeachCarrierCameraExpandDlg_13 = Select Expand number
+
+// TeachMainForm.cpp
+TeachMainForm_1=Fixed Coord. Teaching
+TeachMainForm_2=Offset Teaching
+TeachMainForm_3=Offset Setting
+
+// TeachModelChangeDlg.cpp 
+TeachModelChangeDlg_1=Axis
+TeachModelChangeDlg_2=Y Axis
+TeachModelChangeDlg_3=Target Pos
+TeachModelChangeDlg_4=Fixed Pos
+TeachModelChangeDlg_5=Model Pos
+TeachModelChangeDlg_6=Offset Pos
+TeachModelChangeDlg_7=Current Pos
+TeachModelChangeDlg_8=Difference
+TeachModelChangeDlg_9=Move to Target Pos
+TeachModelChangeDlg_10=Make Target by Current
+TeachModelChangeDlg_11=Save
+TeachModelChangeDlg_12=Exit
+TeachModelChangeDlg_13=Model Change Model Coordinate Teaching
+TeachModelChangeDlg_14=Model Change Fixed Coordinate Teaching
+
+// TeachPanelAlignerDlg.cpp
+TeachPanelAlignerDlg_1=Jog Axis
+TeachPanelAlignerDlg_2=X Axis
+TeachPanelAlignerDlg_3=Y Axis
+TeachPanelAlignerDlg_4=T Axis
+TeachPanelAlignerDlg_5=Z Axiss
+TeachPanelAlignerDlg_6=Target Pos
+TeachPanelAlignerDlg_7=Fixed Pos
+TeachPanelAlignerDlg_8=Model Pos
+TeachPanelAlignerDlg_9=Offset Pos
+TeachPanelAlignerDlg_10=Panel Mark Offset
+TeachPanelAlignerDlg_11=Etc. Offset
+TeachPanelAlignerDlg_12=Current Pos
+TeachPanelAlignerDlg_13=Difference
+TeachPanelAlignerDlg_14=Move to Target Pos
+TeachPanelAlignerDlg_15=Make Target by Current
+TeachPanelAlignerDlg_16=Plate Blow On/Off
+TeachPanelAlignerDlg_17=Plate Vacuum On/Off
+TeachPanelAlignerDlg_18=Teaching Unit change
+TeachPanelAlignerDlg_19=Save
+TeachPanelAlignerDlg_20=Exit
+
+// TeachPanelAlignerOffsetDlg.cpp
+TeachPanelAlignerOffsetDlg_1=Panel Aligner Offset Setting
+TeachPanelAlignerOffsetDlg_2=X Axis
+TeachPanelAlignerOffsetDlg_3=Y Axis
+TeachPanelAlignerOffsetDlg_4=T Axis
+TeachPanelAlignerOffsetDlg_5=Prev.
+TeachPanelAlignerOffsetDlg_6=Next
+TeachPanelAlignerOffsetDlg_7=Batch@@Input
+TeachPanelAlignerOffsetDlg_8=Save
+TeachPanelAlignerOffsetDlg_9=Exit
+//TeachPanelTransferDlg.cpp
+TeachPanelTransferDlg_1=Jog Axis
+TeachPanelTransferDlg_2=X Axis
+TeachPanelTransferDlg_3=Target Pos
+TeachPanelTransferDlg_4=Fixed Pos
+TeachPanelTransferDlg_5=Model Pos
+TeachPanelTransferDlg_6=Offset Pos
+TeachPanelTransferDlg_7=Current Pos
+TeachPanelTransferDlg_8=Difference
+TeachPanelTransferDlg_9=Move to Target Pos
+TeachPanelTransferDlg_10=Make Target by Current
+TeachPanelTransferDlg_11=Save
+TeachPanelTransferDlg_12=Exit
+
+// TeachPressDlg.cpp
+TeachPressDlg_1=Tab Press1 Z Fixed Coordinate Teaching
+TeachPressDlg_2=Tab Press2 Z Fixed Coordinate Teaching
+TeachPressDlg_3=Axis
+TeachPressDlg_4=Z Axis
+TeachPressDlg_5=Target Pos
+TeachPressDlg_6=Fixed Pos
+TeachPressDlg_7=Offset Pos
+TeachPressDlg_8=Current Pos
+TeachPressDlg_9=Difference
+TeachPressDlg_10=Move to Target Pos
+TeachPressDlg_11=Make Target by Current
+TeachPressDlg_12=Save
+TeachPressDlg_13=Exit
+
+
+// TeachSupplierDlg.cpp
+TeachSupplierDlg_1=Tab Supplier1 Y Fixed Coordinate Teaching
+TeachSupplierDlg_2=Tab Supplier2 Y Fixed Coordinate Teaching
+TeachSupplierDlg_3=Axis
+TeachSupplierDlg_4=Y Axis
+TeachSupplierDlg_5=Target Pos
+TeachSupplierDlg_6=Fixed Pos
+TeachSupplierDlg_7=Offset Pos
+TeachSupplierDlg_8=Current Pos
+TeachSupplierDlg_9=Difference
+TeachSupplierDlg_10=Move to Target Pos
+TeachSupplierDlg_11=Make Target by Current
+TeachSupplierDlg_12=Save
+TeachSupplierDlg_13=Exit
+
+// TeachMoldPinDlg.cpp
+TeachMoldPinDlg_1=Mold1 Pin Z Fixed Coordinate Teaching
+TeachMoldPinDlg_2=Mold2 Pin Z Fixed Coordinate Teaching
+TeachMoldPinDlg_3=Axis
+TeachMoldPinDlg_4=Z Axis
+TeachMoldPinDlg_5=Target Pos
+TeachMoldPinDlg_6=Fixed Pos
+TeachMoldPinDlg_7=Offset Pos
+TeachMoldPinDlg_8=Current Pos
+TeachMoldPinDlg_9=Difference
+TeachMoldPinDlg_10=Move to Target Pos
+TeachMoldPinDlg_11=Make Target by Current
+TeachMoldPinDlg_12=Save
+TeachMoldPinDlg_13=Exit
+
+// TeachTabAlignDlg.cpp
+TeachTabAlignDlg_1=TabAligner Model Coordinate Teaching
+TeachTabAlignDlg_2=TabAligner Fixed Coordinate Teaching
+TeachTabAlignDlg_3=Axis
+TeachTabAlignDlg_4=Target Pos
+TeachTabAlignDlg_5=Fixed Pos
+TeachTabAlignDlg_6=Model Pos
+TeachTabAlignDlg_7=Offset Pos
+TeachTabAlignDlg_8=Current Pos
+TeachTabAlignDlg_9=Difference
+TeachTabAlignDlg_10=TabAligner Number
+TeachTabAlignDlg_11=Move to Target Pos
+TeachTabAlignDlg_12=Make Target by Current
+TeachTabAlignDlg_13=Save
+TeachTabAlignDlg_14=Exit
+
+// TeachTabMounterDlg.cpp
+TeachTabMounterDlg_1=TabMounter Model Coordinate Teaching
+TeachTabMounterDlg_2=TabMounter Fixed Coordinate Teaching
+TeachTabMounterDlg_3=Jog Axis
+TeachTabMounterDlg_4=Target Pos
+TeachTabMounterDlg_5=Fixed Pos
+TeachTabMounterDlg_6=Model Pos
+TeachTabMounterDlg_7=Offset Pos
+TeachTabMounterDlg_8=Current Pos
+TeachTabMounterDlg_9=Difference
+TeachTabMounterDlg_10=TabMounter Number
+TeachTabMounterDlg_11=Move to Target Pos
+TeachTabMounterDlg_12=Make Target by Current
+TeachTabMounterDlg_13=Get Origin Return Offset
+TeachTabMounterDlg_14=Save
+TeachTabMounterDlg_15=Exit
+TeachTabMounterDlg_16=Tab number of transfer position
+
+// DlgViewWorkSchedule.cpp
+DlgViewWorkSchedule_1=Exit
+
+[SUB_DLG]
+//CommonErrMsgDlg.cpp
+CommonErrMsgDlg_1=Process
+CommonErrMsgDlg_2=Unit
+CommonErrMsgDlg_3=Error Message
+CommonErrMsgDlg_4=Solving Method
+CommonErrMsgDlg_5=Error Information
+CommonErrMsgDlg_6=Confirm
+CommonErrMsgDlg_7=Error Info
+CommonErrMsgDlg_8=Buzzer Off
+
+//CommonEStopNotifyDlg.cpp
+CommonEStopNotifyDlg_1=Emergency Stop Alarm
+
+//CommonGetNumDlg.cpp
+CommonGetNumDlg_1=Present
+CommonGetNumDlg_2=Modify
+
+//CommonSelectUserGroupDlg.cpp
+CommonSelectUserGroupDlg_1=Change and Save@@the Password
+CommonSelectUserGroupDlg_2=Maker
+CommonSelectUserGroupDlg_3=Engineer
+CommonSelectUserGroupDlg_4=Operator
+CommonSelectUserGroupDlg_5= is logged in.
+
+// LogConfigDlg.cpp
+LogConfigDlg_1=Exit
+LogConfigDlg_2=Save
+LogConfigDlg_3=Tact Time
+LogConfigDlg_4=Error
+LogConfigDlg_5=Warning
+LogConfigDlg_6=Normal
+LogConfigDlg_7=Eq Tact Time
+
+// LogFileSelectDlg.cpp
+LogFileSelectDlg_1=	Exit
+LogFileSelectDlg_2=	Up
+LogFileSelectDlg_3=	Down
+LogFileSelectDlg_4=Page Up
+LogFileSelectDlg_5=	Page Down
+LogFileSelectDlg_6=Log File List
+
+//LogMainForm.cpp
+LogMainForm_1=Selected Log File
+LogMainForm_2=Log Data@@Setting
+
+//VisionCalibDlg.cpp	
+VisionCalibDlg_1=Get Panel Aligner Length Data
+VisionCalibDlg_2=Get TabAlign Camera Distance
+VisionCalibDlg_3=Get Distance Between Prism View Centers
+VisionCalibDlg_4=Get Distance Between Inspection Cameras
+VisionCalibDlg_5=Get Variable Distance Between Inspection Cameras
+VisionCalibDlg_6=Live Image
+VisionCalibDlg_7=Save
+VisionCalibDlg_8=Exit
+VisionCalibDlg_10=Fixed coordinate@@FrontCarrier
+VisionCalibDlg_11=Fixed coordinate@@RearCarrier
+VisionCalibDlg_12=Get fixed position Tab Pre Align Camera
+
+//VisionIlluminationDlg.cpp
+VisionIlluminationDlg_1=Side
+VisionIlluminationDlg_2=Coaxial
+
+//VisionMonitorDlg.cpp	
+VisionMonitorDlg_1=Exit
+VisionMonitorDlg_2=Save
+VisionMonitorDlg_3=Show@@Mark
+VisionMonitorDlg_4=Delete@@Mark
+VisionMonitorDlg_5=Make@@Mark
+VisionMonitorDlg_6=Live@@Image
+VisionMonitorDlg_7=Still@@Image
+VisionMonitorDlg_8=Serch@@Area
+VisionMonitorDlg_9=Load@@Image
+VisionMonitorDlg_10=Capture@@Image
+VisionMonitorDlg_11=Set@@Reference@@Line
+VisionMonitorDlg_12=Reset@@Reference@@Line
+
+//VisionOptionDlg.cpp	
+VisionOptionDlg_1=Exit
+VisionOptionDlg_2=Save
+VisionOptionDlg_3=Direction to Find
+VisionOptionDlg_4=Colot to Find
+VisionOptionDlg_5=Threshold Value
+VisionOptionDlg_6=Initialize ACF
+VisionOptionDlg_7=Light
+VisionOptionDlg_8=Side
+VisionOptionDlg_9=Coaxial
+
+//VisionSearchAreaDlg.cpp
+VisionSearchAreaDlg_1=Save
+VisionSearchAreaDlg_2=Exit
+VisionSearchAreaDlg_3=Center X
+VisionSearchAreaDlg_4=Center Y
+VisionSearchAreaDlg_5=Width
+VisionSearchAreaDlg_6=Height
+VisionSearchAreaDlg_7=Mark Name
+
+//VisionBlobThresholdDlg.cpp
+VisionBlobThresholdDlg_1=Save
+VisionBlobThresholdDlg_2=Exit
+
+
+[MY_MESSAGE_BOX]
+//MPanelData.cpp, MPreBonderData.cpp, MProductInfoData.cpp, MSystemData.cpp
+//MTabData.cpp, MTabOffsetData.cpp, MTeachingPosData.cpp
+Message_10000=It was failed to make backup file. Go ahead?
+
+//MTowerLampData.cpp
+Message_15001 = Can't read data of Use_RedLamp_NomalRun  
+Message_15003 = Can't read data of Use_RedLamp_StepStop
+Message_15005 = Can't read data of Use_RedLamp_ErrorStop
+Message_15007 = Can't read data of Use_RedLamp_PanelEmpty
+Message_15009 = Can't read data of Use_RedLamp_MaterialChange
+Message_15010 = Can't read data of UseRedLamp_OPCall
+Message_15011 = Can't read data of Use_YellowLamp_NomalRun
+Message_15013 = Can't read data of Use_YellowLamp_StepStop
+Message_15015 = Can't read data of Use_YellowLamp_ErrorStop
+Message_15017 = Can't read data of Use_YellowLamp_PanelEmpty
+Message_15019 = Can't read data of Use_YellowLamp_MaterialChange
+Message_15020 = Can't read data of UseYellowLamp_OPCall
+Message_15021 = Can't read data of Use_GreenLamp_NomalRun
+Message_15023 = Can't read data of Use_GreenLamp_StepStop
+Message_15025 = Can't read data of Use_GreenLamp_ErrorStop
+Message_15027 = Can't read data of Use_GreenLamp_PanelEmpty
+Message_15029 = Can't read data of Use_GreenLamp_MaterialChange
+Message_15030 = Can't read data of UseGreenLamp_OPCall
+Message_15031 = Can't read data of Use_Buzzer_NomalRun
+Message_15032 = Can't read data of Use_Buzzer_StepStop
+Message_15033 = Can't read data of Use_Buzzer_ErrorStop
+Message_15034 = Can't read data of Use_Buzzer_PanelEmpty
+Message_15035 = Can't read data of Use_Buzzer_MaterialChange
+Message_15036 = Can't read data of UseBuzzer_OPCall
+Message_15037 = Can't read data of Use_StartLamp_NomalRun
+Message_15038 = Can't read data of Use_StartLamp_StepStop
+Message_15039 = Can't read data of Use_StartLamp_ErrorStop
+Message_15040 = Can't read data of Use_StartLamp_PanelEmpty
+Message_15041 = Can't read data of Use_StartLamp_MaterialChange
+Message_15042 = Can't read data of UseStartLamp_OPCall
+Message_15043 = Can't read data of Use_StopLamp_NomalRun
+Message_15044 = Can't read data of Use_StopLamp_StepStop
+Message_15045 = Can't read data of Use_StopLamp_ErrorStop
+Message_15046 = Can't read data of Use_StopLamp_PanelEmpty
+Message_15047 = Can't read data of Use_StopLamp_MaterialChange
+Message_15048 = Can't read data of UseStopLamp_OPCall
+
+
+Message_15049 = Can't Write data of Use_RedLamp_NomalRun  
+Message_15050 = Can't Write data of Use_RedLamp_StepStop
+Message_15051 = Can't Write data of Use_RedLamp_ErrorStopp
+Message_15052 = Can't Write data of Use_RedLamp_PanelEmptyty
+Message_15053 = Can't Write data of Use_RedLamp_MaterialChangeChange
+Message_15054 = Can't Write data of UseRedLamp_OPCall
+Message_15055 = Can't Write data of Use_YellowLamp_NomalRunRun
+Message_15056 = Can't Write data of Use_YellowLamp_StepStop
+Message_15057 = Can't Write data of Use_YellowLamp_ErrorStop
+Message_15058 = Can't Write data of Use_YellowLamp_PanelEmpty
+Message_15059 = Can't Write data of Use_YellowLamp_MaterialChang
+Message_15060 = Can't Write data of UseYellowLamp_OPCall
+Message_15061 = Can't Write data of Use_GreenLamp_NomalRun
+Message_15062 = Can't Write data of Use_GreenLamp_StepStop
+Message_15063 = Can't Write data of Use_GreenLamp_ErrorStop
+Message_15064 = Can't Write data of Use_GreenLamp_PanelEmpty
+Message_15065 = Can't Write data of Use_GreenLamp_MaterialChange
+Message_15066 = Can't Write data of UseGreenLamp_OPCall
+Message_15067 = Can't Write data of Use_Buzzer_NomalRun
+Message_15068 = Can't Write data of Use_Buzzer_StepStop
+Message_15069 = Can't Write data of Use_Buzzer_ErrorStop
+Message_15070 = Can't Write data of Use_Buzzer_PanelEmpty
+Message_15071 = Can't Write data of Use_Buzzer_MaterialChange
+Message_15072 = Can't Write data of UseBuzzer_OPCall
+Message_15073 = Can't Write data of Use_StartLamp_NomalRun
+Message_15074 = Can't Write data of Use_StartLamp_StepStop
+Message_15075 = Can't Write data of Use_StartLamp_ErrorStop
+Message_15076 = Can't Write data of Use_StartLamp_PanelEmpty
+Message_15077 = Can't Write data of Use_StartLamp_MaterialChange
+Message_15078 = Can't Write data of UseStartLamp_OPCall
+Message_15079 = Can't Write data of Use_StopLamp_NomalRun
+Message_15080 = Can't Write data of Use_StopLamp_StepStop
+Message_15081 = Can't Write data of Use_StopLamp_ErrorStop
+Message_15082 = Can't Write data of Use_StopLamp_PanelEmpty
+Message_15083 = Can't Write data of Use_StopLamp_MaterialChange
+Message_15084 = Can't Write data of UseStopLamp_OPCall
+
+
+
+
+// AutoMainForm.cpp (20000)
+Message_20000=Present equipment operation mode is Pass Run mode. Do you progress continuously?
+Message_20001=Do you progress Unit Initialization?
+Message_20002=Air C/V is absorbing panel. After panel aligner absorbs panel, go ahead unit initialization.
+Message_20003=Do you progress Unit Initialization?
+Message_20004=After assembling New Reel, is it possible to absorb New Reel?
+Message_20005=Is New Reel absorbed completely?
+Message_20006=Stick to the both side Tape, Cut the TabIC. New Reel Vacuum always Must be absorbed.
+Message_20007=TabMounter moved to Safe position.
+Message_20008=Source Inspection Camera moved to safe position at which it does not collide with Load Conveyor.
+Message_20009=Remove all TabIC in equipment?
+Message_20010=Discontinue work by user's request.
+Message_20011=There is no TabIC absorbed by Equipment.
+Message_20012=Critical error occured. Reboot computer.
+Message_20013=TabIC Remove Operation is completed.
+Message_20014=Panel Aligner is adsorbing Panel. Choose the work method for this Panel.
+Message_20015=TabMounter arrived in Load position.
+Message_20016=Do you want to reset Mold count of the Feeder 1?
+Message_20017=Do you want to reset Mold count of the Feeder 2?
+Message_20018 = The current facility is not using All Feeder. Do you want to continue?
+Message_20019 = Current Facility 1Feeder AllMount Use Mode. Do you want to continue?
+Message_20020=Present equipment operation function Use is "Bonding After Log". Do you progress continuously?
+
+
+
+// AutoMaterialInfoDlg.cpp (20100)
+Message_20100=Data was removed because there is no Reel that was used in Feeder1
+Message_20101=Data was removed because there is no Reel that was used in Feeder2
+Message_20102=Data was removed because there is no Reel that waited using in Feeder1
+Message_20103=Data was removed because there is no Reel that waited using in Feeder2
+Message_20104=Data was removed because there is no Zig that was used in Feeder1
+Message_20105=Data was removed because there is no Zig that was used in Feeder2
+
+// AutoMotorOriginDlg.cpp (20200)
+Message_20200=It is no selected axis.
+Message_20201=Origin Return is completed.
+Message_20202=Origin Return is terminated by emergency stop.
+Message_20203=Origin Return is terminated by user's request.
+Message_20204=Origin Return is terminated by axis amp fault.
+Message_20205=Origin Return is terminated by Eq interface signal.
+Message_20206=Origin Return is terminated by limit time out.
+Message_20207=Origin Return is terminated by invalid SERCOS phase number.
+Message_20208=Origin Return Thread is abnormal state.
+Message_20209=Origin Return is failed.
+Message_20210=It is no selected axis.
+Message_20211=Do you turn on Servo?
+Message_20212=Do you progress Origin Return?
+Message_20213=It is no selected axis.
+Message_20214=Do you turn off Servo?
+Message_20215=Do you initialize MMC2 network?
+Message_20216=MMC2 Initialization is completed.
+Message_20217 = Do you want to force the selected axis to zero point?
+Message_20218 = You can not return to the equipment door open state.
+Message_20219=Do you initialize NMC network?
+Message_20220=NMC Initialization is completed.
+Message_20221=Do you want to reset Servo Fault of selected axis?
+
+// AutoPanelMarkManualSearchDlg.cpp (20300)
+Message_20300=PanelAligner axis is abnormal state, so AutoRun will be terminated.
+
+// AutoScrapGlassDlg.cpp (20400)
+Message_20400=Do you apply inputted LOT ID, Device ID, Batch ID?
+Message_20401=Panel data saving operation is completed. Progress unit initialization. Check panel and go ahead.
+Message_20402=Panel unscrap operation is completed.
+Message_20403=Do you erase information about Panel that is in Load Conveyor?
+Message_20404=Panel Scrap operation is completed.
+Message_20405=To Load Conveyor, Panel is not sensed. Unscrap work continuously do?
+Message_20406=Do you delete panel data that is in panel transfer?
+Message_20407=Door sensor is abnormal.
+Message_20408=Panel Scrap operation is completed.
+Message_20409=Panel transfer does not absorb panel. Unscrap work continuously do?
+Message_20410=Do you delete panel data that is in panel aligner?
+Message_20411=Door sensor is abnormal.
+Message_20412=Panel Scrap operation is completed.
+Message_20413=Panel aligner does not absorb panel. Unscrap work continuously do?
+Message_20414=Do you delete panel data that is in unload conveyor?
+Message_20415=Panel Scrap operation is completed.
+Message_20416=Panel is not sensed at unload conveyor. Do you go ahead unscrap opration?
+Message_20417 = Are you sure you want to delete information about the Panel in the Turn Handler?
+
+
+// AutoTabICInfoDlg.cpp (20500)
+Message_20500=Material Status is "Enable" or "Run". First, remove resources.
+Message_20501=Do you input TabIC Information?
+Message_20502=Select working side.
+Message_20503=Working side information is invalid.
+Message_20504=Choose input method.
+Message_20505=Opration time out occurs. Do you input data manually?
+Message_20506=Work is completed.
+Message_20507=Work is failed. Resume from the first.
+Message_20508=Do you apply TabIC information to present Feeder?
+Message_20509=Do you use current TabIC total quantity value?
+Message_20510=Input operatioin is failed.
+Message_20511=Do you input ZIG Information?
+Message_20512=Your current production plan is empty. Please restart after requesting production plan.
+Message_20513=The current material information is empty. Please request the material information and start again.
+Message_20514=MCode does not match any of the currently registered material information. This material is unavailable.
+
+
+// AutoZigInfoDlg.cpp (20600)
+Message_20600=Zig material status is 'Run' or 'Enable'. First of all, remove current material.
+Message_20601=Do you adapt Zig data?
+Message_20602=Can not read Zig data because mold press is down.
+Message_20603=Can not read mold RFID data.
+Message_20604=Do you input mold data manually?
+Message_20605=Input mold ID.
+
+//ManualConveyorDlg.cpp (30000)
+Message_30000=Will Load Conveyor Stopper do Up?"
+Message_30001=Will Load Conveyor Stopper do Down?
+Message_30002=Do you suspend Load Conveyor Rolling?
+Message_30003=Do you reset Unload Conveyor Inverter Fault?
+Message_30004=Will Load Conveyor Motor do Rolling to forward?
+Message_30005=Timer over
+Message_30006=Will Load Conveyor Motor do Rolling to back?
+Message_30007=Will Unload Conveyor Motor do Rolling to fore-end?
+Message_30008=Timer over
+Message_30009=Timer over
+Message_30010=Will Unload Conveyor Motor do Rolling to back?
+Message_30011=Timer over
+Message_30012=Will Unload Conveyor Stopper do Down?
+Message_30013=Do you reset Load Conveyor Inverter Fault?
+Message_30014=Move Backward the Load Conveyor Panel Pre Alinger?
+Message_30015=Move Forward the Load Conveyor Panel Pre Alinger?
+
+// ManualIOMonitoringDlg.cpp (30100)
+Message_30100=I failed in IO Output action.
+
+// ManualLimitSensorDlg.cpp (30200)
+Message_30200=Will selecting Axis' Servo do On?
+Message_30201=Will selecting Axis' Servo do Off?
+Message_30202=Will all Axes' Servo do On?
+Message_30203=Will all Axes' Servo do Off?
+
+// ManualMainForm.cpp (30300)
+Message_30300=Select the work side.
+Message_30301=Operation can't be done. [Not Use WorkSide]
+Message_30302=Tab number that was inputted is wrong.
+Message_30303=Because is Dry Run Mode established state, batch action achievement prohibition.
+Message_30304=Will supply TabIC to TabCarrier?
+Message_30305=Selected Tab number is Tab number that do not work.
+Message_30306=User on call, work discontinue.
+Message_30307=TabCarrier TabIC Loading Work completion
+Message_30308=batch action achievement prohibition because is Dry Run Mode established state.
+Message_30309=Do you supply TabIC to TabMounter?
+Message_30310=Selected Tab number is Tab number that do not work.
+Message_30311=By user's request, work is discontinued.
+Message_30312=By user's request, work is discontinued.
+Message_30313=TabMounter TabIC Load work completion
+Message_30314=batch action achievement prohibition as is Dry Run Mode established state.
+Message_30315=Do you progress TabIC Pre-Align action?
+Message_30316=Selected Tab number is Tab number that do not work.
+Message_30317=By user's request, work is discontinued.
+Message_30318=By user's request, work is discontinued.
+Message_30319=Work completion
+Message_30320=Backup is not Down state.
+Message_30321=Front Backup is not Down state.
+Message_30322=Rear Backup is not Down state.
+Message_30323=Tab Mounter is not Up state.
+Message_30324=Panel exists to Panel Transfer.
+Message_30325=Panel exists to Panel Aligner.
+Message_30326=Panel Aligner is not down state.
+Message_30327=Panel Transfer is not down state.
+Message_30328=Panel Transfer Stopper is not down state.
+Message_30329=Panel Exist Near at Load Conveyor Stopper.Move lest should be sensed in stop sensor backward.
+Message_30330=Do you input Panel in Load Conveyor?
+Message_30331=It did not become Panel perception in Load Conveyor decel sensor for 10 seconds.
+Message_30332=It did not become Panel perception in Load Conveyor decel sensor for 10 seconds.
+Message_30333=It did not become Panel perception in Panel Transfer sensor for 10 seconds.
+Message_30334=Panel was already  adsorbed to Panel Transfer.
+Message_30335=Do you progress Panel Align action?
+Message_30336=Do you discharge Panel to Unload Conveyor?
+Message_30337=It did not become Panel perception in Unload Conveyor sensor for 10 seconds.
+Message_30338=It completed Panel injection, Align, discharge action.
+Message_30339=Do you abandon TabIC?
+Message_30340=Choose work side.
+Message_30341=Operation can't be done. [Not Use WorkSide]
+Message_30342=By user's request, work is discontinued.
+Message_30343=TabIC exclusion work completion
+Message_30344=batch action achievement prohibition as is Dry Run Mode established state.
+Message_30345=Do you progress Inspection work?
+Message_30346=Do you keep Panel current position?It moves Panel to Inspection position if select [no].
+Message_30347=Panel Align was not achieved.
+Message_30348=Do you need TabIC Prealign work?
+Message_30349=It achieves TabIC Prealign work.
+Message_30350=work completion
+Message_30351=Selected Tab number is Tab number that do not work.
+Message_30352=batch action achievement prohibition as is Dry Run Mode established state.
+Message_30353=Do you progress TabIC Mount work?
+Message_30354=Selected Tab number is Tab number that do not work.
+Message_30355=Panel Aligner is not adsorbing Panel.
+Message_30356=Panel Align was not achieved.
+Message_30357=Work completion
+Message_30358=Do you do to move TabMounter to Load position?
+Message_30359=Select a work side.
+Message_30360=Running work completion to Load position
+Message_30361=Do you do to move TabMounter to Ready position?
+Message_30362=Select a work side.
+Message_30363=Running work completion to Ready position
+Message_30364=Do you progress Inspection After Mount work?
+Message_30365=Do you keep Panel's current position? It moves Panel to Mount position if select [no].
+Message_30366=Panel Align was not achieved.
+Message_30367=Work completion
+Message_30368=Do you progress a Reel Auto Change(Front)?
+Message_30369=Auto Change completion
+Message_30370=Do you progress a Reel Auto Change(Rear)?
+Message_30371=Auto Change completion
+Message_30372=AutoHoming operation is skipped during equipment setup.
+Message_30373=Heater Power Reset output On/Off completion
+Message_30374=Do you initialize MMC2 network?
+Message_30375=MMC2 Initialization is completed.
+Message_30376=batch action achievement prohibition as is Dry Run Mode established state.
+Message_30377=Do you check the repeatability of TabIC punching?
+Message_30378=Do you need TabIC Prealign work?
+Message_30379=It achieves TabIC Prealign work.
+Message_30380=work completion
+Message_30381=Move the Mount.
+Message_30382=Enter Mount Number.
+Message_30383=Enter Camera Number.
+Message_30384=Gage.
+Message_30385=Complete.
+
+Message_30386 = Are you sure you want to run Tab Carrier Load Offset automatically?
+Message_30387 = Do you want to save the Tab Carrier Load Offset Auto Get value?
+Message_30389 = Do you want to load Tab Carrier TabIC Load?
+Message_30390 = Do you want to test TABIC Punch?
+Message_30391 = Invalid number.
+Message_30392 = Are you sure you want to move the selected TabCarriers to the Ready position?
+Message_30393 = Are you sure you want to move the selected TabCarriers to the Unloading position?
+Message_30394 = Move to selected location operation completed
+Message_30395 = Stopped with stop button ...
+Message_30396 = Do you want to run TabMounter TabIC Loading (including TabCarrier Prealign)?
+Message_30397 = Are you sure you want to move the selected TabCarriers to the Escape position?
+Message_30398 = Do you want to proceed with dropping the Front TabIC?
+Message_30399 = Do you want to discard Rear TabIC?
+Message_30700 = Are you sure you want to move the front Gantry to the Clean position?
+Message_30701 = Are you sure you want to move the rear Gantry to the Clean position?
+
+
+// ManualPanelAlignerDlg.cpp
+Message_30400=Will Panel Transfer Stopper do Up?
+Message_30401=Will Panel Transfer Stopper do Down?
+Message_30402=Vacuum time exceeded 20 seconds.
+Message_30403=Panel is absorbed.
+Message_30404 = Do you want to turn the panel rotation cylinder?
+Message_30405 = Do you want to return the panel rotation cylinder?
+
+
+// ManualTabCarrierDlg.cpp
+Message_30500=Will Carrier PickUp Unit Up/Down Cylinder do Up?
+Message_30501=Will Carrier PickUp Unit Up/Down Cylinder do Down?
+Message_30502=Will Carrier PickUp Unit do CW?
+Message_30503=Will Carrier PickUp Unit do CCW?
+Message_30504=Will Carrier 7 Pitch Unit do Forward?
+Message_30505=Will Carrier 7 Pitch Unit do Backward?
+Message_30506 = Carrier PickUp Unit Up / Down Do you want to forward the cylinder?
+Message_30507 = Carrier PickUp Unit Up / Down Do you want to backward the cylinder?
+
+
+// ManualTabFeederDlg.cpp (30600)
+Message_30600=Will Press Reel do Up?
+Message_30601=Will Press Reel do Down?
+Message_30602=Will Reel Clamp do Up?
+Message_30603=Will Reel Clamp do Down?
+Message_30604=Will Supplier Chuck do Lock?
+Message_30605=Will Supplier Chuck do Unlock?
+Message_30606=Will Reel Recovery do Up?
+Message_30607=Will Reel Recovery do Backward?
+Message_30608=Will Reel Recovery do Up?
+Message_30609=Will Reel Recovery do Down?
+Message_30610=Will Cutting Support Left do Up?
+Message_30611=Will Cutting Support Left do Down?
+Message_30612=Will Cutting Support Right do Up?
+Message_30613=Will Cutting Support Right do Down?
+Message_30614=Will Feeder Sprocket do Open?
+Message_30615=Will Feeder Sprocket do Close?
+Message_30616=Will Tension Sprocket do Open?
+Message_30617=Will Tension Sprocket do Close?
+Message_30618=Will Recovery Sprocket do Open?
+Message_30619=Will Recovery Sprocket do Close?
+Message_30620=Will All Sprocket do Open?
+Message_30621=Will All Sprocket do Close?
+Message_30622=Will Attach Press do Up?
+Message_30623=Will Attach Press do Down?
+Message_30624=Will Attach Press do Open?
+Message_30625=Will Attach Reel do Cutting?
+Message_30626=Will Attach Reel do Forward?
+Message_30627=Will Attach Reel do Back?
+Message_30628=Do you progress Sprocket1 Homing action?
+Message_30629=Press, Badtab Detector, Sprocket axis must become OriginReturn.
+Message_30630=Do you progress Sprocket2 Homing action?
+Message_30631=Already Homing completed.Will progress Sprocket2 Homing compulsorily, Again?
+Message_30632=Do you do to act withdrawal department Motor?
+Message_30633=Do you do to stop Recovery Motor?
+Message_30634=I suspended Recovery Motor.
+Message_30635=Do you do to act Protect Reel Motor?
+Message_30636=Do you do to act Protect Reel Motor?
+Message_30637=Do you do to stop Protect Reel Motor?
+Message_30638=Do you do to stop Supplier Tension Motor?
+Message_30639=Do you do to act Supplier Tension Motor?
+Message_30640=Do you do to act Brush Motor?
+Message_30641=Do you do to stop Brush Motor?
+Message_30642=TabIC is absorbed by mold.
+Message_30643=Do you progress Mold Press?
+Message_30644=Will progress Sprocket2 Homing compulsorily?
+Message_30645=Do you progress Mold Removing?
+Message_30646=Preparation for mold removing is completed.
+Message_30647=Do you achieve batch operation for Reel exclusion?
+Message_30648=Do you progress Reel Removing?
+Message_30649 = Do you want to raise the mold pin axis?
+Message_30650 = Do you want to lower the mold pin axis?
+Message_30651 = Do you want to do the Supplier Axis Servo On?
+Message_30652 = Do you want Servo Off for Supplier Axis?
+Message_30653 = Do you want to turn Sprocket1 axis Clutch on?
+Message_30654 = Do you want to turn Sprocket1 axis Clutch off?
+
+
+//VisionCalibDlg.cpp
+Message_36512 = Do you want to delete selected Mark?
+// DataActuatorSettingDlg.cpp (40000)
+Message_40000=Do you save data?
+Message_40001=Tab Carrier1 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40002=Tab Carrier1 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40003=Tab Carrier1 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40004=Tab Carrier2 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40005=Tab Carrier2 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40006=Tab Carrier2 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40007=Tab Carrier3 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40008=Tab Carrier3 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40009=Tab Carrier3 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40010=Tab Carrier4 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40011=Tab Carrier4 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40012=Tab Carrier4 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+
+// DataCommonDlg.cpp (40100)
+Message_40100=Select Velocity Mode.
+Message_40101=Do you save data?
+
+// DataConveyorSpeedDlg.cpp (40200)
+Message_40200=Do you save data?
+Message_40201=Do you make Load Conveyor rotate forward direction at normal speed?"
+Message_40202=Do you make Load Conveyor rotate backward direction at normal speed?
+Message_40203=Do you move Load Conveyor to forward direction at reduced speed?
+Message_40204=Do you make Load Conveyor rotate backward direction at reduced speed?
+Message_40205=Do you make Unload Conveyor rotate forward direction at normal speed?
+Message_40206=Do you make Unload Conveyor rotate backward direction at normal speed?
+Message_40207=Do you make Unload Conveyor rotate forward direction at reduced speed?
+Message_40208=Do you make Unload Conveyor rotate backward direction at reduced speed?
+Message_40209=Do you make Load Conveyor rotate forward direction at transfer speed?
+Message_40210=Load conveyor stop rotation.
+Message_40211=Unload conveyor stop rotation.
+
+// DataFuncOnOffDlg.cpp (40300)
+Message_40300=Do you save data?
+
+// DataMainForm.cpp (40400)
+Message_40400=Can not progress work as present user's authority.
+Message_40401=Can not progress work as present user's authority.
+Message_40402=Can not progress work as present user's authority.
+Message_40403=Can not progress work as present user's authority.
+Message_40404=Can not progress work as present user's authority.
+Message_40405=Can not progress work as present user's authority.
+Message_40406=Can not progress work as present user's authority.
+Message_40407=Can not progress work as present user's authority.
+Message_40408=Can not progress work as present user's authority.
+Message_40409=Can not progress work as present user's authority.
+Message_40410=Can not progress work as present user's authority.
+Message_40411=Can not progress work as present user's authority.
+Message_40412=Can not progress work as present user's authority.
+Message_40413=Can not progress work as present user's authority.
+Message_40414=Data Backup is Completed.
+Message_40415=Can not progress work as present user's authority.
+Message_40416=Can not progress work as present user's authority.
+Message_40417=Can not progress work as present user's authority.
+Message_40418=Can not progress work as present user's authority.
+Message_40419=Can not progress work as present user's authority.
+Message_40420=Can not progress work as present user's authority.
+
+// DataModelChangeDistDlg.cpp (40500)
+Message_40500=Do you save data?
+Message_40501=Is Model Change axis's current position equal to work position about current panel model?
+Message_40502=Model change axis starting point distance can not be set.
+Message_40503=Model change axis starting point distance can not be set because model change axis's current position is not model position.
+Message_40504=Should do this operation after find first Model Change axis starting point value and Panel Aligner fixing coordinate. Already do you get these values?
+Message_40505=Should do this operation after find first Model Change axis starting point value. Already do you get this value?
+Message_40506=Is Rear Gantry axis's current position equal to work position about current panel model?
+Message_40507=The distance between rear gantry axis's origin and Model change axis's origin can not be set.
+Message_40508=The distance between rear gantry axis's origin and Model change axis's origin can not be set because rear gantry axis's current position is not mount position.
+Message_40509 = The current position of the Rear Gantry axis is the Mount position for the current working model?
+Message_40510 = The distance between the origin of the Rear Gantry axis and the origin of the Model Change axis can not be set.
+Message_40511 = The current position of the Rear Gantry axis is not the Mount position, so the distance between the Rear Gantry axis origin and the Model Change axis origin point can not be set.
+
+// DataModelDlg.cpp (40600) -> CommonGetValueDlg.h
+Message_40600=There is no registered model.
+Message_40601=Current model directory does not exist.
+Message_40602=Model that has same name exists. Save as different name.
+Message_40603=Model directory creation was failed.
+Message_40604=Do you delete selected model?
+Message_40605=Can not delete current model.
+Message_40606=Do you load new model data?
+Message_40607=Model Loading was failed! Check data configuration about panel model.
+Message_40608 = You can not change the Panel Data of the current model.
+Message_40609 = You can not change the tab data of the current model.
+Message_40610 = The selected model name is empty.
+Message_40611 = Reference Model is not selected.
+
+
+
+// DataModelDlg.cpp (44000)	
+Message_44000 = There are no registered models.
+Message_44001 = Model with the same name exists. Save as?
+Message_44002 = Failed to create Model Directory.
+Message_44003 = Are you sure you want to delete the selected Model?
+Message_44004 = The current Model can not be deleted.
+Message_44005 = Would you like to import the new Model?
+Message_44006 = Reference (Device) ID is not set. Please reset.
+
+
+// DataMoldInfoDlg.cpp (40700)
+Message_40700=Data Reading Failure. Retry after reopen current dialog.
+Message_40701=Wrong Number.
+Message_40702=Used quantity value can not be modified.
+Message_40703=Wrong item number.
+
+
+// DataPanelAlignerDlg.cpp (40800)
+Message_40800=Do you save data?
+
+// DataPanelDlg.cpp (40900)
+Message_40900=Do you save data?
+Message_40901=There is no selected row.
+Message_40902=There is no selected row.
+Message_40903=There is no selected row.
+Message_40904=There is no selected row.
+
+// DataTabICDlg.cpp (40950)
+Message_40950=Do you save bad tab limit count?
+Message_40951=Do you save data?
+Message_40952=Input value exceeds max tab quantity.
+Message_40953=Input value exceeds max tab quantity.
+Message_40954=The sum total of Xu Tab Pitch exceed the distance between Xu Side Fidu Marks.@@Can not save the recent Tab Data setting value.@@after modifying Panel Data, Input the Tab Data again.
+Message_40955=The sum total of Xd Tab Pitch exceed the distance between Xd Side Fidu Marks.@@Can not save the recent Tab Data setting value.@@after modifying Panel Data, Input the Tab Data again.
+Message_40956=The sum total of Yl Tab Pitch exceed the distance between Yl Side Fidu Marks.@@Can not save the recent Tab Data setting value.@@after modifying Panel Data, Input the Tab Data again.
+Message_40957=The sum total of Yr Tab Pitch exceed the distance between Yr Side Fidu Marks.@@Can not save the recent Tab Data setting value.@@after modifying Panel Data, Input the Tab Data again.
+Message_40958=Yl and Yr have different Bad Tab Count values. Please change the values ??of Yl and Yr to the same value.
+
+// DataTabICOffsetDlg.cpp (41000)
+Message_41000=one time change available XOffset value should be smaller than 10㎛.
+Message_41001=Do you save data?
+Message_41002=Offset value should be smaller than 50㎛.
+Message_41003 = YOffset value must be less than 1mm.
+// Message_41003 = YOffset value should be less than 0.2mm. For more values, please teach Gantry (Gate) or Moving Stage (Source).
+Message_41004 = TOffset value must be less than 0.5 (degree).
+Message_41005 = YOffset value must be less than 0.5mm. For more values, please teach Gantry (Gate) or Moving Stage (Source).
+
+
+
+// DataTabMounterDlg.cpp (41100)
+Message_41100=Do you save data?
+
+// Initialize 
+Message_424001 = Please remove panel from PanelTransfer In. Please click the OK button after removing the panel.
+Message_424002 = Please remove Panel from PanelTransfer Center. Please click the OK button after removing the panel.
+Message_424003 = Please remove panel of PanelAligner. Please click the OK button after removing the panel.
+Message_424004 = Please remove panel from PanelTransfer Out. Please click the OK button after removing the panel.
+
+
+// TeachBadTabDetectorDlg.cpp (50000)
+Message_50000=Do you move to target position?
+Message_50001=Do you change target position to current position?
+Message_50002=Do you save the Data?
+Message_50003=Press, Badtab Detector, Sprocket must become Origin Return.
+Message_50004=Will you do Homing of Sprocket1 axis?
+Message_50005=Press confirmation button after set Hole using Sprocket 1 (T)  Jog Key.
+Message_50006=It completed Sprocket1 Homing.
+Message_50007=Press, Badtab Detector, Sprocket must become Origin Return.
+Message_50008=Will you do Homing of Sprocket2 axis?
+Message_50009=Press confirmation button after set Hole using Sprocket 2 (T)  Jog Key.
+Message_50010=Is the TabIC located in Press Position?
+Message_50011=Press confirmation button after set TabIC using BadTabDetector(X) Jog Key.
+Message_50012=It completed Sprocket2 Homing.
+Message_50013=By user's request, work is discontinued.
+Message_50014=By user's request, work is discontinued.
+Message_50015=By user's request, work is discontinued.
+Message_50016=By user's request, work is discontinued.
+Message_50017=Work completion
+Message_50018=Put (+) value if does Tab Cutting long, and (-) value if does Tab Cutting shortly.
+Message_50019=It is bigger than + 1 or It is smaller than -1.
+Message_50020=Do you apply Offset value now?
+Message_50021=The cutting offset application is completed.
+Message_50022=Will Press Reel do Up?
+Message_50023=Will Press Reel do Down?
+Message_50024=Will Reel Clamp do Up?
+Message_50025=Will Reel Clamp do Down?
+Message_50026 = Do you want to raise the mold pin axis?
+Message_50027 = Do you want to lower the mold pin axis?
+Message_50028 = Press, Badtab Detector, Sprocket, MoldPin must all be Return to origin.
+
+
+// TeachCameraCarrierDlg.cpp (50100)
+Message_50100=Camera Carrier fixing coordinate can not do Teaching.
+Message_50101=Do you save the Data?
+Message_50102=Camera Carrier fixing coordinate can not do Teaching.
+Message_50103=Do you move to target position?
+Message_50104=Camera Carrier fixing coordinate can not do Teaching.
+Message_50105=Do you change target position to current position?
+Message_50106=It does not become Tab Mark Pos selection.
+Message_50107=It does not become Tab Mark Pos selection.
+Message_50108=I use Inspection Camera Carrier to get Panel Align Cam2 Carrier Origin Return Offset. Was Inspection Camera Carrier Origin Return Offset set ended?
+Message_50109=Is Inspection Camera Carrier looking at Panel Mark?
+Message_50110=Inspect Cam Carrier number input error
+Message_50111=Selected Inspect Cam Carrier is not Origin Return state.
+Message_50112=Camera Carrier is not Origin Return state.
+Message_50113=Panel Align Cam2 Carrier Origin Return Offset calculation completion. Origin Return completion Flag Cancellation.
+Message_50114=I use TabMounter to get Camera Carrier Origin Return Offset. Was TabMounter Origin Return Offset set ended?
+Message_50115=Is Tab Mounter  position that position determination is available?
+Message_50116=TabMounter Number Insert error
+Message_50117=Selected TabMounter is not Origin Return state.
+Message_50118=CameraCarrier is not Origin Retun state.
+Message_50119=Did you move Inspection Camera Carrier to reference position?
+Message_50120=Move Inspection Camera Carrier to reference position.
+Message_50121=I use Inspection Cam 2 Axis to get Mechanical Distance between Panel Align Cam2 and Inspection Cam 2-2. Was Inspection Camera Carrier Origin Return Offset set ended?
+Message_50122=Inspection Camera2-2 is seeing Panel Mark screen center?
+Message_50123=press confirmation if Panel Mark is seen screen center to Panel Align Camera 2 moving Jog.
+Message_50124=Mechanical distance calculation completion between Panel Align Cam 2 and Inspection Cam 2-2.
+Message_50125 = CameraCarrier 1 does not need to get a reference point offset.
+Message_50126 = If you see Mounter 4 Mark in the middle of InspectionCamera1, please click OK.
+Message_50127 = Move Jog and press OK when you see Mounter 4 Mark in the center of the camera.
+Message_50128 = The side that is not selected is not working. Check the Panel Data.
+Message_50129 = Camera Expand fixed coordinates can not be taught.
+
+// TeachCarrierDlg.cpp (50200)
+Message_50200=Do you move to target position?
+Message_50201=Do you change target position to current position?
+Message_50202=Do you save the Data?
+Message_50203=Load Positions except Load1 position can't be changed in fixed offset mode
+Message_50204=Do you want X-axis position change to be applied to other Load positions?
+Message_50205=Load Positions except Load1 position can't be changed in fixed offset mode.
+Message_50206=Do you want Y-axis position change to be applied to other Load positions?
+Message_50207=Load Positions except Load1 position can't be changed in fixed offset mode.
+Message_50208=Do you want a position change to be applied to other Load positions?
+Message_50209 = TabCarrier Only 1 Carrier is available for fixed coordinates.
+Message_50210 = TabCarrier Ready The fixed coordinates are calculated as the first fixed coordinates.
+Message_50211 = Do you want to apply the same fixed coordinates to other TabCarrierX axes?
+Message_50212 = TabCarrier Remove Fixed Coordinates are counted as 1 Unloading Fixed Coordinates.
+Message_50213 = TabCarrier Fixed coordinates can be specified with TabCarrier # 1.
+Message_50214 = TabCarrier Escape Fixed coordinates can be specified with TabCarrier 4.
+Message_50215 = TabCarrier Loading Fixed coordinates are calculated automatically to Escape position.
+Message_50216 = TabCarrier RUnloading Fixed coordinates are automatically calculated to the Unloading position.
+Message_50217 = TabCarrier Unloading The fixed coordinates are only 4 Carriers.
+Message_50218 = TabCarrier Loading Pos, Pre Align Pos can not use Offset Data.
+Message_50219 = TabCarrier Unload When moving the location, do you want to move to the location where you applied the Tab Offset?
+Message_50220 = You have entered incorrect information. Please try again.
+
+Message_51110 = The current TabCarrier can not be homed.
+Message_51111 = Is TabCarrier in the base position?
+Message_51112 = TabCarrier Homing Offset calculation completed. Release home completion flag.
+Message_51113 = You can not use the current TabCarrier to change the Remove position.
+
+// TeachMainForm.cpp (50300)
+Message_50300=User's authority is not Maker power.
+Message_50301=Can not progress work as present user's authority.
+Message_50302=Can not progress work as present user's authority.
+Message_50303=User's authority is not Maker power.
+Message_50304=User's authority is not Maker power.
+Message_50305=Can not progress work as present user's authority.
+Message_50306=Can not progress work as present user's authority.
+Message_50307=User's authority is not Maker power.
+Message_50308=User's authority is not Maker power.
+Message_50309=User's authority is not Maker power.
+Message_50310=Can not progress work as present user's authority.
+Message_50311=Can not progress work as present user's authority.
+Message_50312=User's authority is not Maker power.
+Message_50313=User's authority is not Maker power.
+Message_50314=Can not progress work as present user's authority.
+Message_50315=Can not progress work as present user's authority.
+Message_50316=User's authority is not Maker power.
+Message_50317=User's authority is not Maker power.
+Message_50318=Can not progress work as present user's authority.
+Message_50319=Can not progress work as present user's authority.
+Message_50320=User's authority is not Maker power.
+Message_50321=User's authority is not Maker power.
+Message_50322=Can not progress work as present user's authority.
+Message_50323=Can not progress work as present user's authority.
+Message_50324=User's authority is not Maker power.
+Message_50325=User's authority is not Maker power.
+Message_50326=Can not progress work as present user's authority.
+Message_50327=Can not progress work as present user's authority.
+Message_50328=User's authority is not Maker power.
+Message_50333=It is can not changed fixed psotion.
+
+// TeachModelChangeDlg.cpp (50400)
+Message_50400=Do you move to target position?
+Message_50401=Do you change target position to current position?
+Message_50402=Do you save the Data?
+Message_50403=Will Model Change do Expand?
+Message_50404=Do you let Model Change Plate to be up?
+Message_50405=Will Model Change do Shrink?
+Message_50406=Do you let Model Change Plate to be down?
+
+// TeachPanelAlignerDlg.cpp (50500)
+Message_50500=Do you save teaching data?
+Message_50501=In Dry Run Mode, can not progress this work.
+Message_50502=Do you do to move Panel Aligner to target position?
+Message_50503=Current Transfer X2 Axis Jog Mode. Change the Jog Mode.
+Message_50504=Panel Transfer Absorb Panel, but X1 and X2 Axis Current Position is diffrent. Release Panel.
+Message_50505=In Dry Run Mode, can not progress this work. Change the OP Mode!
+Message_50506=Will you do Panel Align?
+Message_50507=Do you change target position to current position?
+Message_50508=When Panel Align is ended, It moves repeat. Do you begin?
+Message_50509=It completed repeat transfer action.
+Message_50510=Panel is aborbed on a Panel Transfer.
+Message_50511=Will Reset Align Offset?
+Message_50512 = Do you want to move Panel Aligner to Align position and adsorb Panel?
+Message_50513 = Do you want Panel Turn action?
+Message_50514 = Do you want Panel Return action?
+Message_50515 = Are you sure you want to go to the Panel Turn Location?
+Message_50550 = Do you want to move The Inspection camera to the Align position?
+
+
+// TeachPanelAlignerOffsetDlg.cpp (50600)
+Message_50600=Do you save the Data?
+Message_50601=T Axis of Vision Mark position can not be fertilized.
+
+// TeachPressDlg.cpp (50700)
+Message_50700=Do you move to target position?
+Message_50701=Do you change target position to current position?
+Message_50702=Do you save the Data?
+
+// TeachSupplierDlg.cpp (50800)
+Message_50800=Do you move to target position?
+Message_50801=Do you change target position to current position?
+Message_50802=Do you save the Data?
+
+
+// TeachTabAlignDlg.cpp (50900)
+Message_50900=Do you save the Data?
+Message_50901=Do you move to target position?
+Message_50902=Do you change target position to current position?
+Message_50903=Select axis for reflection of current position.
+Message_50904="Will you do TabIC Prealign?
+Message_50905=No use Tab Number.
+Message_50906=No use TabMounter selection
+Message_50907=TabIC Prealign completion
+
+// TeachTabMounterDlg.cpp (51000)
+Message_51000 = Do you want to save the data?
+Message_51001 = Do you want to apply the same Teaching value to the TabMounter position data in the same group? (Except Ready and Load)
+Message_51002 = Currently, TabMounter can not change the Ready position (only Tool 1 and 8 are available).
+Message_51003 = You can not change the Load position at the current TabMounter (only tools 4 and 5 are available).
+/// Message_51004 = Remove Position Fixed Coordinate Modification Prohibited (Only Tool No. 1 and No. 8 are available.)
+Message_51004 = You can not change the Load position at the current TabMounter (only Tool # 1 is available).
+Message_51005 = Inspection and Mount position fixed coordinates can not be changed.
+Message_51006 = Are you sure you want to go to the target location?
+Message_51007 = Are you sure you want to change the Goal Location to your current location?
+Message_51008 = The current TabMounter is not homed.
+Message_51009 = Is TabMounter in the base position?
+Message_51010 = TabMounter Homing Offset calculation completed. Release home completion flag.
+/// Message_51011 = You can not use the current TabMounter to change the Remove position.
+///// Message_51012 = Ready The fixed coordinates are the same as the Load fixed coordinates.
+Message_51012 = Ready Fixed coordinates are determined by Load position of Tool No. 4 and No. 5.
+/// Message_51013 = Remove Fixed Coordinates are the same as Load Fixed Coordinates.
+Message_51013 = You can not change the position of Remove at the current TabMounter (only once)
+Message_51014 = Gantry Loading Fixed coordinates can only be specified once Loading1.
+Message_51015 = Currently, TabMounter can not change the Ready position (only the last tool is available).
+Message_51016 = The fixed coordinates of Escape are determined by the Load position of Tool # 1. Can not be specified separately.
+Message_51017 = Rear Loading Position fixed coordinates are determined by the loading position of the opposite tool.
+Message_51018 = Mount Z, Inspection Do you want to move Camera Z to the flat measurement position?
+Message_51019 = Movement of target position completed.
+
+
+
+//BottomForm.cpp (60000)
+Message_60000=Operator Password is Not Correct.
+
+Message_60413 = It is Fail to register Motion Lib. 
+Message_60414 = It is Fail to set Motion Board Parameter.
+
+//CommonSelectUserGroupDlg.cpp (60500)
+Message_60500=Password Change is completed.
+Message_60501=Operator Password is Not correct.
+Message_60502=Engineer Password is Not correct.
+Message_60503=Maker Password is Not correct.
+Message_60504=Input current password.
+Message_60505=Input new password.
+Message_60506=Inputs are not coincident.
+
+//MainFrm.cpp (61000)
+Message_61000=Do you terminate this program?
+Message_61001=Do you terminate this program, really?
+
+//MPlatformOlbSystem.cpp (61500)	
+Message_61500=Teaching Infomation File can not be loaded.
+Message_61501=Model number is bigger than system allowable value.
+Message_61502=Selected model can not be removed.
+Message_61503=Model who wish to create already exists.
+Message_61504=Model number is bigger than system allowable value
+Message_61505=Model directory could not be created.
+Message_61506=New Model Name was not saved in System.dat file.
+Message_61507=Panel Data Reading Failure.
+Message_61508=PreBonder Data Reading Failure.
+Message_61509=Tab Data Reading Failure.
+Message_61510=TabOffset Data Reading Failure.
+Message_61511=Do you remove TabIC in TabCarrier?
+Message_61512=Tab Prealign is completed
+Message_61513=Do you move TabMounter to Inspection position?
+Message_61514=Do you move TabMounter to Ready position?
+Message_61515=Emergency Stop by E-Stop event.
+Message_61516=Selected Tab number is invalid.
+Message_61517=TabIC is not absorbed.
+Message_61518=Can not register Object Instance that was created. Confirm Object ID.
+Message_61519= could not be opened.
+Message_61520=Impossible Amp clear. Check the Servo Driver
+Message_61521=Running on SIMULATION mode.
+Message_61522 = There is no data during Model Loading. Do you want to continue?
+Message_61523 = Rear TabOffset Data Reading Failed.
+
+
+
+//MTrsAutoManager.cpp (62000)
+Message_62000=PortID(Feeder ID) data is invalid.
+Message_62001=TabIC Reel data can not be saved because of invalid PortID(Feeder ID).
+Message_62002= model will be used as work model. Do you progress model change?
+Message_62003=TabIC Zig data can not be saved because of invalid PortID(Feeder ID).
+Message_62004=Model Change Failure
+Message_62005=Equipment is waiting for connecting with L/C. If you want to return Manual Mode, press STOP Key.
+Message_62006=Communication with Line Controller is disconnected. Material information is not controlled. Continue?
+Message_62007=On doing Power Reset...
+Message_62008=Operation Mode is altering.
+Message_62009=Making error list backup file was failed. Check "Data/ErrorList.bak".
+Message_62010=Deleting error list file was failed. Check "Data/ErrorList.dat".
+Message_62011=Making error list file was failed. Check "Data/ErrorList.dat".
+Message_62012=Reading error list backup file was failed. Check "Data/ErrorList.bak".
+Message_62013=Can not create log file.
+Message_62020=Because of the Lower equipment E-Stop,@@the state of Equipment is changed to StepStop state. 
+Message_62021=Because of the Upper equipment E-Stop,@@the state of Equipment is changed to StepStop state.
+Message_62022=Mold Count of Feeder 1 is over 290000. Prepare a Mold Changing.
+Message_62023=Mold Count of Feeder 2 is over 290000. Prepare a Mold Changing.
+
+Message_62024=PortID (Feeder) is unclear when trying to save ZIG information.
+
+//Panel Scrap
+Message_62100=There is a panel on Load Conveyor. Remove it.
+Message_62200=There is a panel on Panel Transfer. Remove it.
+Message_62300=There is a panel on Unload Conveyor. Remove it.
+Message_62400 = Panel ALigner Please remove the Panel and press the OK button.
+Message_62500 = Please remove the Panel under the Turn Handler and press the OK button.
+
+//MHW_Teach
+Message_62401=Using Jog! => Let The Mark In The Vision => Press OK! 
+Message_62402=Using Jog! => Let 1st Camera Mark In The Vision => Press OK!
+Message_62403=Using Jog! => Let 2nd Camera Mark In The Vision => Press OK!
+
+//MTrsPanelAligner.cpp (62500)
+Message_62500=There is a panel on Panel Aligner. Remove it.
+Message_62501=PanelAligner has a Panel ID but released a vacuum. Scrap(delete) the Panel ID?@@Panel Scrap
+Message_62502 = Task Schedule creation failed. PanelData, TabData and Pos, Neg Please check camera distance.
+Message_62600 = Are you sure you want to proceed with Scrap?
+
+
+//TitleForm.cpp (63000)
+Message_63000=By Emergency Stop, Power is down.@@Release E-Stop Switch, and push Reset Switch.@@After restoration, operate "Axis Origin Return"
+Message_63001=Teaching Pendant was linked.@@Jog Keys on Teaching Pendant are available.
+Message_63002=Reel Recovery Rail is folded.
+Message_63003=Close message dialog after unfolding Reel Recovery Rail.
+Message_63004=: Insert New Spare Reel. [Material Exhaust Pre-Alarm]
+Message_63005=Recovery Rail Unfold : User Check Complete
+
+//NotifyStopDlg.cpp
+NotifyStop=It is finishing this process. Please wait...
+
+//VisionCalibDlg.cpp (63500)	
+Message_63500=Do you want to save data?
+Message_63501=Invalid Camera Number
+Message_63502=Do you progress Vision Calibration?
+Message_63503=Confirm whether registered Calibration Mark after Backlash removal action. Do you progress calibration?
+Message_63504=At the same time, will you do calibration of Prism's both side?
+Message_63505=Select Prism side which will be done Calibration
+Message_63506=Coordinate creation to use in Calibration action was failed
+Message_63507=Vision Calibration was failed.
+Message_63508=Vision Calibration is completed.
+Message_63509=Set search area.
+Message_63510=Set model area.
+Message_63511=Set reference point.
+Message_63512=Do you delete selected mark?
+Message_63513=Do you save model data?
+Message_63514=Panel Aligner absorbs panel.
+Message_63515=Panel Aligner pickup unit is not down.
+Message_63516=Air Plate does not absorb panel.
+Message_63517=Model Change Axis is not Model position.
+Message_63518=Pre-condition Check
+Message_63519=Model Change axis starting point distance was not obtained. Do you get it now?
+Message_63520=Press 'Ok' button and go ahead.
+Message_63521=Panel Aligner Distaince Data is obtained.
+Message_63522=Invalid Camera Number Error.
+Message_63523=Make mark be in field of view using jog and press confirmation button
+Message_63524=Do you get the distance between cameras?
+Message_63525=By user's request, work is discontinued.
+Message_63526=Do you get the distance between camera view conters?
+Message_63527=Wrong camera number or selected camera is not the type of using prism.
+Message_63528=Make mark move to reference position in field of view using jog and press confirmation button
+Message_63529=By user's request, work is discontinued.
+Message_63530=Do you get the Inspection Camera Variable Distance?
+Message_63531=Inspection Camera Variable Distance is obtained using TabMounter8.
+Message_63532=Wrong camera number.
+Message_63533=Make mark move to reference position in field of view using jog and press confirmation button
+Message_63534=By user's request, work is discontinued.
+Message_63535 = Tab Align Camera Do you want to perform variable length measurement?
+Message_63536 = Measure the variable length using Tab Carrier4.
+Message_63537 = Tab Carrier camera number is not selected.
+Message_63538 = Do you want to perform Tab Carrier rotation center measurement?
+Message_63539 = Please select measurement carrier
+Message_63540 = You have completed the Tab Carrier rotation center measurement.
+Message_63541 = Make sure you have TabMount4 in the InspectionCamera base. Do you want to continue with calibration?
+Message_63542 = TabCarrierCamera Make sure TabCarrier is in the base position. Do you want to continue with calibration?
+Message_63543 = Do you want to get the distance between the center of the PanelAligner and the center of the panel rotation cylinder?
+
+
+
+//VisionMonitorDlg.cpp (64000)	
+Message_64000=Do you save current model data?
+Message_64001=Manual Register
+Message_64002=Link
+Message_64003=Do you register Model directly? Or, refer Model that will be registered already and will create Model?
+Message_64004=Do you delete selected model?
+Message_64005=Select Mark to use on present Camera among Mark that is registered to selected Source Camera.
+Message_64006=Set search area.
+Message_64007=Set model area.
+Message_64008=Set reference point.
+Message_64009=Set Blob Area.
+Message_64010=Set Measurement Box.
+Message_64011=Mark does not use Search Area except Pattern Matching Mark.
+Message_64012=Input image file name. [Max. 32]
+Message_64013=Image File Save Completion.
+Message_64014=Wrong Camera Number!
+
+//VisionOptionDlg.cpp (64500)	
+Message_64500=There is wrong camera number. Close VisionOption Dialog
+Message_64501=Write Model Error
+
+//VisionSearchAreaDlg.cpp (65000)
+Message_65000=Save is completed
+
+//MTrsTabFeeder.cpp (65500)
+Message_65500=Sprocket2 AutoHoming is going on.
+Message_65501=TabIC AutoChange is completed.
+Message_65502=It was failed to write Jig data(press count).
+Message_65503 = Front Feeder is exhausted. Please replace it.
+Message_65504 = Your Rear Feeder is exhausted. Please replace it.
+
+
+
+//MErrorMsg.cpp (66000)
+Message_66000=is not defined.
+
+//VisionJogKeyDlg.cpp (66500)
+Message_66500=Timer was not created
+
+
+// CManualTiltDialog
+Message_67000 = Tilt Up / Down Cylinder is not Up.
+Message_67001 = Tilt Up / Down Do you want to increase the cylinder? (Please check cylinder upper / lower part!)
+Message_67002 = Do you want to down the Tilt Up / Down Cylinder? (Please check cylinder upper / lower part!)
+Message_67003 = Panel Transfer Center is not Amp Enable.
+Message_67004 = Panel Transfer In X1 axis is not Amp Enable status.
+Message_67005 = Panel Transfer In X2 axis is not Amp Enable status.
+Message_67006 = Panel Transfer Center is not homing.
+Message_67007 = Panel Transfer In X1 axis is not homing.
+Message_67008 = Panel Transfer In X2 axis is not homing.
+Message_67009 = The position of the Panel Transfer Center is not the unloading position.
+Message_67010 = The position of the Panel Transfer In is not the unloading position.
+Message_67011 = Tilt Lock / Unlock The cylinder is not in the Unlock state.
+Message_67012 = TabMounterY The axis is not referenced.
+Message_67013 = TabMounterY axis is not in a safe position (Loading position);
+Message_67014 = Are you sure you want to move the Panel Transfer In to the Unload position?
+Message_67015 = Do you want to move the Panel Transfer Center to the Unload position?
+Message_67016 = Tilt Up / Down Cylinder is not Down.
+Message_67017 = Only Feeder 1 is selected in SystemData. Remove the grooves of Feeder 2.
+Message_67018 = You have only selected Feeder 2 in SystemData. Remove the feeder 1 groove.
+Message_67019 = ALL Feeder selected in SystemData. Feeder 1 or Feeder 2 is not home.
+
+//common 폴더 들어있는 파일들(90000 번대)
+//MACSAxis.cpp (90000)
+Message_90000=PC and Gantry 1 Controller are disconnected.
+Message_90001=PC and Gantry 2 Controller are disconnected.
+Message_90002=PC and Gantry Controller are disconnected.
+Message_90003=Select a feeder that requires home teaching.

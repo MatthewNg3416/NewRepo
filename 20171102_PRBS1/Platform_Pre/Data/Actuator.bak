@@ -1,0 +1,1182 @@
+[Backup1 UD]
+MovingTime=7.000000
+SettlingTime1=0.200000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Backup1 FB]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Backup2 UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Backup2 FB]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Panel Aligner UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[Panel Transfer UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Panel Transfer Stopper UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Load Conveyor Stopper UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Unload Conveyor Stopper UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[Model Change Width Adjust ES]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[TabMounter1 Press1 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press2 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press3 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press4 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press5 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press6 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press7 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter1 Press8 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabCarrier1 UD]
+MovingTime=5.000000
+SettlingTime1=0.001000
+SettlingTime2=0.001000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabCarrier1 CWCCW]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[TabPress1 Feeder Sprocket UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Tension Sprocket UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Recovery Sprocket UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.500000
+[TabPress1 Used Reel Cutter UDStr]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress1 Press Reel UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Press Reel Clamp UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Support Left UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Cutting Support Left UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Support Right UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Cutting Support Right UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Press UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Reel Cutter UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Reel FB]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Attach Supplier Chuck ES]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress1 Protection Reel Cutter UDStr]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress1 Protection Guide FB]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress1 Protection Guide UDStr]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter2 Press1 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter2 Press2 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter2 Press3 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter2 Press4 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter2 Press5 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabMounter2 Press6 UD]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabCarrier2 UD]
+MovingTime=5.000000
+SettlingTime1=0.001000
+SettlingTime2=0.001000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabCarrier2 CWCCW]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress2 Feeder Sprocket UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Tension Sprocket UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Recovery Sprocket UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.500000
+[TabPress2 Used Reel Cutter UDStr]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress2 Press Reel UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Press Reel Clamp UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Support Left UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Cutting Support Left UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Support Right UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Cutting Support Right UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Press UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Reel Cutter UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Reel FB]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Attach Supplier Chuck ES]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.500000
+[TabPress2 Protection Reel Cutter UDStr]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress2 Protection Guide FB]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress2 Protection Guide UDStr]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[PanelAligner Vac]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[PanelTransfer Vac]
+TurningTime=7.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac1]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac2]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac3]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac4]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac5]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac6]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac7]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter1 Vac8]
+TurningTime=7.000000
+OnSettlingTime=0.100000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier1 Vac1]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac2]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac3]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac4]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac5]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac6]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac7]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabCarrier1 Vac8]
+TurningTime=7.000000
+OnSettlingTime=0.050000
+OffSettlingTime=0.200000
+SimulationTime=0.5
+[TabPress1 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[TabPress1 New Reel Vac]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[TabMounter2 Vac1]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter2 Vac2]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter2 Vac3]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter2 Vac4]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter2 Vac5]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabMounter2 Vac6]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier2 Vac1]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier2 Vac2]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier2 Vac3]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier2 Vac4]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier2 Vac5]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabCarrier2 Vac6]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.5
+[TabPress2 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[TabPress2 New Reel Vac]
+TurningTime=60.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[Panel Aligner FB]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.500000
+[TabPress1 Attach Supplier Chuck ES]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.5
+[TabPress2 Attach Supplier Chuck ES]
+MovingTime=3.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+[PanelAligner Vac1]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[PanelAligner Vac2]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[PanelTransfer Vac1]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+[PanelTransfer Vac2]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+[TabMounter1 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter2 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter3 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter4 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter5 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter6 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter7 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter8 Press 1st UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter1 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter2 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter3 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter4 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter5 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter6 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter7 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabMounter8 Press 2nd UD]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[TabPress1 P-Reel Recovery UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.100000
+[TabPress1 P-Reel Recovery FB]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.100000
+[TabAligner ES]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[Inspection ES]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+SimulationTime=0.000000
+[Load Conveyor Panel PreAlign FB]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+[TabCarrier1 7Pitch FB]
+MovingTime=7.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.100000
+[Panel Pusher UD]
+MovingTime=7.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.100000
+[Panel Transfer Center UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[Panel Transfer In UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Panel Transfer Out UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter1 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter2 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter3 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter4 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter5 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabMounter6 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabMounter7 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabMounter8 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabCarrier3 UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabCarrier4 UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[R TabCarrier1 UD]
+MovingTime=5.000000
+SettlingTime1=0.001000
+SettlingTime2=0.001000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[R TabCarrier2 UD]
+MovingTime=5.000000
+SettlingTime1=0.001000
+SettlingTime2=0.001000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[R TabCarrier3 UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[R TabCarrier4 UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabPress2 P-Reel Recovery FB]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[TabPress2 P-Reel Recovery UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+SimulationTime=0.000000
+[PreAlign Cam ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R PreAlign Cam ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Inspection Cam1 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Inspection Cam2 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Inspection Cam3 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Inspection Cam4 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[PanelAligner Vac3]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[PanelTransfer Center Vac]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[PanelTransfer In Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[PanelTransfer Out Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter1 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter2 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter3 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter4 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter5 Vac]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter6 Vac]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter7 Vac]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter8 Vac]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabCarrier1 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.200000
+SimulationTime=0.000000
+[TabCarrier2 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.200000
+SimulationTime=0.000000
+[TabCarrier3 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.200000
+SimulationTime=0.000000
+[TabCarrier4 Vac]
+TurningTime=1.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.200000
+SimulationTime=0.000000
+[R TabCarrier1 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[R TabCarrier2 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[R TabCarrier3 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[R TabCarrier4 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabCarrier UD]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.001000
+SimulationTime=0.500000
+[R TabCarrier UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.500000
+[TabCarrier FB]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R TabCarrier FB]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Tilting LU]
+MovingTime=20.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+[Tilting UD]
+MovingTime=20.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+[Dump Basket Front FB]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+[Dump Basket Rear FB]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.500000
+[RTabMounter1 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[RTabMounter2 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R Inspection Cam1 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R Inspection Cam2 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[PanelTransfer Out2 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[RTabMounter1 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[RTabMounter2 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[RTabMounter3 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[RTabMounter4 Press UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R Inspection Cam3 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R Inspection Cam4 ES]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[PanelTransfer In2 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[RTabMounter3 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[RTabMounter4 Vac]
+TurningTime=5.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.000000
+[TabMounter1 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter2 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter3 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabMounter4 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[RTabMounter1 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[RTabMounter2 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[RTabMounter3 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[RTabMounter4 Panel Pusher UD]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Transfer In AirRail FB1]
+MovingTime=10.000000
+SettlingTime1=0.500000
+SettlingTime2=0.500000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Transfer In AirRail FB2]
+MovingTime=10.000000
+SettlingTime1=0.500000
+SettlingTime2=0.500000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[TabCarrier UD2]
+MovingTime=5.000000
+SettlingTime1=0.005000
+SettlingTime2=0.005000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[R TabCarrier UD2]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[Transfer Center]
+MovingTime=5.000000
+SettlingTime1=0.010000
+SettlingTime2=0.010000
+NoSenMovingTime=0.001000
+SimulationTime=0.100000
+[PanelTransfer Center Vac2]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[THandler Vac1]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[THandler Vac2]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000
+[THandler Vac3]
+TurningTime=3.000000
+OnSettlingTime=0.010000
+OffSettlingTime=0.010000
+SimulationTime=0.500000

@@ -1,0 +1,1784 @@
+[MAIN_AUTO]
+// AutoElapseTimeDlg.cpp
+AutoElapseTimeDlg_1=실린더 동작 시간 표시
+
+// AutoMainForm.cpp
+AutoMainForm_1=OP Panel의 START Key로 자동운전을 시작합니다. STOP Key로 자동운전 MODE를 해제합니다.
+AutoMainForm_2=사용자 요청에 의해 작업을 중단함.
+AutoMainForm_3=PC 오동작 중. 프로그램 종료 후 PC Rebooting 해 주세요.
+AutoMainForm_4=PC 오동작 중. 프로그램 종료 후 PC Rebooting 해 주세요.
+AutoMainForm_5=자동운전 초기화 완료.
+AutoMainForm_6=생산 수량을 초기화 하시겠습니까?
+AutoMainForm_7=생산 정보
+AutoMainForm_8=운영 정보
+AutoMainForm_9=유닛수행정보
+AutoMainForm_10=생산 모델
+AutoMainForm_11=설비 Tact Time
+AutoMainForm_12=라인 Tact Time
+AutoMainForm_13=생산 수량
+AutoMainForm_14=운전상태
+AutoMainForm_15=운전모드
+AutoMainForm_16=가압 시간
+AutoMainForm_17=Run Mode@@선택
+AutoMainForm_18=축@@원점복귀
+AutoMainForm_19=유닛@@초기화
+AutoMainForm_20=시스템 준비
+AutoMainForm_21=Panel@@공급중단
+AutoMainForm_22=자재@@관련
+AutoMainForm_23=설비 InterLock
+AutoMainForm_24=설비 내에 Panel 이 있습니다. Panel 의 작업방식을 선택해 주세요
+AutoMainForm_25=설비 내에 있는 TabIC 제거 Unit을 선택하여 주세요.
+AutoMainForm_26=장비 상태
+AutoMainForm_27=프로세스 상태
+AutoMainForm_28 = 투입 수량을 초기화 하시겠습니까?
+AutoMainForm_29 = 스크랩 수량을 초기화 하시겠습니까?
+AutoMainForm_30 = 투입/스크랩수량
+
+// AutoMaterialCmdGroupDlg.cpp
+AutoMaterialCmdGroupDlg_1=자재 등록
+AutoMaterialCmdGroupDlg_2=나가기
+AutoMaterialCmdGroupDlg_3=생산 정보
+
+// AutoMaterialInfoDlg.cpp
+AutoMaterialInfoDlg_1=Tab IC 투입 (조회)
+AutoMaterialInfoDlg_2=Tab IC 제거
+AutoMaterialInfoDlg_3=제거 완료
+AutoMaterialInfoDlg_4=Tab IC 투입 (조회)
+AutoMaterialInfoDlg_5=Tab IC 제거
+AutoMaterialInfoDlg_6=제거 완료
+AutoMaterialInfoDlg_7=Tab IC 투입 (조회)
+AutoMaterialInfoDlg_8=Tab IC 제거
+AutoMaterialInfoDlg_9=제거 완료
+AutoMaterialInfoDlg_10=Tab IC 투입 (조회)
+AutoMaterialInfoDlg_11=Tab IC 제거
+AutoMaterialInfoDlg_12=제거 완료
+AutoMaterialInfoDlg_13=Zig 투입 (조회)
+AutoMaterialInfoDlg_14=Zig 제거
+AutoMaterialInfoDlg_15=제거 완료
+AutoMaterialInfoDlg_16=Zig 투입 (조회)
+AutoMaterialInfoDlg_17=Zig 제거
+AutoMaterialInfoDlg_18=제거 완료
+AutoMaterialInfoDlg_19=나가기
+
+// AutoModeSelectDlg.cpp
+AutoModeSelectDlg_1=운영 모드 선택
+AutoModeSelectDlg_2=나가기
+
+// AutoMotorOriginDlg.cpp
+AutoMotorOriginDlg_1=축 원점 복귀
+AutoMotorOriginDlg_2=모두 선택
+AutoMotorOriginDlg_3=모두 취소
+AutoMotorOriginDlg_4=강제 원점복귀
+AutoMotorOriginDlg_5=서보 ON
+AutoMotorOriginDlg_6=서보 OFF
+AutoMotorOriginDlg_7=원점복귀@@실행
+AutoMotorOriginDlg_8=나가기
+
+// AutoOperationCmdGroupDlg.cpp
+AutoOperationCmdGroupDlg_1=TabMounter Ready 위치이동
+AutoOperationCmdGroupDlg_2=Gantry 작업 위치
+AutoOperationCmdGroupDlg_3=TabIC 제거
+AutoOperationCmdGroupDlg_4=나가기
+
+// AutoPanelMarkManualSearchDlg.cpp
+AutoPanelMarkManualSearchDlg_1=Panel 제거
+AutoPanelMarkManualSearchDlg_2=진행
+AutoPanelMarkManualSearchDlg_3=Jog를 움직여 Mark를 들어오게 한 후, 확인을 눌러주세요.(Mark 손상 시, 제거 버튼을 누르세요)
+
+// AutoRepairTabSelectDlg.cpp
+AutoRepairTabSelectDlg_1=다음@@작업변
+AutoRepairTabSelectDlg_2=Repair@@계속
+
+// AutoScrapGlassDlg.cpp
+AutoScrapGlassDlg_1=Panel 정보
+AutoScrapGlassDlg_2=저장
+AutoScrapGlassDlg_3=나가기
+AutoScrapGlassDlg_4=Door Open 상태입니다. 닫아주세요.
+AutoScrapGlassDlg_5=Door Open 상태입니다. 닫아주세요.
+
+// AutoStepDispDlg.cpp
+AutoStepDispDlg_1=숨기기
+
+// AutoTabICInfoDlg.cpp
+AutoTabICInfoDlg_1=위치 (Feeder 번호)
+AutoTabICInfoDlg_2=입력 시작
+AutoTabICInfoDlg_3=입력 취소
+AutoTabICInfoDlg_4=나가기
+3AutoTabICInfoDlg_5=Tab IC 입력 DATA [BarCode Gun으로 입력, 순서대로 입력하세요]
+AutoTabICInfoDlg_6=Tab IC 관련정보 [기존 설정값]
+AutoTabICInfoDlg_7=Maker를 선택해 주세요
+AutoTabICInfoDlg_8=직접입력
+AutoTabICInfoDlg_9=TabIC 총 수량을 입력해주세요
+
+// AutoZigInfoDlg.cpp
+AutoZigInfoDlg_1=구분
+AutoZigInfoDlg_2=값
+AutoZigInfoDlg_3=금형 ID
+AutoZigInfoDlg_4=Regrinding 횟수
+AutoZigInfoDlg_5=Regrinding 날짜
+AutoZigInfoDlg_6=MATCODE
+AutoZigInfoDlg_7=총 제한 횟수
+AutoZigInfoDlg_8=총 사용 횟수
+AutoZigInfoDlg_9=Regrinding 후 사용 제한 횟수
+AutoZigInfoDlg_10=Regrinding 후 사용 횟수
+AutoZigInfoDlg_11=나가기
+
+//ProductPlanDlg.cpp
+ProductPlanDlg_1=최초 생산 지시량
+ProductPlanDlg_2=최종 생산 지시량
+ProductPlanDlg_3=요청
+ProductPlanDlg_4=생성
+ProductPlanDlg_5=지우기
+ProductPlanDlg_6=수정
+ProductPlanDlg_7=나가기
+
+//ProductCreateDlg.cpp
+ProductCreateDlg_1=최초 생산 지시량
+ProductCreateDlg_2=최종 생산 지시량
+ProductCreateDlg_3=저장
+ProductCreateDlg_4=나가기
+
+//PanelValidationCheckDlg.cpp
+PanelValidationCheckDlg_1=저장
+PanelValidationCheckDlg_2=나가기
+
+
+//VersionDisplayDlg.cpp
+VersionDisplayDlg_1=나가기
+
+//DataMatchingTableDlg.cpp
+DataMatchingTableDlg_1=Matching@@정보 추가
+DataMatchingTableDlg_2=Matching@@정보 수정
+DataMatchingTableDlg_3=Matching@@정보 삭제
+DataMatchingTableDlg_4=나가기
+DataMatchingTableDlg_5=위
+DataMatchingTableDlg_6=아래
+
+//AutoNSMCInfoDlg.cpp
+AutoNSMCInfoDlg_1=나가기
+
+
+[MAIN_MANUAL]
+// ManualCameraExpShrDlg.cpp
+ManualCameraExpShrDlg_1=나가기
+
+// ManualConveyorDlg.cpp
+ManualConveyorDlg_1=나가기
+// ManualIOMonitoringDlg.cpp
+ManualIOMonitoringDlg_1=이전
+ManualIOMonitoringDlg_2=다음
+ManualIOMonitoringDlg_3=맨 앞
+ManualIOMonitoringDlg_4=맨 뒤
+ManualIOMonitoringDlg_5=이전
+ManualIOMonitoringDlg_6=다음
+ManualIOMonitoringDlg_7=맨 앞
+ManualIOMonitoringDlg_8=맨 뒤
+ManualIOMonitoringDlg_9=나가기
+ManualIOMonitoringDlg_10=입력/출력 접점
+
+// ManualLimitSensorDlg.cpp
+ManualLimitSensorDlg_1=이전
+ManualLimitSensorDlg_2=다음
+ManualLimitSensorDlg_3=나가기
+
+// ManualMainForm.cpp
+ManualMainForm_1=I/O 동작
+ManualMainForm_2=수동 초기화
+ManualMainForm_3=일련 동작
+ManualMainForm_4=단위 동작
+ManualMainForm_5=입/출력 확인
+ManualMainForm_6=Limit 센서@@입력 확인
+ManualMainForm_7=축 원점복귀
+ManualMainForm_8=Panel@@투입, 정렬, 배출
+ManualMainForm_9=TabIC Loading 방식을 결정하세요.
+ManualMainForm_10=전체 Loading
+ManualMainForm_11=Tab 번호 선택
+ManualMainForm_12=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_13=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_14=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_15=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+ManualMainForm_16=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_17=Panel Aligner 가 Panel 을 흡착하고 있지 않습니다.
+ManualMainForm_18=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_19=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_20=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_21=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_22=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_23=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+ManualMainForm_24=Panel Aligner가 Panel을 흡착하고 있지 않습니다.
+ManualMainForm_25=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+ManualMainForm_26=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+ManualMainForm_27=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_28=Heater Power Reset 출력 점멸 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_29=일련 동작 중 입니다. 잠시만 기다려 주세요...
+ManualMainForm_30=Motion Network@@초기화
+ManualMainForm_31=일련 동작을 완료 하였습니다.
+ManualMainForm_32=이동할 위치를 선택하세요.
+ManualMainForm_33=공급할 Carrier를 선택하세요.
+
+// ManualPanelAlignerDlg.cpp
+ManualPanelAlignerDlg_1=나가기
+
+// ManualTabCarrierDlg.cpp
+ManualTabCarrierDlg_1=나가기
+
+// ManualTabFeederDlg.cpp
+ManualTabFeederDlg_1=금형 제거
+ManualTabFeederDlg_2=Sprocket2 강제 Homing
+ManualTabFeederDlg_3=Reel 제거
+ManualTabFeederDlg_4=나가기
+
+//ManualTabMounterDlg.cpp
+ManualTabMounterDlg_1=나가기
+ManualTabMounterDlg_2=Cylinder (앞)
+ManualTabMounterDlg_3=Cylinder (뒤)
+ManualTabMounterDlg_4=Vacuum (앞)
+ManualTabMounterDlg_5=Vacuum (뒤)
+ManualTabMounterDlg_6=Backup (앞)	
+ManualTabMounterDlg_7=Backup (뒤)
+
+//EqStopCodeDlg.cpp
+CEqStopCodeDlg_1=유실 보고 입력
+CEqStopCodeDlg_2=저장
+CEqStopCodeDlg_3=유실 코드
+CEqStopCodeDlg_4=유실 내용
+CEqStopCodeDlg_5=유실 항목 수정
+CEqStopCodeDlg_6=설비 유실보고 코드 입력/수정
+
+//DlgSheetTactTime.cpp
+DlgSheetTactTime_1=나가기
+
+
+//PMFullDisplay.cpp
+PMFullDisplay_1=나가기
+[MAIN_DATA]
+// DataActuatorSettingDlg.cpp
+DataActuatorSettingDlg_1=이전
+DataActuatorSettingDlg_2=다음
+DataActuatorSettingDlg_3=일괄입력
+DataActuatorSettingDlg_4=저장
+DataActuatorSettingDlg_5=나가기
+DataActuatorSettingDlg_6=Motor 속도 / 가속도 Setting Dialog
+DataActuatorSettingDlg_7=Motor 속도
+DataActuatorSettingDlg_8=Motor 가감속 시간
+DataActuatorSettingDlg_9=Motor Slow 속도
+DataActuatorSettingDlg_10=Motor 원점복귀 속도 / 가속도 Setting Dialog
+DataActuatorSettingDlg_11=Origin Fast
+DataActuatorSettingDlg_12=Origin Slow
+DataActuatorSettingDlg_13=원점복귀 가감속 시간
+DataActuatorSettingDlg_14=원점복귀 Offset
+DataActuatorSettingDlg_15=Jog 속도 Setting Dialog
+DataActuatorSettingDlg_16=저속 이동 속도
+DataActuatorSettingDlg_17=고속 이동 속도
+DataActuatorSettingDlg_18=Motor S/W Limit Setting Dialog	
+DataActuatorSettingDlg_19=+ Limit	
+DataActuatorSettingDlg_20=- Limit	
+DataActuatorSettingDlg_21=Tolerance Setting Dialog	
+DataActuatorSettingDlg_22=Tolerace	
+DataActuatorSettingDlg_23=Motor 지연 시간 설정 Dialog		
+DataActuatorSettingDlg_24=동작 제한 시간
+DataActuatorSettingDlg_25=동작 후@@대기 시간
+DataActuatorSettingDlg_26=원점복귀@@제한 시간	
+DataActuatorSettingDlg_27=Cylinder 지연 시간 설정 Dialog	
+DataActuatorSettingDlg_28=동작 제한 시간	
+DataActuatorSettingDlg_29=동작 후@@대기 시간1	
+DataActuatorSettingDlg_30=동작 후@@대기 시간2	
+DataActuatorSettingDlg_31=No Sensor@@대기 시간
+DataActuatorSettingDlg_32=Vacuum 지연 시간 설정 Dialog	
+DataActuatorSettingDlg_33=동작 제한 시간	
+DataActuatorSettingDlg_34=Vacuum On 후 대기 시간	
+DataActuatorSettingDlg_35=Vacuum Off 후 대기 시간
+DataActuatorSettingDlg_36=EC Data 생성
+
+// DataCommonDlg.cpp
+DataCommonDlg_1=사용 언어
+DataCommonDlg_2=금형 RFID Writing 주기
+DataCommonDlg_3=금형 Blow 주기
+DataCommonDlg_4=금형 Blow 시간
+DataCommonDlg_5=저장
+DataCommonDlg_6=나가기
+DataCommonDlg_7=사용할 언어를 선택해 주세요.
+
+// DataConveyorSpeedDlg.cpp -> DataConveyorSpeedDlg.h
+DataConveyorSpeedDlg_1=저장
+DataConveyorSpeedDlg_2=나가기
+
+// DataFuncOnOffDlg.cpp
+DataFuncOnOffDlg_1=Fiducial Mark Auto Search 사용
+DataFuncOnOffDlg_2=Plate Vacuum 사용
+DataFuncOnOffDlg_3=Panel Mark Manual Search
+DataFuncOnOffDlg_4=자재 사전 Alarm
+DataFuncOnOffDlg_5=Buzzer 사용
+DataFuncOnOffDlg_6=Heater Alarm 사용
+DataFuncOnOffDlg_7=Safety 기능 사용
+DataFuncOnOffDlg_8=TabIC 압착 후@@압착 상태 검사
+DataFuncOnOffDlg_9=Panel Validation Check
+DataFuncOnOffDlg_10=Panel 흡착에 따른 Panel 위치 변화 반영
+DataFuncOnOffDlg_11=R/Y Lamp Off Buzzer Off
+DataFuncOnOffDlg_12=금형 Blow 사용
+DataFuncOnOffDlg_13=저장
+DataFuncOnOffDlg_14=나가기
+DataFuncOnOffDlg_15=기능 On/Off Dialog
+DataFuncOnOffDlg_16=Feeder선택
+DataFuncOnOffDlg_17=Select Use Feeder
+//DataFuncOnOffDlg_22=Use TabMount Switching
+DataFuncOnOffDlg_22=1Feeder AllMount
+
+
+// DataMainForm.cpp 
+DataMainForm_1=모델 설정
+DataMainForm_2=지연시간 설정
+DataMainForm_3=모션 설정
+DataMainForm_4=공정 설정
+DataMainForm_5=속도/가감속@@시간
+DataMainForm_6=원점복귀@@속도/가감속 시간
+DataMainForm_7=Jog 속도
+DataMainForm_8=기능 On/Off
+DataMainForm_9=금형 1 관리
+DataMainForm_10=금형 2 관리
+
+// DataModelChangeDistDlg.cpp
+
+DataModelChangeDistDlg_1=Stage중심에서 Align1Cam중심 거리 X
+DataModelChangeDistDlg_2=Stage중심에서 Align1Cam중심 거리 Y
+DataModelChangeDistDlg_3=Stage중심에서 Align2Cam중심 거리 X
+DataModelChangeDistDlg_4=Stage중심에서 Align2Cam중심 거리 Y
+DataModelChangeDistDlg_5=Stage중심 Pad간 거리
+DataModelChangeDistDlg_6=BadTab Origin 거리(Front)
+DataModelChangeDistDlg_7=BadTab Origin 거리(Rear)
+DataModelChangeDistDlg_8=F Inspect Camera 고정좌표 X
+
+DataModelChangeDistDlg_9=Gantry원점에서 PanelAligner원점간 거리(Front)
+DataModelChangeDistDlg_10=Gantry원점에서 PanelAligner원점간 거리(Rear)
+DataModelChangeDistDlg_11=Positive Inspect Camera 거리(Front)
+DataModelChangeDistDlg_12=Negative Inspect Camera 거리(Front)
+DataModelChangeDistDlg_13=Positive Inspect Camera 거리(Rear)
+DataModelChangeDistDlg_14=Negative Inspect Camera거리(Rear)
+DataModelChangeDistDlg_15=R Inspect Camera 고정좌표 X
+
+
+DataModelChangeDistDlg_16=저장
+DataModelChangeDistDlg_17=나기기
+
+
+// DataModelDlg.cpp
+DataModelDlg_1=모델 리스트
+DataModelDlg_2=현재 생산 중인 모델
+DataModelDlg_3=선택된 모델
+DataModelDlg_4=위
+DataModelDlg_5=아래
+DataModelDlg_6=페이지@@위로
+DataModelDlg_7=페이지@@아래로
+DataModelDlg_8=모델 생성
+DataModelDlg_9=모델 삭제
+DataModelDlg_10=모델 선택
+DataModelDlg_11=나가기
+//DataModelDlgNew.cpp
+DataModelDlgNew_1=모델 리스트
+DataModelDlgNew_2=현재 생산 중인 모델
+DataModelDlgNew_3=선택된 모델
+DataModelDlgNew_4=위
+DataModelDlgNew_5=아래
+DataModelDlgNew_6=페이지@@위로
+DataModelDlgNew_7=페이지@@아래로
+DataModelDlgNew_8=모델 생성
+DataModelDlgNew_9=모델 삭제
+DataModelDlgNew_10=모델 선택
+DataModelDlgNew_11=나가기
+DataModelDlgNew_12a=현재 모델
+DataModelDlgNew_12b=디렉토리가 존재하지 않습니다.
+DataModelDlgNew_13=현재 생산중인 모델
+DataModelDlgNew_14=모델 수정
+DataModelDlgNew_15=Data 조회
+DataModelDlgNew_16=현재 Device ID List
+
+// DataMoldInfoDlg.cpp
+DataMoldInfoDlg_1=Feeder #1 금형 정보
+DataMoldInfoDlg_2=Feeder #2 금형 정보
+DataMoldInfoDlg_3=금형 ID
+DataMoldInfoDlg_4=Regrinding 횟수
+DataMoldInfoDlg_5=Regrinding 날짜
+DataMoldInfoDlg_6=MATCODE
+DataMoldInfoDlg_7=총 제한 횟수
+DataMoldInfoDlg_8=총 사용 횟수
+DataMoldInfoDlg_9=Regrinding 후 사용 제한 횟수
+DataMoldInfoDlg_10=Regrinding 후 사용 횟수
+DataMoldInfoDlg_11=금형 ID
+DataMoldInfoDlg_12=금형 정보 번호 선택
+DataMoldInfoDlg_13=금형 정보 강제 쓰기
+DataMoldInfoDlg_14=금형 정보 다시 읽기
+DataMoldInfoDlg_15=나가기
+
+// DataPanelAlignerDlg.cpp
+DataPanelAlignerDlg_1=저속 이동 기준 거리
+DataPanelAlignerDlg_2=기준 Aligner X
+DataPanelAlignerDlg_3=기준 Aligner Y
+DataPanelAlignerDlg_4=Panel Auto Search 시 이동 거리
+DataPanelAlignerDlg_5=부상 Plate Blow On Delay (sec)
+DataPanelAlignerDlg_6=저장
+DataPanelAlignerDlg_7=나가기
+DataPanelAlignerDlg_8=Align중심과 회전@@실린더중심간 거리X
+DataPanelAlignerDlg_9=Align중심과 회전@@실린더중심간 거리Y
+
+// DataPanelDlg.cpp
+DataPanelDlg_1=저장
+DataPanelDlg_2=나가기
+
+// DataTabICDlg.cpp
+DataTabICDlg_1=Sensor@@사용 개수
+DataTabICDlg_2=TabIC 종류
+DataTabICDlg_3=TabIC Data 설정
+DataTabICDlg_4=일괄@@입력
+DataTabICDlg_5=이전
+DataTabICDlg_6=다음
+DataTabICDlg_7=저장
+DataTabICDlg_8=나가기
+DataTabICDlg_9=이전 @@Work Side
+DataTabICDlg_10=다음 @@Work Side
+DataTabICDlg_11=이전 @@Tab Page
+DataTabICDlg_12=다음 @@Tab Page
+DataTabICDlg_13=SR Line@@오차값
+DataTabICDlg_14=Tab EndLine@@오차값
+DataTabICDlg_15=Tab EndLine@@미보정오차값
+
+// DataTabICOffsetDlg.cpp
+DataTabICOffsetDlg_1=X@@일괄입력
+DataTabICOffsetDlg_2=Y@@일괄입력
+DataTabICOffsetDlg_3=이전
+DataTabICOffsetDlg_4=다음
+DataTabICOffsetDlg_5=저장
+DataTabICOffsetDlg_6=나가기
+DataTabICOffsetDlg_7=T@@일괄입력
+DataTabICOffsetDlg_8=이전 @@Tab Page
+DataTabICOffsetDlg_9=다음 @@Tab Page
+
+// DataTabMounterDlg.cpp
+DataTabMounterDlg_1=저장
+DataTabMounterDlg_2=나가기
+
+
+// DataTowerLampDlg.cpp
+DataTowerLampDlg_1=저장
+DataTowerLampDlg_2=나가기
+
+// DataECDBDlg.cpp
+DataECDBDlg_1=Data 추가
+DataECDBDlg_2=Data 수정
+DataECDBDlg_3=Data 삭제
+DataECDBDlg_4=수정모드	
+DataECDBDlg_5=나가기
+
+// ErrorNotSendDlg.cpp
+ErrorNotSendDlg_1=저장
+ErrorNotSendDlg_2=나가기
+
+//PlateVacModelDataDlg.cc
+PlateVacModelDataDlg_1=나가기
+PlateVacModelDataDlg_2=저장
+
+// ModulePortIDDlg.cpp
+ModulePortIDDlg_1=저장
+ModulePortIDDlg_2=나가기
+
+[MAIN_TEACH]
+//TeachBackUpDlg.cpp
+TeachBackUpDlg_1=BackUp Z 모델좌표 Teaching
+TeachBackUpDlg_2=BackUp Z 고정좌표 Teaching
+TeachBackUpDlg_3=축
+TeachBackUpDlg_4=Z 축
+TeachBackUpDlg_5=목표 위치
+TeachBackUpDlg_6=고정 좌표
+TeachBackUpDlg_7=Offset 좌표
+TeachBackUpDlg_8=현재 위치
+TeachBackUpDlg_9=차이값
+TeachBackUpDlg_10=목표 위치로@@이동
+TeachBackUpDlg_11=목표 위치를@@현재값으로
+TeachBackUpDlg_12=저장
+TeachBackUpDlg_13=나가기
+
+// TeachBadTabDetectorDlg.cpp 
+TeachBadTabDetectorDlg_1=BadTab Detector1@@X 모델좌표@@Teaching
+TeachBadTabDetectorDlg_2=BadTab Detector2@@X 모델좌표@@Teaching
+TeachBadTabDetectorDlg_3=축
+TeachBadTabDetectorDlg_4=X 축
+TeachBadTabDetectorDlg_5=목표 위치
+TeachBadTabDetectorDlg_6=Model 좌표
+TeachBadTabDetectorDlg_7=Offset 좌표
+TeachBadTabDetectorDlg_8=현재 위치
+TeachBadTabDetectorDlg_9=차이값
+TeachBadTabDetectorDlg_10=목표 위치로@@이동
+TeachBadTabDetectorDlg_11=목표 위치를@@현재값으로
+TeachBadTabDetectorDlg_12=저장
+TeachBadTabDetectorDlg_13=나가기
+TeachBadTabDetectorDlg_14=타발 길이 미세조정(단위:mm)
+TeachBadTabDetectorDlg_15=타발 길이 확인
+
+// TeachCameraCarrierDlg.cpp 
+TeachCameraCarrierDlg_1=CameraCarrier@@모델좌표 Teaching
+TeachCameraCarrierDlg_2=CameraCarrier 고정좌표 Teaching
+TeachCameraCarrierDlg_3=목표 위치
+TeachCameraCarrierDlg_4=고정 좌표
+TeachCameraCarrierDlg_5=모델 좌표
+TeachCameraCarrierDlg_6=Offset 좌표
+TeachCameraCarrierDlg_7=현재 위치
+TeachCameraCarrierDlg_8=차이값
+TeachCameraCarrierDlg_9=Camera Carrier 번호 선택
+TeachCameraCarrierDlg_10=목표 위치로@@이동
+TeachCameraCarrierDlg_11=목표 위치를@@현재값으로
+TeachCameraCarrierDlg_12=방향 1 Tab 이동
+TeachCameraCarrierDlg_13=방향 1 Tab 이동
+TeachCameraCarrierDlg_14=원점복귀 Offset 얻기
+TeachCameraCarrierDlg_15=저장
+TeachCameraCarrierDlg_16=나가기
+TeachCameraCarrierDlg_17=이동 위치의 Tab 번호
+
+// TeachCarrierDlg.cpp
+TeachCarrierDlg_1=TabIC Carrier 모델좌표 Teaching
+TeachCarrierDlg_2=TabIC Carrier 모델좌표 Teaching
+TeachCarrierDlg_3=Jog 축 변경
+TeachCarrierDlg_4=X 축
+TeachCarrierDlg_5=Y 축
+TeachCarrierDlg_6=목표 위치
+TeachCarrierDlg_7=고정 좌표
+TeachCarrierDlg_8=모델 좌표	
+TeachCarrierDlg_9=Offset 좌표	
+TeachCarrierDlg_10=현재 위치	
+TeachCarrierDlg_11=차이값	
+TeachCarrierDlg_12=목표 위치로@@이동
+TeachCarrierDlg_13=목표 위치를@@현재값으로
+TeachCarrierDlg_14=저장
+TeachCarrierDlg_15=나가기
+TeachCarrierDlg_16=보정값
+TeachCarrierDlg_17=원점복귀 Offset 얻기
+TeachCarrierDlg_18=TabCarrier 번호 선택
+TeachCarrierDlg_19=T 축
+TeachCarrierDlg_20=Z 축
+
+// TeachCarrierCameraExpandDlg.cpp
+TeachCarrierCameraExpandDlg_1=Jog 축 변경
+TeachCarrierCameraExpandDlg_2=X 축
+TeachCarrierCameraExpandDlg_3=목표 위치
+TeachCarrierCameraExpandDlg_4=고정 좌표
+TeachCarrierCameraExpandDlg_5=모델 좌표
+TeachCarrierCameraExpandDlg_6=Offset 좌표
+TeachCarrierCameraExpandDlg_7=현재 위치
+TeachCarrierCameraExpandDlg_8=차이값
+TeachCarrierCameraExpandDlg_9=목표 위치로@@이동
+TeachCarrierCameraExpandDlg_10=목표 위치를@@현재값으로
+TeachCarrierCameraExpandDlg_11=저장   
+TeachCarrierCameraExpandDlg_12=나가기
+TeachCarrierCameraExpandDlg_13=Expand 번호 선택
+
+// TeachMainForm.cpp
+TeachMainForm_1=고정좌표 Teaching
+TeachMainForm_2=Offset Teaching
+TeachMainForm_3=Offset 직접 입력
+
+// TeachModelChangeDlg.cpp
+TeachModelChangeDlg_1=축
+TeachModelChangeDlg_2=Y 축
+TeachModelChangeDlg_3=목표 위치
+TeachModelChangeDlg_4=고정 좌표
+TeachModelChangeDlg_5=모델 좌표
+TeachModelChangeDlg_6=Offset 좌표
+TeachModelChangeDlg_7=현재 위치
+TeachModelChangeDlg_8=차이값
+TeachModelChangeDlg_9=목표 위치로@@이동
+TeachModelChangeDlg_10=목표 위치를@@현재값으로
+TeachModelChangeDlg_11=저장
+TeachModelChangeDlg_12=나가기
+TeachModelChangeDlg_13=Model Change 모델좌표 Teaching
+TeachModelChangeDlg_14=Model Change 고정좌표 Teaching
+
+// TeachPanelAlignerDlg.cpp
+TeachPanelAlignerDlg_1=Jog 축 변경
+TeachPanelAlignerDlg_2=X축
+TeachPanelAlignerDlg_3=Y축
+TeachPanelAlignerDlg_4=T축
+TeachPanelAlignerDlg_5=Z축
+TeachPanelAlignerDlg_6=목표 위치
+TeachPanelAlignerDlg_7=고정 좌표
+TeachPanelAlignerDlg_8=모델 좌표
+TeachPanelAlignerDlg_9=Offset 좌표
+TeachPanelAlignerDlg_10=Panel Mark 보정
+TeachPanelAlignerDlg_11=기타 보정값
+TeachPanelAlignerDlg_12=현재 위치
+TeachPanelAlignerDlg_13=차이값
+TeachPanelAlignerDlg_14=목표위치로@@이동
+TeachPanelAlignerDlg_15=목표위치를@@현재값으로
+TeachPanelAlignerDlg_16=Plate 부상@@On/Off
+TeachPanelAlignerDlg_17=Plate Vacuum@@On/Off
+TeachPanelAlignerDlg_18=Teaching유닛변경
+TeachPanelAlignerDlg_19=저장
+TeachPanelAlignerDlg_20=Exit
+
+
+// TeachPanelAlignerOffsetDlg.cpp
+TeachPanelAlignerOffsetDlg_1=Panel Aligner Offset 좌표 설정
+TeachPanelAlignerOffsetDlg_2=X 축
+TeachPanelAlignerOffsetDlg_3=Y 축
+TeachPanelAlignerOffsetDlg_4=T 축
+TeachPanelAlignerOffsetDlg_5=이전
+TeachPanelAlignerOffsetDlg_6=다음
+TeachPanelAlignerOffsetDlg_7=일괄입력
+TeachPanelAlignerOffsetDlg_8=저장
+TeachPanelAlignerOffsetDlg_9=나가기
+//TeachPanelTransferDlg.cpp
+TeachPanelTransferDlg_1=Jog 축 변경
+TeachPanelTransferDlg_2=X축
+TeachPanelTransferDlg_3=목표 위치
+TeachPanelTransferDlg_4=고정 좌표
+TeachPanelTransferDlg_5=모델 좌표
+TeachPanelTransferDlg_6=Offset 좌표
+TeachPanelTransferDlg_7=현재 위치
+TeachPanelTransferDlg_8=차이값
+TeachPanelTransferDlg_9=목표위치로@@이동
+TeachPanelTransferDlg_10=목표위치를@@현재값으로
+TeachPanelTransferDlg_11=저장
+TeachPanelTransferDlg_12=나가기
+
+// TeachPressDlg.cpp
+TeachPressDlg_1=Tab Press1 Z 고정좌표 Teaching
+TeachPressDlg_2=Tab Press2 Z 고정좌표 Teaching
+TeachPressDlg_3=축
+TeachPressDlg_4=Z 축
+TeachPressDlg_5=목표 위치
+TeachPressDlg_6=고정 좌표
+TeachPressDlg_7=Offset 좌표
+TeachPressDlg_8=현재 위치
+TeachPressDlg_9=차이값
+TeachPressDlg_10=목표 위치로@@이동
+TeachPressDlg_11=목표 위치를@@현재값으로
+TeachPressDlg_12=저장
+TeachPressDlg_13=나가기
+
+
+// TeachSupplierDlg.cpp
+TeachSupplierDlg_1=Tab Supplier1 Y 고정좌표 Teaching
+TeachSupplierDlg_2=Tab Supplier2 Y 고정좌표 Teaching
+TeachSupplierDlg_3=축
+TeachSupplierDlg_4=Y 축
+TeachSupplierDlg_5=목표 위치
+TeachSupplierDlg_6=고정 좌표
+TeachSupplierDlg_7=Offset 좌표
+TeachSupplierDlg_8=현재 위치
+TeachSupplierDlg_9=차이값
+TeachSupplierDlg_10=목표 위치로@@이동
+TeachSupplierDlg_11=목표 위치를@@현재값으로
+TeachSupplierDlg_12=저장
+TeachSupplierDlg_13=나가기
+
+// TeachMoldPinDlg.cpp
+TeachMoldPinDlg_1=Mold1 Pin Z 고정좌표 Teaching
+TeachMoldPinDlg_2=Mold2 Pin Z 고정좌표 Teaching
+TeachMoldPinDlg_3=축
+TeachMoldPinDlg_4=Z 축
+TeachMoldPinDlg_5=목표 위치
+TeachMoldPinDlg_6=고정 좌표
+TeachMoldPinDlg_7=Offset 좌표
+TeachMoldPinDlg_8=현재 위치
+TeachMoldPinDlg_9=차이값
+TeachMoldPinDlg_10=목표 위치로@@이동
+TeachMoldPinDlg_11=목표 위치를@@현재값으로
+TeachMoldPinDlg_12=저장
+TeachMoldPinDlg_13=나가기
+
+// TeachTabAlignDlg.cpp
+TeachTabAlignDlg_1=TabAligner 모델좌표 Teaching
+TeachTabAlignDlg_2=TabAligner 고정좌표 Teaching
+TeachTabAlignDlg_3=축
+TeachTabAlignDlg_4=목표 위치
+TeachTabAlignDlg_5=고정 좌표
+TeachTabAlignDlg_6=모델 좌표
+TeachTabAlignDlg_7=Offset 좌표
+TeachTabAlignDlg_8=현재 위치
+TeachTabAlignDlg_9=차이값
+TeachTabAlignDlg_10=TabAligner 번호 선택
+TeachTabAlignDlg_11=목표 위치로@@이동
+TeachTabAlignDlg_12=목표 위치를@@현재값으로
+TeachTabAlignDlg_13=저장
+TeachTabAlignDlg_14=나가기
+
+// TeachTabMounterDlg.cpp
+TeachTabMounterDlg_1=TabMounter 모델좌표 Teaching
+TeachTabMounterDlg_2=TabMounter 고정좌표 Teaching
+TeachTabMounterDlg_3=축 변경
+TeachTabMounterDlg_4=목표 위치
+TeachTabMounterDlg_5=고정 좌표
+TeachTabMounterDlg_6=모델 좌표
+TeachTabMounterDlg_7=Offset 좌표
+TeachTabMounterDlg_8=현재 위치
+TeachTabMounterDlg_9=차이값
+TeachTabMounterDlg_10=TabMounter 번호 선택
+TeachTabMounterDlg_11=목표 위치로@@이동
+TeachTabMounterDlg_12=목표 위치를@@현재값으로
+TeachTabMounterDlg_13=원점복귀 Offset 얻기
+TeachTabMounterDlg_14=저장
+TeachTabMounterDlg_15=나가기
+TeachTabMounterDlg_16=이동 위치의 Tab 번호
+
+
+// DlgViewWorkSchedule.cpp
+DlgViewWorkSchedule_1=나가기
+
+[SUB_DLG]
+//CommonErrMsgDlg.cpp
+CommonErrMsgDlg_1=공정
+CommonErrMsgDlg_2=유닛
+CommonErrMsgDlg_3=에러 메세지
+CommonErrMsgDlg_4=조치 방법
+CommonErrMsgDlg_5=에러 발생 정보
+CommonErrMsgDlg_6=확인
+CommonErrMsgDlg_7=에러 발생 정보
+CommonErrMsgDlg_8=경고음 끄기
+
+
+//CommonEStopNotifyDlg.cpp
+CommonEStopNotifyDlg_1=비상 정지 경고
+
+//CommonGetNumDlg.cpp
+CommonGetNumDlg_1=현재 값
+CommonGetNumDlg_2=적용 값
+
+//CommonSelectUserGroupDlg.cpp
+CommonSelectUserGroupDlg_1=암호변경 및 저장
+CommonSelectUserGroupDlg_2=Maker
+CommonSelectUserGroupDlg_3=Engineer
+CommonSelectUserGroupDlg_4=Operator
+CommonSelectUserGroupDlg_5= 로 Log in 되었습니다.
+
+// LogConfigDlg.cpp
+LogConfigDlg_1=나가기
+LogConfigDlg_2=저장
+LogConfigDlg_3=Tact Time
+LogConfigDlg_4=에러
+LogConfigDlg_5=경고
+LogConfigDlg_6=정상
+LogConfigDlg_7=Eq Tact Time
+
+// LogFileSelectDlg.cpp
+LogFileSelectDlg_1=	나가기
+LogFileSelectDlg_2=	위
+LogFileSelectDlg_3=	아래
+LogFileSelectDlg_4=페이지 위
+LogFileSelectDlg_5=	페이지 아래
+LogFileSelectDlg_6=로그 파일 리스트
+
+//LogMainForm.cpp
+LogMainForm_1=선택된 로그파일
+LogMainForm_2=로그 데이터 설정
+
+//VisionCalibDlg.cpp	
+VisionCalibDlg_1=고정좌표 얻기 (Panel Aligner 위치 Data)
+VisionCalibDlg_2=TabAlign Camera 간 거리 얻기
+VisionCalibDlg_3=Prism 사용 Camera Vision 중심 간 거리 얻기
+VisionCalibDlg_4=Inspection Camera Vision 중심 간 거리 얻기
+VisionCalibDlg_5=Inspection Camera 가변 길이 측정
+VisionCalibDlg_6=Live 영상
+VisionCalibDlg_7=저장
+VisionCalibDlg_8=나가기
+VisionCalibDlg_9=TabAlign Camera Vision 중심 간 거리 얻기
+VisionCalibDlg_10=Fixed coordinate@@FrontCarrier
+VisionCalibDlg_11=Fixed coordinate@@RearCarrier
+VisionCalibDlg_12=고정좌표 얻기 (Tab Pre Align Camera)
+
+
+//VisionIlluminationDlg.cpp
+VisionIlluminationDlg_1=측광
+VisionIlluminationDlg_2=동축
+
+//VisionMonitorDlg.cpp	
+VisionMonitorDlg_1=나가기
+VisionMonitorDlg_2=저장
+VisionMonitorDlg_3=Mark@@보기
+VisionMonitorDlg_4=Mark@@삭제
+VisionMonitorDlg_5=Mark@@생성
+VisionMonitorDlg_6=실시간@@영상
+VisionMonitorDlg_7=정지@@영상
+VisionMonitorDlg_8=영역@@검색
+VisionMonitorDlg_9=영상@@불러오기
+VisionMonitorDlg_10=영상@@Capture
+VisionMonitorDlg_11=기준선@@설정
+VisionMonitorDlg_12=기준선@@해제
+
+//VisionOptionDlg.cpp	
+VisionOptionDlg_1=나가기
+VisionOptionDlg_2=저장
+VisionOptionDlg_3=검색 방향
+VisionOptionDlg_4=검색 색상
+VisionOptionDlg_5=Threshold 값
+VisionOptionDlg_6=ACF 회수부 장착
+VisionOptionDlg_7=조명
+VisionOptionDlg_8=측광
+VisionOptionDlg_9=동축
+
+//VisionSearchAreaDlg.cpp
+VisionSearchAreaDlg_1=저장
+VisionSearchAreaDlg_2=나가기
+VisionSearchAreaDlg_3=X 중심
+VisionSearchAreaDlg_4=Y 중심
+VisionSearchAreaDlg_5=너비
+VisionSearchAreaDlg_6=높이
+VisionSearchAreaDlg_7=Mark 이름
+
+//VisionBlobThresholdDlg.cpp
+VisionBlobThresholdDlg_1=저장
+VisionBlobThresholdDlg_2=나가기
+
+[MY_MESSAGE_BOX]
+//MPanelData.cpp, MPreBonderData.cpp, MProductInfoData.cpp, MSystemData.cpp
+//MTabData.cpp, MTabOffsetData.cpp, MTeachingPosData.cpp (10000)
+Message_10000=Back Up File을 만드는데 실패 했습니다. 계속 진행 하겠습니까?
+
+//MTowerLampData.cpp
+Message_15001 = Can't read data of Use_RedLamp_NomalRun  
+Message_15003 = Can't read data of Use_RedLamp_StepStop
+Message_15005 = Can't read data of Use_RedLamp_ErrorStop
+Message_15007 = Can't read data of Use_RedLamp_PanelEmpty
+Message_15009 = Can't read data of Use_RedLamp_MaterialChange
+Message_15010 = Can't read data of UseRedLamp_OPCall
+Message_15011 = Can't read data of Use_YellowLamp_NomalRun
+Message_15013 = Can't read data of Use_YellowLamp_StepStop
+Message_15015 = Can't read data of Use_YellowLamp_ErrorStop
+Message_15017 = Can't read data of Use_YellowLamp_PanelEmpty
+Message_15019 = Can't read data of Use_YellowLamp_MaterialChange
+Message_15020 = Can't read data of UseYellowLamp_OPCall
+Message_15021 = Can't read data of Use_GreenLamp_NomalRun
+Message_15023 = Can't read data of Use_GreenLamp_StepStop
+Message_15025 = Can't read data of Use_GreenLamp_ErrorStop
+Message_15027 = Can't read data of Use_GreenLamp_PanelEmpty
+Message_15029 = Can't read data of Use_GreenLamp_MaterialChange
+Message_15030 = Can't read data of UseGreenLamp_OPCall
+Message_15031 = Can't read data of Use_Buzzer_NomalRun
+Message_15032 = Can't read data of Use_Buzzer_StepStop
+Message_15033 = Can't read data of Use_Buzzer_ErrorStop
+Message_15034 = Can't read data of Use_Buzzer_PanelEmpty
+Message_15035 = Can't read data of Use_Buzzer_MaterialChange
+Message_15036 = Can't read data of UseBuzzer_OPCall
+Message_15037 = Can't read data of Use_StartLamp_NomalRun
+Message_15038 = Can't read data of Use_StartLamp_StepStop
+Message_15039 = Can't read data of Use_StartLamp_ErrorStop
+Message_15040 = Can't read data of Use_StartLamp_PanelEmpty
+Message_15041 = Can't read data of Use_StartLamp_MaterialChange
+Message_15042 = Can't read data of UseStartLamp_OPCall
+Message_15043 = Can't read data of Use_StopLamp_NomalRun
+Message_15044 = Can't read data of Use_StopLamp_StepStop
+Message_15045 = Can't read data of Use_StopLamp_ErrorStop
+Message_15046 = Can't read data of Use_StopLamp_PanelEmpty
+Message_15047 = Can't read data of Use_StopLamp_MaterialChange
+Message_15048 = Can't read data of UseStopLamp_OPCall
+
+
+Message_15049 = Can't Write data of Use_RedLamp_NomalRun  
+Message_15050 = Can't Write data of Use_RedLamp_StepStop
+Message_15051 = Can't Write data of Use_RedLamp_ErrorStopp
+Message_15052 = Can't Write data of Use_RedLamp_PanelEmptyty
+Message_15053 = Can't Write data of Use_RedLamp_MaterialChangeChange
+Message_15054 = Can't Write data of UseRedLamp_OPCall
+Message_15055 = Can't Write data of Use_YellowLamp_NomalRunRun
+Message_15056 = Can't Write data of Use_YellowLamp_StepStop
+Message_15057 = Can't Write data of Use_YellowLamp_ErrorStop
+Message_15058 = Can't Write data of Use_YellowLamp_PanelEmpty
+Message_15059 = Can't Write data of Use_YellowLamp_MaterialChang
+Message_15060 = Can't Write data of UseYellowLamp_OPCall
+Message_15061 = Can't Write data of Use_GreenLamp_NomalRun
+Message_15062 = Can't Write data of Use_GreenLamp_StepStop
+Message_15063 = Can't Write data of Use_GreenLamp_ErrorStop
+Message_15064 = Can't Write data of Use_GreenLamp_PanelEmpty
+Message_15065 = Can't Write data of Use_GreenLamp_MaterialChange
+Message_15066 = Can't Write data of UseGreenLamp_OPCall
+Message_15067 = Can't Write data of Use_Buzzer_NomalRun
+Message_15068 = Can't Write data of Use_Buzzer_StepStop
+Message_15069 = Can't Write data of Use_Buzzer_ErrorStop
+Message_15070 = Can't Write data of Use_Buzzer_PanelEmpty
+Message_15071 = Can't Write data of Use_Buzzer_MaterialChange
+Message_15072 = Can't Write data of UseBuzzer_OPCall
+Message_15073 = Can't Write data of Use_StartLamp_NomalRun
+Message_15074 = Can't Write data of Use_StartLamp_StepStop
+Message_15075 = Can't Write data of Use_StartLamp_ErrorStop
+Message_15076 = Can't Write data of Use_StartLamp_PanelEmpty
+Message_15077 = Can't Write data of Use_StartLamp_MaterialChange
+Message_15078 = Can't Write data of UseStartLamp_OPCall
+Message_15079 = Can't Write data of Use_StopLamp_NomalRun
+Message_15080 = Can't Write data of Use_StopLamp_StepStop
+Message_15081 = Can't Write data of Use_StopLamp_ErrorStop
+Message_15082 = Can't Write data of Use_StopLamp_PanelEmpty
+Message_15083 = Can't Write data of Use_StopLamp_MaterialChange
+Message_15084 = Can't Write data of UseStopLamp_OPCall
+
+
+
+
+// AutoMainForm.cpp (20000)
+Message_20000=Pass Run Mode 로 진행합니다. 계속 진행하시겠습니까?
+Message_20001=초기화를 진행하시겠습니까?
+Message_20002=부상 Plate 가 Panel 을 흡착하고 있습니다. Panel Aligner 로 Panel 을 흡착한 후에 초기화를 진행하세요.
+Message_20003=초기화를 진행하시겠습니까?
+Message_20004=새로운 Reel을 장착하고, TabIC 흡착 가능한 상태로 하였습니까?
+Message_20005=흡착이 완료 되었습니까?
+Message_20006=양면테이프를 붙치고, TabIC를 Cutting 하세요. New Reel Vacuum은 항상 On 이어야 합니다.
+Message_20007=TabMounter 축 작업자 간섭 위치 회피 완료.
+Message_20008=Source Inspection Camera : Load Conveyor 착탈 과정에서 발생할 수 있는 충돌로부터 안전한 위치로 이동 완료.
+Message_20009=설비가 흡착하고 있는 TabIC 를 모두 버리시겠습니까?
+Message_20010=사용자 요청에 의해 작업을 중단함.
+Message_20011=설비가 흡착하고 있는 TabIC 가 없음.
+Message_20012=PC 오동작 중. 프로그램 종료 후 PC Rebooting 해 주세요.
+Message_20013=TabIC Remove 작업 완료.
+Message_20014=설비 내에 Panel 이 있습니다. 이 Panel 의 작업방식을 선택해 주세요.
+Message_20015=TabMounter Load 위치 이동 완료.
+Message_20016=Feeder 1의 Mold Count를 초기화 하시겠습니까?
+Message_20017=Feeder 2의 Mold Count를 초기화 하시겠습니까?
+Message_20018=현재 설비 All Feeder 사용이 아닙니다. 계속 진행 하시겠습니까?
+Message_20019=현재 설비 1Feeder AllMount 사용 Mode입니다. 계속 진행 하시겠습니까?
+Message_20020=Bonding After Log기능이 켜져 있습니다. 계속 진행하시겠습니까?
+Message_20021=이중 부착 검사중 실패하였습니다. 이중 부착 재검사를 합니다.
+
+// AutoMaterialInfoDlg.cpp (20100)
+Message_20100=Feeder1 사용 Reel 실물이 없으므로 Data 제거 하였습니다.
+Message_20101=Feeder2 사용 Reel 실물이 없으므로 Data 제거 하였습니다.
+Message_20102=Feeder1 대기 Reel 실물이 없으므로 Data 제거 하였습니다.
+Message_20103=Feeder2 대기 Reel 실물이 없으므로 Data 제거 하였습니다.
+Message_20104=Feeder1 Zig 실물이 없으므로 Data 제거 하였습니다.
+Message_20105=Feeder2 Zig 실물이 없으므로 Data 제거 하였습니다.
+
+// AutoMotorOriginDlg.cpp (20200)
+Message_20200=선택한 축이 없습니다.
+Message_20201=원점복귀가 완료되었습니다.
+Message_20202=원점 복귀 중 비상정지에 의해 정지 되었습니다.
+Message_20203=원점 복귀 중 사용자에 의해 정지 되었습니다.
+Message_20204=원점 복귀 중 AmpFault 상태가 되었습니다.
+Message_20205=원점 복귀 중 설비 I/F 신호에 의해 정지 되었습니다.
+Message_20206=원점 복귀 중 제한 시간 초과 발생.
+Message_20207=Sercos Phase 4 아님.
+Message_20208=원점 복귀 Thread 이상 발생.
+Message_20209=원점복귀가 실패했습니다.
+Message_20210=선택한 축이 없습니다.
+Message_20211=선택한 축의 Servo를 On 하시겠습니까?
+Message_20212=선택한 축을 원점복귀 하시겠습니까?
+Message_20213=선택한 축이 없습니다.
+Message_20214=선택한 축의 Servo를 Off 하시겠습니까?
+Message_20215=MMC2 초기화(Phase4)를 하시겠습니까?
+Message_20216=초기화가 완료되었습니다.
+Message_20217=선택한 축을 강제 원점복귀 하시겠습니까?
+Message_20218=설비 Door Open 상태로 원점 복귀 할 수 없습니다.
+Message_20219=NMC 초기화를 하시겠습니까?
+Message_20220=초기화가 완료되었습니다.
+Message_20221=선택한 축의 Servo Fault Reset를 하시겠습니까?
+
+
+// AutoPanelMarkManualSearchDlg.cpp (20300)
+Message_20300=PanelAligner 축이 정상 상태가 아니므로, 자동운전을 정지합니다.
+
+// AutoScrapGlassDlg.cpp (20400)
+Message_20400=입력된 LOT ID, Device ID, Batch ID를 적용 하시겠습니까?
+Message_20401=Panel 정보 저장이 완료되었습니다. 계속해서 자동운전 초기화를 진행합니다. Panel 투입을 확인하고 계속 진행하세요.
+Message_20402=Panel Unscrap 작업이 완료되었습니다.
+Message_20403=PanelTransfer Center 에 있는 Panel 에 대한 정보를 삭제하시겠습니까?
+Message_20404=Panel Scrap 완료.
+Message_20405=Load Conveyor에 Panel이 감지 되지 않습니다. Unscrap 작업을 계속 하시겠습니까?
+Message_20406=Panel Transfer 에 있는 Panel 에 대한 정보를 삭제하시겠습니까?
+Message_20407=Door Sensor 이상.
+Message_20408=Panel Scrap 완료.
+Message_20409=Panel Transfer 에 Panel 이 흡착되어 있지 않습니다. Unscrap 작업을 계속 하시겠습니까?
+Message_20410=Panel Aligner 에 있는 Panel 에 대한 정보를 삭제하시겠습니까?
+Message_20411=Door Sensor 이상.
+Message_20412=Panel Scrap 완료.
+Message_20413=Panel Aligner 에 Panel 이 흡착되어 있지 않습니다. Unscrap 작업을 계속 하시겠습니까?
+Message_20414=Unload Conveyor 에 있는 Panel 에 대한 정보를 삭제하시겠습니까?
+Message_20415=Panel Scrap 완료.
+Message_20416=Unload Conveyor 에 Panel 이 감지되지 않습니다. Unscrap 작업을 계속 하시겠습니까?
+Message_20417=Turn Handler 에 있는 Panel 에 대한 정보를 삭제하시겠습니까?
+Message_20414=Transfer Out 에 있는 Panel 에 대한 정보를 삭제하시겠습니까?
+
+// AutoTabICInfoDlg.cpp (20500)
+Message_20500=자재 상태가 Enable이나 Run상태입니다. 먼저 자재를 제거해 주세요
+Message_20501=TabIC 정보를 입력하시겠습니까?
+Message_20502=작업변을 선택해 주세요
+Message_20503=작업변 정보가 설정된 값과 다릅니다. 확인 후 다시 진행해 주세요.
+Message_20504=입력방법을 선택하세요
+Message_20505=입력 제한시간을 초과하였습니다. 수동으로 입력하시겠습니까?
+Message_20506=Data 입력에 성공하였습니다.
+Message_20507=Data 입력에 실패했습니다. 처음부터 다시 시작하세요.
+Message_20508=TabIC 정보를 현재 Feeder에 적용하시겠습니까?
+Message_20509=현재 입력된 TabIC 총 수량 값을 사용하시겠습니까?
+Message_20510=총 수량 입력에 실패하였습니다.
+Message_20511=ZIG 정보를 입력하시겠습니까?
+Message_20512=현재 생산계획이 비어 있습니다. 생산계획 요청후 다시 시작하세요.
+Message_20513=현재 자재 정보가 비어 있습니다. 자재 정보 요청후 다시 시작하세요.
+Message_20514=현재 등록된 자재 정보중 MCode가 일치하는 자재가 없습니다. 사용할수 없는 자재입니다.
+
+
+// AutoZigInfoDlg.cpp (20600)
+Message_20600=금형 자재 상태가 Run 혹은 Enable입니다. 먼저 기존 자재를 제거해 주세요.
+Message_20601=ZIG 정보를 적용하시겠습니까?
+Message_20602=금형 Press가 Down 위치이므로 읽을 수 없습니다.
+Message_20603=금형 RFID 정보 읽을 수 없습니다.
+Message_20604=금형정보를 직접 입력하시겠습니까?
+Message_20605=금형 ID를 입력하세요
+
+//ManualConveyorDlg.cpp (30000)
+Message_30000=Load Conveyor Stopper를 Up하시겠습니까?
+Message_30001=Load Conveyor Stopper를 Down하시겠습니까?
+Message_30002=Load Conveyor 회전을 정지 하시겠습니까?
+Message_30003=Unload Conveyor Inverter Fault를 Reset 하시겠습니까?
+Message_30004=Load Conveyor Motor를 전진 회전 하시겠습니까?
+Message_30005=Timer 초과
+Message_30006=Load Conveyor Motor를 후진 회전 하시겠습니까?
+Message_30007=Unload Conveyor Motor를 전진 회전 하시겠습니까?
+Message_30008=Timer 초과
+Message_30009=Timer 초과
+Message_30010=Unload Conveyor Motor를 후진 회전 하시겠습니까?
+Message_30011=Timer 초과
+Message_30012=Unload Conveyor Stopper를 Down하시겠습니까?
+Message_30013=Load Conveyor Inverter Fault를 Reset 하시겠습니까?
+Message_30014=Load Conveyor Panel Pre Alinger 를 Backward하시겠습니까?
+Message_30015=Load Conveyor Panel Pre Alinger 를 Forward하시겠습니까?
+
+// ManualIOMonitoringDlg.cpp (30100)
+Message_30100=IO 출력 동작이 실패했습니다.
+
+// ManualLimitSensorDlg.cpp (30200)
+Message_30200=선택한 축의 Servo를 On 하시겠습니까?
+Message_30201=선택한 축의 Servo를 Off 하시겠습니까?
+Message_30202=모든 축의 Servo를 On 하시겠습니까?
+Message_30203=모든 축의 Servo를 Off 하시겠습니까?
+
+// ManualMainForm.cpp (30300)
+Message_30300=작업변을 선택하세요.
+Message_30301=작업 수행 불가합니다. [해당 작업변 사용하지 않음.]
+Message_30302=Tab 번호 입력 오류
+Message_30303=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+Message_30304=TabIC 를 TabCarrier 로 공급하시겠습니까?
+Message_30305=선택된 Tab 번호는 작업하지 않는 Tab 번호임.
+Message_30306=사용자 요청에 의해 작업을 중단함.
+Message_30307=TabCarrier TabIC Loading 작업 완료
+Message_30308=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+Message_30309=TabIC 를 TabMounter 로 공급하시겠습니까?
+Message_30310=선택된 Tab 번호는 작업하지 않는 Tab 번호임.
+Message_30311=사용자 요청에 의해 작업을 중단함.
+Message_30312=사용자 요청에 의해 작업을 중단함.
+Message_30313=TabMounter TabIC Load 작업 완료
+Message_30314=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+Message_30315=TabIC Pre-Align 동작을 진행하시겠습니까?
+Message_30316=선택된 Tab 번호는 작업하지 않는 Tab 번호임.
+Message_30317=사용자 요청에 의해 작업을 중단함.
+Message_30318=사용자 요청에 의해 작업을 중단함.
+Message_30319=작업 완료
+Message_30320=Backup이 Down 상태가 아닙니다.
+Message_30321=Front Backup이 Down 상태가 아닙니다.
+Message_30322=Rear Backup이 Down 상태가 아닙니다.
+Message_30323=Tab Mounter가 Up 상태가 아닙니다.
+Message_30324=Panel Transfer에 Panel이 존재합니다.
+Message_30325=Panel Aligner에 Panel이 존재합니다.
+Message_30326=Panel Aligner가 Down 상태가 아닙니다.
+Message_30327=Panel Transfer가 Down 상태가 아닙니다.
+Message_30328=Panel Transfer Stopper가 Down 상태가 아닙니다.
+Message_30329=Panel이 Load Conveyor Stopper와 너무 가깝습니다. 정지센서에 감지되지 않도록 뒤로 이동해 주세요.
+Message_30330=Load Conveyor에서 Panel을 투입하시겠습니까?
+Message_30331=10초 동안 Load Conveyor 감속 센서에 Panel 감지가 되지 않았습니다.
+Message_30332=10초 동안 Load Conveyor 감속 센서에 Panel 감지가 되지 않았습니다.
+Message_30333=10초 동안 Panel Transfer 센서에 Panel 감지가 되지 않았습니다.
+Message_30334=Panel Transfer에 Panel이 이미 흡착되어 있습니다.
+Message_30335=Panel Align 동작을 진행하시겠습니까?
+Message_30336=Unload Conveyor로 Panel을 배출하시겠습니까?
+Message_30337=20초 동안 Unload Conveyor 센서에 Panel 감지가 되지 않았습니다.
+Message_30338=Panel 투입, Align, 배출 동작을 완료하였습니다.
+Message_30339=TabIC 를 버리시겠습니까?
+Message_30340=작업변을 선택하세요.
+Message_30341=작업 수행 불가합니다. [해당 작업변 사용하지 않음.]
+Message_30342=사용자 요청에 의해 작업을 중단함.
+Message_30343=TabIC 제거 작업 완료
+Message_30344=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+Message_30345=Inspection 작업을 진행하시겠습니까?
+Message_30346=Panel 의 현재 위치를 유지하겠습니까? [아니오]를 선택하면 Panel 을 Inspection 위치로 이동합니다.
+Message_30347=Panel Align이 수행되지 않았습니다.
+Message_30348=TabIC Prealign 작업이 필요합니까?
+Message_30349=TabIC Prealign 작업을 수행합니다.
+Message_30350=작업 완료
+Message_30351=선택된 Tab 번호는 작업하지 않는 Tab 번호임.
+Message_30352=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+Message_30353=TabIC Mount 작업을 진행하시겠습니까?
+Message_30354=선택된 Tab 번호는 작업하지 않는 Tab 번호임.
+Message_30355=Panel Aligner가 Panel을 흡착하고 있지 않습니다.
+Message_30356=Panel Align 이 수행되지 않았습니다.
+Message_30357=작업 완료
+Message_30358=작업변의 TabMounter를 Load 위치로 이동 시키겠습니까?
+Message_30359=작업변을 선택하세요.
+Message_30360=Load 위치로 이동 작업 완료
+Message_30361=작업변의 TabMounter를 Ready 위치로 이동 시키겠습니까?
+Message_30362=작업변을 선택하세요.
+Message_30363=Ready 위치로 이동 작업 완료
+Message_30364=Inspection After Mount 작업을 진행하시겠습니까?
+Message_30365=Panel 의 현재 위치를 유지하겠습니까? [아니오]를 선택하면 Panel 을 Mount 위치로 이동합니다.
+Message_30366=Panel Align이 수행되지 않았습니다.
+Message_30367=작업 완료
+Message_30368=Reel Auto Change(Front) 작업을 진행하시겠습니까?
+Message_30369=Auto Change 작업 완료
+Message_30370=Reel Auto Change(Rear) 작업을 진행하시겠습니까?
+Message_30371=Auto Change 작업 완료
+Message_30372=Setup 기간 중에는 AutoHoming 동작을 생략합니다.
+Message_30373=Heater Power Reset 출력 점멸 완료.
+Message_30374=MMC2 초기화(Phase4)를 하시겠습니까?
+Message_30375=초기화가 완료되었습니다.
+Message_30376=Dry Run Mode 설정 상태이므로 일련 동작 수행 불가.
+Message_30377=타발 정도 확인 작업을 진행하시겠습니까?
+Message_30378=TabIC Prealign 작업이 필요합니까?
+Message_30379=TabIC Prealign 작업을 수행합니다.
+Message_30380=작업 완료
+Message_30381=Mount를 측정 가능한 위치로 이동시키세요.
+Message_30382=Mount의 번호를 입력하세요.
+Message_30383=Camera 번호를 입력하세요.
+Message_30384=Gage 추가..
+Message_30385=완료
+Message_30386=Tab Carrier Load Offset 자동 얻기를 실행하시겠습니까?
+Message_30387=Tab Carrier Load Offset 자동 얻기 값을 저장하시겠습니까?
+Message_30389=Tab Carrier TabIC Load를 하시겠습니까?
+Message_30390=TabIC 타발 TEST를 하시겠습니까?
+Message_30391=잘못된 번호입니다.
+Message_30392=선택한 TabCarrier들을 Ready 위치로 이동 시키겠습니까?
+Message_30393=선택한 TabCarrier들을 Unloading 위치로 이동 시키겠습니까?
+Message_30394=선택한 위치로 이동 작업 완료
+Message_30395=정지 버튼으로 동작 중지함...
+Message_30396=TabMounter TabIC Loading작업(TabCarrier Prealign포함)을 하겠습니까?
+Message_30397=선택한 TabCarrier들을 Escape 위치로 이동 시키겠습니까?
+Message_30398=Front TabIC버리기 작업을 진행하겠습니까?
+Message_30399=Rear TabIC버리기 작업을 진행하겠습니까?
+Message_30700=전면부 Gantry를 Clean 위치로 이동 하시겠습니까?
+Message_30701=전면부 Gantry를 Clean 위치로 이동 하시겠습니까?
+
+// ManualPanelAlignerDlg.cpp
+Message_30400=Panel Transfer Stopper를 Up하시겠습니까?
+Message_30401=Panel Transfer Stopper를 Down하시겠습니까?
+Message_30402=Vacuum 시간이 20초를 초과하였습니다.
+Message_30403=Panel이 흡착되어 있습니다.
+Message_30404=Panel회전 실린더를 Turn하겠습니까?
+Message_30405=Panel회전 실린더를 Return하겠습니까?
+
+// ManualTabCarrierDlg.cpp
+Message_30500=Carrier PickUp Unit Up/Down 실린더를 Up하시겠습니까?
+Message_30501=Carrier PickUp Unit Up/Down 실린더를 Down하시겠습니까?
+Message_30502=Carrier PickUp Unit를 CW로 이동하시겠습니까?
+Message_30503=Carrier PickUp Unit를 CCW로 이동하시겠습니까?
+Message_30504=Carrier 7Pitch Unit를 Forward로 이동하시겠습니까?
+Message_30505=Carrier 7Pitch Unit를 Backward로 이동하시겠습니까?
+Message_30506=Carrier PickUp Unit Up/Down 실린더를 Forward하시겠습니까?
+Message_30507=Carrier PickUp Unit Up/Down 실린더를 Backward하시겠습니까?
+
+// ManualTabFeederDlg.cpp (30600)
+Message_30600=Press Reel을 Up하시겠습니까?
+Message_30601=Press Reel을 Down하시겠습니까?
+Message_30602=Reel Clamp를 Up 하시겠습니까?
+Message_30603=Reel Clamp를 Down 하시겠습니까?
+Message_30604=Supplier Chuck를 Lock 하시겠습니까?
+Message_30605=Supplier Chuck를 Unlock 하시겠습니까?
+Message_30606=Reel Recovery을 Forward하시겠습니까?
+Message_30607=Reel Recovery을 Backward하시겠습니까?
+Message_30608=Reel Recovery을 Up하시겠습니까?
+Message_30609=Reel Recovery을 Down하시겠습니까?
+Message_30610=Cutting Support Left을 Up하시겠습니까?
+Message_30611=Cutting Support Left을 Down하시겠습니까?
+Message_30612=Cutting Support Right을 Up하시겠습니까?
+Message_30613=Cutting Support Right을 Down하시겠습니까?
+Message_30614=Feeder Sprocket을 Open하시겠습니까?
+Message_30615=Feeder Sprocket을 Close하시겠습니까?
+Message_30616=Tension Sprocket을 Open하시겠습니까?
+Message_30617=Tension Sprocket을 Close하시겠습니까?
+Message_30618=Recovery Sprocket을 Open하시겠습니까?
+Message_30619=Recovery Sprocket을 Close하시겠습니까?
+Message_30620=All Sprocket을 Open하시겠습니까?
+Message_30621=All Sprocket을 Close하시겠습니까?
+Message_30622=Attach Press을 Up하시겠습니까?
+Message_30623=Attach Press을 Down하시겠습니까?
+Message_30624=Attach Press을 Open하시겠습니까?
+Message_30625=Attach Reel을 Cutting하시겠습니까?
+Message_30626=Attach Reel을 Forward하시겠습니까?
+Message_30627=Attach Reel을 Back하시겠습니까?
+Message_30628=Sprocket1 Home잡는 동작을 진행하시겠습니까?
+Message_30629=Press, Badtab Detector, Sprocket이 모두 원점복귀되어야 합니다.
+Message_30630=Sprocket2 Home 잡는 동작을 진행하시겠습니까?
+Message_30631=이미 Home 동작이 완료 되었습니다. 다시, 강제 Sprocket2 Home 잡는 동작을 진행하시겠습니까?
+Message_30632=회수부 Motor를 동작 시키시겠습니까?
+Message_30633=Recovery Motor를 정지 시키시겠습니까?
+Message_30634=Recovery Motor를 정지했습니다.
+Message_30635=Protect Reel Motor를 동작 시키시겠습니까?
+Message_30636=Protect Reel Reverse Motor를 동작 시키시겠습니까?
+Message_30637=Protect Reel Motor를 정지 시키시겠습니까?
+Message_30638=Supplier Tension Motor를 정지 시키시겠습니까?"
+Message_30639=Supplier Tension Motor를 동작 시키시겠습니까?
+Message_30640=Brush Motor를 동작 시키시겠습니까?
+Message_30641=Brush Motor를 정지 시키시겠습니까?
+Message_30642=TabIC 를 흡착하고 있습니다.
+Message_30643=금형 Press 작업을 진행하시겠습니까?
+Message_30644=강제 Sprocket2 Home 잡는 동작을 진행하시겠습니까?
+Message_30645=금형 제거 작업을 진행하시겠습니까?
+Message_30646=금형 제거 준비 완료.
+Message_30647=Reel 제거를 위한 일련 동작을 수행하시겠습니까?
+Message_30648=Reel 제거 작업을 진행하시겠습니까?
+Message_30649=금형 Pin축을 상승하겠습니까?
+Message_30650=금형 Pin축을 하강하겠습니까?
+Message_30651=Supplier축 Servo On하시겠습니까?
+Message_30652=Supplier축 Servo Off하시겠습니까?
+Message_30653=Sprocket1축 Clutch를 On하시겠습니까?
+Message_30654=Sprocket1축 Clutch를 Off하시겠습니까?
+
+
+//VisionCalibDlg.cpp
+Message_36512 = Do you want to delete selected Mark?
+// DataActuatorSettingDlg.cpp (40000)
+Message_40000=저장하시겠습니까?
+Message_40001=Tab Carrier1 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40002=Tab Carrier1 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40003=Tab Carrier1 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40004=Tab Carrier2 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40005=Tab Carrier2 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40006=Tab Carrier2 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40007=Tab Carrier3 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40008=Tab Carrier3 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40009=Tab Carrier3 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40010=Tab Carrier4 X축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40011=Tab Carrier4 Y축의 Tolerance값이 Align Tolerance보다 높습니다.
+Message_40012=Tab Carrier4 T축의 Tolerance값이 Align Tolerance보다 높습니다.
+
+// DataCommonDlg.cpp (41000)
+Message_40100=속도 모드를 선택해 주세요.
+Message_40101=변경된 Data를 저장 하시겠습니까?
+
+// DataConveyorSpeedDlg.cpp (40200)
+Message_40200=변경된 Data를 저장 하시겠습니까?
+Message_40201=Load Conveyor를 정상 속도로 정회전 시키시겠습니까?
+Message_40202=Load Conveyor를 정상 속도로 역회전 시키시겠습니까?
+Message_40203=Load Conveyor를 느린 속도로 정방향으로 이동하시겠습니까?
+Message_40204=Load Conveyor를 느린 속도로 역방향으로 이동하시겠습니까?
+Message_40205=Unload Conveyor를 정상 속도로 정회전 시키시겠습니까?
+Message_40206=Unload Conveyor를 정상 속도로 역회전 시키시겠습니까?
+Message_40207=Unload Conveyor를 느린 속도로 정회전 시키시겠습니까?
+Message_40208=Unload Conveyor를 느린 속도로 역회전 시키시겠습니까?
+Message_40209=Load Conveyor를 Panel 전달 속도로 정회전 시키시겠습니까?
+Message_40210=Load Conveyor가 정지했습니다.
+Message_40211=Unload Conveyor가 정지했습니다.
+
+// DataFuncOnOffDlg.cpp (40300)
+Message_40300=Data를 저장하시겠습니까?
+
+// DataMainForm.cpp (40400)
+Message_40400=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40401=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40402=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40403=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40404=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40405=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40406=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40407=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40408=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40409=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40410=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40411=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40412=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40413=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40414=Data Backup 을 완료했습니다.
+Message_40415=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40416=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40417=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40418=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40419=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_40420=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+
+// DataModelChangeDistDlg.cpp (40500)
+Message_40500=변경된 Data를 저장 하시겠습니까?
+Message_40501=Model Change 축의 현재 위치가 현재 작업 Model 에 대한 작업 위치가 맞습니까?
+Message_40502=Model Change 축 원점 거리를 설정할 수 없습니다.
+Message_40503=Model Change 축의 현재 위치가 Model Pos 이 아니라서, Model Change 축 원점 거리를 설정할 수 없습니다.
+Message_40504=Model Change 축 원점 거리 값과 Panel Aligner 고정좌표를 먼저 구한 후 수정해야 합니다. Model Change 축 원점 거리와 Panel Aligner 고정좌표는 구해져 있습니까?
+Message_40505=Model Change 축 원점 거리 값을 먼저 구한 후 이 작업을 수행해야 합니다. Model Change 축 원점 거리는 구해져 있습니까?
+Message_40506=Front Gantry 축의 현재 위치가 현재 작업 Model 에 대한 Mount 위치가 맞습니까?
+Message_40507=Front Gantry 축 원점과 Model Change 축 원점 간의 거리를 설정할 수 없습니다.
+Message_40508=Front Gantry 축의 현재 위치가 Mount 위치가 아니라서, Rear Gantry 축 원점과 Model Change 축 원점 간의 거리를 설정할 수 없습니다.
+Message_40509=Rear Gantry 축의 현재 위치가 현재 작업 Model 에 대한 Mount 위치가 맞습니까?
+Message_40510=Rear Gantry 축 원점과 Model Change 축 원점 간의 거리를 설정할 수 없습니다.
+Message_40511=Rear Gantry 축의 현재 위치가 Mount 위치가 아니라서, Rear Gantry 축 원점과 Model Change 축 원점 간의 거리를 설정할 수 없습니다.
+
+// DataModelDlg.cpp (40600)
+Message_40600=등록된 모델이 하나도 없습니다.
+Message_40601=현재 모델 디렉토리가 존재하지 않습니다. [
+Message_40602=같은 이름의 Model이 존재 합니다. 다른 이름으로 저장하세요?
+Message_40603=Model Directory를 생성하는데 실패 하였음.
+Message_40604=선택된 모델을 삭제하시겠습니까?
+Message_40605=현재 진행 중인 Model은 삭제 할 수 없습니다.
+Message_40606=새로운 Model을 Loading 하시겠습니까?
+Message_40607=Model Loading 작업 실패!. Data 설정을 직접 확인하시오.
+Message_40608=현재 진행 중인 Model의 Panel Data는 변경할수 없습니다.
+Message_40609=현재 진행 중인 Model의 Tab Data는 변경할수 없습니다.
+Message_40610=선택한 모델명이 비어있습니다.
+Message_40611=Reference Model이 선택되어 있지 않습니다. 
+
+
+// DataModelDlg.cpp (44000)	
+Message_44000=등록된 모델이 하나도 없습니다.
+Message_44001=같은 이름의 Model이 존재 합니다. 다른 이름으로 저장하세요?
+Message_44002=Model Directory를 생성하는데 실패 하였음.
+Message_44003=선택된 Model 을 삭제하시겠습니까?
+Message_44004=현재 진행중인 Model은 삭제 할 수 없습니다.
+Message_44005=새로운 Model을 불러오시겠습니까?
+Message_44006=Referance(Device) ID를 설정하지 않았습니다. 재설정 해주세요.
+
+
+// DataMoldInfoDlg.cpp (40700) -> 다시 시도
+Message_40700=Data 읽기 실패. 작업창을 다시 열고 재시도해 주세요.
+Message_40701=값을 잘못 입력하였습니다. [1 ~ 
+Message_40702=누적 타발 횟수는 수정하실 수 없습니다.
+Message_40703=잘못된 Item 번호임.
+
+// DataPanelAlignerDlg.cpp (40800)
+Message_40800=변경된 Data를 저장 하시겠습니까?
+
+// DataPanelDlg.cpp (40900)
+Message_40900=Data를 저장하시겠습니까?
+Message_40901=행 선택이 되지 않았습니다.
+Message_40902=행 선택이 되지 않았습니다.
+Message_40903=행 선택이 되지 않았습니다.
+Message_40904=행 선택이 되지 않았습니다.
+
+// DataTabICDlg.cpp (40950)
+Message_40950=BadTab Limit Count를 저장 하시겠습니까?
+Message_40951=변경된 Data를 저장 하시겠습니까?
+Message_40952=입력값이 작업 가능 Tab 개수를 초과함. [최대값으로 강제 설정]
+Message_40953=입력값이 작업 가능 Tab 개수를 초과함. [최대값으로 강제 설정]
+Message_40954=Xu Tab Pitch 합산값이 Xu 변 Fidu Mark 간 거리 값을 초과합니다.@@현재 Tab Data 설정값을 저장할 수 없습니다.@@Panel Data 를 수정 후, 다시 Tab Data 를 입력해 주세요.
+Message_40955=Xd Tab Pitch 합산값이 Xd 변 Fidu Mark 간 거리 값을 초과합니다.@@현재 Tab Data 설정값을 저장할 수 없습니다.@@Panel Data 를 수정 후, 다시 Tab Data 를 입력해 주세요.
+Message_40956=Yl Tab Pitch 합산값이 Yl 변 Fidu Mark 간 거리 값을 초과합니다.@@현재 Tab Data 설정값을 저장할 수 없습니다.@@Panel Data 를 수정 후, 다시 Tab Data 를 입력해 주세요.
+Message_40957=Yr Tab Pitch 합산값이 Yr 변 Fidu Mark 간 거리 값을 초과합니다.@@현재 Tab Data 설정값을 저장할 수 없습니다.@@Panel Data 를 수정 후, 다시 Tab Data 를 입력해 주세요.
+Message_40958=Yl과 Yr의 Bad Tab Count 값이 다릅니다. Yl과 Yr 의 값을 동일하게 변경해 주세요.
+
+// DataTabICOffsetDlg.cpp (41000)
+Message_41000=한번에 변경 가능한 XOffset 값은 10㎛ 보다 작아야 합니다.
+Message_41001=변경된 Data를 저장 하시겠습니까?
+Message_41002=Offset 값은 50㎛ 보다 작아야 합니다.
+Message_41003=YOffset 값은 1mm 보다 작아야 합니다.
+//Message_41003=YOffset 값은 0.2mm 보다 작아야 합니다. 그 이상의 값은 Gantry(Gate)나 Moving Stage(Source)에 티칭해 주세요.
+Message_41004=TOffset 값은 0.5(degree) 보다 작아야 합니다.
+Message_41005=YOffset 값은 0.5mm 보다 작아야 합니다. 그 이상의 값은 Gantry(Gate)나 Moving Stage(Source)에 티칭해 주세요.
+
+// DataTabMounterDlg.cpp (41100)
+Message_41100=변경된 Data를 저장 하시겠습니까?
+
+
+// Initialize 
+Message_424001 = PanelTransfer In 의 Panel 을 제거해 주세요. Panel 제거후에 확인 버튼을 눌러 주세요. 
+Message_424002 = PanelTransfer Center 의 Panel 을 제거해 주세요. Panel 제거후에 확인 버튼을 눌러 주세요. 
+Message_424003 = PanelAligner 의 Panel 을 제거해 주세요. Panel 제거후에 확인 버튼을 눌러 주세요. 
+Message_424004 = PanelTransfer Out 의 Panel 을 제거해 주세요. Panel 제거후에 확인 버튼을 눌러 주세요. 
+
+
+// TeachBadTabDetectorDlg.cpp (50000)
+Message_50000=목표위치로 이동하시겠습니까?
+Message_50001=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50002=Data를 저장하시겠습니까?
+Message_50003=Press, Badtab Detector, Sprocket이 모두 원점복귀되어야 합니다."
+Message_50004=Sprocket1의 Homing 동작을 하시겠습니까?
+Message_50005=Sprocket1(T) 조그키를 이용해서 Hole을 맞춘 후 확인을 눌러주세요.
+Message_50006=Sprocket1 Homing을 완료하였습니다.
+Message_50007=Press, Badtab Detector, Sprocket이 모두 원점복귀되어야 합니다.
+Message_50008=Sprocket2의 Homing 동작을 하시겠습니까?
+Message_50009=Sprocket2(T) 조그키를 이용해서 Hole을 맞춘 후 확인을 눌러주세요.
+Message_50010=TabIC가 Press 위치에 맞게 있습니까?", "Is the TabIC located in Press Position?
+Message_50011=BadTabDetector(X) 조그키를 이용해서 TabIC를 맞춘 후 확인을 눌러주세요.
+Message_50012=Sprocket2 Homing을 완료하였습니다.
+Message_50013=사용자 요청에 의해 작업을 중단함.
+Message_50014=사용자 요청에 의해 작업을 중단함.
+Message_50015=사용자 요청에 의해 작업을 중단함.
+Message_50016=사용자 요청에 의해 작업을 중단함.
+Message_50017=확인 작업 완료
+Message_50018=길게 타발하시려면 (+), 짧게 타발하시려면 (-)값을 넣어주세요.
+Message_50019=+1 보다 크거나 -1 보다 작습니다.
+Message_50020=Offset값을 지금 적용하시겠습니까?
+Message_50021=Offset 적용 완료.
+Message_50022=Press Reel을 Up하시겠습니까?
+Message_50023=Press Reel을 Down하시겠습니까?
+Message_50024=Reel Clamp를 Up 하시겠습니까?
+Message_50025=Reel Clamp를 Down 하시겠습니까?
+Message_50026=금형 Pin축을 상승하겠습니까?
+Message_50027=금형 Pin축을 하강하겠습니까?
+Message_50028=Press, Badtab Detector, Sprocket, MoldPin이 모두 원점복귀되어야 합니다.
+
+// TeachCameraCarrierDlg.cpp (50100)
+Message_50100=Camera Carrier 고정좌표는 Teaching 할 수 없음.
+Message_50101=Data를 저장하시겠습니까?
+Message_50102=Camera Carrier 고정좌표는 Teaching 할 수 없음.
+Message_50103=목표위치로 이동하시겠습니까?
+Message_50104=Camera Carrier 고정좌표는 Teaching 할 수 없음.
+Message_50105=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50106=Tab Mark Pos 선택 안됨.
+Message_50107=Tab Mark Pos 선택 안됨.
+Message_50108=Panel Align Cam2 Carrier 원점복귀 Offset 얻기에 Inspection Camera Carrier를 이용합니다. Inspection Camera Carrier 원점 복귀 Offset 설정이 완료되었습니까?
+Message_50109=Inspection Camera Carrier가 Panel Mark를 보고 있습니까?
+Message_50110=Inspect Cam Carrier 번호 입력 오류 발생
+Message_50111=선택된 Inspect Cam Carrier 원점 복귀 안됨.
+Message_50112=Camera Carrier 원점 복귀 안됨.
+Message_50113=Panel Align Cam2 Carrier 원점 복귀 Offset 계산 완료. 원점 복귀 완료 Flag 를 해제함.
+Message_50114=CameraCarrier 원점복귀 Offset 얻기에 4번 TabMounter 를 이용합니다.\r\n원점복귀 Offset얻기 동작을 하겠습니까?
+Message_50115=TabMounter가 위치 측정이 가능한 위치입니까?
+Message_50116=TabMounter 번호 입력 오류 발생
+Message_50117=선택된 TabMounter 원점 복귀 안됨.
+Message_50118=CameraCarrier 원점 복귀 안됨.
+Message_50119=Inspection Camera Carrier를 기준 위치로 이동했습니까?
+Message_50120=Inspection Camera Carrier를 기준 위치로 이동하세요.
+Message_50121=Panel Align Cam2와 Inspection Cam 2-2 간의 기구적 거리 얻기에 Inspection Camera 2 Carrier를 이용합니다. Inspection Camera2 Carrier 원점 복귀 Offset 설정이 완료되었습니까?
+Message_50122=Inspection Camera2-2이 Panel Mark를 화면 중앙에 보고 있습니까?
+Message_50123=Jog를 움직여 Panel Align Camera 2 에 Panel Mark가 화면 중앙에 보이면 확인을 눌러주세요.
+Message_50124=Panel Align Cam 2와 Inspection Cam 2-2간의 기구적 거리 계산 완료.
+Message_50125=CameraCarrier 1번은 원점복귀 Offset 얻기를 할필요가 없습니다.
+Message_50126=InspectionCamera1번 중앙에 Mounter4번 Mark가 보이면 확인을 눌러 주세요.
+Message_50127=Jog를 움직여 Camera중앙에 Mounter4번 Mark가 보이면 확인을 눌러 주세요.
+Message_50128=선택하진 변은 작업하지 않는 변입니다. Panel Data를 확인해 보세요.
+Message_50129=Camera Expand 고정좌표는 Teaching 할 수 없음.
+
+// TeachCarrierDlg.cpp (50200)
+Message_50200=목표위치로 이동하시겠습니까?
+Message_50201=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50202=Data를 저장하시겠습니까?
+Message_50203=Load 1 위치를 제외한 나머지 Load Position 의 고정좌표는 변경 불가.
+Message_50204=X 방향 Position 변경량을 나머지 Load Position 에도 반영하시겠습니까?
+Message_50205=Load 1 위치를 제외한 나머지 Load Position 의 고정좌표는 변경 불가.
+Message_50206=Y 방향 Position 변경량을 나머지 Load Position 에도 반영하시겠습니까?
+Message_50207=Load 1 위치를 제외한 나머지 Load Position 의 고정좌표는 변경 불가.
+Message_50208=Position 변경량을 나머지 Load Position 에도 반영하시겠습니까?
+Message_50209=TabCarrier 고정좌표는 1번 Carrier만 가능합니다.
+Message_50210=TabCarrier Ready고정좌표는 1번 Loading고정좌표로 계산됩니다.
+Message_50211=다른 TabCarrierX축에도 동일한 고정좌표를 적용하겠습니까?
+Message_50212=TabCarrier Remove고정좌표는 1번 Unloading고정좌표로 계산됩니다.
+Message_50213=TabCarrier 고정좌표는 1번 TabCarrier로 지정할수 있습니다.
+Message_50214=TabCarrier Escape고정좌표는 4번 TabCarrier로 지정할수 있습니다.
+Message_50215=TabCarrier Loading고정좌표는 Escape위치로 자동 계산됩니다.
+Message_50216=TabCarrier RUnloading고정좌표는 Unloading위치로 자동 계산됩니다.
+Message_50217=TabCarrier Unloading고정좌표는 4번 Carrier만 가능합니다.
+Message_50218=TabCarrier Loading Pos, Pre Align Pos은 Offset Data를 사용 할 수 없습니다.
+Message_50219=TabCarrier Unload 위치 이동 시, Tab Offset을 적용한 위치로 이동하시겠습니까?
+Message_50220=잘못된 정보를 입력하셨습니다. 다시 시도해주세요.
+
+Message_51110=현재 TabCarrier 원점 복귀 안됨.
+Message_51111=TabCarrier가 기준 위치에 있습니까?
+Message_51112=TabCarrier 원점 복귀 Offset 계산 완료. 원점 복귀 완료 Flag를 해제함.
+Message_51113=현재 TabCarrier 에서는 Remove 위치 변경 작업을 할 수 없습니다.
+
+// TeachMainForm.cpp (50300)
+Message_50300=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50301=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50302=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50303=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50304=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50305=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50306=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50307=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50308=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50309=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50310=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50311=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50312=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50313=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50314=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50315=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50316=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50317=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50318=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50319=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50320=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50321=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50322=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50323=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50324=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50325=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50326=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50327=현재 사용자의 권한으로는 이 작업을 수행할 수 없습니다.
+Message_50328=이 작업을 위해서는 Maker 권한이 필요합니다.
+Message_50333=모델 체인지 축 고정 좌표는 수정할 수 없습니다.
+
+// TeachModelChangeDlg.cpp (50400)
+Message_50400=목표위치로 이동하시겠습니까?
+Message_50401=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50402=Data를 저장하시겠습니까?
+Message_50403=Model Change를 Expand하시겠습니까?
+Message_50404=Model Change Plate 를 Up 하시겠습니까?
+Message_50405=Model Change를 Shrink하시겠습니까?
+Message_50406=Model Change Plate 를 Down 하시겠습니까?
+
+// TeachPanelAlignerDlg.cpp (50500)
+Message_50500=Data를 저장하시겠습니까?
+Message_50501=Dry Run Mode 에서는 이 작업을 수행할 수 없습니다.
+Message_50502=목표위치로 이동하시겠습니까?
+Message_50503=Transfer X2축이 Jog 설정되어 있습니다. Jog Mode를 바꿔주세요!
+Message_50504=Panel Transfer에 Panel이 흡착되어 있는데 X1축과 X2축의 현재 위치가 다릅니다. Panel을 흡착해제 하세요.
+Message_50505=Dry Run Mode 에서는 이 작업을 수행할 수 없습니다. OP Mode를 바꿔주세요!
+Message_50506=Panel Align을 하시겠습니까?
+Message_50507=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50508=Panel Align이 완료된 상태에서 반복 이동합니다. 시작하시겠습니까?
+Message_50509=반복 이동 동작을 완료하였습니다.
+Message_50510=Panel Transfer가 Panel을 흡착하고 있습니다.
+Message_50511=Align Offset을 Reset하시겠습니까?
+Message_50512=Panel Aligner를 Align위치로 이동하여 Panel을 흡착하겠습니까?
+Message_50513=Panel Turn 동작을 하겠습니까?
+Message_50514=Panel Return 동작을 하겠습니까?
+Message_50515=Panel Turn 위치로 이동하겠습니까?
+Message_50550=Inspection Camera를 Align위치로 이동하겠습니까?
+
+// TeachPanelAlignerOffsetDlg.cpp (50600)
+Message_50600=Data를 저장하시겠습니까?
+Message_50601=VisionMark 위치의 T 축은 수정할 수 없습니다.
+
+// TeachPressDlg.cpp (50700)
+Message_50700=목표위치로 이동하시겠습니까?
+Message_50701=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50702=Data를 저장하시겠습니까?
+
+// TeachSupplierDlg.cpp (50800)
+Message_50800=목표위치로 이동하시겠습니까?
+Message_50801=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50802=Data를 저장하시겠습니까?
+
+// TeachTabAlignDlg.cpp (50900)
+Message_50900=Data를 저장하시겠습니까?
+Message_50901=목표위치로 이동하시겠습니까?
+Message_50902=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_50903=현재 위치를 반영할 Axis 를 선택하시오.
+Message_50904=TabIC Prealign 동작을 하시겠습니까?
+Message_50905=사용하지 않는 Tab 번호임.
+Message_50906=사용하지 않는 TabMounter 가 선택됨.
+Message_50907=TabIC Prealign 완료.
+
+// TeachTabMounterDlg.cpp (51000)
+Message_51000=Data를 저장하시겠습니까?
+Message_51001=같은 Group 내의 TabMounter 위치 Data 에 같은 Teaching 값을 반영하시겠습니까? (Ready, Load 제외)
+Message_51002=현재 TabMounter 에서는 Ready 위치 변경 작업을 할 수 없습니다.(1번, 8번 Tool만 가능)
+Message_51003=현재 TabMounter 에서는 Load 위치 변경 작업을 할 수 없습니다.(4번, 5번 Tool만 가능)
+///Message_51004=Remove 위치 고정좌표 변경 금지.(1번, 8번 Tool만 가능)
+Message_51004=현재 TabMounter 에서는 Load 위치 변경 작업을 할 수 없습니다.(1번 Tool만 가능)
+Message_51005=Inspection및 Mount위치 고정좌표 변경 불가.
+Message_51006=목표위치로 이동하시겠습니까?
+Message_51007=목표 위치를 현재 위치로 변경하시겠습니까?
+Message_51008=현재 TabMounter 원점 복귀 안됨.
+Message_51009=TabMounter가 기준 위치에 있습니까?
+Message_51010=TabMounter 원점 복귀 Offset 계산 완료. 원점 복귀 완료 Flag를 해제함.
+///Message_51011=현재 TabMounter 에서는 Remove 위치 변경 작업을 할 수 없습니다.
+/////Message_51012=Ready고정 좌표는 Load고정좌표와 동일합니다. 
+Message_51012=Ready고정 좌표는 4번, 5번 Tool의 Load위치로 결정됩니다.
+///Message_51013=Remove고정 좌표는 Load고정좌표와 동일합니다. 
+Message_51013=현재 TabMounter 에서는 Remove위치 변경 작업을 할 수 없습니다.(1번만 가능)
+Message_51014=Gantry Loading 고정좌표는 Loading1번만 지정할수 있습니다.
+Message_51015=현재 TabMounter 에서는 Ready 위치 변경 작업을 할 수 없습니다.(마지막번 Tool만 가능)
+Message_51016=Escape 고정좌표는 1번 Tool의 Load위치로 결정됩니다. 따로 지정할수 없습니다.
+Message_51017=Rear Loading위치 고정 좌표는 반대편 Tool의 Loading위치로 결정됩니다.
+Message_51018=Mount Z, Inspection Camera Z를 평탄 측정 위치로 이동하시겠습니까?
+Message_51019=목표 위치 이동 완료.
+
+
+//BottomForm.cpp (60000)
+Message_60000=Operator Password 가 일치 하지 않습니다.
+
+Message_60413 = It is Fail to register Motion Lib. 
+Message_60414 = It is Fail to set Motion Board Parameter.
+//CommonSelectUserGroupDlg.cpp (60500)
+Message_60500=암호변경을 완료 했습니다.
+Message_60501=Operator Password 가 일치 하지 않습니다.
+Message_60502=Engineer Password 가 일치 하지 않습니다.
+Message_60503=Maker Password 가 일치 하지 않습니다.
+Message_60504=현재 암호를 입력 하세요.
+Message_60505=새로 변경할 입력 하세요.
+Message_60506=입력한 암호들이 일치하지 않습니다.
+
+//MainFrm.cpp (61000)
+Message_61000=운용 프로그램을 종료하시겠습니까?
+Message_61001=재확인 합니다. 프로그램을 종료하시겠습니까?
+
+//MPlatformOlbSystem.cpp (61500)	
+Message_61500=Teaching 정보 파일 로드에 실패 했습니다.
+Message_61501=모델 갯수가 시스템 허용치를 초과 합니다.
+Message_61502=현재 선택된 모델을 삭제할 수 없습니다.
+Message_61503=생성하고자 하는 모델이 이미 존재합니다.
+Message_61504=모델 갯수가 시스템 허용치를 초과 합니다.
+Message_61505=모델 디렉토리를 생성할수 없습니다.
+Message_61506=새 Model 명을 SystemData 에 저장하지 못했습니다.
+Message_61507=Panel Data Reading 에 실패했습니다.
+Message_61508=PreBonder Data Reading 에 실패했습니다.
+Message_61509=Tab Data Reading 에 실패했습니다.
+Message_61510=TabOffset Data Reading 에 실패했습니다.
+Message_61511=TabCarrier 에 있는 TabIC 도 제거하시겠습니까?
+Message_61512=선택한 Tab 에 대한 Tab Prealign 작업 완료.
+Message_61513=Inspection 위치로 이동하겠습니까?
+Message_61514=Ready 위치로 이동하겠습니까?
+Message_61515=E-Stop Event 발생으로 동작 정지.
+Message_61516=선택된 Tab 번호는 작업하지 않는 Tab 번호임.
+Message_61517=TabIC 흡착 안하고 있음.
+Message_61518=생성된 Object Instance 를 등록할 수 없습니다. Object ID 를 확인하세요.
+Message_61519= 를 여는데 실패하였습니다.
+Message_61520=Amp Fault Clear 안됨. 확인 필요
+Message_61521=SIMULATION mode로 동작 합니다.
+Message_61522=Model Loading중 데이타가 없습니다. 계속 진행하겠습니까?
+Message_61523=Rear TabOffset Data Reading 에 실패했습니다.
+
+
+//MTrsAutoManager.cpp (62000)
+Message_62000=PortID(Feeder)가 불명확합니다.
+Message_62001=Tab IC Reel 정보를 저장하려는데 PortID(Feeder)가 불명확합니다.
+Message_62002= 로 모델을 변경합니다. 계속 진행하시겠습니까?
+Message_62003=Tab IC Zig 정보를 저장하려는데 PortID(Feeder)가 불명확합니다.
+Message_62004=모델 교체 실패
+Message_62005=L/C 와의 통신 연결을 기다리고 있습니다. STOP Key 를 누르면, Manual Mode 로 돌아갑니다.
+Message_62006=통신상태가 오프라인이므로 자재 정보를 관리할 수 없습니다. 계속 진행하시겠습니까?
+Message_62007=Power Reset 작업 진행 중...
+Message_62008=Operation Mode 전환 중입니다.
+Message_62009=Error List Backup File을 만들 수 없습니다. Data\\ErrorList.bak를 확인하시오.
+Message_62010=Error List File을 지울 수 없습니다. Data\\ErrorList.dat를 확인하시오.
+Message_62011=Error List File을 만들 수 없습니다. Data\\ErrorList.dat를 확인하시오.
+Message_62012=Error List Backup File을 읽을 수 없습니다. Data\\ErrorList.bak 를 확인하시오.
+Message_62013=Log File을 만들수가 없습니다.
+Message_62020=후설비 E-STOP에 의해 StepStop 상태로 변경되었습니다.
+Message_62021=전설비 E-STOP에 의해 StepStop 상태로 변경되었습니다.
+Message_62022=Feeder 1의 Mold Count가 290000을 초과하였습니다. 금형 교체를 준비하세요.
+Message_62023=Feeder 2의 Mold Count가 290000을 초과하였습니다. 금형 교체를 준비하세요.
+
+Message_62024=ZIG 정보를 저장하려는데 PortID(Feeder)가 불명확합니다.
+
+//Panel Scrap
+Message_62100=Panel Transfer In 위의 Panel 을 제거후에 확인 버튼을 눌러 주세요..
+Message_62200=Panel Transfer Center 위의 Panel 을 제거후에 확인 버튼을 눌러 주세요.
+Message_62300=Panel Transfer Out 위의 Panel 을 제거후에 확인 버튼을 눌러 주세요.
+Message_62400=Panel ALigner 위의 Panel 을 제거후에 확인 버튼을 눌러 주세요.
+Message_62500=Turn Handler 밑의 Panel 을 제거후에 확인 버튼을 눌러 주세요.
+
+//MHW_Teach
+Message_62401=Jog를 이용하여 Mark가 Vision 화면에 들어오게 하고 OK 버튼을 눌러 주세요. 
+Message_62402=Jog를 이용하여 Mark가 첫번째 카메라 Vision 화면에 들어오게 하고 확인 버튼을 눌러 주세요.
+Message_62403=Jog를 이용하여 Mark가 두번째 카메라 Vision 화면에 들어오게 하고 확인 버튼을 눌러 주세요.
+
+//MTrsPanelAligner.cpp (62500)
+Message_62500=Panel Aligner 에 Panel 이 있습니다. 제거해 주세요.
+Message_62501=PanelAligner 가 Vacuum Off 상태인데, Panel ID 가 존재합니다. Scrap을 진행할까요?
+Message_62502=작업 Schedule생성에 실패했습니다. PanelData, TabData및 Pos,Neg 카메라 거리를 확인하세요.
+
+Message_62600=정말로 Scrap을 진행 하시겠습니까?
+
+//TitleForm.cpp (63000)
+Message_63000="Emergency Stop"으로 인한 설비 전원 차단 상태임.@@E-Stop 해제 후, Reset Switch 를 누르세요. 조치 후, 축 원점복귀를 수행하세요.
+Message_63001=Teaching Pendant 가 연결되어 있음.@@Teaching Pendant 상의 Jog Key 동작만 가능함.
+Message_63002=Reel 회수부가 접혀 있습니다.
+Message_63003=회수부를 편 후, 메세지 창을 닫아 주세요.
+Message_63004=: 대기 Reel 을 장착해 주세요.
+Message_63005=회수부 Rail Unfold : 사용자 확인 완료
+
+//NotifyStopDlg.cpp
+NotifyStop=설비 정지동작 중입니다. 잠시만 기다려주세요...
+
+//VisionCalibDlg.cpp (63500)	
+Message_63500=저장하시겠습니까?
+Message_63501=Camera 번호 선택 오류
+Message_63502=Vision Calibration을 하시겠습니까?
+Message_63503=Backlash 보정 동작 후 Calibration Mark 를 기준 위치에 맞게 등록했는지 확인하세요. Calibration 을 계속 진행하겠습니까?
+Message_63504=Prism 양쪽을 동시에 Calibration 하겠습니까?
+Message_63505=Calibration 을 수행할 Prism Side 를 선택하세요.
+Message_63506=Calibration 동작에 이용할 좌표 생성에 실패 했습니다.
+Message_63507=Vision Calibration 을 실패하였습니다.
+Message_63508=Vision Calibration이 완료되었습니다.
+Message_63509=Search Area 를 설정하세요.
+Message_63510=Model Area 를 설정하세요.
+Message_63511=Reference Point 를 설정하세요.
+Message_63512=선택한 Mark 를 삭제하겠습니까?
+Message_63513=현재 모델을 저장하겠습니까?
+Message_63514=PanelAligner 가 Panel 을 흡착하고 있습니다.
+Message_63515=PanelAligner 가 Down 상태가 아닙니다.
+Message_63516=Panel이 부상유닛에 흡착되어 있지 않습니다.
+Message_63517=Model Change 축이 Model 위치가 아닙니다.
+Message_63518=Model Change축 원점 거리 미설정
+Message_63519=Model Change 축 원점 거리가 구해져 있지 않습니다. 지금 구하시겠습니까?
+Message_63520=확인 버튼을 누르면 작업을 진행합니다.
+Message_63521=PanelAligner 거리 Data 얻기 작업을 완료했습니다.
+Message_63522=Camera 번호 선택 오류
+Message_63523=Jog를 이용하여 Mark 가 Vision 화면에 들어오게 하고 확인 버튼을 눌러 주세요.
+Message_63524=TabCarrier4번으로 진행합니다. TabAlign카메라 간 거리 얻기를 실행하시겠습니까?
+Message_63525=사용자 요청에 의해 작업을 중단함.
+Message_63526=TabMounter4번으로 진행합니다. Inspection카메라 간 거리 얻기 작업을 수행하시겠습니까?
+Message_63527=Camera 번호 선택 오류이거나, Prism 을 사용하지 않는 Camera 임.
+Message_63528=Jog를 이용하여 Mark 가 Vision 화면 기준 위치에 오도록 한 후, 확인 버튼을 눌러 주세요.
+Message_63529=사용자 요청에 의해 작업을 중단함.
+Message_63530=Inspection Camera 가변 길이 측정 작업을 수행하시겠습니까?
+Message_63531=TabMounter8 을 이용하여 가변 길이를 측정합니다.
+Message_63532=Inspection Camera 번호가 선택되지 않음.
+Message_63533=Jog를 이용하여 Mark 가 Vision 화면 기준 위치에 오도록 한 후, 확인 버튼을 눌러 주세요.
+Message_63534=사용자 요청에 의해 작업을 중단함
+Message_63532=Inspection Camera 번호가 선택되지 않음.
+Message_63533=Jog를 이용하여 Mark 가 Vision 화면 기준 위치에 오도록 한 후, 확인 버튼을 눌러 주세요.
+Message_63534=사용자 요청에 의해 작업을 중단함
+Message_63535=Tab Align Camera 가변 길이 측정 작업을 수행하시겠습니까?
+Message_63536=Tab Carrier4 을 이용하여 가변 길이를 측정합니다.
+Message_63537=Tab Carrier Camera 번호가 선택되지 않음.
+Message_63538=Tab Carrier 회전 중심 측정 작업을 수행하시겠습니까?
+Message_63539=측정 Carrier를 선택해 주세요
+Message_63540=Tab Carrier 회전 중심 측정 작업을 완료했습니다.
+Message_63541=InspectionCamera 기준위치에 TabMount4번을 위치했는지 확인하세요. Calibration을 계속 진행하겠습니까?
+Message_63542=TabCarrierCamera 기준위치에 TabCarrier를 위치했는지 확인하세요. Calibration을 계속 진행하겠습니까?
+Message_63543=PanelAligner중심과 Panel회전 실린더 중심간 거리 얻기 동작을 하겠습니까?
+
+//VisionMonitorDlg.cpp (64000)	
+Message_64000=현재 모델을 저장하겠습니까?
+Message_64001=직접 등록
+Message_64002=연결
+Message_64003=Model 을 직접 등록하시겠습니까?@@아니면, 이미 등록된 Model 을 참조하여 Model 을 생성하겠습니까?
+Message_64004=선택한 Mark 를 삭제하겠습니까?
+Message_64005=선택된 Source Camera 에 등록된 Mark 중, 현재 Camera 에서 사용할 Mark 를 선택하세요.
+Message_64006=Search Area 를 설정하세요.
+Message_64007=Model Area 를 설정하세요.
+Message_64008=Reference Point 를 설정하세요.
+Message_64009=Blob Area 를 설정하세요.
+Message_64010=Measurement Box 를 설정하세요.
+Message_64011=Pattern Matching Mark 이외의 Mark 에서는 Search Area 를 사용하지 않음.
+Message_64012=Image File 이름을 입력하세요. [최대 32]
+Message_64013=Image file 저장 완료.
+Message_64014=잘못된 번호 입니다.
+
+//VisionOptionDlg.cpp (64500)	
+Message_64500=Camera 번호 선택이 잘못 되었습니다. VisionOptionDialog 를 닫아 주세요.
+Message_64501=Model 쓰기 에러
+
+//VisionSearchAreaDlg.cpp (65000)
+Message_65000=저장 완료
+
+//MTrsTabFeeder.cpp (65500)
+Message_65500=Sprocket2 AutoHoming 진행 중입니다.
+Message_65501=TabIC 자동교체 완료.
+Message_65502=금형 Data 를 쓰는데 실패하였습니다.
+Message_65503=Front Feeder가 소진되었습니다. 교체하여 주세요.
+Message_65504=Rear Feeder가 소진되었습니다. 교체하여 주세요.
+
+//MErrorMsg.cpp (66000)
+Message_66000=가 정의되어 있지 않습니다.
+
+//VisionJogKeyDlg.cpp (66500)
+Message_66500=Timer가 생성 되지 않았습니다.
+
+
+// CManualTiltDialog
+Message_67000=Tilt Up/Down Cylinder가 Up이 아닙니다.
+Message_67001=Tilt Up/Down Cylinder를 Up 하시겠습니까? (실린더 상부/하부를 반드시 확인하세요!)
+Message_67002=Tilt Up/Down Cylinder를 Down 하시겠습니까? (실린더 상부/하부를 반드시 확인하세요!)
+Message_67003=Panel Transfer Center가 Amp Enable상태가 아닙니다.
+Message_67004=Panel Transfer In X1 축이 Amp Enable상태가 아닙니다.
+Message_67005=Panel Transfer In X2 축이 Amp Enable상태가 아닙니다.
+Message_67006=Panel Transfer Center가 원점 복귀가 되어 있지 않습니다.
+Message_67007=Panel Transfer In X1 축이 원점 복귀가 되어 있지 않습니다.
+Message_67008=Panel Transfer In X2 축이 원점 복귀가 되어 있지 않습니다.
+Message_67009=Panel Transfer Center의 위치가 Unloading 위치가 아닙니다.
+Message_67010=Panel Transfer In의 위치가 Unloading 위치가 아닙니다.
+Message_67011=Tilt Lock/Unlock 실린더가 Unlock상태가 아닙니다.
+Message_67012=TabMounterY축이 원점복귀 되어 있지 않습니다.
+Message_67013=TabMounterY축이 안전한 위치에 있지 않습니다.(Loading위치);
+Message_67014=Panel Transfer In을 Unload 위치로 이동하시겠습니까?
+Message_67015=Panel Transfer Center를  Unload 위치로 이동하시겠습니까?
+Message_67016=Tilt Up/Down Cylinder가 Down이 아닙니다.
+Message_67017=SystemData 에서 Feeder 1 만 선택 하였습니다. Feeder 2 의 홈을 제거해 주세요.
+Message_67018=SystemData 에서 Feeder 2 만 선택 하였습니다. Feeder 1 의 홈을 제거해 주세요.
+Message_67019=SystemData 에서 ALL Feeder 선택 하였습니다. Feeder 1 이나 Feeder 2가 홈 상태가 아닙니다.
+
+//common 폴더 들어있는 파일들(90000 번대)
+//MACSAxis.cpp (90000)
+Message_90000=PC와 Gantry 1 Controller간 통신 연결이 되지 않았습니다.
+Message_90001=PC와 Gantry 2 Controller간 통신 연결이 되지 않았습니다.
+Message_90002=PC와 Gantry Controller간 통신 연결이 되지 않았습니다.
+Message_90003=Home Teaching 이 필요한 Feeder를 선택 하세요.

@@ -1,0 +1,284 @@
+;UNIT,	unitNo,	Name(Section),			NumAxis,	PostFix,	NumTeachingPos,	GuiNameEng,				GuiNameKor,				GuiNameChn
+UNIT,	0,		Panel Aligner XYT,		3,			X, Y, T,	9,				Panel Aligner XYT,		Panel Aligner XYT,				
+UNIT,	1,		Panel Aligner Z,		1,			Z,			3,				Panel Aligner Z,		Panel Aligner Z,	
+UNIT,	2,		Panel Transfer Out X,	1,			X,			2,				Panel Transfer Out X,	Panel Transfer Out X,
+UNIT,	3,		Model Change Y1,		1,			Y,			3,				Model Change Y1,		Model Change Y1,				
+UNIT,	4,		Model Change Y2,		1,			Y,			3,				Model Change Y2,		Model Change Y2,				
+UNIT,	5,		F_BadTab Detector X,	1,			X,			2,				F_BadTab Detector X,	F_BadTab Detector X,
+UNIT,	6,		F_Feeder Sprocket1 T,	1,			T,			1,				F_Feeder Sprocket1 T,	F_Feeder Sprocket1 T,		
+UNIT,	7,		F_Feeder Sprocket2 T,	1,			T,			1,				F_Feeder Sprocket2 T,	F_Feeder Sprocket2 T,			
+UNIT,	8,		F_Tab Press Z,			1,			Z,			3,				F_Tab Press Z,			F_Tab Press Z,
+UNIT,	9,		F_Molding UpDown Z,		1,			Z,			2,				F_Molding UpDown Z,		F_Molding UpDown Z,
+UNIT,	10,		R_BadTab Detector X,	1,			X,			2,				R_BadTab Detector X,	R_BadTab Detector X,
+UNIT,	11,		R_Feeder Sprocket1 T,	1,			T,			1,				R_Feeder Sprocket1 T,	R_Feeder Sprocket1 T,		
+UNIT,	12,		R_Feeder Sprocket2 T,	1,			T,			1,				R_Feeder Sprocket2 T,	R_Feeder Sprocket2 T,			
+UNIT,	13,		R_Tab Press Z,			1,			Z,			3,				R_Tab Press Z,			R_Tab Press Z,				
+UNIT,	14,		R_Molding UpDown Z,		1,			Z,			2,				F_Molding UpDown Z,		F_Molding UpDown Z,
+UNIT,	15,		TabMounter1 Y,			1,			Y,			6,				TabMounter1 Y,			TabMounter1 Y,			
+UNIT,	16,		TabMounter2 Y,			1,			Y,			6,				TabMounter2 Y,			TabMounter2 Y,				
+UNIT,	17,		R_TabMounter1 Y,		1,			Y,			6,				RTabMounter1 Y,			RTabMounter1 Y,			
+UNIT,	18,		R_TabMounter2 Y,		1,			Y,			6,				RTabMounter2 Y,			RTabMounter2 Y,				
+UNIT,	19,		TabMounter1 Z,			1,			Z,			6,				TabMounter1 Z,			TabMounter1 Z,			
+UNIT,	20,		TabMounter2 Z,			1,			Z,			6,				TabMounter2 Z,			TabMounter2 Z,				
+UNIT,	21,		R_TabMounter1 Z,		1,			Z,			6,				RTabMounter1 Z,			RTabMounter1 Z,			
+UNIT,	22,		R_TabMounter2 Z,		1,			Z,			6,				RTabMounter2 Z,			RTabMounter2 Z,				
+UNIT,	23,		Backup1 Z,				1,			Z,			3,				Backup1 Z,				Backup1 Z,
+UNIT,	24,		Backup2 Z,				1,			Z,			3,				Backup2 Z,				Backup2 Z,
+UNIT,	25,		R_Backup1 Z,			1,			Z,			3,				RBackup1 Z,				RBackup1 Z,
+UNIT,	26,		R_Backup2 Z,			1,			Z,			3,				RBackup2 Z,				RBackup2 Z,
+UNIT,	27,		Inspect Camera1 Y,		1,			Y,			3,				Inspect Camera1 Y,		Inspect Camera1 Y,
+UNIT,	28,		Inspect Camera2 Y,		1,			Y,			3,				Inspect Camera2 Y,		Inspect Camera2 Y,
+UNIT,	29,		R_Inspect Camera1 Y,	1,			Y,			3,				RInspect Camera1 Y,		RInspect Camera1 Y,
+UNIT,	30,		R_Inspect Camera2 Y,	1,			Y,			3,				RInspect Camera2 Y,		RInspect Camera2 Y,
+UNIT,	31,		TabIC Carrier1 XYT,		3,			X, Y, T,	5,				TabIC Carrier1 XYT,		TabIC Carrier1 XYT,		
+UNIT,	32,		TabIC Carrier2 XYT,		3,			X, Y, T,	5,				TabIC Carrier2 XYT,		TabIC Carrier2 XYT,		
+UNIT,	33,		R_TabIC Carrier1 XYT,	3,			X, Y, T,	5,				RTabIC Carrier1 XYT,	RTabIC Carrier1 XYT,		
+UNIT,	34,		R_TabIC Carrier2 XYT,	3,			X, Y, T,	5,				RTabIC Carrier2 XYT,	RTabIC Carrier2 XYT,		
+UNIT,	35,		TabMounter Gantry Y,	1,			Y,			4,				TabMounter Gantry Y,	TabMounter Gantry Y,
+UNIT,	36,		R_TabMounter Gantry Y,	1,			Y,			4,				RTabMounter Gantry Y,	RTabMounter Gantry Y,
+
+UNIT,	37,		I_Camera1 Expand,		1,			X,			2,				I_Camera1 Expand,		I_Camera1 Expand,
+UNIT,	38,		I_Camera2 Expand,		1,			X,			2,				I_Camera2 Expand,		I_Camera2 Expand,
+UNIT,	39,		C_Camera Expand,		1,			Y,			2,				C_Camera Expand,		C_Camera Expand,
+
+UNIT,	40,		R_I_Camera1 Expand,		1,			X,			2,				R_I_Camera1 Expand,		R_I_Camera1 Expand,
+UNIT,	41,		R_I_Camera2 Expand,		1,			X,			2,				R_I_Camera2 Expand,		R_I_Camera2 Expand,
+UNIT,	42,		R_C_Camera Expand,		1,			Y,			2,				R_C_Camera Expand,		R_C_Camera Expand,
+
+;POS,	unitNo, posNo,	Use?(YES/NO)	Enable?(YES/NO)		Name(Key),		GuiNameEng, 	GuiNameKor, 	GuiNameChn
+;Panel Aligner XYT
+POS,	0,			0,			YES,			YES,			Load,					Load,						Load,	
+POS,	0,			1,			YES,			YES,			FirstMark,				FirstMark,					FirstMark,	
+POS,	0,			2,			NO,				NO,				SecondMark,				SecondMark,					SecondMark,
+POS,	0,			3,			NO,				NO,				Press_1,				Press_1,					Press_1,
+POS,	0,			4,			NO,				NO,				Press_2,				Press_2,					Press_2,
+POS,	0,			5,			YES,			YES,			Inspection_1,			Inspection_1,				Inspection_1,		
+POS,	0,			6,			NO,				NO,				Inspection_2,			Inspection_2,				Inspection_2,		
+POS,	0,			7,			NO,				NO,				Inspection_3,			Inspection_3,				Inspection_3,
+POS,	0,			8,			YES,			YES,			Unload,					Unload,						Unload,	
+
+; Panel Aligner Z
+POS,	1,		0,		YES,			YES,				Down,			Down,			Down,
+POS,	1,		1,		YES,			YES,				MoveUp,			MoveUp,			MoveUp,
+POS,	1,		2,		YES,			YES,				Work,			Work,			Work,
+
+; Panel Transfer Out X
+POS,	2,		0,		YES,			YES,				Load,			Load,			Load,			
+POS,	2,		1,		YES,			YES,				Unload,			Unload,			Unload,			
+
+; Model Change Y1
+POS,	3,		0,		YES,			YES,				Init,			Init,			Init,		
+POS,	3,		1,		YES,			YES,				Model,			Model,			Model,		
+POS,	3,		2,		YES,			YES,				PanelAlign,		PanelAlign,		PanelAlign,		
+
+; Model Change Y2
+POS,	4,		0,		YES,			YES,				Init,			Init,			Init,		
+POS,	4,		1,		YES,			YES,				Model,			Model,			Model,		
+POS,	4,		2,		YES,			YES,				PanelAlign,		PanelAlign,		PanelAlign,		
+
+; F_BadTab Detector X
+POS,	5,		0,		YES,			YES,				Ready,			Ready,			Ready,
+POS,	5,		1,		YES,			YES,				Work,			Work,			Work,
+
+; F_Feeder Sprocket1 T
+POS,	6,		0,		YES,			YES,				Home,			Home,			Home,
+
+; F_Feeder Sprocket2 T
+POS,	7,		0,		YES,			YES,				Home,			Home,			Home,
+
+; F_Tab Press Z
+POS,	8,		0,		YES,			YES,				Up,				Up,				Up
+POS,	8,		1,		YES,			YES,				Ready,			Ready,			Ready,
+POS,	8,		2,		YES,			YES,				Down,			Down,			Down,
+
+; F_Molding UpDown Z
+POS,	9,		0,		YES,			YES,				PinRelease,		PinRelease,		PinRelease,
+POS,	9,		1,		YES,			YES,				PinFix,			PinFix,			PinFix,
+
+; R_BadTab Detector X
+POS,	10,		0,		YES,			YES,				Ready,			Ready,			Ready,
+POS,	10,		1,		YES,			YES,				Work,			Work,			Work,
+
+; R_Feeder Sprocket1 T
+POS,	11,		0,		YES,			YES,				Home,			Home,			Home,
+
+; R_Feeder Sprocket2 T
+POS,	12,		0,		YES,			YES,				Home,			Home,			Home,
+
+; R_Tab Press Z
+POS,	13,		0,		YES,			YES,				Up,				Up,				Up
+POS,	13,		1,		YES,			YES,				Ready,			Ready,			Ready,
+POS,	13,		2,		YES,			YES,				Down,			Down,			Down,
+
+; R_Molding UpDown Z
+POS,	14,		0,		YES,			YES,				PinRelease,		PinRelease,		PinRelease,
+POS,	14,		1,		YES,			YES,				PinFix,			PinFix,			PinFix,
+
+; TabMounter1 Y
+POS,	15,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	15,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	15,		2,		YES,			YES,				Escape,			Escape,			Escape,
+POS,	15,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,		
+POS,	15,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	15,		5,		YES,			YES,				Remove,			Remove,			Remove,
+
+; TabMounter2 Y
+POS,	16,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	16,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	16,		2,		YES,			YES,				Escape,			Escape,			Escape,
+POS,	16,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,		
+POS,	16,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	16,		5,		YES,			YES,				Remove,			Remove,			Remove,
+
+; R_TabMounter1 Y
+POS,	17,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	17,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	17,		2,		YES,			YES,				Escape,			Escape,			Escape,
+POS,	17,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,		
+POS,	17,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	17,		5,		YES,			YES,					Remove,			Remove,			Remove,
+
+; R_TabMounter2 Y
+POS,	18,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	18,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	18,		2,		YES,			YES,				Escape,			Escape,			Escape,
+POS,	18,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,		
+POS,	18,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	18,		5,		YES,			YES,					Remove,			Remove,			Remove,
+
+; TabMounter1 Z
+POS,	19,		0,		YES,			YES,				Move,			Move,			Move,		
+POS,	19,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	19,		2,		NO,				NO,					Spare,			Spare,			Spare,		
+POS,	19,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,	
+POS,	19,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	19,		5,		YES,			YES,				Remove,			Remove,			Remove,
+
+; TabMounter2 Z
+POS,	20,		0,		YES,			YES,				Move,			Move,			Move,		
+POS,	20,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	20,		2,		NO,				NO,					Spare,			Spare,			Spare,		
+POS,	20,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,	
+POS,	20,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	20,		5,		YES,			YES,				Remove,			Remove,			Remove,
+
+; R_TabMounter1 Z
+POS,	21,		0,		YES,			YES,				Move,			Move,			Move,		
+POS,	21,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	21,		2,		NO,				NO,					Spare,			Spare,			Spare,		
+POS,	21,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,	
+POS,	21,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	21,		5,		YES,			YES,				Remove,			Remove,			Remove,
+
+; R_TabMounter2 Z
+POS,	22,		0,		YES,			YES,				Move,			Move,			Move,		
+POS,	22,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	22,		2,		NO,				NO,					Spare,			Spare,			Spare,		
+POS,	22,		3,		YES,			YES,				Inspection,		Inspection,		Inspection,	
+POS,	22,		4,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	22,		5,		YES,			YES,				Remove,			Remove,			Remove,
+
+; Backup1 Z
+POS,	23,		0,		YES,			YES,				Down,			Down,			Down,
+POS,	23,		1,		YES,			YES,				Vision,			Vision,			Vision,
+POS,	23,		2,		YES,			NO,					Up,				Up,				Up,
+
+; Backup2 Z
+POS,	24,		0,		YES,			YES,				Down,			Down,			Down,
+POS,	24,		1,		YES,			YES,				Vision,			Vision,			Vision,
+POS,	24,		2,		YES,			NO,					Up,				Up,				Up,
+
+; R_Backup1 Z
+POS,	25,		0,		YES,			YES,				Down,			Down,			Down,
+POS,	25,		1,		YES,			YES,				Vision,			Vision,			Vision,
+POS,	25,		2,		YES,			NO,					Up,				Up,				Up,
+
+; R_Backup2 Z
+POS,	26,		0,		YES,			YES,				Down,			Down,			Down,
+POS,	26,		1,		YES,			YES,				Vision,			Vision,			Vision,
+POS,	26,		2,		YES,			NO,					Up,				Up,				Up,
+
+; Inspect Camera1 Y
+POS,	27,		0,		YES,			YES,				FiduMark,		FiduMark,		FiduMark,
+POS,	27,		1,		YES,			YES,				SubMark,		SubMark,		SubMark,
+POS,	27,		2,		YES,			YES,				LeadMark,		LeadMark,		LeadMark,
+
+; Inspect Camera2 Y
+POS,	28,		0,		YES,			YES,				FiduMark,		FiduMark,		FiduMark,
+POS,	28,		1,		YES,			YES,				SubMark,		SubMark,		SubMark,
+POS,	28,		2,		YES,			YES,				LeadMark,		LeadMark,		LeadMark,
+
+; R_Inspect Camera1 Y
+POS,	29,		0,		YES,			YES,				FiduMark,		FiduMark,		FiduMark,
+POS,	29,		1,		YES,			YES,				SubMark,		SubMark,		SubMark,
+POS,	29,		2,		YES,			YES,				LeadMark,		LeadMark,		LeadMark,
+
+; R_Inspect Camera2 Y
+POS,	30,		0,		YES,			YES,				FiduMark,		FiduMark,		FiduMark,
+POS,	30,		1,		YES,			YES,				SubMark,		SubMark,		SubMark,
+POS,	30,		2,		YES,			YES,				LeadMark,		LeadMark,		LeadMark,
+
+; TabIC Carrier1 XYT
+POS,	31,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	31,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	31,		2,		YES,			YES,				Prealign,		Prealign,		Prealign,
+POS,	31,		3,		YES,			YES,				Unload,			Unload,			Unload,		
+POS,	31,		4,		YES,			YES,				Escape,			Escape,			Escape,
+
+; TabIC Carrier2 XYT
+POS,	32,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	32,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	32,		2,		YES,			YES,				Prealign,		Prealign,		Prealign,
+POS,	32,		3,		YES,			YES,				Unload,			Unload,			Unload,		
+POS,	32,		4,		YES,			YES,				Escape,			Escape,			Escape,
+
+; RTabIC Carrier1 XYT
+POS,	33,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	33,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	33,		2,		YES,			YES,				Prealign,		Prealign,		Prealign,
+POS,	33,		3,		YES,			YES,				Unload,			Unload,			Unload,		
+POS,	33,		4,		YES,			YES,				Escape,			Escape,			Escape,
+
+; RTabIC Carrier2 XYT
+POS,	34,		0,		YES,			YES,				Ready,			Ready,			Ready,		
+POS,	34,		1,		YES,			YES,				Load,			Load,			Load,		
+POS,	34,		2,		YES,			YES,				Prealign,		Prealign,		Prealign,
+POS,	34,		3,		YES,			YES,				Unload,			Unload,			Unload,		
+POS,	34,		4,		YES,			YES,				Escape,			Escape,			Escape,
+
+; TabMounter Gantry Y
+POS,	35,		0,		YES,			YES,				Load1,			Load1,			Load1,			
+POS,	35,		1,		YES,			YES,				Inspection,		Inspection,		Inspection,
+POS,	35,		2,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	35,		3,		YES,			YES,				TabRemove,		TabRemove,		TabRemove,
+
+; R_TabMounter Gantry Y
+POS,	36,		0,		YES,			YES,				Load1,			Load1,			Load1,			
+POS,	36,		1,		YES,			YES,				Inspection,		Inspection,		Inspection,
+POS,	36,		2,		YES,			YES,				Mount,			Mount,			Mount,
+POS,	36,		3,		YES,			YES,				TabRemove,		TabRemove,		TabRemove,
+
+; I_Camera1 Expand
+POS,	37,		0,		YES,			YES,				Init,			Init,			Init,
+POS,	37,		1,		YES,			YES,				Work,			Work,			Work,
+
+; I_Camera2 Expand
+POS,	38,		0,		YES,			YES,				Init,			Init,			Init,
+POS,	38,		1,		YES,			YES,				Work,			Work,			Work,
+
+; C_Camera Expand
+POS,	39,		0,		YES,			YES,				Init,			Init,			Init,
+POS,	39,		1,		YES,			YES,				Work,			Work,			Work,
+
+; R_I_Camera1 Expand
+POS,	40,		0,		YES,			YES,				Init,			Init,			Init,
+POS,	40,		1,		YES,			YES,				Work,			Work,			Work,
+
+; R_I_Camera2 Expand
+POS,	41,		0,		YES,			YES,				Init,			Init,			Init,
+POS,	41,		1,		YES,			YES,				Work,			Work,			Work,
+
+; R_C_Camera Expand
+POS,	42,		0,		YES,			YES,				Init,			Init,			Init,
+POS,	42,		1,		YES,			YES,				Work,			Work,			Work,
+

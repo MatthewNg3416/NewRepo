@@ -1,0 +1,2175 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//  
+// ACS-Tech80 Ltd.
+// Copyright © 1999 - 2004. All Rights Reserved.
+//
+// PROJECT			:    SPiiPlus 
+// SUBSYSTEM		:    SPiiPlus C Library
+// FILE				:	 ACSC.h
+// VERSION			:    4.50.0.0 
+// OVERVIEW
+// ========
+//
+// SPiiPlus C Library export functions definition
+// 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+#ifndef _ACSC_H_
+#define _ACSC_H_
+
+#if defined(WIN32) && !defined(UNDER_RTSS)
+// Win32
+#include <windows.h>
+#elif defined(WIN32) && defined(UNDER_RTSS)
+// RTX
+#include <windows.h>
+#include <rtapi.h>
+#endif
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// General definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_VER					0x4320000
+
+#define ACSC_MAXCHANNEL				10			//Maximum number of communication channels
+#define ACSC_INVALID				(HANDLE)-1	//Invalid communication handle 
+#define ACSC_NONE					-1				
+//#define ACSC_BUFSIZE				2032		//Maximum size of the communication block
+#define ACSC_INT_BINARY				4			//Size of the controller integer variable
+#define ACSC_REAL_BINARY			8			//Size of the controller real variable
+#define ACSC_AXES_MAX_NUMBER		8			//Maximum number of supported axes
+#define ACSC_DC_VAR_MAX_NUMBER		10			//Maximum number of variables to be collected by one command
+#define ACSC_MAX_LINE				100000		//Maximum number of lines in program buffer
+#define ACSC_COUNTERCLOCKWISE		1			//Counterclockwise rotation
+#define ACSC_CLOCKWISE				-1			//Clockwise rotation
+#define ACSC_POSITIVE_DIRECTION		1			//A move in positive direction
+#define ACSC_NEGATIVE_DIRECTION		-1			//A move in negative direction
+
+// for compatibility with the previous library
+#define MAXCHANNEL					10				
+#define ZL_INVALID					(HANDLE)-1		
+#define ZL_NONE						-1				
+//#define ZL_BUFSIZE					2032			
+#define ZL_INT_BINARY				4			
+#define ZL_REAL_BINARY				8			
+#define ZL_AXES_MAX_NUMBER			8
+
+// Set/Get configuration keys
+#define ACSC_CONF_WORD1_KEY					1
+#define ACSC_CONF_INT_EDGE_KEY				3
+#define ACSC_CONF_ENCODER_KEY				4
+#define ACSC_CONF_MFLAGS9_KEY				204
+#define ACSC_CONF_DIGITAL_SOURCE_KEY		205
+#define ACSC_CONF_SP_OUT_PINS_KEY			206
+#define ACSC_CONF_OUT_KEY					29
+#define ACSC_CONF_BRAKE_OUT_KEY				229
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// ACSPL+ variables types
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_INT_TYPE						1	//Integer type of the variable
+#define ACSC_REAL_TYPE						2	//Real type of the variable
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Serial communication options
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_AUTO -1
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Ethernet communication options
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_SOCKET_DGRAM_PORT				700
+#define ACSC_SOCKET_STREAM_PORT				701
+
+// for compatibility with the library version 2.0
+#define SOCKET_DGRAM_PORT					700
+#define SOCKET_STREAM_PORT					701
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Axis definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_AXIS_X							0
+#define ACSC_AXIS_Y							1
+#define ACSC_AXIS_Z							2
+#define ACSC_AXIS_T							3
+#define ACSC_AXIS_A							4
+#define ACSC_AXIS_B							5
+#define ACSC_AXIS_C							6
+#define ACSC_AXIS_D							7
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// PCI interrupts flags
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_INTR_PEG						3
+#define ACSC_INTR_MARK1						7
+#define ACSC_INTR_MARK2						8
+#define ACSC_INTR_EMERGENCY					15
+#define ACSC_INTR_PHYSICAL_MOTION_END		16
+#define ACSC_INTR_LOGICAL_MOTION_END		17
+#define ACSC_INTR_MOTION_FAILURE			18
+#define ACSC_INTR_MOTOR_FAILURE				19
+#define ACSC_INTR_PROGRAM_END				20
+#define ACSC_INTR_COMMAND					21
+#define ACSC_INTR_ACSPL_PROGRAM				22
+#define ACSC_INTR_INPUT						23
+#define ACSC_INTR_MOTION_START				24
+#define ACSC_INTR_MOTION_PHASE_CHANGE		25
+#define ACSC_INTR_TRIGGER					26
+#define ACSC_INTR_CYCLE						30
+#define ACSC_INTR_MESSAGE					31
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Bit masks definitions
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Communication options
+#define ACSC_COMM_USE_CHECKSUM				0x00000001
+#define ACSC_COMM_AUTORECOVER_HW_ERROR		0x00000002
+
+// Motion flags
+#define ACSC_AMF_WAIT						0x00000001			
+#define ACSC_AMF_RELATIVE					0x00000002			
+#define ACSC_AMF_VELOCITY					0x00000004			
+#define ACSC_AMF_ENDVELOCITY				0x00000008
+#define ACSC_AMF_POSITIONLOCK				0x00000010
+#define ACSC_AMF_VELOCITYLOCK				0x00000020
+#define ACSC_AMF_CYCLIC						0x00000100
+#define ACSC_AMF_VARTIME					0x00000200
+#define ACSC_AMF_CUBIC						0x00000400
+#define ACSC_AMF_EXTRAPOLATED				0x00001000
+#define ACSC_AMF_STALLED					0x00002000
+#define ACSC_AMF_MAXIMUM					0x00004000
+#define ACSC_AMF_SYNCHRONOUS				0x00008000
+
+// for compatibility with the library version 2.0
+#define AMF_WAIT							0x00000001
+#define AMF_RELATIVE						0x00000002
+#define AMF_VELOCITY						0x00000004
+#define AMF_ENDVELOCITY						0x00000008
+
+// Data collection flags
+#define ACSC_DCF_TEMPORAL					0x00000001
+#define ACSC_DCF_CYCLIC						0x00000002
+
+// Motor states
+#define ACSC_MST_ENABLE						0x00000001
+#define ACSC_MST_INPOS						0x00000010			
+#define ACSC_MST_MOVE						0x00000020
+#define ACSC_MST_ACC						0x00000040
+
+// Motion states
+#define ACSC_AST_LEAD						0x00000001
+#define ACSC_AST_DC							0x00000002
+#define ACSC_AST_PEG						0x00000004
+#define ACSC_AST_MOVE						0x00000020
+#define ACSC_AST_ACC						0x00000040
+#define ACSC_AST_SEGMENT					0x00000080
+#define ACSC_AST_VELLOCK					0x00000100
+#define ACSC_AST_POSLOCK					0x00000200
+
+// Index states
+#define ACSC_IST_IND						0x00000001
+#define ACSC_IST_IND2						0x00000002
+#define ACSC_IST_MARK						0x00000004
+#define ACSC_IST_MARK2						0x00000008
+
+// Program states
+#define ACSC_PST_COMPILED					0x00000001
+#define ACSC_PST_RUN						0x00000002
+#define ACSC_PST_SUSPEND					0x00000004
+#define ACSC_PST_DEBUG						0x00000020
+#define ACSC_PST_AUTO						0x00000080
+
+// Safety control masks
+#define ACSC_SAFETY_RL						0x00000001
+#define ACSC_SAFETY_LL						0x00000002
+#define ACSC_SAFETY_RL2						0x00000004
+#define ACSC_SAFETY_LL2						0x00000008
+#define ACSC_SAFETY_HOT						0x00000010
+#define ACSC_SAFETY_SRL						0x00000020
+#define ACSC_SAFETY_SLL						0x00000040
+#define ACSC_SAFETY_ENCNC					0x00000080
+#define ACSC_SAFETY_ENC2NC					0x00000100
+#define ACSC_SAFETY_DRIVE					0x00000200
+#define ACSC_SAFETY_ENC						0x00000400
+#define ACSC_SAFETY_ENC2					0x00000800
+#define ACSC_SAFETY_PE						0x00001000
+#define ACSC_SAFETY_CPE						0x00002000
+#define ACSC_SAFETY_VL						0x00004000
+#define ACSC_SAFETY_AL						0x00008000
+#define ACSC_SAFETY_CL						0x00010000
+#define ACSC_SAFETY_SP						0x00020000
+#define ACSC_SAFETY_PROG					0x02000000
+#define ACSC_SAFETY_MEM						0x04000000
+#define ACSC_SAFETY_TIME					0x08000000
+#define ACSC_SAFETY_ES						0x10000000
+#define ACSC_SAFETY_INT						0x20000000
+#define ACSC_SAFETY_INTGR					0x40000000
+
+// Axis masks
+#define ACSC_MASK_AXIS_X					0x00000001
+#define ACSC_MASK_AXIS_Y					0x00000002
+#define ACSC_MASK_AXIS_Z					0x00000004
+#define ACSC_MASK_AXIS_T					0x00000008
+#define ACSC_MASK_AXIS_A					0x00000010
+#define ACSC_MASK_AXIS_B					0x00000020
+#define ACSC_MASK_AXIS_C					0x00000040
+#define ACSC_MASK_AXIS_D					0x00000080
+
+// Buffer masks
+#define ACSC_MASK_BUFFER_0					0x00000001
+#define ACSC_MASK_BUFFER_1					0x00000002
+#define ACSC_MASK_BUFFER_2					0x00000004
+#define ACSC_MASK_BUFFER_3					0x00000008
+#define ACSC_MASK_BUFFER_4					0x00000010
+#define ACSC_MASK_BUFFER_5					0x00000020
+#define ACSC_MASK_BUFFER_6					0x00000040
+#define ACSC_MASK_BUFFER_7					0x00000080
+#define ACSC_MASK_BUFFER_8					0x00000100
+#define ACSC_MASK_BUFFER_9					0x00000200
+
+// Input masks
+#define ACSC_MASK_INPUT_0					0x00000001
+#define ACSC_MASK_INPUT_1					0x00000002
+#define ACSC_MASK_INPUT_2					0x00000004
+#define ACSC_MASK_INPUT_3					0x00000008
+#define ACSC_MASK_INPUT_4					0x00000010
+#define ACSC_MASK_INPUT_5					0x00000020
+#define ACSC_MASK_INPUT_6					0x00000040
+#define ACSC_MASK_INPUT_7					0x00000080
+#define ACSC_MASK_INPUT_8					0x00000100
+#define ACSC_MASK_INPUT_9					0x00000200
+#define ACSC_MASK_INPUT_10					0x00000400
+#define ACSC_MASK_INPUT_11					0x00000800
+#define ACSC_MASK_INPUT_12					0x00001000
+#define ACSC_MASK_INPUT_13					0x00002000
+#define ACSC_MASK_INPUT_14					0x00004000
+#define ACSC_MASK_INPUT_15					0x00008000
+#define ACSC_MASK_INPUT_16					0x00010000
+#define ACSC_MASK_INPUT_17					0x00020000
+#define ACSC_MASK_INPUT_18					0x00040000
+#define ACSC_MASK_INPUT_19					0x00080000
+#define ACSC_MASK_INPUT_20					0x00100000
+#define ACSC_MASK_INPUT_21					0x00200000
+#define ACSC_MASK_INPUT_22					0x00400000
+#define ACSC_MASK_INPUT_23					0x00800000
+#define ACSC_MASK_INPUT_24					0x01000000
+#define ACSC_MASK_INPUT_25					0x02000000
+#define ACSC_MASK_INPUT_26					0x04000000
+#define ACSC_MASK_INPUT_27					0x08000000
+#define ACSC_MASK_INPUT_28					0x10000000
+#define ACSC_MASK_INPUT_29					0x20000000
+#define ACSC_MASK_INPUT_30					0x40000000
+#define ACSC_MASK_INPUT_31					0x80000000
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Errors codes
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#define ACSC_ERRORBASE				100
+#define ACSC_UNKNOWNERROR			ACSC_ERRORBASE		//Unknown error
+#define ACSC_ENOENTLOGFILE			(ACSC_ERRORBASE+2)	//No such file or directory
+#define ACSC_OLD_FW					(ACSC_ERRORBASE+3)  //FW does not support all desired features
+#define ACSC_EBADFLOGFILE			(ACSC_ERRORBASE+9)	//Invalid log file handle 
+#define ACSC_EACCESLOGFILE			(ACSC_ERRORBASE+13)	//File access error
+#define ACSC_EINVALLOGFILE			(ACSC_ERRORBASE+22)	//Write error in Log file
+#define ACSC_EMFILELOGFILE			(ACSC_ERRORBASE+24)	//Too many open files
+#define ACSC_ENOSPCLOGFILE			(ACSC_ERRORBASE+28)	//Cannot open Log file. The drive is full
+#define ACSC_TIMEOUT				(ACSC_ERRORBASE+30)	//The controller stopped responding
+#define ACSC_INITFAILURE			(ACSC_ERRORBASE+32)	//Communication initialization failure
+#define ACSC_CREATECOMMFAILURE		(ACSC_ERRORBASE+33)	//(New) Error of creating communication object
+#define ACSC_INVALIDHANDLE			(ACSC_ERRORBASE+34)	//Invalid communication handle
+#define ACSC_ALLCHANNELSBUSY		(ACSC_ERRORBASE+35)	//All channels are busy
+#define ACSC_INVALIDLOGFILENAME		(ACSC_ERRORBASE+36)	//Invalid name of Log file
+#define ACSC_RECEIVEDTOOLONG		(ACSC_ERRORBASE+37)	//Received message too long(more than size of user buffer)
+#define ACSC_INVALIDBUFSIZE			(ACSC_ERRORBASE+38)	//Functions acsc_DownloadBuffer: the program contains string longer than 2032 bytes
+#define ACSC_INVALIDPARAMETERS		(ACSC_ERRORBASE+39) //Function parameters are invalid
+#define ACSC_CLOSEDHISTORYBUF		(ACSC_ERRORBASE+40)	//History buffer is closed 
+#define ACSC_EMPTYNAMEVAR			(ACSC_ERRORBASE+41)	//Name variable must be specified
+#define	ACSC_INPUTPAR				(ACSC_ERRORBASE+42)	//Error in index specification
+#define	ACSC_RECEIVEDTOOSMALL		(ACSC_ERRORBASE+43)	//Controller reply contains less values than expected
+#define ACSC_INITHISTORYBUFFAILED	(ACSC_ERRORBASE+47) //History buffer initialization failure
+#define ACSC_CLOSEDMESSAGEBUF		(ACSC_ERRORBASE+50)	//Unsolicited messages buffer is closed 
+#define ACSC_SETCALLBACKERROR		(ACSC_ERRORBASE+51) //Callback registration error
+#define ACSC_CALLBACKALREADYSET		(ACSC_ERRORBASE+52) //Callback function has been already installed
+#define ACSC_CHECKSUMERROR			(ACSC_ERRORBASE+53)	//Checksum of controller reply error
+#define ACSC_REPLIESSEQUENCEERROR	(ACSC_ERRORBASE+54)	//Internal error: Replies sequence error
+#define ACSC_WAITFAILED				(ACSC_ERRORBASE+55)	//Internal error: WaitForSingleObject error
+#define ACSC_INITMESSAGEBUFFAILED	(ACSC_ERRORBASE+57) //Unsolicited messages buffer initialization fauilure
+#define ACSC_OPERATIONABORTED		(ACSC_ERRORBASE+58) //Non-waiting call has been aborted
+#define ACSC_CANCELOPERATIONERROR	(ACSC_ERRORBASE+59) //Error of the non-waiting call cancellation
+#define ACSC_COMMANDSQUEUEFULL		(ACSC_ERRORBASE+60)	//Internal error: Queue of transmitted commands is full
+#define ACSC_SENDINGFAILED			(ACSC_ERRORBASE+62)	//Internal error: Sending is failed
+#define ACSC_RECEIVINGFAILED		(ACSC_ERRORBASE+63)	//Internal error: Receiving is failed
+#define ACSC_CHAINSENDINGFAILED		(ACSC_ERRORBASE+64)	//Internal error: Sending of chain is failed
+#define ACSC_TLSERROR				(ACSC_ERRORBASE+79)	//Internal error: Thread local storage error
+#define ACSC_INITDRIVERFAILED		(ACSC_ERRORBASE+80)	//PCI driver initialization failure
+#define ACSC_CAN_INITFAILURE		(ACSC_ERRORBASE+81)	//CAN library not found or initialization failure
+#define ACSC_INVALIDPOINTER			(ACSC_ERRORBASE+85)	//Pointer to the buffer is invalid
+#define ACSC_SETPRIORITYERROR		(ACSC_ERRORBASE+89)	//Specified priority for the callback thread cannot be set
+#define ACSC_DIRECTDPRAMACCESS		(ACSC_ERRORBASE+90)	//Attempt to access DPRAM not via PCI
+#define ACSC_DDERROR				(ACSC_ERRORBASE+91)	//Spii.vxd/sys can not be found or installed
+#define ACSC_INVALID_DPRAM_ADDR		(ACSC_ERRORBASE+92) //Invalid DPRAM address 
+#define ACSC_OLD_SIMULATOR			(ACSC_ERRORBASE+93) //Old version of SPiiPlus Simulator
+#define ACSC_HW_PROBLEM				(ACSC_ERRORBASE+94) //Hardware won't work properley
+#define ACSC_FILE_NOT_FOUND			(ACSC_ERRORBASE+95)
+#define ACSC_NOT_ENOUGH_DATA		(ACSC_ERRORBASE+96)
+#define ACSC_SERVEREXCEPTION		(ACSC_ERRORBASE+97)
+#define ACSC_STOPPED_RESPONDING		(ACSC_ERRORBASE+98)
+#define ACSC_DLL_UMD_VERSION		(ACSC_ERRORBASE+99) //DLL and Server are not of the same Version
+
+#define ACSC_HW_ERRORBASE			500						// Hardware specific errors
+#define ACSC_HW_NO_INT				(ACSC_HW_ERRORBASE+2)
+#define ACSC_HW_INT_PERIOD			(ACSC_HW_ERRORBASE+4)
+#define ACSC_HW_NO_INT_NOTIF		(ACSC_HW_ERRORBASE+6)
+#define ACSC_HW_SPiiFAILURE			(ACSC_HW_ERRORBASE+8)
+
+// for compatibility with the previous library
+#define ZL_ERRORBASE				100
+#define ZL_UNKNOWNERROR				ZL_ERRORBASE		
+#define ZL_ENOENTLOGFILE			(ZL_ERRORBASE+2)	
+#define ZL_EBADFLOGFILE				(ZL_ERRORBASE+9)	
+#define ZL_EACCESLOGFILE			(ZL_ERRORBASE+13)	
+#define ZL_EINVALLOGFILE			(ZL_ERRORBASE+22)	
+#define ZL_EMFILELOGFILE			(ZL_ERRORBASE+24)	
+#define ZL_ENOSPCLOGFILE			(ZL_ERRORBASE+28)	
+#define ZL_TIMEOUT					(ZL_ERRORBASE+30)	
+#define ZL_CHANNELERROR				(ZL_ERRORBASE+31)	
+#define ZL_INITFAILURE				(ZL_ERRORBASE+32)	
+#define ZL_CREATECOMMFAILURE		(ZL_ERRORBASE+33)	
+#define ZL_INVALIDHANDLE			(ZL_ERRORBASE+34)	
+#define ZL_ALLCHANNELSBUSY			(ZL_ERRORBASE+35)	
+#define ZL_INVALIDLOGFILENAME		(ZL_ERRORBASE+36)	
+#define ZL_RECEIVEDTOOLONG			(ZL_ERRORBASE+37)	
+#define ZL_INVALIDBUFSIZE			(ZL_ERRORBASE+38)	
+#define ZL_CLOSEDHISTORYBUF			(ZL_ERRORBASE+40)	
+#define ZL_EMPTYNAMEVAR				(ZL_ERRORBASE+41)	
+#define	ZL_INPUTPAR					(ZL_ERRORBASE+42)	
+#define	ZL_RECEIVEDTOOSMALL			(ZL_ERRORBASE+43)	
+#define ZL_INVALIDPATHDIRECT		(ZL_ERRORBASE+44)	
+#define ZL_INVALIDPROCESSDIRECT		(ZL_ERRORBASE+45)	
+#define ZL_INVALIDSTARTUP			(ZL_ERRORBASE+46)	
+#define ZL_INITHISTORYBUFFAILED		(ZL_ERRORBASE+47)   
+#define ZL_CLOSEDMESSAGEBUF			(ZL_ERRORBASE+50)	
+#define ZL_CHECKSUMERROR			(ZL_ERRORBASE+53)	
+#define ZL_REPLIESSEQUENCEERROR		(ZL_ERRORBASE+54)	
+#define ZL_WAITFAILED				(ZL_ERRORBASE+55)	
+#define ZL_INITMESSAGEBUFFAILED		(ZL_ERRORBASE+57)   
+#define ZL_COMMANDSQUEUEFULL		(ZL_ERRORBASE+60)	
+#define ZL_SENDINGFAILED			(ZL_ERRORBASE+62)	
+#define ZL_RECEIVINGFAILED			(ZL_ERRORBASE+63)	
+#define ZL_CHAINSENDINGFAILED		(ZL_ERRORBASE+64)	
+#define ZL_TLSERROR					(ZL_ERRORBASE+79)	
+#define ZL_INITDRIVERFAILED			(ZL_ERRORBASE+80)	
+
+#define ACSC_CANDEVICE_CUSTOM1		1
+#define ACSC_CANDEVICE_CUSTOM2		2
+#define ACSC_CANDEVICE_NI			11
+
+#if defined (_ACSC_LIBRARY_DLL_)
+#define _ACSCLIB_ __declspec( dllexport )
+#else
+#define _ACSCLIB_ __declspec( dllimport )
+#endif
+
+// Structure is used for non-waiting calls of the library functions
+typedef struct 
+{
+	HANDLE Event;				//signal event
+	int	   Ret;					//code of return
+} ACSC_WAITBLOCK, *LP_ACSC_WAITBLOCK, WAITBLOCK, *LP_WAITBLOCK;
+
+#define ACSC_IGNORE				(LP_ACSC_WAITBLOCK)-1		//Ignore result of asyncronous call
+
+// Structure defines a physical location of PCI card
+typedef struct 
+{
+	unsigned int BusNumber;		//PCI physical bus number of card
+	unsigned int SlotNumber;	//PCI physical slot number of card
+	unsigned int Function;		//PCI function of card
+} ACSC_PCI_SLOT, *LP_ACSC_PCI_SLOT, PCI_SLOT, *LP_PCI_SLOT;
+
+typedef enum ACSC_LOG_DETALIZATION_LEVEL{Minimum,Medium,Maximum};
+typedef enum ACSC_LOG_DATA_PRESENTATION {Compact,Formatted,Full};
+// Structure of history and message buffer
+// Please never change data of this structure!
+struct _ACSCLIB_ ACSC_HISTORYBUFFER
+{
+	int    Max;					//buffer size
+	int    Cur;					//number of bytes currently stored in the buffer
+	int    Ring;				//circular index in the buffer
+	char*  Buf;					//pointer to buffer
+};
+
+typedef struct ACSC_HISTORYBUFFER ZL_HISTORYBUFFER;
+typedef struct ACSC_HISTORYBUFFER *LP_ACSC_HISTORYBUFFER, *LP_ZL_HISTORYBUFFER;
+
+typedef int (WINAPI *ACSC_INTR_CALLBACK_FUNC)(int Param);
+typedef int (WINAPI *ACSC_INTR_CALLBACK_FUNC_EXT)(int Param,void* CardContext);
+typedef int (WINAPI *ACSC_USER_CONDITION_FUNC)(HANDLE Handle);
+
+#define ACSC_DUMMY_CALLBACK (ACSC_INTR_CALLBACK_FUNC)-1
+#define ACSC_DUMMY_CALLBACK_EXT (ACSC_INTR_CALLBACK_FUNC_EXT)-1
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// If you want to load ACSC.dll dynamically at runtime, 
+// define ACSC_RUNTIME_DYNAMIC_LINKING in your project before including this file
+// Otherwise load-time dynamic linking is implied
+//////////////////////////////////////////////////////////////////////////////////////////////////
+#if !defined (ACSC_RUNTIME_DYNAMIC_LINKING)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates communication via serial port
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+HANDLE _ACSCLIB_ WINAPI acsc_OpenCommSerial(int Channel, int Rate);
+// for compatibility with the previous library
+HANDLE _ACSCLIB_ WINAPI zl_OpenCommSerial(int Channel, int Rate);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates communication via Ethernet
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+HANDLE _ACSCLIB_ WINAPI acsc_OpenCommEthernet(char* Address, int Port);
+// for compatibility with the previous library
+HANDLE _ACSCLIB_ WINAPI zl_OpenCommEthernet(char* Address, int Port);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates direct communication with simulator
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+HANDLE _ACSCLIB_ WINAPI acsc_OpenCommDirect();
+// for compatibility with the previous library
+HANDLE _ACSCLIB_ WINAPI zl_OpenCommDirect();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates communication via PCI device driver
+//////////////////////////////////////////////////////////////////////////////////////////////////
+HANDLE _ACSCLIB_ WINAPI acsc_OpenCommPCI(int SlotNumber);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a PCI bus information for the SB1218PCI cards installed
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetPCICards(ACSC_PCI_SLOT* Cards, int Count, int* ObtainedCards);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function closes communication (for all kinds of communications)
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_CloseComm(HANDLE Handle);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_CloseComm(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sends message
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_Send(HANDLE Handle, char* Buf, int Count, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_Send(HANDLE Handle, char* Buf, int Count, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function receives message
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_Receive(HANDLE Handle, char* Buf, int Count, int* Received, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_Receive(HANDLE Handle, char* Buf, int Count, int* Received, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides transaction: sends request and receives reply
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int	_ACSCLIB_ WINAPI acsc_Transaction(HANDLE Handle, char* OutBuf, int OutCount, char* InBuf, int InCount, int* Received, ACSC_WAITBLOCK* Wait);
+
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_Transaction(HANDLE Handle, char* OutBuf, int OutCount, char* InBuf, int InCount, int* Received, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sends a command to the controller and analyzes the controller response.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Command(HANDLE Handle, char* OutBuf, int OutCount, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for completion of asynchronous call and retrieves a data.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitForAsyncCall(HANDLE Handle, void* Buf, int* Received, ACSC_WAITBLOCK* Wait, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function cancels any asynchronous (non-waiting) call
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_CancelOperation(HANDLE Handle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the last error code
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int	_ACSCLIB_ WINAPI acsc_GetLastError();
+// for compatibility with the previous library
+int	_ACSCLIB_ WINAPI zl_GetLastError(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the explanation of an error code. 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int	_ACSCLIB_ WINAPI acsc_GetErrorString(HANDLE Handle, int ErrorCode, char* ErrorStr, int Count, int* Received);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets communication call delay
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetQueueOverflowTimeout(HANDLE Handle, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves communication call delay 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetQueueOverflowTimeout(HANDLE Handle);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets communication timeout
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetTimeout(HANDLE Handle, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves communication timeout
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetTimeout(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves default communication timeout
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetDefaultTimeout(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the number of iterations of one transaction
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetIterations(HANDLE Handle, int Iterations);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets communication options
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetCommOptions(HANDLE Handle, unsigned int Options);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves communication options
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetCommOptions(HANDLE Handle, unsigned int* Options);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves ACSC Library version
+//////////////////////////////////////////////////////////////////////////////////////////////////
+unsigned int _ACSCLIB_ WINAPI acsc_GetLibraryVersion();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function loads ACSPL+ program to the specified program buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_LoadBuffer(HANDLE Handle, int Buffer, char* Text, int Count, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function loads ACSPL+ program to the specified program buffer.
+// Service lines are ignored.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_LoadBufferIgnoreServiceLines(HANDLE Handle, int Buffer, char* Text, int Count, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function loads ACSPL+ programs to the specified program buffers.
+// From *.prg file
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_LoadBuffersFromFile(HANDLE Handle,  char* Filename, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function appends one or more ACSPL+ lines to the program in the specified program buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AppendBuffer(HANDLE Handle, int Buffer, char* Text, int Count, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function downloads text to a program buffer. The function is similar to the function acsc_AppendBuffer() 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_DownloadBuffer(HANDLE Handle, int Buffer, char* Text, int Count, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_DownloadBuffer(HANDLE Handle, int NBuf, char* Text, int Count, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function uploads text from a program buffer 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_UploadBuffer(HANDLE Handle, int Buffer, int Offset, char* Text, int Count, int* Received, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_UploadBuffer(HANDLE Handle, int NBuf, int Offset, char* Text, int Count, int* Received, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function deletes the specified ACSPL+ program lines in the specified program buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ClearBuffer(HANDLE Handle, int Buffer, int FromLine, int ToLine, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function compiles ACSPL+ program in the specified program buffer(s).
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_CompileBuffer(HANDLE Handle, int Buffer, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function starts up ACSPL+ program in the specified program buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_RunBuffer(HANDLE Handle, int Buffer, char* Label, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function stops ACSPL+ program in the specified program buffer(s).
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_StopBuffer(HANDLE Handle, int Buffer, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function suspends ACSPL+ program in the specified program buffer(s).
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SuspendBuffer(HANDLE Handle, int Buffer, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function reads value(s) from integer variable
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_ReadInteger(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, int* Values, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_ReadInteger(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, int* Values, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function writes value(s) to integer variable
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_WriteInteger(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, int* Values, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_WriteInteger(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, int* Values, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function reads value(s) from real variable
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_ReadReal(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, double* Values, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_ReadReal(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, double* Values, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function writes value(s) to real variable
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_WriteReal(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, double* Values, ACSC_WAITBLOCK* Wait);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_WriteReal(HANDLE Handle, int NBuf, char* Var, int From1, int To1, int From2, int To2, double* Values, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function captures communication
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_CaptureComm(HANDLE Handle);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_CaptureComm(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function releases communication
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_ReleaseComm(HANDLE Handle);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_ReleaseComm(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates history buffer
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+LP_ACSC_HISTORYBUFFER _ACSCLIB_ WINAPI acsc_OpenHistoryBuffer(HANDLE Handle, int Size);
+// for compatibility with the previous library
+LP_ZL_HISTORYBUFFER _ACSCLIB_ WINAPI zl_OpenHistoryBuffer(HANDLE Handle, int Size);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function closes history buffer
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_CloseHistoryBuffer(HANDLE Handle);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_CloseHistoryBuffer(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the contents of the history buffer
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_GetHistory(HANDLE Handle, char* Buf, int Count, int* Received, BOOL bClear);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_GetHistory(HANDLE Handle, char* Buf, int Count, int* Received, BOOL bClear);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates unsolicited messages buffer
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+LP_ACSC_HISTORYBUFFER _ACSCLIB_ WINAPI acsc_OpenMessageBuffer(HANDLE Handle, int Size);
+// for compatibility with the previous library
+LP_ZL_HISTORYBUFFER _ACSCLIB_ WINAPI zl_OpenMessageBuffer(HANDLE Handle, int Size);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function closes unsolicited messages buffer
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_CloseMessageBuffer(HANDLE Handle);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_CloseMessageBuffer(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves all stored unsolicited messages from buffer
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_GetMessage(HANDLE Handle, char* Buf, int Count, int* Received, BOOL bClear);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_GetMessage(HANDLE Handle, char* Buf, int Count, int* Received, BOOL bClear);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a single unsolicited message or exits by timeout
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetSingleMessage(HANDLE Handle, char* Buf, int Count, int* Received, int Timeout);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function opens logfile. Now all communication will be saved in the logfile.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_OpenLogFile(HANDLE Handle, char* FileName);
+int _ACSCLIB_ WINAPI acsc_OpenTimingLogFile(HANDLE Handle, char* FileName);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_OpenLogFile(HANDLE Handle, char* FileName);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function closes logfile. 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// function of the new library
+int _ACSCLIB_ WINAPI acsc_CloseLogFile(HANDLE Handle);
+int _ACSCLIB_ WINAPI acsc_CloseTimingLogFile(HANDLE Handle);
+// for compatibility with the previous library
+int _ACSCLIB_ WINAPI zl_CloseLogFile(HANDLE Handle);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function writes to logfile. 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WriteLogFile(HANDLE Handle, char* Buf, int Count);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function defines a value of motion velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetVelocity(HANDLE Handle, int Axis, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a value of motion velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetVelocity(HANDLE Handle, int Axis, double* Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function defines a value of motion acceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetAcceleration(HANDLE Handle, int Axis, double Acceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a value of motion acceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetAcceleration(HANDLE Handle, int Axis, double* Acceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function defines a value of motion deceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetDeceleration(HANDLE Handle, int Axis, double Deceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a value of motion deceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetDeceleration(HANDLE Handle, int Axis, double* Deceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function defines a value of motion jerk.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetJerk(HANDLE Handle, int Axis, double Jerk, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a value of motion jerk.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetJerk(HANDLE Handle, int Axis, double* Jerk, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function defines a value of kill deceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetKillDeceleration(HANDLE Handle, int Axis, double KillDeceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a value of kill deceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetKillDeceleration(HANDLE Handle, int Axis, double* KillDeceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides on-the-fly change a value of motion velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetVelocityImm(HANDLE Handle, int Axis, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides on-the-fly change a value of motion acceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetAccelerationImm(HANDLE Handle, int Axis, double Acceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides on-the-fly change a value of motion deceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetDecelerationImm(HANDLE Handle, int Axis, double Deceleration, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides on-the-fly change a value of motion jerk.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetJerkImm(HANDLE Handle, int Axis, double Jerk, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides on-the-fly change a value of kill deceleration.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetKillDecelerationImm(HANDLE Handle, int Axis, double KillDeceleration, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function assigns a current value of target position for several axes.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetTargetPositionM(HANDLE Handle, int* Axes, double *TargetPositions, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function assigns a current value of target position.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetTargetPosition(HANDLE Handle, int Axis, double TargetPosition, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a current value of motor feedback position.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+int _ACSCLIB_ WINAPI acsc_GetTargetPosition(HANDLE Handle, int Axis, double* TargetPosition, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function assigns a current value of target position.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetFPosition(HANDLE Handle, int Axis, double FPosition, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a current value of motor feedback position.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetFPosition(HANDLE Handle, int Axis, double* FPosition, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function assigns a current value of reference position.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetRPosition(HANDLE Handle, int Axis, double RPosition, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a current value of reference position.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetRPosition(HANDLE Handle, int Axis, double* RPosition, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a current value of motor feedback velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetFVelocity(HANDLE Handle, int Axis, double* FVelocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves a current value of reference velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetRVelocity(HANDLE Handle, int Axis, double* RVelocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function activates a motor.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Enable(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function activates several motors.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_EnableM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function shuts off a motor.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Disable(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function shuts off several motors.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_DisableM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function shuts off all motors.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_DisableAll(HANDLE Handle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function creates a coordinate system for multi-axis motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Group(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+int _ACSCLIB_ WINAPI acsc_ff(void **ptr);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function breaks down an axis group created before by the acsc_Group function.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Split(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function breaks down all axis groups created before by the acsc_Group function.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SplitAll(HANDLE Handle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function starts up a motion that is waiting in the specified motion queue.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Go(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function synchronously starts up several motions 
+// that are waiting in the specified motion queues. 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GoM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates a motion using the full deceleration profile.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Halt(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates several motions using the full deceleration profile.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_HaltM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates a motion using reduced deceleration profile.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Kill(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates several motions using reduced deceleration profile.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_KillM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates all currently executed motions.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_KillAll(HANDLE Handle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates a motion immediately and 
+// provides a smooth transition to the next motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Break(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates several motions immediately and 
+// provides a smooth transition to the next motions.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_BreakM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a single-axis motion to the specified point.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ToPoint(HANDLE Handle, int Flags, int Axis, double Point, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multi-axis motion to the specified point
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ToPointM(HANDLE Handle, int Flags, int* Axes, double* Point, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a single-axis motion to the specified point 
+// using the specified velocity or end velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtToPoint(HANDLE Handle, int Flags, int Axis, double Point, double Velocity, double EndVelocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multi-axis motion to the specified point 
+// using the specified velocity or end velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtToPointM(HANDLE Handle, int Flags, int* Axes, double* Point, double Velocity, double EndVelocity, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a single-axis track motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Track(HANDLE Handle, int Flags, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multile-axis track motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_TrackM(HANDLE Handle, int Flags, int *Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function clears the current faults and results of previous faults stored in the MERR variable.
+// For single axis
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_FaultClear(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function clears the current faults and results of previous faults stored in the MERR variable.
+// For multiple axes
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_FaultClearM(HANDLE Handle, int *Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function writes system configuration-obsolete
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetConf(HANDLE Handle, int Key, int Index, double Value, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function reads system configuration-obsolete
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetConf(HANDLE Handle, int Key, int Index, double *Value, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function writes system configuration
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Setconf(HANDLE Handle, int Key, int Index, int Value, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function reads system configuration
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Getconf(HANDLE Handle, int Key, int Index, int *Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a single-axis jog motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Jog(HANDLE Handle, int Flags, int Axis, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multi-axis jog motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_JogM(HANDLE Handle, int Flags, int* Axes, int* Direction, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates calculating of master value for an axis.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetMaster(HANDLE Handle, int Axis, char* Formula, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a master-slave motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Slave(HANDLE Handle, int Flags, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a master-slave motion with a limited following area.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SlaveStalled(HANDLE Handle, int Flags, int Axis, double Left, double Right, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a single-axis multi-point motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_MultiPoint(HANDLE Handle, int Flags, int Axis, double Dwell, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multi-axis multi-point motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_MultiPointM(HANDLE Handle, int Flags, int* Axes, double Dwell, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a single-axis spline motion. 
+// The motion follows an arbitrary path defined by a set of points.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Spline(HANDLE Handle, int Flags, int Axis, double Period, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multi-axis spline motion. 
+// The motion follows an arbitrary path defined by a set of points.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SplineM(HANDLE Handle, int Flags, int* Axes, double Period, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates a multi-axis segmented motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Segment(HANDLE Handle, int Flags, int* Axes, double* Point, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a linear segment to a segmented motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Line(HANDLE Handle, int* Axes, double* Point, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a linear segment to a segmented motion and specifies a motion velocity.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtLine(HANDLE Handle, int* Axes, double* Point, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds an arc segment to a segmented motion and specifies the coordinates 
+// of center point, coordinates of the final point and the direction of rotation.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Arc1(HANDLE Handle, int* Axes, double* Center, double* FinalPoint, int Rotation, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds an arc segment to a segmented motion and specifies the coordinates 
+// of center point, coordinates of the final point, direction of rotation and 
+// the vector velocity for the current segment.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtArc1(HANDLE Handle, int* Axes, double* Center, double* FinalPoint, int Rotation, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds an arc segment to a segmented motion and specifies the coordinates 
+// of center point and rotation angle.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Arc2(HANDLE Handle, int* Axes, double* Center, double Angle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds an arc segment to a segmented motion and specifies the coordinates 
+// of center point, rotation angle and the vector velocity for the current segment.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtArc2(HANDLE Handle, int* Axes, double* Center, double Angle, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function provides a smooth transition between two segments of segmented motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Stopper(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets a projection matrix for segmented motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Projection(HANDLE Handle, int* Axes, char* Matrix, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a single-axis multi-point or spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddPoint(HANDLE Handle, int Axis, double Point, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a multi-axis multi-point or spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddPointM(HANDLE Handle, int* Axes, double* Point, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a single-axis multi-point or spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtAddPoint(HANDLE Handle, int Axis, double Point, double Rate, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a multi-axis multi-point or spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ExtAddPointM(HANDLE Handle, int* Axes, double* Point, double Rate, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a single-axis PVT spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddPVTPoint(HANDLE Handle, int Axis, double Point, double Velocity,double TimeInterval, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a multi-axis PVT spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddPVTPointM(HANDLE Handle, int *Axis, double *Point, double *Velocity,double TimeInterval, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a single-axis PV spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddPVPoint(HANDLE Handle, int Axis, double Point, double Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds a point to a multi-axis PV spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddPVPointM(HANDLE Handle, int *Axis, double *Point, double *Velocity, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds an array of points to a single-axis multi-point or spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddMPoint(HANDLE Handle, int Axis, char* Name, int Count, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function adds an array of points to a multi-axis multi-point or spline motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_AddMPointM(HANDLE Handle, int* Axes, char* Name, int Count, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function informs the controller, that no more points will be specified for the current single-axis motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_EndSequence(HANDLE Handle, int Axis, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function informs the controller, that no more points or segments will be specified for the current multi-axis motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_EndSequenceM(HANDLE Handle, int* Axes, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates data collection.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_Collect(HANDLE Handle, int Flags, char* Array, int NSample, int Period, char** Vars, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates data collection.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_CollectB(HANDLE Handle, int Flags, char* Array, int NSample, int Period, char* Vars, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates data collection.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_StopCollect(HANDLE Handle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current motor state.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetMotorState(HANDLE Handle, int Axis, int* State, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current axis state.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetAxisState(HANDLE Handle, int Axis, int* State, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the index and mark variables.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetIndexState(HANDLE Handle, int Axis, int* State, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function resets the specified bits of the index/mark state.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ResetIndexState(HANDLE Handle, int Axis, int Mask, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the program buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetProgramState(HANDLE Handle, int Buffer, int* State, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified digital input.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetInput(HANDLE Handle, int Port, int Bit, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified digital input port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetInputPort(HANDLE Handle, int Port, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified digital output.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetOutput(HANDLE Handle, int Port, int Bit, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified digital output port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetOutputPort(HANDLE Handle, int Port, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the specified digital output to the specified value.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetOutput(HANDLE Handle, int Port, int Bit, int Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the specified digital output port to the specified value.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetOutputPort(HANDLE Handle, int Port, int Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current numerical value of the specified analog inputs.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetAnalogInput(HANDLE Handle, int Port, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current numerical value of  the specified analog outputs.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetAnalogOutput(HANDLE Handle, int Port, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function writes the current numerical value to the specified analog outputs.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetAnalogOutput(HANDLE Handle, int Port, int Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified extended input.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetExtInput(HANDLE Handle, int Port, int Bit, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified extended input port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetExtInputPort(HANDLE Handle, int Port, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified extended output.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetExtOutput(HANDLE Handle, int Port, int Bit, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified extended output port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetExtOutputPort(HANDLE Handle, int Port, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the specified extended output to the specified value.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetExtOutput(HANDLE Handle, int Port, int Bit, int Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the specified extended output port to the specified value.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetExtOutputPort(HANDLE Handle, int Port, int Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the set of bits, that indicate the motor or system faults.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetFault(HANDLE Handle, int Axis, int* Fault, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the mask, that defines which controller faults are examined and processed.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetFaultMask(HANDLE Handle, int Axis, int* Mask, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the mask, that enables/disables the examination and processing of the controller faults.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetFaultMask(HANDLE Handle, int Axis, int Mask, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function enables the specified motor or system fault.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_EnableFault(HANDLE Handle, int Axis, int Fault, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function disables the specified motor or system fault.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_DisableFault(HANDLE Handle, int Axis, int Fault, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the mask, that defines for which motor or system faults the controller provides default response.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetResponseMask(HANDLE Handle, int Axis, int* Mask, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the mask, that defines for which motor or system faults the controller provides default response.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetResponseMask(HANDLE Handle, int Axis, int Mask, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function enables the response to the specified motor or system fault.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_EnableResponse(HANDLE Handle, int Axis, int Response, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function disables the default response to the specified motor or system fault.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_DisableResponse(HANDLE Handle, int Axis, int Response, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified safety input.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetSafetyInput(HANDLE Handle, int Axis, int Input, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the current state of  the specified safety input port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetSafetyInputPort(HANDLE Handle, int Axis, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the set of bits that define inversion for the specified safety input port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetSafetyInputPortInv(HANDLE Handle, int Axis, int* Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the set of bits that define inversion for the specified safety input port.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetSafetyInputPortInv(HANDLE Handle, int Axis, int Value, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for the end of a motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitMotionEnd(HANDLE Handle, int Axis, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for the logical end of a motion.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitLogicalMotionEnd(HANDLE Handle, int Axis, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for the end of data collection.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitCollectEnd(HANDLE Handle, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for the program termination in the specified buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitProgramEnd(HANDLE Handle, int Buffer, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for the specified state of the specified motor.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitMotorEnabled(HANDLE Handle, int Axis, int State, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for the specified state of digital input.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitInput(HANDLE Handle, int Port, int Bit, int State, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function waits for user-defined condition.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_WaitUserCondition(HANDLE Handle, ACSC_USER_CONDITION_FUNC UserCondition, int Timeout);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function installs a user-defined callback function for the specified interrupt condition
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetCallback(HANDLE Handle, ACSC_INTR_CALLBACK_FUNC Callback, int Interrupt);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function installs a user-defined callback function for the specified interrupt condition
+// with specified card context
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetCallbackExt(HANDLE Handle, ACSC_INTR_CALLBACK_FUNC_EXT Callback,void* CardContext, int Interrupt);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the priority for all callback threads. 
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetCallbackPriority(HANDLE Handle, int Priority);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function sets the mask for specified interrupt
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_SetInterruptMask(HANDLE Handle, int Interrupt, unsigned int Mask);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the mask for specified interrupt
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetInterruptMask(HANDLE Handle, int Interrupt, unsigned int* Mask);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function creates the persistent global variable.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_DeclareVariable(HANDLE Handle, int Type, char* Name, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function deletes all persistent global variables.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ClearVariables(HANDLE Handle, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the firmware version of the controller.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetFirmwareVersion(HANDLE Handle, char* Version, int Count, int* Received, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the controller serial number.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetSerialNumber(HANDLE Handle, char* SerialNumber, int Count, int* Received, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function terminates a motion using reduced deceleration profile with Reason of kill.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_KillExt(HANDLE Handle, int Axis,int Reason, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function disables motor and sets Reason of disable.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_DisableExt(HANDLE Handle, int Axis,int Reason, ACSC_WAITBLOCK* Wait);
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the reason why the motor was disabled.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetMotorError(HANDLE Handle, int Axis, int* Error, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the termination code of the last executed motion of the specified axis.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetMotionError(HANDLE Handle, int Axis, int* Error, ACSC_WAITBLOCK* Wait);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function retrieves the error code of the last program error encountered in the specified buffer.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_GetProgramError(HANDLE Handle, int Buffer, int* Error, ACSC_WAITBLOCK* Wait);
+////////////////////////////////////////////////////////////////////////////////////////////////
+//These functions access directly DPRAM via PCI bus only
+////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_ReadDPRAMInteger(HANDLE Handle, int index, int* result);
+int _ACSCLIB_ WINAPI acsc_WriteDPRAMInteger(HANDLE Handle, int index, int data);
+int _ACSCLIB_ WINAPI acsc_ReadDPRAMReal(HANDLE Handle, int index, double* result);
+int _ACSCLIB_ WINAPI acsc_WriteDPRAMReal(HANDLE Handle, int index, double data);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//This function defines communication server IP address
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int _ACSCLIB_ WINAPI acsc_SetServer(char *IP);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//These functions are related to Position Event Generation(PEG)
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+int _ACSCLIB_ WINAPI acsc_PegI(HANDLE Handle,int Flags,int Axis,double Width,int FirstPoint,int Interval,int LastPoint,int TbNumber,double TbPeriod, ACSC_WAITBLOCK* Wait);
+int _ACSCLIB_ WINAPI acsc_PegR(HANDLE Handle,int Flags,int Axis,double Width,char* PointArray,char* StateArray,int TbNumber,double TbPeriod, ACSC_WAITBLOCK* Wait);
+int _ACSCLIB_ WINAPI acsc_AssignPins(HANDLE Handle,int Axis,unsigned short Mask, ACSC_WAITBLOCK* Wait);
+int _ACSCLIB_ WINAPI acsc_StopPeg(HANDLE Handle,int Axis, ACSC_WAITBLOCK* Wait);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+//These functions are used for reading data from text files
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int _ACSCLIB_ WINAPI acsc_LoadFileToIntegerVariable(HANDLE Handle, int NBuf, char *Var, int From1, int To1, int From2, int To2, char* Filename, ACSC_WAITBLOCK* Wait);
+int _ACSCLIB_ WINAPI acsc_LoadFileToRealVariable(HANDLE Handle, int NBuf, char *Var, int From1, int To1, int From2, int To2, char* Filename, ACSC_WAITBLOCK* Wait);
+
+int _ACSCLIB_ WINAPI acsc_DownloadBinVariableToFile(HANDLE Handle, int NBuf, char *Var, int Size, int From1, int To1, int From2, int To2, char* Filename, char* Format, ACSC_WAITBLOCK* Wait);
+int _ACSCLIB_ WINAPI acsc_SetLogFileOptions(HANDLE Handle,ACSC_LOG_DETALIZATION_LEVEL Detalization, ACSC_LOG_DATA_PRESENTATION Presentation);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates local communication with SPiiPlus-PC Firmware
+//////////////////////////////////////////////////////////////////////////////////////////////////
+HANDLE _ACSCLIB_ WINAPI acsc_OpenCommLocalPC();
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function initiates communication via CAN network
+//////////////////////////////////////////////////////////////////////////////////////////////////
+HANDLE _ACSCLIB_ WINAPI acsc_OpenCommCAN(int DeviceType, int Node_ID, int Port, int Rate, void* Attributes);
+
+#else // defined (ACSC_RUNTIME_DYNAMIC_LINKING)
+
+// function type definitions
+typedef int (WINAPI *ACSC_AddMPoint)(HANDLE, int, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddMPointM)(HANDLE, int*, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddPoint)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddPointM)(HANDLE, int*, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AppendBuffer)(HANDLE, int, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Arc1)(HANDLE, int*, double*, double*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Arc2)(HANDLE, int*, double*, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Break)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_BreakM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_CancelOperation)(HANDLE, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_CaptureComm)(HANDLE);
+typedef int (WINAPI *ACSC_ClearBuffer)(HANDLE, int, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ClearVariables)(HANDLE, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_CloseComm)(HANDLE);
+typedef int (WINAPI *ACSC_CloseHistoryBuffer)(HANDLE);
+typedef int (WINAPI *ACSC_CloseLogFile)(HANDLE);
+typedef int (WINAPI *ACSC_CloseMessageBuffer)(HANDLE);
+typedef int (WINAPI *ACSC_Collect)(HANDLE, int, char*, int, int, char**, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Command)(HANDLE, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_CompileBuffer)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DeclareVariable)(HANDLE, int, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Disable)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DisableAll)(HANDLE, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DisableFault)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DisableM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DisableResponse)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DownloadBuffer)(HANDLE, int, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Enable)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_EnableFault)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_EnableM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_EnableResponse)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_EndSequence)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_EndSequenceM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtAddPoint)(HANDLE, int, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtAddPointM)(HANDLE, int*, double*, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtArc1)(HANDLE, int*, double*, double*, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtArc2)(HANDLE, int*, double*, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtLine)(HANDLE, int*, double*, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtToPoint)(HANDLE, int, int, double, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ExtToPointM)(HANDLE, int, int*, double*, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetAcceleration)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetAnalogInput)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetAnalogOutput)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetAxisState)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetCommOptions)(HANDLE, unsigned int*);
+typedef int (WINAPI *ACSC_GetDeceleration)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetDefaultTimeout)(HANDLE);
+typedef int	(WINAPI *ACSC_GetErrorString)(HANDLE, int, char*, int, int*);
+typedef int (WINAPI *ACSC_GetExtInput)(HANDLE, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetExtInputPort)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetExtOutput)(HANDLE, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetExtOutputPort)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetFPosition)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetFVelocity)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetFault)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetFaultMask)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetFirmwareVersion)(HANDLE, char*, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetHistory)(HANDLE, char*, int, int*, BOOL);
+typedef int (WINAPI *ACSC_GetIndexState)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetInput)(HANDLE, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetInputPort)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetInterruptMask)(HANDLE, int, unsigned int*);
+typedef int (WINAPI *ACSC_GetJerk)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetKillDeceleration)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetLastError)();
+typedef unsigned int (WINAPI *ACSC_GetLibraryVersion)();
+typedef int (WINAPI *ACSC_GetMessage)(HANDLE, char*, int, int*, BOOL);
+typedef int (WINAPI *ACSC_GetMotionError)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetMotorError)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetMotorState)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetOutput)(HANDLE, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetOutputPort)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetPCICards)(ACSC_PCI_SLOT*, int , int*); 
+typedef int (WINAPI *ACSC_GetProgramError)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetProgramState)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetRPosition)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetRVelocity)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetResponseMask)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetSafetyInput)(HANDLE, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetSafetyInputPort)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetSafetyInputPortInv)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetSerialNumber)(HANDLE, char*, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetTimeout)(HANDLE);
+typedef int (WINAPI *ACSC_GetVelocity)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Go)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GoM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Group)(HANDLE, int*, ACSC_WAITBLOCK* Wait);
+typedef int (WINAPI *ACSC_Halt)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_HaltM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Jog)(HANDLE, int, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_JogM)(HANDLE, int, int*, int*, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Kill)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_KillExt)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_DisableExt)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_KillAll)(HANDLE, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_KillM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Line)(HANDLE, int*, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_LoadBuffer)(HANDLE, int, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_MultiPoint)(HANDLE, int, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_MultiPointM)(HANDLE, int, int*, double, ACSC_WAITBLOCK*);
+typedef HANDLE (WINAPI *ACSC_OpenCommDirect)();
+typedef HANDLE (WINAPI *ACSC_OpenCommEthernet)(char*, int);
+typedef HANDLE (WINAPI *ACSC_OpenCommSerial)(int, int);
+typedef HANDLE (WINAPI *ACSC_OpenCommPCI)(int); 
+typedef LP_ACSC_HISTORYBUFFER (WINAPI *ACSC_OpenHistoryBuffer)(HANDLE, int);
+typedef int (WINAPI *ACSC_OpenLogFile)(HANDLE, char*);
+typedef LP_ACSC_HISTORYBUFFER (WINAPI *ACSC_OpenMessageBuffer)(HANDLE, int);
+typedef int (WINAPI *ACSC_Projection)(HANDLE, int*, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ReadDPRAMInteger)(HANDLE, int, int*);
+typedef int (WINAPI *ACSC_ReadDPRAMReal)(HANDLE, int, double*);
+typedef int (WINAPI *ACSC_ReadInteger)(HANDLE, int, char*, int, int, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ReadReal)(HANDLE, int, char*, int, int, int, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Receive)(HANDLE, char*, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ReleaseComm)(HANDLE);
+typedef int (WINAPI *ACSC_ResetIndexState)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_RunBuffer)(HANDLE, int, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Segment)(HANDLE, int, int*, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Send)(HANDLE, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetAcceleration)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetAccelerationImm)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetAnalogOutput)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetCallback)(HANDLE, ACSC_INTR_CALLBACK_FUNC, int);
+typedef int (WINAPI *ACSC_SetCallbackPriority)(HANDLE, int);
+typedef int (WINAPI *ACSC_SetCommOptions)(HANDLE, unsigned int);
+typedef int (WINAPI *ACSC_SetDeceleration)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetDecelerationImm)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetExtOutput)(HANDLE, int, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetExtOutputPort)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetFPosition)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetFaultMask)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetInterruptMask)(HANDLE, int, unsigned int);
+typedef int (WINAPI *ACSC_SetIterations)(HANDLE, int);
+typedef int (WINAPI *ACSC_SetJerk)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetJerkImm)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetKillDeceleration)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetKillDecelerationImm)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetMaster)(HANDLE, int, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetOutput)(HANDLE, int, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetOutputPort)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetRPosition)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetResponseMask)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetSafetyInputPortInv)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetTimeout)(HANDLE, int);
+typedef int (WINAPI *ACSC_SetVelocity)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetVelocityImm)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Slave)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SlaveStalled)(HANDLE, int, int, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Spline)(HANDLE, int, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SplineM)(HANDLE, int, int*, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Split)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SplitAll)(HANDLE, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_StopBuffer)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_StopCollect)(HANDLE, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Stopper)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SuspendBuffer)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ToPoint)(HANDLE, int, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_ToPointM)(HANDLE, int, int*, double*, ACSC_WAITBLOCK*);
+typedef int	(WINAPI *ACSC_Transaction)(HANDLE, char*, int, char*, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_UploadBuffer)(HANDLE, int, int, char*, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_WaitCollectEnd)(HANDLE, int);
+typedef int (WINAPI *ACSC_WaitForAsyncCall)(HANDLE, void*, int*, ACSC_WAITBLOCK*, int);
+typedef int (WINAPI *ACSC_WaitInput)(HANDLE, int, int, int, int);
+typedef int (WINAPI *ACSC_WaitLogicalMotionEnd)(HANDLE, int, int);
+typedef int (WINAPI *ACSC_WaitMotionEnd)(HANDLE, int, int);
+typedef int (WINAPI *ACSC_WaitMotorEnabled)(HANDLE, int, int, int);
+typedef int (WINAPI *ACSC_WaitProgramEnd)(HANDLE, int, int);
+typedef int (WINAPI *ACSC_WaitUserCondition)(HANDLE, ACSC_USER_CONDITION_FUNC, int);
+typedef int (WINAPI *ACSC_WriteDPRAMInteger)(HANDLE, int, int);
+typedef int (WINAPI *ACSC_WriteDPRAMReal)(HANDLE, int, double);
+typedef int (WINAPI *ACSC_WriteInteger)(HANDLE, int, char*, int, int, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_WriteLogFile)(HANDLE, char*, int);
+typedef int (WINAPI *ACSC_WriteReal)(HANDLE, int, char*, int, int, int, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_LoadBufferIgnoreServiceLines)(HANDLE, int, char*, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_LoadBuffersFromFile)(HANDLE, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_PegI)(HANDLE, int, int, double, int, int, int, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_PegR)(HANDLE, int, int, double, char*, char*, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AssignPins)(HANDLE, int, unsigned short, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_StopPeg)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_CollectB)(HANDLE, int, char*, int, int, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddPVPoint)(HANDLE, int, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddPVPointM)(HANDLE, int*, double*, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddPVTPoint)(HANDLE, int, double, double, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_AddPVTPointM)(HANDLE, int*, double*, double*, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_LoadFileToRealVariable)(HANDLE, int, char*, int, int, int, int, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_LoadFileToIntegerVariable)(HANDLE, int, char*, int, int, int, int, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetQueueOverflowTimeout)(HANDLE, int);
+typedef int (WINAPI *ACSC_GetQueueOverflowTimeout)(HANDLE);
+typedef int (WINAPI *ACSC_SetTargetPosition)(HANDLE, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_GetTargetPosition)(HANDLE, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetTargetPositionM)(HANDLE, int*, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Track)(HANDLE, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_TrackM)(HANDLE, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_FaultClearM)(HANDLE, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_FaultClear)(HANDLE, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Getconf)(HANDLE, int, int, int*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_Setconf)(HANDLE, int, int, int, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_OpenTimingLogFile)(HANDLE, char*);
+typedef int (WINAPI *ACSC_CloseTimingLogFile)(HANDLE);
+typedef int (WINAPI *ACSC_SetCallbackExt)(HANDLE, ACSC_INTR_CALLBACK_FUNC_EXT, void*, int);
+typedef int (WINAPI *ACSC_DownloadBinVariableToFile)(HANDLE, int, char*, int, int, int, int, int, char*, char*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetLogFileOptions)(HANDLE, ACSC_LOG_DETALIZATION_LEVEL, ACSC_LOG_DATA_PRESENTATION);
+typedef int (WINAPI *ACSC_GetConf)(HANDLE, int, int, double*, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetConf)(HANDLE, int, int, double, ACSC_WAITBLOCK*);
+typedef int (WINAPI *ACSC_SetServer)(char *IP);
+typedef int (WINAPI *ACSC_GetSingleMessage)(HANDLE Handle, char* Buf, int Count, int* Received, int Timeout);
+
+typedef HANDLE (WINAPI *ACSC_OpenCommLocalPC)();
+typedef HANDLE (WINAPI *ACSC_OpenCommCAN)(int, int, int, int, void*);
+
+ACSC_AddMPoint							acsc_AddMPoint;
+ACSC_AddMPointM							acsc_AddMPointM;
+ACSC_AddPoint							acsc_AddPoint;
+ACSC_AddPointM							acsc_AddPointM;
+ACSC_AppendBuffer						acsc_AppendBuffer;
+ACSC_Arc1								acsc_Arc1;
+ACSC_Arc2								acsc_Arc2;
+ACSC_Break								acsc_Break;
+ACSC_BreakM								acsc_BreakM;
+ACSC_CancelOperation					acsc_CancelOperation;
+ACSC_CaptureComm						acsc_CaptureComm;
+ACSC_ClearBuffer						acsc_ClearBuffer;
+ACSC_ClearVariables						acsc_ClearVariables;
+ACSC_CloseComm							acsc_CloseComm;
+ACSC_CloseHistoryBuffer					acsc_CloseHistoryBuffer;
+ACSC_CloseLogFile						acsc_CloseLogFile;
+ACSC_CloseMessageBuffer					acsc_CloseMessageBuffer;
+ACSC_Collect							acsc_Collect;
+ACSC_Command							acsc_Command;
+ACSC_CompileBuffer						acsc_CompileBuffer;
+ACSC_DeclareVariable					acsc_DeclareVariable;
+ACSC_Disable							acsc_Disable;
+ACSC_DisableAll							acsc_DisableAll;
+ACSC_DisableFault						acsc_DisableFault;
+ACSC_DisableM							acsc_DisableM;
+ACSC_DisableResponse					acsc_DisableResponse;
+ACSC_DownloadBuffer						acsc_DownloadBuffer;
+ACSC_Enable								acsc_Enable;
+ACSC_EnableFault						acsc_EnableFault;
+ACSC_EnableM							acsc_EnableM;
+ACSC_EnableResponse						acsc_EnableResponse;
+ACSC_EndSequence						acsc_EndSequence;
+ACSC_EndSequenceM						acsc_EndSequenceM;
+ACSC_ExtAddPoint						acsc_ExtAddPoint;
+ACSC_ExtAddPointM						acsc_ExtAddPointM;
+ACSC_ExtArc1							acsc_ExtArc1;
+ACSC_ExtArc2							acsc_ExtArc2;
+ACSC_ExtLine							acsc_ExtLine;
+ACSC_ExtToPoint							acsc_ExtToPoint;
+ACSC_ExtToPointM						acsc_ExtToPointM;
+ACSC_GetAcceleration					acsc_GetAcceleration;
+ACSC_GetAnalogInput						acsc_GetAnalogInput;
+ACSC_GetAnalogOutput					acsc_GetAnalogOutput;
+ACSC_GetAxisState						acsc_GetAxisState;
+ACSC_GetCommOptions						acsc_GetCommOptions;
+ACSC_GetDeceleration					acsc_GetDeceleration;
+ACSC_GetDefaultTimeout					acsc_GetDefaultTimeout;
+ACSC_GetErrorString						acsc_GetErrorString;
+ACSC_GetExtInput						acsc_GetExtInput;
+ACSC_GetExtInputPort					acsc_GetExtInputPort;
+ACSC_GetExtOutput						acsc_GetExtOutput;
+ACSC_GetExtOutputPort					acsc_GetExtOutputPort;
+ACSC_GetFPosition						acsc_GetFPosition;
+ACSC_GetFVelocity						acsc_GetFVelocity;
+ACSC_GetFault							acsc_GetFault;
+ACSC_GetFaultMask						acsc_GetFaultMask;
+ACSC_GetFirmwareVersion					acsc_GetFirmwareVersion;
+ACSC_GetHistory							acsc_GetHistory;
+ACSC_GetIndexState						acsc_GetIndexState;
+ACSC_GetInput							acsc_GetInput;
+ACSC_GetInputPort						acsc_GetInputPort;
+ACSC_GetInterruptMask					acsc_GetInterruptMask;
+ACSC_GetJerk							acsc_GetJerk;
+ACSC_GetKillDeceleration				acsc_GetKillDeceleration;
+ACSC_GetLastError						acsc_GetLastError;
+ACSC_GetLibraryVersion					acsc_GetLibraryVersion;
+ACSC_GetMessage							acsc_GetMessage;
+ACSC_GetMotionError						acsc_GetMotionError;
+ACSC_GetMotorError						acsc_GetMotorError;
+ACSC_GetMotorState						acsc_GetMotorState;
+ACSC_GetOutput							acsc_GetOutput;
+ACSC_GetOutputPort						acsc_GetOutputPort;
+ACSC_GetPCICards						acsc_GetPCICards;
+ACSC_GetProgramError					acsc_GetProgramError;
+ACSC_GetProgramState					acsc_GetProgramState;
+ACSC_GetRPosition						acsc_GetRPosition;
+ACSC_GetRVelocity						acsc_GetRVelocity;
+ACSC_GetResponseMask					acsc_GetResponseMask;
+ACSC_GetSafetyInput						acsc_GetSafetyInput;
+ACSC_GetSafetyInputPort					acsc_GetSafetyInputPort;
+ACSC_GetSafetyInputPortInv				acsc_GetSafetyInputPortInv;
+ACSC_GetSerialNumber					acsc_GetSerialNumber;
+ACSC_GetTimeout							acsc_GetTimeout;
+ACSC_GetVelocity						acsc_GetVelocity;
+ACSC_Go									acsc_Go;
+ACSC_GoM								acsc_GoM;
+ACSC_Group								acsc_Group;
+ACSC_Halt								acsc_Halt;
+ACSC_HaltM								acsc_HaltM;
+ACSC_Jog								acsc_Jog;
+ACSC_JogM								acsc_JogM;
+ACSC_Kill								acsc_Kill;
+ACSC_KillExt							acsc_KillExt;
+ACSC_DisableExt							acsc_DisableExt;
+ACSC_KillAll							acsc_KillAll;
+ACSC_KillM								acsc_KillM;
+ACSC_Line								acsc_Line;
+ACSC_LoadBuffer							acsc_LoadBuffer;
+ACSC_MultiPoint							acsc_MultiPoint;
+ACSC_MultiPointM						acsc_MultiPointM;
+#if defined(WIN32) && !defined(UNDER_RTSS)
+ACSC_OpenCommDirect						acsc_OpenCommDirect;
+ACSC_OpenCommEthernet					acsc_OpenCommEthernet;
+ACSC_OpenCommSerial						acsc_OpenCommSerial;
+#endif
+ACSC_OpenCommPCI						acsc_OpenCommPCI;
+ACSC_OpenHistoryBuffer					acsc_OpenHistoryBuffer;
+ACSC_OpenLogFile						acsc_OpenLogFile;
+ACSC_OpenMessageBuffer					acsc_OpenMessageBuffer;
+ACSC_Projection							acsc_Projection;
+ACSC_ReadDPRAMInteger					acsc_ReadDPRAMInteger;
+ACSC_ReadDPRAMReal						acsc_ReadDPRAMReal;
+ACSC_ReadInteger						acsc_ReadInteger;
+ACSC_ReadReal							acsc_ReadReal;
+ACSC_Receive							acsc_Receive;
+ACSC_ReleaseComm						acsc_ReleaseComm;
+ACSC_ResetIndexState					acsc_ResetIndexState;
+ACSC_RunBuffer							acsc_RunBuffer;
+ACSC_Segment							acsc_Segment;
+ACSC_Send								acsc_Send;
+ACSC_SetAcceleration					acsc_SetAcceleration;
+ACSC_SetAccelerationImm					acsc_SetAccelerationImm;
+ACSC_SetAnalogOutput					acsc_SetAnalogOutput;
+ACSC_SetCallback						acsc_SetCallback;
+ACSC_SetCallbackPriority				acsc_SetCallbackPriority;
+ACSC_SetCommOptions						acsc_SetCommOptions;
+ACSC_SetDeceleration					acsc_SetDeceleration;
+ACSC_SetDecelerationImm					acsc_SetDecelerationImm;
+ACSC_SetExtOutput						acsc_SetExtOutput;
+ACSC_SetExtOutputPort					acsc_SetExtOutputPort;
+ACSC_SetFPosition						acsc_SetFPosition;
+ACSC_SetFaultMask						acsc_SetFaultMask;
+ACSC_SetInterruptMask					acsc_SetInterruptMask;
+ACSC_SetIterations						acsc_SetIterations;
+ACSC_SetJerk							acsc_SetJerk;
+ACSC_SetJerkImm							acsc_SetJerkImm;
+ACSC_SetKillDeceleration				acsc_SetKillDeceleration;
+ACSC_SetKillDecelerationImm				acsc_SetKillDecelerationImm;
+ACSC_SetMaster							acsc_SetMaster;
+ACSC_SetOutput							acsc_SetOutput;
+ACSC_SetOutputPort						acsc_SetOutputPort;
+ACSC_SetRPosition						acsc_SetRPosition;
+ACSC_SetResponseMask					acsc_SetResponseMask;
+ACSC_SetSafetyInputPortInv				acsc_SetSafetyInputPortInv;
+ACSC_SetTimeout							acsc_SetTimeout;
+ACSC_SetVelocity						acsc_SetVelocity;
+ACSC_SetVelocityImm						acsc_SetVelocityImm;
+ACSC_Slave								acsc_Slave;
+ACSC_SlaveStalled						acsc_SlaveStalled;
+ACSC_Spline								acsc_Spline;
+ACSC_SplineM							acsc_SplineM;
+ACSC_Split								acsc_Split;
+ACSC_SplitAll							acsc_SplitAll;
+ACSC_StopBuffer							acsc_StopBuffer;
+ACSC_StopCollect						acsc_StopCollect;
+ACSC_Stopper							acsc_Stopper;
+ACSC_SuspendBuffer						acsc_SuspendBuffer;
+ACSC_ToPoint							acsc_ToPoint;
+ACSC_ToPointM							acsc_ToPointM;
+ACSC_Transaction						acsc_Transaction;
+ACSC_UploadBuffer						acsc_UploadBuffer;
+ACSC_WaitCollectEnd						acsc_WaitCollectEnd;
+ACSC_WaitForAsyncCall					acsc_WaitForAsyncCall;
+ACSC_WaitInput							acsc_WaitInput;
+ACSC_WaitLogicalMotionEnd				acsc_WaitLogicalMotionEnd;
+ACSC_WaitMotionEnd						acsc_WaitMotionEnd;
+ACSC_WaitMotorEnabled					acsc_WaitMotorEnabled;
+ACSC_WaitProgramEnd						acsc_WaitProgramEnd;
+ACSC_WaitUserCondition					acsc_WaitUserCondition;
+ACSC_WriteDPRAMInteger					acsc_WriteDPRAMInteger;
+ACSC_WriteDPRAMReal						acsc_WriteDPRAMReal;
+ACSC_WriteInteger						acsc_WriteInteger;
+ACSC_WriteLogFile						acsc_WriteLogFile;
+ACSC_WriteReal							acsc_WriteReal;
+ACSC_LoadBufferIgnoreServiceLines		acsc_LoadBufferIgnoreServiceLines;
+ACSC_LoadBuffersFromFile				acsc_LoadBuffersFromFile;
+ACSC_PegI								acsc_PegI;
+ACSC_PegR								acsc_PegR;
+ACSC_AssignPins							acsc_AssignPins;
+ACSC_StopPeg							acsc_StopPeg;
+ACSC_CollectB							acsc_CollectB;
+ACSC_AddPVPoint							acsc_AddPVPoint;
+ACSC_AddPVPointM						acsc_AddPVPointM;
+ACSC_AddPVTPoint						acsc_AddPVTPoint;
+ACSC_AddPVTPointM						acsc_AddPVTPointM;
+ACSC_LoadFileToRealVariable				acsc_LoadFileToRealVariable;
+ACSC_LoadFileToIntegerVariable			acsc_LoadFileToIntegerVariable;
+ACSC_SetQueueOverflowTimeout			acsc_SetQueueOverflowTimeout;
+ACSC_GetQueueOverflowTimeout			acsc_GetQueueOverflowTimeout;
+ACSC_SetTargetPosition					acsc_SetTargetPosition;
+ACSC_GetTargetPosition					acsc_GetTargetPosition;
+ACSC_SetTargetPositionM					acsc_SetTargetPositionM;
+ACSC_Track								acsc_Track;
+ACSC_TrackM								acsc_TrackM;
+ACSC_FaultClearM						acsc_FaultClearM;
+ACSC_FaultClear							acsc_FaultClear;
+ACSC_Getconf							acsc_Getconf;
+ACSC_Setconf							acsc_Setconf;
+ACSC_GetConf							acsc_GetConf;
+ACSC_SetConf							acsc_SetConf;
+
+ACSC_OpenTimingLogFile					acsc_OpenTimingLogFile;
+ACSC_CloseTimingLogFile					acsc_CloseTimingLogFile;
+ACSC_SetCallbackExt						acsc_SetCallbackExt;
+ACSC_DownloadBinVariableToFile			acsc_DownloadBinVariableToFile;
+ACSC_SetLogFileOptions					acsc_SetLogFileOptions;
+
+
+
+ACSC_SetServer							acsc_SetServer;
+ACSC_GetSingleMessage					acsc_GetSingleMessage;
+
+
+#if defined(WIN32) && !defined(UNDER_RTSS)
+ACSC_OpenCommLocalPC					acsc_OpenCommLocalPC;
+ACSC_OpenCommCAN						acsc_OpenCommCAN;
+#endif
+
+static HMODULE hACSCLibraryModule;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function loads ACSC.DLL and obtains addresses for all exported functions.
+// Call this function before any using of ACSC API.
+// Check return value for success.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+static int InitACSCLibrary()
+{
+	hACSCLibraryModule = LoadLibrary("ACSCL.dll");
+
+	if (hACSCLibraryModule == NULL) return 0;
+
+	acsc_AddMPoint = (ACSC_AddMPoint) GetProcAddress(hACSCLibraryModule, "_acsc_AddMPoint@20");									//	   2
+	acsc_AddMPointM = (ACSC_AddMPointM) GetProcAddress(hACSCLibraryModule, "_acsc_AddMPointM@20");								//     3
+	acsc_AddPoint = (ACSC_AddPoint) GetProcAddress(hACSCLibraryModule, "_acsc_AddPoint@20");									//     4
+	acsc_AddPointM = (ACSC_AddPointM) GetProcAddress(hACSCLibraryModule, "_acsc_AddPointM@16");									//	   5
+	acsc_AppendBuffer = (ACSC_AppendBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_AppendBuffer@20");						//	   6
+	acsc_Arc1 = (ACSC_Arc1) GetProcAddress(hACSCLibraryModule, "_acsc_Arc1@24");												//	   7          
+	acsc_Arc2 = (ACSC_Arc2) GetProcAddress(hACSCLibraryModule, "_acsc_Arc2@24");												//	   8          
+	acsc_Break = (ACSC_Break) GetProcAddress(hACSCLibraryModule, "_acsc_Break@12");												//     9          
+	acsc_BreakM = (ACSC_BreakM) GetProcAddress(hACSCLibraryModule, "_acsc_BreakM@12");											//     10         
+	acsc_CancelOperation = (ACSC_CancelOperation) GetProcAddress(hACSCLibraryModule, "_acsc_CancelOperation@8");				//     11         
+	acsc_CaptureComm = (ACSC_CaptureComm) GetProcAddress(hACSCLibraryModule, "_acsc_CaptureComm@4");							//     12         
+	acsc_ClearBuffer = (ACSC_ClearBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_ClearBuffer@20");							//     13         
+	acsc_ClearVariables = (ACSC_ClearVariables) GetProcAddress(hACSCLibraryModule, "_acsc_ClearVariables@8");					//     14         
+	acsc_CloseComm = (ACSC_CloseComm) GetProcAddress(hACSCLibraryModule, "_acsc_CloseComm@4");									//     15         
+	acsc_CloseHistoryBuffer = (ACSC_CloseHistoryBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_CloseHistoryBuffer@4");		//     16         
+	acsc_CloseLogFile = (ACSC_CloseLogFile) GetProcAddress(hACSCLibraryModule, "_acsc_CloseLogFile@4");							//     17         
+	acsc_CloseMessageBuffer = (ACSC_CloseMessageBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_CloseMessageBuffer@4");		//     18         
+	acsc_Collect = (ACSC_Collect) GetProcAddress(hACSCLibraryModule, "_acsc_Collect@28");										//     19         
+	acsc_Command = (ACSC_Command) GetProcAddress(hACSCLibraryModule, "_acsc_Command@16");										//     20         
+	acsc_CompileBuffer = (ACSC_CompileBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_CompileBuffer@12");						//     21         
+	acsc_DeclareVariable = (ACSC_DeclareVariable) GetProcAddress(hACSCLibraryModule, "_acsc_DeclareVariable@16");				//     22         
+	acsc_Disable = (ACSC_Disable) GetProcAddress(hACSCLibraryModule, "_acsc_Disable@12");										//     23         
+	acsc_DisableAll = (ACSC_DisableAll) GetProcAddress(hACSCLibraryModule, "_acsc_DisableAll@8");								//     24         
+	acsc_DisableFault = (ACSC_DisableFault) GetProcAddress(hACSCLibraryModule, "_acsc_DisableFault@16");						//     25         
+	acsc_DisableM = (ACSC_DisableM) GetProcAddress(hACSCLibraryModule, "_acsc_DisableM@12");									//     26         
+	acsc_DisableResponse = (ACSC_DisableResponse) GetProcAddress(hACSCLibraryModule, "_acsc_DisableResponse@16");				//     27         
+	acsc_DownloadBuffer = (ACSC_DownloadBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_DownloadBuffer@20");					//     28         
+	acsc_Enable = (ACSC_Enable) GetProcAddress(hACSCLibraryModule, "_acsc_Enable@12");											//     29         
+	acsc_EnableFault = (ACSC_EnableFault) GetProcAddress(hACSCLibraryModule, "_acsc_EnableFault@16");							//     30         
+	acsc_EnableM = (ACSC_EnableM) GetProcAddress(hACSCLibraryModule, "_acsc_EnableM@12");										//     31         
+	acsc_EnableResponse = (ACSC_EnableResponse) GetProcAddress(hACSCLibraryModule, "_acsc_EnableResponse@16");					//     32         
+	acsc_EndSequence = (ACSC_EndSequence) GetProcAddress(hACSCLibraryModule, "_acsc_EndSequence@12");							//     33         
+	acsc_EndSequenceM = (ACSC_EndSequenceM) GetProcAddress(hACSCLibraryModule, "_acsc_EndSequenceM@12");						//     34         
+	acsc_ExtAddPoint = (ACSC_ExtAddPoint) GetProcAddress(hACSCLibraryModule, "_acsc_ExtAddPoint@28");							//     35         
+	acsc_ExtAddPointM = (ACSC_ExtAddPointM) GetProcAddress(hACSCLibraryModule, "_acsc_ExtAddPointM@24");						//     36         
+	acsc_ExtArc1 = (ACSC_ExtArc1) GetProcAddress(hACSCLibraryModule, "_acsc_ExtArc1@32");										//     37         
+	acsc_ExtArc2 = (ACSC_ExtArc2) GetProcAddress(hACSCLibraryModule, "_acsc_ExtArc2@32");										//     38         
+	acsc_ExtLine = (ACSC_ExtLine) GetProcAddress(hACSCLibraryModule, "_acsc_ExtLine@24");										//     39         
+	acsc_ExtToPoint = (ACSC_ExtToPoint) GetProcAddress(hACSCLibraryModule, "_acsc_ExtToPoint@40");								//     40         
+	acsc_ExtToPointM = (ACSC_ExtToPointM) GetProcAddress(hACSCLibraryModule, "_acsc_ExtToPointM@36");							//     41         
+	acsc_GetAcceleration = (ACSC_GetAcceleration) GetProcAddress(hACSCLibraryModule, "_acsc_GetAcceleration@16");				//     42         
+	acsc_GetAnalogInput = (ACSC_GetAnalogInput) GetProcAddress(hACSCLibraryModule, "_acsc_GetAnalogInput@16");					//     43         
+	acsc_GetAnalogOutput = (ACSC_GetAnalogOutput) GetProcAddress(hACSCLibraryModule, "_acsc_GetAnalogOutput@16");				//     44         
+	acsc_GetAxisState = (ACSC_GetAxisState) GetProcAddress(hACSCLibraryModule, "_acsc_GetAxisState@16");						//     45         
+	acsc_GetCommOptions = (ACSC_GetCommOptions) GetProcAddress(hACSCLibraryModule, "_acsc_GetCommOptions@8");					//     46         
+	acsc_GetDeceleration = (ACSC_GetDeceleration) GetProcAddress(hACSCLibraryModule, "_acsc_GetDeceleration@16");				//     47         
+	acsc_GetDefaultTimeout = (ACSC_GetDefaultTimeout) GetProcAddress(hACSCLibraryModule, "_acsc_GetDefaultTimeout@4");			//     48         
+	acsc_GetErrorString = (ACSC_GetErrorString) GetProcAddress(hACSCLibraryModule, "_acsc_GetErrorString@20");					//     49         
+	acsc_GetExtInput = (ACSC_GetExtInput) GetProcAddress(hACSCLibraryModule, "_acsc_GetExtInput@20");							//     50         
+	acsc_GetExtInputPort = (ACSC_GetExtInputPort) GetProcAddress(hACSCLibraryModule, "_acsc_GetExtInputPort@16");				//     51         
+	acsc_GetExtOutput = (ACSC_GetExtOutput) GetProcAddress(hACSCLibraryModule, "_acsc_GetExtOutput@20");						//     52         
+	acsc_GetExtOutputPort = (ACSC_GetExtOutputPort) GetProcAddress(hACSCLibraryModule, "_acsc_GetExtOutputPort@16");			//     53         
+	acsc_GetFPosition = (ACSC_GetFPosition) GetProcAddress(hACSCLibraryModule, "_acsc_GetFPosition@16");						//     54         
+	acsc_GetFVelocity = (ACSC_GetFVelocity) GetProcAddress(hACSCLibraryModule, "_acsc_GetFVelocity@16");						//     55         
+	acsc_GetFault = (ACSC_GetFault) GetProcAddress(hACSCLibraryModule, "_acsc_GetFault@16");									//     56         
+	acsc_GetFaultMask = (ACSC_GetFaultMask) GetProcAddress(hACSCLibraryModule, "_acsc_GetFaultMask@16");						//     57         
+	acsc_GetFirmwareVersion = (ACSC_GetFirmwareVersion) GetProcAddress(hACSCLibraryModule, "_acsc_GetFirmwareVersion@20");		//     58         
+	acsc_GetHistory = (ACSC_GetHistory) GetProcAddress(hACSCLibraryModule, "_acsc_GetHistory@20");								//     59         
+	acsc_GetIndexState = (ACSC_GetIndexState) GetProcAddress(hACSCLibraryModule, "_acsc_GetIndexState@16");						//     60         
+	acsc_GetInput = (ACSC_GetInput) GetProcAddress(hACSCLibraryModule, "_acsc_GetInput@20");									//     61         
+	acsc_GetInputPort = (ACSC_GetInputPort) GetProcAddress(hACSCLibraryModule, "_acsc_GetInputPort@16");						//     62         
+	acsc_GetInterruptMask = (ACSC_GetInterruptMask) GetProcAddress(hACSCLibraryModule, "_acsc_GetInterruptMask@12");			//     63         
+	acsc_GetJerk = (ACSC_GetJerk) GetProcAddress(hACSCLibraryModule, "_acsc_GetJerk@16");										//     64         
+	acsc_GetKillDeceleration = (ACSC_GetKillDeceleration) GetProcAddress(hACSCLibraryModule, "_acsc_GetKillDeceleration@16");	//     65         
+	acsc_GetLastError = (ACSC_GetLastError) GetProcAddress(hACSCLibraryModule, "_acsc_GetLastError@0");							//     66         
+	acsc_GetLibraryVersion = (ACSC_GetLibraryVersion) GetProcAddress(hACSCLibraryModule, "_acsc_GetLibraryVersion@0");			//     67         
+	acsc_GetMessage = (ACSC_GetMessage) GetProcAddress(hACSCLibraryModule, "_acsc_GetMessage@20");								//     68         
+	acsc_GetMotionError = (ACSC_GetMotionError) GetProcAddress(hACSCLibraryModule, "_acsc_GetMotionError@16");					//     69         
+	acsc_GetMotorError = (ACSC_GetMotorError) GetProcAddress(hACSCLibraryModule, "_acsc_GetMotorError@16");						//     70         
+	acsc_GetMotorState = (ACSC_GetMotorState) GetProcAddress(hACSCLibraryModule, "_acsc_GetMotorState@16");						//     71         
+	acsc_GetOutput = (ACSC_GetOutput) GetProcAddress(hACSCLibraryModule, "_acsc_GetOutput@20");									//     72         
+	acsc_GetOutputPort = (ACSC_GetOutputPort) GetProcAddress(hACSCLibraryModule, "_acsc_GetOutputPort@16");						//     73         
+	acsc_GetPCICards = (ACSC_GetPCICards) GetProcAddress(hACSCLibraryModule, "_acsc_GetPCICards@12");							//     74         
+	acsc_GetProgramError = (ACSC_GetProgramError) GetProcAddress(hACSCLibraryModule, "_acsc_GetProgramError@16");				//     75         
+	acsc_GetProgramState = (ACSC_GetProgramState) GetProcAddress(hACSCLibraryModule, "_acsc_GetProgramState@16");				//     76         
+	acsc_GetRPosition = (ACSC_GetRPosition) GetProcAddress(hACSCLibraryModule, "_acsc_GetRPosition@16");						//     77         
+	acsc_GetRVelocity = (ACSC_GetRVelocity) GetProcAddress(hACSCLibraryModule, "_acsc_GetRVelocity@16");						//     78         
+	acsc_GetResponseMask = (ACSC_GetResponseMask) GetProcAddress(hACSCLibraryModule, "_acsc_GetResponseMask@16");				//     79         
+	acsc_GetSafetyInput = (ACSC_GetSafetyInput) GetProcAddress(hACSCLibraryModule, "_acsc_GetSafetyInput@20");					//     80         
+	acsc_GetSafetyInputPort = (ACSC_GetSafetyInputPort) GetProcAddress(hACSCLibraryModule, "_acsc_GetSafetyInputPort@16");		//     81         
+	acsc_GetSafetyInputPortInv = (ACSC_GetSafetyInputPortInv) GetProcAddress(hACSCLibraryModule, "_acsc_GetSafetyInputPortInv@16");	//     82         
+	acsc_GetSerialNumber = (ACSC_GetSerialNumber) GetProcAddress(hACSCLibraryModule, "_acsc_GetSerialNumber@20");				//     83         
+	acsc_GetTimeout = (ACSC_GetTimeout) GetProcAddress(hACSCLibraryModule, "_acsc_GetTimeout@4");								//     84         
+	acsc_GetVelocity = (ACSC_GetVelocity) GetProcAddress(hACSCLibraryModule, "_acsc_GetVelocity@16");							//     85         
+	acsc_Go = (ACSC_Go) GetProcAddress(hACSCLibraryModule, "_acsc_Go@12");														//     86         
+	acsc_GoM = (ACSC_GoM) GetProcAddress(hACSCLibraryModule, "_acsc_GoM@12");													//     87         
+	acsc_Group = (ACSC_Group) GetProcAddress(hACSCLibraryModule, "_acsc_Group@12");												//     88         
+	acsc_Halt = (ACSC_Halt) GetProcAddress(hACSCLibraryModule, "_acsc_Halt@12");												//     89         
+	acsc_HaltM = (ACSC_HaltM) GetProcAddress(hACSCLibraryModule, "_acsc_HaltM@12");												//     90         
+	acsc_Jog = (ACSC_Jog) GetProcAddress(hACSCLibraryModule, "_acsc_Jog@24");													//     91         
+	acsc_JogM = (ACSC_JogM) GetProcAddress(hACSCLibraryModule, "_acsc_JogM@28");												//     92         
+	acsc_Kill = (ACSC_Kill) GetProcAddress(hACSCLibraryModule, "_acsc_Kill@12");												//     93         
+	acsc_KillExt = (ACSC_KillExt) GetProcAddress(hACSCLibraryModule, "_acsc_KillExt@16");												//     
+	acsc_DisableExt = (ACSC_DisableExt) GetProcAddress(hACSCLibraryModule, "_acsc_DisableExt@16");												//     
+	acsc_KillAll = (ACSC_KillAll) GetProcAddress(hACSCLibraryModule, "_acsc_KillAll@8");										//     94         
+	acsc_KillM = (ACSC_KillM) GetProcAddress(hACSCLibraryModule, "_acsc_KillM@12");												//     95         
+	acsc_Line = (ACSC_Line) GetProcAddress(hACSCLibraryModule, "_acsc_Line@16");												//     96         
+	acsc_LoadBuffer = (ACSC_LoadBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_LoadBuffer@20");								//     97         
+	acsc_MultiPoint = (ACSC_MultiPoint) GetProcAddress(hACSCLibraryModule, "_acsc_MultiPoint@24");								//     98         
+	acsc_MultiPointM = (ACSC_MultiPointM) GetProcAddress(hACSCLibraryModule, "_acsc_MultiPointM@24");							//     99         
+#if defined(WIN32) && !defined(UNDER_RTSS)
+	acsc_OpenCommDirect = (ACSC_OpenCommDirect) GetProcAddress(hACSCLibraryModule, "_acsc_OpenCommDirect@0");					//     100        
+	acsc_OpenCommEthernet = (ACSC_OpenCommEthernet) GetProcAddress(hACSCLibraryModule, "_acsc_OpenCommEthernet@8");				//     101        
+	acsc_OpenCommSerial = (ACSC_OpenCommSerial) GetProcAddress(hACSCLibraryModule, "_acsc_OpenCommSerial@8");					//     103        
+#endif
+	acsc_OpenCommPCI = (ACSC_OpenCommPCI) GetProcAddress(hACSCLibraryModule, "_acsc_OpenCommPCI@4");							//     102        
+	acsc_OpenHistoryBuffer = (ACSC_OpenHistoryBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_OpenHistoryBuffer@8");			//     104        
+	acsc_OpenLogFile = (ACSC_OpenLogFile) GetProcAddress(hACSCLibraryModule, "_acsc_OpenLogFile@8");							//     105        
+	acsc_OpenMessageBuffer = (ACSC_OpenMessageBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_OpenMessageBuffer@8");			//     106        
+	acsc_Projection = (ACSC_Projection) GetProcAddress(hACSCLibraryModule, "_acsc_Projection@16");								//     107        
+	acsc_ReadDPRAMInteger = (ACSC_ReadDPRAMInteger) GetProcAddress(hACSCLibraryModule, "_acsc_ReadDPRAMInteger@12");			//     108        
+	acsc_ReadDPRAMReal = (ACSC_ReadDPRAMReal) GetProcAddress(hACSCLibraryModule, "_acsc_ReadDPRAMReal@12");						//     109        
+	acsc_ReadInteger = (ACSC_ReadInteger) GetProcAddress(hACSCLibraryModule, "_acsc_ReadInteger@36");							//     110        
+	acsc_ReadReal = (ACSC_ReadReal) GetProcAddress(hACSCLibraryModule, "_acsc_ReadReal@36");									//     111        
+	acsc_Receive = (ACSC_Receive) GetProcAddress(hACSCLibraryModule, "_acsc_Receive@20");										//     112        
+	acsc_ReleaseComm = (ACSC_ReleaseComm) GetProcAddress(hACSCLibraryModule, "_acsc_ReleaseComm@4");							//     113        
+	acsc_ResetIndexState = (ACSC_ResetIndexState) GetProcAddress(hACSCLibraryModule, "_acsc_ResetIndexState@16");				//     114        
+	acsc_RunBuffer = (ACSC_RunBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_RunBuffer@16");									//     115        
+	acsc_Segment = (ACSC_Segment) GetProcAddress(hACSCLibraryModule, "_acsc_Segment@20");										//     116        
+	acsc_Send = (ACSC_Send) GetProcAddress(hACSCLibraryModule, "_acsc_Send@16");												//     117        
+	acsc_SetAcceleration = (ACSC_SetAcceleration) GetProcAddress(hACSCLibraryModule, "_acsc_SetAcceleration@20");				//     118        
+	acsc_SetAccelerationImm = (ACSC_SetAccelerationImm) GetProcAddress(hACSCLibraryModule, "_acsc_SetAccelerationImm@20");		//     119        
+	acsc_SetAnalogOutput = (ACSC_SetAnalogOutput) GetProcAddress(hACSCLibraryModule, "_acsc_SetAnalogOutput@16");				//     120        
+	acsc_SetCallback = (ACSC_SetCallback) GetProcAddress(hACSCLibraryModule, "_acsc_SetCallback@12");							//     121        
+	acsc_SetCallbackPriority = (ACSC_SetCallbackPriority) GetProcAddress(hACSCLibraryModule, "_acsc_SetCallbackPriority@8");	//     122        
+	acsc_SetCommOptions = (ACSC_SetCommOptions) GetProcAddress(hACSCLibraryModule, "_acsc_SetCommOptions@8");					//     123        
+	acsc_SetDeceleration = (ACSC_SetDeceleration) GetProcAddress(hACSCLibraryModule, "_acsc_SetDeceleration@20");				//     124        
+	acsc_SetDecelerationImm = (ACSC_SetDecelerationImm) GetProcAddress(hACSCLibraryModule, "_acsc_SetDecelerationImm@20");		//     125        
+	acsc_SetExtOutput = (ACSC_SetExtOutput) GetProcAddress(hACSCLibraryModule, "_acsc_SetExtOutput@20");						//     126        
+	acsc_SetExtOutputPort = (ACSC_SetExtOutputPort) GetProcAddress(hACSCLibraryModule, "_acsc_SetExtOutputPort@16");			//     127        
+	acsc_SetFPosition = (ACSC_SetFPosition) GetProcAddress(hACSCLibraryModule, "_acsc_SetFPosition@20");						//     128        
+	acsc_SetFaultMask = (ACSC_SetFaultMask) GetProcAddress(hACSCLibraryModule, "_acsc_SetFaultMask@16");						//     129        
+	acsc_SetInterruptMask = (ACSC_SetInterruptMask) GetProcAddress(hACSCLibraryModule, "_acsc_SetInterruptMask@12");			//     130        
+	acsc_SetIterations = (ACSC_SetIterations) GetProcAddress(hACSCLibraryModule, "_acsc_SetIterations@8");						//     131        
+	acsc_SetJerk = (ACSC_SetJerk) GetProcAddress(hACSCLibraryModule, "_acsc_SetJerk@20");										//     132        
+	acsc_SetJerkImm = (ACSC_SetJerkImm) GetProcAddress(hACSCLibraryModule, "_acsc_SetJerkImm@20");								//     133        
+	acsc_SetKillDeceleration = (ACSC_SetKillDeceleration) GetProcAddress(hACSCLibraryModule, "_acsc_SetKillDeceleration@20");	//     134        
+	acsc_SetKillDecelerationImm = (ACSC_SetKillDecelerationImm) GetProcAddress(hACSCLibraryModule, "_acsc_SetKillDecelerationImm@20");	//     135        
+	acsc_SetMaster = (ACSC_SetMaster) GetProcAddress(hACSCLibraryModule, "_acsc_SetMaster@16");									//     136        
+	acsc_SetOutput = (ACSC_SetOutput) GetProcAddress(hACSCLibraryModule, "_acsc_SetOutput@20");									//     137        
+	acsc_SetOutputPort = (ACSC_SetOutputPort) GetProcAddress(hACSCLibraryModule, "_acsc_SetOutputPort@16");						//     138        
+	acsc_SetRPosition = (ACSC_SetRPosition) GetProcAddress(hACSCLibraryModule, "_acsc_SetRPosition@20");						//     139        
+	acsc_SetResponseMask = (ACSC_SetResponseMask) GetProcAddress(hACSCLibraryModule, "_acsc_SetResponseMask@16");				//     140        
+	acsc_SetSafetyInputPortInv = (ACSC_SetSafetyInputPortInv) GetProcAddress(hACSCLibraryModule, "_acsc_SetSafetyInputPortInv@16");		//     141        
+	acsc_SetTimeout = (ACSC_SetTimeout) GetProcAddress(hACSCLibraryModule, "_acsc_SetTimeout@8");								//     142        
+	acsc_SetVelocity = (ACSC_SetVelocity) GetProcAddress(hACSCLibraryModule, "_acsc_SetVelocity@20");							//     143        
+	acsc_SetVelocityImm = (ACSC_SetVelocityImm) GetProcAddress(hACSCLibraryModule, "_acsc_SetVelocityImm@20");					//     144        
+	acsc_Slave = (ACSC_Slave) GetProcAddress(hACSCLibraryModule, "_acsc_Slave@16");												//     145        
+	acsc_SlaveStalled = (ACSC_SlaveStalled) GetProcAddress(hACSCLibraryModule, "_acsc_SlaveStalled@32");						//     146        
+	acsc_Spline = (ACSC_Spline) GetProcAddress(hACSCLibraryModule, "_acsc_Spline@24");											//     147        
+	acsc_SplineM = (ACSC_SplineM) GetProcAddress(hACSCLibraryModule, "_acsc_SplineM@24");										//     148        
+	acsc_Split = (ACSC_Split) GetProcAddress(hACSCLibraryModule, "_acsc_Split@12");												//     149        
+	acsc_SplitAll = (ACSC_SplitAll) GetProcAddress(hACSCLibraryModule, "_acsc_SplitAll@8");										//     150        
+	acsc_StopBuffer = (ACSC_StopBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_StopBuffer@12");								//     151        
+	acsc_StopCollect = (ACSC_StopCollect) GetProcAddress(hACSCLibraryModule, "_acsc_StopCollect@8");							//     152        
+	acsc_Stopper = (ACSC_Stopper) GetProcAddress(hACSCLibraryModule, "_acsc_Stopper@12");										//     153        
+	acsc_SuspendBuffer = (ACSC_SuspendBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_SuspendBuffer@12");						//     154        
+	acsc_ToPoint = (ACSC_ToPoint) GetProcAddress(hACSCLibraryModule, "_acsc_ToPoint@24");										//     155        
+	acsc_ToPointM = (ACSC_ToPointM) GetProcAddress(hACSCLibraryModule, "_acsc_ToPointM@20");									//     156        
+	acsc_Transaction = (ACSC_Transaction) GetProcAddress(hACSCLibraryModule, "_acsc_Transaction@28");							//     157        
+	acsc_UploadBuffer = (ACSC_UploadBuffer) GetProcAddress(hACSCLibraryModule, "_acsc_UploadBuffer@28");						//     158        
+	acsc_WaitCollectEnd = (ACSC_WaitCollectEnd) GetProcAddress(hACSCLibraryModule, "_acsc_WaitCollectEnd@8");					//     159        
+	acsc_WaitForAsyncCall = (ACSC_WaitForAsyncCall) GetProcAddress(hACSCLibraryModule, "_acsc_WaitForAsyncCall@20");			//     160        
+	acsc_WaitInput = (ACSC_WaitInput) GetProcAddress(hACSCLibraryModule, "_acsc_WaitInput@20");									//     161        
+	acsc_WaitLogicalMotionEnd = (ACSC_WaitLogicalMotionEnd) GetProcAddress(hACSCLibraryModule, "_acsc_WaitLogicalMotionEnd@12");//     162        
+	acsc_WaitMotionEnd = (ACSC_WaitMotionEnd) GetProcAddress(hACSCLibraryModule, "_acsc_WaitMotionEnd@12");						//     163        
+	acsc_WaitMotorEnabled = (ACSC_WaitMotorEnabled) GetProcAddress(hACSCLibraryModule, "_acsc_WaitMotorEnabled@16");			//     164        
+	acsc_WaitProgramEnd = (ACSC_WaitProgramEnd) GetProcAddress(hACSCLibraryModule, "_acsc_WaitProgramEnd@12");					//     165        
+	acsc_WaitUserCondition = (ACSC_WaitUserCondition) GetProcAddress(hACSCLibraryModule, "_acsc_WaitUserCondition@12");			//     166        
+	acsc_WriteDPRAMInteger = (ACSC_WriteDPRAMInteger) GetProcAddress(hACSCLibraryModule, "_acsc_WriteDPRAMInteger@12");			//     167        
+	acsc_WriteDPRAMReal = (ACSC_WriteDPRAMReal) GetProcAddress(hACSCLibraryModule, "_acsc_WriteDPRAMReal@16");					//     168        
+	acsc_WriteInteger = (ACSC_WriteInteger) GetProcAddress(hACSCLibraryModule, "_acsc_WriteInteger@36");						//     169        
+	acsc_WriteLogFile = (ACSC_WriteLogFile) GetProcAddress(hACSCLibraryModule, "_acsc_WriteLogFile@12");						//     170        
+	acsc_WriteReal = (ACSC_WriteReal) GetProcAddress(hACSCLibraryModule, "_acsc_WriteReal@36");									//     171        
+	acsc_LoadBufferIgnoreServiceLines = (ACSC_LoadBufferIgnoreServiceLines) GetProcAddress(hACSCLibraryModule, "_acsc_LoadBufferIgnoreServiceLines@20");	//     196		
+	acsc_PegI = (ACSC_PegI) GetProcAddress(hACSCLibraryModule, "_acsc_PegI@48");												//     197		
+	acsc_PegR = (ACSC_PegR) GetProcAddress(hACSCLibraryModule, "_acsc_PegR@44");												//     198		
+	acsc_AssignPins = (ACSC_AssignPins) GetProcAddress(hACSCLibraryModule, "_acsc_AssignPins@16");								//	   199		
+	acsc_StopPeg = (ACSC_StopPeg) GetProcAddress(hACSCLibraryModule, "_acsc_StopPeg@12");										//	   200		
+	acsc_CollectB = (ACSC_CollectB) GetProcAddress(hACSCLibraryModule, "_acsc_CollectB@28");									//     201		
+	acsc_AddPVPoint = (ACSC_AddPVPoint) GetProcAddress(hACSCLibraryModule, "_acsc_AddPVPoint@28");								//     202			
+	acsc_AddPVPointM = (ACSC_AddPVPointM) GetProcAddress(hACSCLibraryModule, "_acsc_AddPVPointM@20");							//     203			
+	acsc_AddPVTPoint = (ACSC_AddPVTPoint) GetProcAddress(hACSCLibraryModule, "_acsc_AddPVTPoint@36");							//     204			
+	acsc_AddPVTPointM = (ACSC_AddPVTPointM) GetProcAddress(hACSCLibraryModule, "_acsc_AddPVTPointM@28");						//     205			
+	acsc_LoadFileToRealVariable = (ACSC_LoadFileToRealVariable) GetProcAddress(hACSCLibraryModule, "_acsc_LoadFileToRealVariable@36");			//     206			
+	acsc_LoadFileToIntegerVariable = (ACSC_LoadFileToIntegerVariable) GetProcAddress(hACSCLibraryModule, "_acsc_LoadFileToIntegerVariable@36");	//     207			
+	acsc_SetQueueOverflowTimeout = (ACSC_SetQueueOverflowTimeout) GetProcAddress(hACSCLibraryModule, "_acsc_SetQueueOverflowTimeout@8");							//     208				
+	acsc_GetQueueOverflowTimeout = (ACSC_GetQueueOverflowTimeout) GetProcAddress(hACSCLibraryModule, "_acsc_GetQueueOverflowTimeout@4");							//     209				
+	acsc_LoadBuffersFromFile = (ACSC_LoadBuffersFromFile) GetProcAddress(hACSCLibraryModule, "_acsc_LoadBuffersFromFile@12");	//     210				
+	acsc_SetTargetPosition = (ACSC_SetTargetPosition) GetProcAddress(hACSCLibraryModule, "_acsc_SetTargetPosition@20");			//     211				
+	acsc_GetTargetPosition = (ACSC_GetTargetPosition) GetProcAddress(hACSCLibraryModule, "_acsc_GetTargetPosition@16");			//     212				
+	acsc_SetTargetPositionM = (ACSC_SetTargetPositionM) GetProcAddress(hACSCLibraryModule, "_acsc_SetTargetPositionM@16");		//     213				
+	acsc_Track = (ACSC_Track) GetProcAddress(hACSCLibraryModule, "_acsc_Track@16");												//     214		
+	acsc_TrackM = (ACSC_TrackM) GetProcAddress(hACSCLibraryModule, "_acsc_TrackM@16");											//     215		
+	acsc_FaultClearM = (ACSC_FaultClearM) GetProcAddress(hACSCLibraryModule, "_acsc_FaultClearM@12");							//     216		
+	acsc_FaultClear = (ACSC_FaultClear) GetProcAddress(hACSCLibraryModule, "_acsc_FaultClear@12");								//     217		
+	acsc_Getconf = (ACSC_Getconf) GetProcAddress(hACSCLibraryModule, "_acsc_Getconf@20");										//     218											
+	acsc_Setconf = (ACSC_Setconf) GetProcAddress(hACSCLibraryModule, "_acsc_Setconf@20");										//     219											
+	acsc_OpenTimingLogFile = (ACSC_OpenTimingLogFile) GetProcAddress(hACSCLibraryModule, "_acsc_OpenTimingLogFile@8");			//	   220
+	acsc_CloseTimingLogFile = (ACSC_CloseTimingLogFile) GetProcAddress(hACSCLibraryModule, "_acsc_CloseTimingLogFile@4");		//	   221
+	acsc_SetCallbackExt = (ACSC_SetCallbackExt) GetProcAddress(hACSCLibraryModule, "_acsc_SetCallbackExt@16");					//	   222
+	acsc_DownloadBinVariableToFile = (ACSC_DownloadBinVariableToFile) GetProcAddress(hACSCLibraryModule, "_acsc_DownloadBinVariableToFile@44"); //     223
+	acsc_SetLogFileOptions = (ACSC_SetLogFileOptions)GetProcAddress(hACSCLibraryModule, "_acsc_SetLogFileOptions@12");			//	   224
+#if defined(WIN32) && !defined(UNDER_RTSS)
+	acsc_OpenCommLocalPC = (ACSC_OpenCommLocalPC)GetProcAddress(hACSCLibraryModule, "_acsc_OpenCommLocalPC@0");					//	   225
+	acsc_OpenCommCAN = (ACSC_OpenCommCAN)GetProcAddress(hACSCLibraryModule, "_acsc_OpenCommCAN@20");							//	   226
+#endif
+
+	acsc_GetConf=(ACSC_GetConf)GetProcAddress(hACSCLibraryModule, "_acsc_GetConf@20");							//	   226;
+	acsc_SetConf=(ACSC_SetConf)GetProcAddress(hACSCLibraryModule, "_acsc_SetConf@24");							//	   226
+	acsc_SetServer=(ACSC_SetServer)GetProcAddress(hACSCLibraryModule, "_acsc_SetServer@4");							//	   226
+	acsc_GetSingleMessage=(ACSC_GetSingleMessage)GetProcAddress(hACSCLibraryModule, "_acsc_GetSingleMessage@20");							//	   226;
+
+	return 1;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// The function unmapps from the address space of the calling process.
+//////////////////////////////////////////////////////////////////////////////////////////////////
+static int FreeACSCLibrary()
+{
+	return FreeLibrary(hACSCLibraryModule);
+}
+
+
+#endif
+
+#ifdef __cplusplus
+}
+#endif
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Internal functions that save and read a global errors
+//////////////////////////////////////////////////////////////////////////////////////////////////
+// Save last global error
+void SetGlobalError(DWORD dwError);
+// Read last global error
+DWORD GetGlobalError();
+
+#endif

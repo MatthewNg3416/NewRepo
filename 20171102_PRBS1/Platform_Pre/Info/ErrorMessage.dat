@@ -1,0 +1,2767 @@
+[ERROR ENGLISH]
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Hardware Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Device Net Error(Component Code : 100)
+100001 = It is IO module Master error (Fail) state.
+100002 = It is IO module Salve error (Fail) state.
+100003 = IO Driver is error (Fail) state.
+100004 = Board Initialize Failure.
+100005 = Board Ready Operatioin Failure.
+100006 = Board Not Ready Operatioin Failure.
+100007 = Board Exit Operatioin Failure.
+100008 = Dirver Close Operatioin Failure.
+100009 = Update Operatioin Failure.
+100010 = Module Operatioin Failure.
+
+100011 = Explicit Message Data Length Excess.
+100012 = Explicit Message Buffer Pointer is Null Pointer.
+100013 = Message Receive Operation Failure.
+100014 = Invalid Receive Message.
+100015 = Received Message Data  Length Excess.
+100016 = Invalid small Received Message Length.
+100017 = Tx Time Out.
+100018 = Rx Time Out.
+
+100021 = resources unavailable [IO Error: 2] 
+100022 = service not avaliable [IO Eerror: 8] 
+100023 = invalid attribute value [IO Error: 9] 
+100024 = already in request mode [IO Error: 11] 
+100025 = object state conflict [IO Error: 12] 
+100026 = attribute not settable [IO Error: 14] 
+100027 = a permission check failed [IO Error:  15] 
+100028 = state conflict [IO Error: 16] 
+100029 = no response from the network device [IO Error: 17] 
+100030 = not enough data [IO Error: 19] 
+100031 = attribute not supported [IO Error: 20] 
+100032 = too much data [IO Error: 21] 
+100033 = object does not exists [IO Error: 22] 
+100034 = reply data too large [IO Error: 23] 
+100035 = device not configured, Explicit not established [IO Error: 48]
+100036 = format error in response telegram [IO Error: 50] 
+100037 = another get or set command still active [IO Error: 54] 
+100038 = MAC ID out of range [IO Error: 55] 
+100039 = sequence error in fragmented [IO Error: 57] 
+100040 = not confiqured no data base found [IO Error: 200]
+100041 = unknown error
+
+// Cylinder Error(Component Code : 101)
+101001 = Cylinder operating time was exceeded. [1st Movement]
+101002 = Cylinder operating time was exceeded. [2nd Movement]
+101003 = Cylinder operating time was exceeded. [3rd Movement]
+101004 = Cylinder position is invalid.
+101005 = Cylinder parameter road failure
+101006 = Cylinder parameter save failure
+
+// Vacuum Error(Component Code : 102)
+102000 = Vacuum input/output signal is unequal.
+102001 = Vacuum On operating time was exceeded.
+102002 = Vacuum Off operating time was exceeded.
+102003 = Vacuum parameter road failure
+102004 = Vacuum parameter save failure
+
+// Vision Error
+104001 = Vision System failed to Application Allocation.
+104002 = Vision System failed to System Allocation.
+104003 = Vision System failed to Digitizer Allocation.
+104004 = Vision System failed to Buffer Allocation.
+104005 = DCF File doesn't exist.
+104006 = System Type isn't proper for S/W.
+
+104011 = It is a camera number mistake.
+104012 = It is a mark number mistake.
+104013 = It is a mark index mistake.
+104014 = It is not Available Mark number extent.
+104015 = Vision System failed in Model Display Buffer creation.
+104016 = Mistake happened in Mark number to use to Multiple Model Search.
+104017 = System failed in Pattern Matching realization. [Number of sighted mark is not 1.]
+104018 = Pattern Matching correct recognition score is low.
+104019 = Blob analysis result escaped Score extent.
+104020 = Mark position escaped Limit. [left]
+104021 = Mark position escaped Limit. [top]
+104022 = Mark position escaped Limit. [right]
+104023 = Mark position escaped Limit. [bottom]
+104024 = parameter value is invalid.
+104025 = doesn't support this operation.
+
+104030 = Image Grab is not achieved. [Check Camera Cable Connection]
+
+// Motion Axis Error(Component Code : 105)
+105001 = Motion Board is not Initialized. (ERR_MOTION_NOT_INITIALIZED)
+105002 = Motion DPRAM Communication Time is Over. (ERR_MOTION_TIMEOUT_ERR)
+105003 = Motion Axis Number is Invalid. (ERR_MOTION_INVALID_AXIS)
+105004 = Analog Channel is out of Range. (ERR_MOTION_ILLEGAL_ANALOG)
+105005 = IO Port is Abnormal. (ERR_MOTION_ILLEGAL_IO)
+105006 = Velocity or Accelaration is 0. (ERR_MOTION_ILLEGAL_PARAMETER)
+105007 = Map is not made. (ERR_MOTION_NO_MAP)
+105008 = AMP is Fault Status. (ERR_MOTION_AMP_FAULT)
+105009 = Motion is Doing. (ERR_MOTION_ON_MOTION)
+105010 = MMC Board is not Exist. (ERR_MOTION_NON_EXIST)
+105011 = It Failed to Read and Write MMC Boot File. (ERR_MOTION_BOOT_OPEN_ERROR)
+105012 = It Failed to Read and Write MMC Checksum File. (ERR_MOTION_CHKSUM_OPEN_ERROR)
+105013 = It Failed to Open MMC Window NT Driver.
+105014 = ERR_MOTION_EVENT_OCCUR_ERROR
+105015 = AMP Power is Off. (ERR_MOTION_AMP_POWER_OFF)
+105016 = It Failed to Open Data Directory. (ERR_MOTION_DATA_DIRECTORY_OPEN_ERROR)
+105017 = CP Motion Group is Invalid. (ERR_MOTION_INVALID_CPMOTION_GROUP)
+105018 = Volocity Parameter is Invalid.(ERR_MOTION_VELOCITY_ILLEGAL_PARAMETER)
+105019 = Accelerator Parameter is Invalid. (ERR_MOTION_ACCEL_ILLEGAL_PARAMETER)
+
+105020 = It's Using Axis ID.
+105021 = Axis Motion is Time Over.
+105022 = Motion Board Number is Over.
+105023 = Motion Axis Number is Over.
+105024 = Motion Library Object is not Exist.
+105025 = Motion Board is not Exist.
+105026 = Motion Axis is not Exist.
+105027 = Motion Pointer of Axis Information Area is not Exist.
+105028 = Pointer is Abnormal.
+105029 = Priority of Origin is Abnormal.
+105030 = Priority of Motion is Abnormal.
+105031 = Motion Board is Invalid.
+105032 = Motion Board Number is Abnormal.
+105033 = Motion Board ID is Abnormal.
+105034 = Axis ID is Abnormal.
+105035 = Axis Number is Abnormal.
+105036 = HOME Switch is Detected. (ERR_MAXES_HOME_SWITCH_AXIS_SOURCE)
+105037 = + Limit Sensor is Detected. (ERR_MAXES_POSITIVE_LIMIT_AXIS_SOURCE)
+105038 = - Limit Sensor is Detected. (ERR_MAXES_NEGATIVE_LIMIT_AXIS_SOURCE)
+105039 = AMP if Fault Status. (ERR_MAXES_AMP_FAULT_AXIS_SOURCE)
+105040 = Acceleration is Bounded in Limit. (ERR_MAXES_ACCELERATE_LIMIT_AXIS_SOURCE)
+105041 = Velocity is Bounded in Limit. (ERR_MAXES_VELOCITY_LIMIT_AXIS_SOURCE)
+105042 = - Axis is Out of Limit Range. (ERR_MAXES_X_NEGATIVE_LIMIT_AXIS_SOURCE)
+105043 = + Axis is Out of Limit Range. (ERR_MAXES_X_POSITIVE_LIMIT_AXIS_SOURCE)
+105044 = Axis is Limit Range.	(ERR_MAXES_ERROR_LIMIT_AXIS_SOURCE)
+105045 = PC Command is Occurred. (ERR_MAXES_PC_COMMAND_AXIS_SOURCE)
+105046 = Frame Number is Exceeded. (ERR_MAXES_OUT_OF_FRAMES_AXIS_SOURCE)
+105047 = (ERR_MAXES_AMP_POWER_ON_OFF_AXIS_SOURCE)
+105048 = (ERR_MAXES_RUN_STOP_COMMAND_AXIS_SOURCE)
+105049 = Axis is Collision Status. (ERR_MAXES_COLLISION_STATE_AXIS_SOURCE)
+105050 = Axis is not Origin.
+105051 = Axis Origin Step is Invalid.
+105052 = Axis Origin Thread is not Executed.
+105053 = Axis Origin Exceeded Limit Time.
+105054 = Motion Funtiion is Abnormal..
+105055 = Motion Axis is not Exist in List.
+105056 = It's Abnormal Source Status.
+105057 = Stop Event is Occurred.
+105058 = E-Stop Event is Occurred.
+105059 = Abort Event is Occurred.
+105060 = Axis Exceeded S/W + Limit.
+105061 = Axis Exceeded S/W - Limit.
+105062 = Axis Origin is Stopped by User.
+105063 = (ERR_MAXES_ABS_COMM_ERROR)
+105064 = (ERR_MAXES_INPOSITION_STATUS)
+105065 = (ERR_MAXES_NOT_ESTOP_STATE_IN_RETURNORIGIN)
+105066 = (ERR_MAXES_INTERLOCK_CHECKED)
+105067 = (ERR_MAXES_NOT_IN_POSITION)
+105068 = (ERR_MAXES_CHECKED_ESTOP_SW)
+105069 = (ERR_MAXES_CHECKED_STOP_SW);
+
+105070 = It's Using ID.
+105071 = Motion DPRAM Address is not Equal to Composition.
+105072 = Motion Board Number is not Equal to Composition.
+105073 = Motion Board is not Initialized.
+105074 = Axises are not on Same Board.
+105075 = kind of WaitDone is Abnormal.
+105076 = Velocity is Abnormal.
+105077 = Kind of Stop is Abnormal.
+105078 = Spline Motion Number is Invalid.
+105079 = Kind of Sensor is Abnormal.
+105080 = Sampling Rate is Abnormal.
+105081 = Resolution Value is Abnormal.
+105082 = Position IO Number is Abnormal.
+105083 = Position Data Number is Abnormal.
+105084 = Position Compare Mode is Abnormal.
+105085 = Position Compare Repeat Time is Abnormal.
+105086 = Position Compare IO Output Time is Abnormal.
+105087 = Position Compare Index Choice Number is Abnormal.
+105088 = Position Compare Index Number is Abnormal.
+105089 = Position Compare Function is Abnormal.
+105090 = Pointer is Abnormal.
+105091 = Origin Wait Time is Abnormal.
+105092 = Kind of Motion is Abnormal.
+105093 = Number of Motion Route is Abnormal.
+105094 = Kind of Motor is Abnormal.
+105095 = Motor Feedback Equipment is Abnormal.
+105096 = Motion Board Numner is Abnormal.
+105097 = Motion Board ID is Abnormal.
+105098 = Numerator Value is Abnormal.
+105099 = IO Port ID is Abnormal.
+105100 = IO Interrupt is Abnormal.
+105101 = IO Bit Number is Abnormal.
+105102 = Motion Start Timing Value is Abnormal.
+105103 = Axis Order is Abnormal.
+105104 = Group Number is Abnormal.
+105105 = Event Valude is Abnormal.
+105106 = Denominator Value is Abnormal.
+105107 = Delay Time is Abnormal.
+105108 = Axis Number is Abnormal.
+105109 = Axis ID is Abnormal.
+105110 = Velocity of Circumference is Abnormal.
+105111 = Channel ID of Analog Input is Abnormal.
+105112 = Acceleration Value is Abnormal.
+105113 = Kind of Absolute Motor is Abnormal.
+105114 = Axis is in Motion.
+105115 = Motion Axis Number is Invalid.
+105116 = Axis Number of Same Board is Invalid.
+105117 = Position Comparison is Already Initialized.
+105118 = It's Failed to Load Parameter.
+105119 = it's Failed to Save parameter.
+105120 = Returning to Origin. Axis is Out of Home Sensor Position.
+
+// MMC Board Error(Component Code : 106)
+106001 = Motion Board is not Initialized. (ERR_MOTION_NOT_INITIALIZED)
+106002 = Motion DPRAM Communication Time is Over. (ERR_MOTION_TIMEOUT_ERR)
+106003 = Motion Axis Number is Invalid. (ERR_MOTION_INVALID_AXIS)
+106004 = Analog Channel is out of Range. (ERR_MOTION_ILLEGAL_ANALOG)
+106005 = IO Port is Abnormal. (ERR_MOTION_ILLEGAL_IO)
+106006 = Velocity or Accelaration is 0. (ERR_MOTION_ILLEGAL_PARAMETER)
+106007 = Map is not made. (ERR_MOTION_NO_MAP)
+106008 = AMP is Fault Status. (ERR_MOTION_AMP_FAULT)
+106009 = Motion is Doing. (ERR_MOTION_ON_MOTION)
+106010 = MMC Board is not Exist. (ERR_MOTION_NON_EXIST)
+106011 = It Failed to Read and Write MMC Boot File. (ERR_MOTION_BOOT_OPEN_ERROR)
+106012 = It Failed to Read and Write MMC Checksum File. (ERR_MOTION_CHKSUM_OPEN_ERROR)
+106013 = It Failed to Open MMC Window NT Driver.
+106014 = ERR_MOTION_EVENT_OCCUR_ERROR
+106015 = AMP Power is Off. (ERR_MOTION_AMP_POWER_OFF)
+106016 = It Failed to Open Data Directory. (ERR_MOTION_DATA_DIRECTORY_OPEN_ERROR)
+106017 = CP Motion Group is Invalid. (ERR_MOTION_INVALID_CPMOTION_GROUP)
+106018 = Volocity Parameter is Invalid.(ERR_MOTION_VELOCITY_ILLEGAL_PARAMETER)
+106019 = Accelerator Parameter is Invalid. (ERR_MOTION_ACCEL_ILLEGAL_PARAMETER)
+
+106020 = It's Using Axis ID.
+106021 = Axis Motion is Time Over.
+106022 = Motion Board Number is Over.
+106023 = Motion Axis Number is Over.
+106024 = Motion Library Object is not Exist.
+106025 = Motion Board is not Exist.
+106026 = Motion Axis is not Exist.
+106027 = Motion Pointer of Axis Information Area is not Exist.
+106028 = Pointer is Abnormal.
+106029 = Priority of Origin is Abnormal.
+106030 = Priority of Motion is Abnormal.
+106031 = Motion Board is Invalid.
+106032 = Motion Board Number is Abnormal.
+106033 = Motion Board ID is Abnormal.
+106034 = Axis ID is Abnormal.
+106035 = Axis Number is Abnormal.
+106036 = HOME Switch is Detected. (ERR_MAXES_HOME_SWITCH_AXIS_SOURCE)
+106037 = + Limit Sensor is Detected. (ERR_MAXES_POSITIVE_LIMIT_AXIS_SOURCE)
+106038 = - Limit Sensor is Detected. (ERR_MAXES_NEGATIVE_LIMIT_AXIS_SOURCE)
+106039 = AMP if Fault Status. (ERR_MAXES_AMP_FAULT_AXIS_SOURCE)
+106040 = Acceleration is Bounded in Limit. (ERR_MAXES_ACCELERATE_LIMIT_AXIS_SOURCE)
+106041 = Velocity is Bounded in Limit. (ERR_MAXES_VELOCITY_LIMIT_AXIS_SOURCE)
+106042 = - Axis is Out of Limit Range. (ERR_MAXES_X_NEGATIVE_LIMIT_AXIS_SOURCE)
+106043 = + Axis is Out of Limit Range. (ERR_MAXES_X_POSITIVE_LIMIT_AXIS_SOURCE)
+106044 = Axis is Limit Range.	(ERR_MAXES_ERROR_LIMIT_AXIS_SOURCE)
+106045 = PC Command is Occurred. (ERR_MAXES_PC_COMMAND_AXIS_SOURCE)
+106046 = Frame Number is Exceeded. (ERR_MAXES_OUT_OF_FRAMES_AXIS_SOURCE)
+106047 = (ERR_MAXES_AMP_POWER_ON_OFF_AXIS_SOURCE)
+106048 = (ERR_MAXES_RUN_STOP_COMMAND_AXIS_SOURCE)
+106049 = Axis is Collision Status. (ERR_MAXES_COLLISION_STATE_AXIS_SOURCE)
+106050 = Axis is not Origin.
+106051 = Axis Origin Step is Invalid.
+106052 = Axis Origin Thread is not Executed.
+106053 = Axis Origin Exceeded Limit Time.
+106054 = Motion Funtiion is Abnormal..
+106055 = Motion Axis is not Exist in List.
+106056 = It's Abnormal Source Status.
+106057 = Stop Event is Occurred.
+106058 = E-Stop Event is Occurred.
+106059 = Abort Event is Occurred.
+106060 = Axis Exceeded S/W + Limit.
+106061 = Axis Exceeded S/W - Limit.
+106062 = Axis Origin is Stopped by User.
+106063 = (ERR_MAXES_ABS_COMM_ERROR)
+106064 = (ERR_MAXES_INPOSITION_STATUS)
+106065 = (ERR_MAXES_NOT_ESTOP_STATE_IN_RETURNORIGIN)
+106066 = (ERR_MAXES_INTERLOCK_CHECKED)
+106067 = (ERR_MAXES_NOT_IN_POSITION)
+106068 = (ERR_MAXES_CHECKED_ESTOP_SW)
+106069 = (ERR_MAXES_CHECKED_STOP_SW);
+
+106070 = It's Using ID.
+106071 = Motion DPRAM Address is not Equal to Composition.
+106072 = Motion Board Number is not Equal to Composition.
+106073 = Motion Board is not Initialized.
+106074 = Axises are not on Same Board.
+106075 = kind of WaitDone is Abnormal.
+106076 = Velocity is Abnormal.
+106077 = Kind of Stop is Abnormal.
+106078 = Spline Motion Number is Invalid.
+106079 = Kind of Sensor is Abnormal.
+106080 = Sampling Rate is Abnormal.
+106081 = Resolution Value is Abnormal.
+106082 = Position IO Number is Abnormal.
+106083 = Position Data Number is Abnormal.
+106084 = Position Compare Mode is Abnormal.
+106085 = Position Compare Repeat Time is Abnormal.
+106086 = Position Compare IO Output Time is Abnormal.
+106087 = Position Compare Index Choice Number is Abnormal.
+106088 = Position Compare Index Number is Abnormal.
+106089 = Position Compare Function is Abnormal.
+106090 = Pointer is Abnormal.
+106091 = Origin Wait Time is Abnormal.
+106092 = Kind of Motion is Abnormal.
+106093 = Number of Motion Route is Abnormal.
+106094 = Kind of Motor is Abnormal.
+106095 = Motor Feedback Equipment is Abnormal.
+106096 = Motion Board Numner is Abnormal.
+106097 = Motion Board ID is Abnormal.
+106098 = Numerator Value is Abnormal.
+106099 = IO Port ID is Abnormal.
+106100 = IO Interrupt is Abnormal.
+106101 = IO Bit Number is Abnormal.
+106102 = Motion Start Timing Value is Abnormal.
+106103 = Axis Order is Abnormal.
+106104 = Group Number is Abnormal.
+106105 = Event Valude is Abnormal.
+106106 = Denominator Value is Abnormal.
+106107 = Delay Time is Abnormal.
+106108 = Axis Number is Abnormal.
+106109 = Axis ID is Abnormal.
+106110 = Velocity of Circumference is Abnormal.
+106111 = Channel ID of Analog Input is Abnormal.
+106112 = Acceleration Value is Abnormal.
+106113 = Kind of Absolute Motor is Abnormal.
+106114 = Axis is in Motion.
+106115 = Motion Axis Number is Invalid.
+106116 = Axis Number of Same Board is Invalid.
+106117 = Position Comparison is Already Initialized.
+106118 = It's Failed to Load Parameter.
+106119 = it's Failed to Save parameter.
+106120 = It's Failed to Read Absolute Motor Encoder.
+106121 = Axis Cannot Complete Stop.
+
+// SERCOS Motion Error(Component Code : 107)
+107000 = no error
+107001 = wrong ring number
+107002 = wrong node number
+107003 = wrong stage nmuber
+107004 = wrong axis number
+107005 = wrong ring configuration
+107006 = wrong stage configuration
+107007 = time out error
+107008 = can not read a node number list
+107009 = can not read a stage count
+107010 = can not change phase 0
+107011 = can not change phase 1
+107012 = can not change phase 2
+107013 = can not change phase 3
+107014 = can not change phase 4
+107015 = There is no nmc board
+107016 = Driver is not ready to operate
+107017 = The first parameter is wrong
+107018 = The second parameter is wrong
+107019 = The third parameter is wrong
+107020 = The fourth parameter is wrong
+107021 = The fifth parameter is wrong
+107022 = The sixth parameter is wrong
+107023 = The seventh parameter is wrong
+107024 = The eighth parameter is wrong
+107025 = The ninth parameter is wrong
+107026 = The tenth parameter is wrong
+107027 = The idn data type is not a two bytes long or four bytes long
+107028 = Drive Cannot servo on
+107029 = Drive Cannot servo off
+107030 = In position event object wait abandoned
+107031 = In position event object wait timeout
+107032 = In position event object wait failed
+107033 = Previous homing operation is running
+107034 = API Parameter range error
+107035 = API cannot be done in this amp state  
+107036 = Undefined switch status
+
+107100 = no ident number
+107101 = wrong access to element 1
+107102 = no name
+107103 = name transmission too short
+107104 = name transmission too long
+107105 = name cannot be changed
+107106 = name write protected at this time
+107107 = attribute transmission too short
+107108 = attribute transmission too long
+107109 = attribute cannot be modified
+107110 = attribute is write protected at this time
+107111 = no units
+107112 = unit transmission too short
+107113 = unit transmission too long
+107114 = unit cannot be changed
+107115 = unit is write protected at this time
+107116 = no minimum value
+107117 = minimum value transmission too short
+107118 = minimum value transmission too long
+107119 = minimum value cannot be changed
+107120 = minimum value is write protected at this time
+107121 = no maximum value
+107122 = maximum value transmission too short
+107123 = maximum value transmission too long
+107124 = maximum value cannot be changed
+107125 = maximum value is write protected at this time
+107126 = data transmission too short
+107127 = data transmission too long
+107128 = data cannot be changed
+107129 = data write protected at this time
+107130 = data smaller than the min. value
+107131 = data greater than the max. value
+107132 = data not correct
+107133 = data write protected by password
+107134 = data cyclic configured at this time
+107135 = data outside the valid number area
+107136 = data can not be changed during homing
+107137 = user motion does not completed
+
+107200 = service channel presently busy
+107201 = problem in service channel
+107202 = drive address not corrrect
+107203 = HS timeout
+107204 = double AT failure
+107205 = fiber optics cable disconnected
+107206 = transmission aborted(higher priority)
+107207 = illegal access(service channel still active)
+107208 = command channel presently not active
+107209 = drive error(class 1 diagnostics, S-0-0011)
+107210 = changeover phase 2->3 not possible
+107211 = changeover phase 3->4 not possible
+107212 = command in drive cannot be executed
+107213 = configuration error(command/actual value channel)
+107214 = error in time slot calculation
+107215 = incorrect phase from NC
+107216 = internal error
+107217 = lifecounter error
+107218 = copy times too long
+107219 = checksum error(Y parameter)
+107220 = double MST failure or input signal SYNCIN failed
+ 
+107300 = (-106): procedure command timeout
+107301 = (-105): invalid data
+107302 = (-104): NC timeout 
+107303 = (-103): MMI timeout 
+107304 = (-102): board not initizlied 
+107305 = (-101): init error 
+107306 = (-100): timeout
+
+107400 = No Homing Error
+107401 = Amp Fault while homing
+107402 = EVENT Status is not cleared
+107403 = EVENT does not set to NO_EVENT
+107404 = Homing User Cancel
+107405 = Short Homing Distance
+107406 = Motion Command Buffer not Empty.
+107407 = Limit Switch disagree with Moving Direction.
+107408 = Not found Marker in 1 turn.
+107409 = Servo off in homing procedure
+107410 = Modulo Setting is Enable
+107411 = Homing Procedure State is abnormal.
+107412 = Not found Switch or abnormal Switch status.
+107413 = Not found Home Switch.
+107414 = Not Servo on.
+107415 = Homing Watch dog time out.
+107416 = Cancel Event state.
+107417 = System can not become Amp Fault Reset.
+107418 = Velocity Value is Zero.
+
+107800 = Node is not Origin State
+107801 = Exceed Positive Limit
+107802 = Exceed Negative Limit
+107803 = Node is not Amp On State
+107804 = Node is In Motion State
+107805 = POT perception
+107806 = NOT perception
+107807 = Limit Sensor Power Off
+107808 = Data Reading Error
+107809 = Data Writing Error
+
+107900 = Axis Origin is Stopped by User.
+107901 = Motion Function is Abnormal..
+107902 = E-Stop Event is Occurred.
+107903 = Axis Origin Step is Invalid.
+107904 = Axis Exceeded S/W + Limit.
+107905 = Axis Exceeded S/W - Limit.
+107906 = Axis is not Origin.
+107907 = Axis ID is Abnormal.
+107908 = It's Failed to Load Parameter.
+107909 = it's Failed to Save parameter.
+107910 = (ERR_MAXES_NOT_IN_POSITION)
+107911 = Set Position was pressed in Manager.
+107912 = It is not Phase4 state.
+107913 = Main power was not supplied in Servo drive.
+107914 = It is DRIVE_STATUS_ FAULT. Confirm Drive state.
+107915 = It is not DRIVE_STATUS_SERVO_ ON state.
+
+107920 = Can Not Use MMC2 Board.
+107921 = Can Not Clear MMC2 System Error.
+107922 = Can Not Read Sercos Ring Information.
+107923 = Can not Read Sercos Phase Number.
+107924 = Can not Change Sercos Phase Number.
+
+107999 = It is not existed Error Code.
+
+// Lighting Component Error(Component Code : 113)
+113000 = Light On failure.
+113001 = Light Off failure.
+
+// Inverter Error(Component Code : 116)
+116000 = Inverter failed to Stop Bit On.
+116001 = Inverter failed to Stop Bit Off.
+116002 = Inverter failed to Start Bit On.
+116003 = Inverter failed to Start Bit Off.
+116004 = Inverter failed to Clear Fault Bit On.
+116005 = Inverter failed to Clear Fault Bit Off.
+116006 = Speed Bit value is not correct.
+116007 = Inverter failed to Bit On of Forward Direction.
+116008 = Inverter failed to Bit Off of Forward Direction.
+116009 = Inverter failed to Bit On of Backward Direction.
+116010 = Inverter failed to Bit Off of Backward Direction.
+116011 = Inverter is Fault state and failed Fault Clear.
+116012 = Inverter is not Ready state and failed Fault Clear.
+
+
+// ACS Motion Error(Component Code : 117)
+117000 = It does not become communication link between PC and Gantry Controller.
+117001 = It does not become communication link between PC and Gantry 1 Controller.
+117002 = It does not become communication link between PC and Gantry 2 Controller.
+117003 = System failed in ACS Controller Buffer practice for Gantry establishment.
+117004 = System failed in Gantry establishment completion confirmation.
+117005 = I failed in result Gantry set that confirm Gantry establishment completion.
+117006 = It is axis ID that is using present.
+117007 = Axis ID is abnormality.
+117008 = System failed to read Parameter.
+117009 = System failed to write Parameter.
+117010 = It does not become Axis Origin return.
+117011 = Transfer Type establishment is not valid.
+117012 = It exceeded action time limit.
+117013 = Among action completion confirmation, Interlock Check IO was sensed.
+117014 = It is Amp Fualt state.
+117015 = It is not In Position state after action completion.
+117016 = I failed in Axis Origin return action.
+117017 = Axis Origin return action by user was interrupted.
+117018 = Motor is not Enable state.
+117019 = It exceeded (+) SW Limit value.
+117020 = It exceeded (-) SW Limit value.
+117021 = During speed value establishment, error arose.
+117022 = During acceleration value establishment, error arose.
+117023 = During deceleration value establishment, error arose.
+117024 = Replied Axis proceed to but error arose.
+117025 = Among Fault state confirmation, error arose.
+117026 = During Spline transport speed establishment, error arose.
+117027 = During Origin return buffer action stop, error arose.
+117028 = During stop action, error arose.
+117029 = During Jog stop action, error arose.
+117030 = During hitch (E-STOP)  action, error arose.
+117031 = Among Fault Clear, error arose.
+117032 = During Encoder direction establishment, error arose.
+117033 = Error arose in the midst of read Encoder direction established state.
+117034 = Error arose while read motor state.
+117035 = During current position establishment, error arose.
+117036 = Error arose while read current position.
+117037 = During target position establishment, error arose.
+117038 = Error arose while read target position.
+117039 = Error arose while Amp Enable.
+117040 = Error arose while Amp Disable.
+117041 = During Origin return Fast speed establishment, error arose.
+117042 = During Origin return Slow speed establishment, error arose.
+117043 = During Origin return buffer action, error arose.
+117044 = Among Origin return buffer action completion confirmation, error arose.
+117045 = Origin return operating time was exceeded.
+117046 = Among Origin return action completion confirmation, error arose.
+117047 = It failed Origin return action.
+117048 = During Gantry Grouping buffer action, error arose.
+117049 = Among Gantry Grouping buffer action completion confirmation, error arose.
+117050 = It failed Gantry Grouping.
+117051 = During Origin return, error arose.
+117052 = During Amp HW Reset, error arose.
+
+// CAN Motion Error(Component Code : 119)
+119000 = CMLERR_Error_OK(PreAlign Axis(VCM))                  
+119001 = CMLERR_Error_Unknown(PreAlign Axis(VCM))             
+119002 = CMLERR_AmpError_NodeState(PreAlign Axis(VCM))        
+119003 = CMLERR_AmpError_pvtSegPos(PreAlign Axis(VCM))        
+119004 = CMLERR_AmpError_pvtSegVel(PreAlign Axis(VCM))        
+119005 = CMLERR_AmpError_pvtBufferFull(PreAlign Axis(VCM))    
+119006 = CMLERR_AmpError_badDeviceID(PreAlign Axis(VCM))      
+119007 = CMLERR_AmpError_badHomeParam(PreAlign Axis(VCM))     
+119008 = CMLERR_AmpError_badMoveParam(PreAlign Axis(VCM))     
+119009 = CMLERR_AmpError_InMotion(PreAlign Axis(VCM))         
+119010 = CMLERR_AmpError_GuardError(PreAlign Axis(VCM))       
+119011 = CMLERR_AmpError_Fault(PreAlign Axis(VCM))            
+119012 = CMLERR_AmpError_ShortCircuit(PreAlign Axis(VCM))     
+119013 = CMLERR_AmpError_AmpTemp(PreAlign Axis(VCM))          
+119014 = CMLERR_AmpError_MotorTemp(PreAlign Axis(VCM))        
+119015 = CMLERR_AmpError_OverVolt(PreAlign Axis(VCM))         
+119016 = CMLERR_AmpError_UnderVolt(PreAlign Axis(VCM))        
+119017 = CMLERR_AmpError_EncoderPower(PreAlign Axis(VCM))     
+119018 = CMLERR_AmpError_PhaseErr(PreAlign Axis(VCM))         
+119019 = CMLERR_AmpError_TrackErr(PreAlign Axis(VCM))         
+119020 = CMLERR_AmpError_PosLim(PreAlign Axis(VCM))           
+119021 = CMLERR_AmpError_NegLim(PreAlign Axis(VCM))           
+119022 = CMLERR_AmpError_PosSoftLim(PreAlign Axis(VCM))       
+119023 = CMLERR_AmpError_NegSoftLim(PreAlign Axis(VCM))       
+119024 = CMLERR_AmpError_TrackWarn(PreAlign Axis(VCM))        
+119025 = CMLERR_AmpError_Unknown(PreAlign Axis(VCM))          
+119026 = CMLERR_AmpError_Reset(PreAlign Axis(VCM))            
+119027 = CMLERR_AmpError_Disabled(PreAlign Axis(VCM))         
+119028 = CMLERR_AmpError_QuickStopMode(PreAlign Axis(VCM))   
+119029 = CMLERR_AmpError_NoUserUnits(PreAlign Axis(VCM))      
+119030 = CMLERR_AmpError_Abort(PreAlign Axis(VCM))            
+119031 = CMLERR_AmpError_pvtPosUnavail(PreAlign Axis(VCM))    
+119032 = CMLERR_AmpFault_Memory(PreAlign Axis(VCM))           
+119033 = CMLERR_AmpFault_ADC(PreAlign Axis(VCM))              
+119034 = CMLERR_AmpFault_ShortCircuit(PreAlign Axis(VCM))     
+119035 = CMLERR_AmpFault_AmpTemp(PreAlign Axis(VCM))          
+119036 = CMLERR_AmpFault_MotorTemp(PreAlign Axis(VCM))        
+119037 = CMLERR_AmpFault_OverVolt(PreAlign Axis(VCM))         
+119038 = CMLERR_AmpFault_UnderVolt(PreAlign Axis(VCM))        
+119039 = CMLERR_AmpFault_EncoderPower(PreAlign Axis(VCM))     
+119040 = CMLERR_AmpFault_PhaseErr(PreAlign Axis(VCM))         
+119041 = CMLERR_AmpFault_TrackErr(PreAlign Axis(VCM))         
+119042 = CMLERR_AmpFault_Unknown(PreAlign Axis(VCM))          
+119043 = CMLERR_CanError_BadPortName(PreAlign Axis(VCM))      
+119044 = CMLERR_CanError_NotOpen(PreAlign Axis(VCM))          
+119045 = CMLERR_CanError_AlreadyOpen(PreAlign Axis(VCM))      
+119046 = CMLERR_CanError_BadParam(PreAlign Axis(VCM))         
+119047 = CMLERR_CanError_Driver(PreAlign Axis(VCM))           
+119048 = CMLERR_CanError_BadBaud(PreAlign Axis(VCM))          
+119049 = CMLERR_CanError_Timeout(PreAlign Axis(VCM))          
+119050 = CMLERR_CanError_Overflow(PreAlign Axis(VCM))         
+119051 = CMLERR_CanError_BusOff(PreAlign Axis(VCM))           
+119052 = CMLERR_CanError_InvalidID(PreAlign Axis(VCM))           
+119053 = CMLERR_CanError_Unknown(PreAlign Axis(VCM))             
+119054 = CMLERR_CanError_NoDriver(PreAlign Axis(VCM))            
+119055 = CMLERR_CanError_Alloc(PreAlign Axis(VCM))               
+119056 = CMLERR_CanOpenError_ThreadStart(PreAlign Axis(VCM))     
+119057 = CMLERR_CanOpenError_BadParam(PreAlign Axis(VCM))        
+119058 = CMLERR_CanOpenError_SDO_Busy(PreAlign Axis(VCM))        
+119059 = CMLERR_CanOpenError_SDO_Timeout(PreAlign Axis(VCM))     
+119060 = CMLERR_CanOpenError_SDO_Unknown(PreAlign Axis(VCM))     
+119061 = CMLERR_CanOpenError_SDO_BadMuxRcvd(PreAlign Axis(VCM))  
+119062 = CMLERR_CanOpenError_SDO_BadMsgRcvd(PreAlign Axis(VCM))  
+119063 = CMLERR_CanOpenError_BadNodeID(PreAlign Axis(VCM))       
+119064 = CMLERR_CanOpenError_NotInitialized(PreAlign Axis(VCM))  
+119065 = CMLERR_CanOpenError_Initialized(PreAlign Axis(VCM))     
+119066 = CMLERR_CanOpenError_NotSupported(PreAlign Axis(VCM))    
+119067 = CMLERR_CanOpenError_MonitorRunning(PreAlign Axis(VCM))  
+119068 = CMLERR_CanOpenError_IllegalFieldCt(PreAlign Axis(VCM))  
+119069 = CMLERR_CanOpenError_RcvrNotFound(PreAlign Axis(VCM))    
+119070 = CMLERR_CanOpenError_RcvrPresent(PreAlign Axis(VCM))     
+119071 = CMLERR_CanOpenError_Closed(PreAlign Axis(VCM))          
+119072 = CMLERR_NodeError_GuardTimeout(PreAlign Axis(VCM))       
+119073 = CMLERR_SDO_Error_NoAbortCode(PreAlign Axis(VCM))        
+119074 = CMLERR_SDO_Error_Togglebit(PreAlign Axis(VCM))          
+119075 = CMLERR_SDO_Error_Timeout(PreAlign Axis(VCM))            
+119076 = CMLERR_SDO_Error_Bad_scs(PreAlign Axis(VCM))            
+119077 = CMLERR_SDO_Error_Block_size(PreAlign Axis(VCM))         
+119078 = CMLERR_SDO_Error_Block_seq(PreAlign Axis(VCM))          
+119079 = CMLERR_SDO_Error_Block_crc(PreAlign Axis(VCM))          
+119080 = CMLERR_SDO_Error_Memory(PreAlign Axis(VCM))             
+119081 = CMLERR_SDO_Error_Access(PreAlign Axis(VCM))             
+119082 = CMLERR_SDO_Error_Writeonly(PreAlign Axis(VCM))          
+119083 = CMLERR_SDO_Error_Readonly(PreAlign Axis(VCM))           
+119084 = CMLERR_SDO_Error_Bad_object(PreAlign Axis(VCM))         
+119085 = CMLERR_SDO_Error_Pdo_map(PreAlign Axis(VCM))            
+119086 = CMLERR_SDO_Error_Pdo_length(PreAlign Axis(VCM))         
+119087 = CMLERR_SDO_Error_Bad_param(PreAlign Axis(VCM))          
+119088 = CMLERR_SDO_Error_Incompatible(PreAlign Axis(VCM))       
+119089 = CMLERR_SDO_Error_Hardware(PreAlign Axis(VCM))           
+119090 = CMLERR_SDO_Error_Bad_length(PreAlign Axis(VCM))         
+119091 = CMLERR_SDO_Error_Too_long(PreAlign Axis(VCM))           
+119092 = CMLERR_SDO_Error_Too_short(PreAlign Axis(VCM))          
+119093 = CMLERR_SDO_Error_Subindex(PreAlign Axis(VCM))           
+119094 = CMLERR_SDO_Error_Param_range(PreAlign Axis(VCM))        
+119095 = CMLERR_SDO_Error_Param_high(PreAlign Axis(VCM))         
+119096 = CMLERR_SDO_Error_Param_low(PreAlign Axis(VCM))          
+119097 = CMLERR_SDO_Error_Min_max(PreAlign Axis(VCM))            
+119098 = CMLERR_SDO_Error_General(PreAlign Axis(VCM))            
+119099 = CMLERR_SDO_Error_Transfer(PreAlign Axis(VCM))           
+119100 = CMLERR_SDO_Error_Transfer_Local(PreAlign Axis(VCM))     
+119101 = CMLERR_SDO_Error_Transfer_State(PreAlign Axis(VCM))     
+119102 = CMLERR_SDO_Error_OD_Gen_Fail(PreAlign Axis(VCM))        
+119103 = CMLERR_SDO_Error_Unknown(PreAlign Axis(VCM))           
+119104 = CMLERR_IOError_BadID(PreAlign Axis(VCM))                
+119105 = CMLERR_IOError_BadIOCount(PreAlign Axis(VCM))           
+119106 = CMLERR_PDO_Error_MapFull(PreAlign Axis(VCM))            
+119107 = CMLERR_PDO_Error_BitOverflow(PreAlign Axis(VCM))         
+119108 = CMLERR_PDO_Error_BitSizeError(PreAlign Axis(VCM))        
+119109 = CMLERR_LinkError_BadAmpCount(PreAlign Axis(VCM))         
+119110 = CMLERR_LinkError_NetworkMismatch(PreAlign Axis(VCM))     
+119111 = CMLERR_LinkError_AlreadyInit(PreAlign Axis(VCM))         
+119112 = CMLERR_LinkError_AmpAlreadyLinked(PreAlign Axis(VCM))    
+119113 = CMLERR_LinkError_AxisCount(PreAlign Axis(VCM))           
+119114 = CMLERR_LinkError_AmpTrjOverflow(PreAlign Axis(VCM))      
+119115 = CMLERR_LinkError_AmpTrjInUse(PreAlign Axis(VCM))         
+119116 = CMLERR_LinkError_AmpTrjNotRunning(PreAlign Axis(VCM))    
+119117 = CMLERR_LinkError_NoActiveTrj(PreAlign Axis(VCM))         
+119118 = CMLERR_LinkError_BadMoveLimit(PreAlign Axis(VCM))        
+119119 = CMLERR_LinkError_UnknownAmpErr(PreAlign Axis(VCM))       
+119120 = CMLERR_LinkError_StartMoveTO(PreAlign Axis(VCM))         
+119121 = CMLERR_LinkError_NotSupported(PreAlign Axis(VCM))       
+119122 = CMLERR_ThreadError_Start(PreAlign Axis(VCM))             
+119123 = CMLERR_ThreadError_Running(PreAlign Axis(VCM))           
+119124 = CMLERR_ThreadError_Timeout(PreAlign Axis(VCM))           
+119125 = CMLERR_ThreadError_General(PreAlign Axis(VCM))           
+119126 = CMLERR_ThreadError_BadParam(PreAlign Axis(VCM))          
+119127 = CMLERR_ThreadError_Alloc(PreAlign Axis(VCM))             
+119128 = CMLERR_EventError_AlreadyOwned(PreAlign Axis(VCM))       
+119129 = CMLERR_EventError_NotMapped(PreAlign Axis(VCM))          
+119130 = CMLERR_AmpFileError_format(PreAlign Axis(VCM))           
+119131 = CMLERR_AmpFileError_tooOld(PreAlign Axis(VCM))           
+119132 = CMLERR_AmpFileError_noFileAccess(PreAlign Axis(VCM))     
+119133 = CMLERR_AmpFileError_fileOpen(PreAlign Axis(VCM))         
+119134 = CMLERR_AmpFileError_range(PreAlign Axis(VCM))            
+119135 = CMLERR_ScurveError_BadParam(PreAlign Axis(VCM))          
+119136 = CMLERR_ScurveError_NoCalc(PreAlign Axis(VCM))            
+119137 = CMLERR_ScurveError_InUse(PreAlign Axis(VCM))             
+119138 = CMLERR_ScurveError_NotInUse(PreAlign Axis(VCM))          
+119139 = CMLERR_CanError_Permission(PreAlign Axis(VCM))           
+119140 = CMLERR_FirmwareError_open(PreAlign Axis(VCM))            
+119141 = CMLERR_FirmwareError_read(PreAlign Axis(VCM))            
+119142 = CMLERR_FirmwareError_format(PreAlign Axis(VCM))          
+119143 = CMLERR_FirmwareError_crc(PreAlign Axis(VCM))             
+119144 = CMLERR_FirmwareError_alloc(PreAlign Axis(VCM))           
+119145 = CMLERR_PathError_BadVel(PreAlign Axis(VCM))              
+119146 = CMLERR_PathError_BadAcc(PreAlign Axis(VCM))              
+119147 = CMLERR_PathError_VelNotInit(PreAlign Axis(VCM))          
+119148 = CMLERR_PathError_AccNotInit(PreAlign Axis(VCM))          
+119149 = CMLERR_PathError_BadPoint(PreAlign Axis(VCM))            
+119150 = CMLERR_PathError_Alloc(PreAlign Axis(VCM))               
+119151 = CMLERR_PathError_BadLength(PreAlign Axis(VCM))           
+119152 = CMLERR_PathError_Empty(PreAlign Axis(VCM))               
+119153 = CMLERR_AmpFileError_axis(PreAlign Axis(VCM))             
+119154 = CMLERR_AmpFault_I2TLimit(PreAlign Axis(VCM))             
+119155 = CMLERR_AmpError_VelWin(PreAlign Axis(VCM))               
+119156 = CMLERR_CopleyNodeError_SerialMsgLen(PreAlign Axis(VCM))  
+119157 = CMLERR_CopleyNodeError_SerialError(PreAlign Axis(VCM))   
+119158 = CMLERR_TrjError_NoneAvailable(PreAlign Axis(VCM))        
+119159 = System failed to read Parameter.
+119160 = System failed to write Parameter.
+119161 = It does not become Axis Origin return.
+119162 = Transfer Type establishment is not valid.
+119163 = It exceeded action time limit.
+119164 = Among action completion confirmation, Interlock Check IO was sensed.
+119165 = It is Amp Fualt state.
+119166 = It is not In Position state after action completion.
+119167 = I failed in Axis Origin return action.
+119168 = Axis Origin return action by user was interrupted.
+119169 = Motor is not Enable state.
+119170 = It exceeded (+) SW Limit value.
+119171 = It exceeded (-) SW Limit value.
+119172 = During speed value establishment, error arose.
+119173 = During acceleration value establishment, error arose.
+119174 = During deceleration value establishment, error arose.
+119175 = Replied Axis proceed to but error arose.
+119176 = Among Fault state confirmation, error arose.
+119177 = During Spline transport speed establishment, error arose.
+119178 = During Origin return buffer action stop, error arose.
+119179 = During stop action, error arose.
+119180 = During Jog stop action, error arose.
+119181 = During hitch (E-STOP)  action, error arose.
+119182 = Among Fault Clear, error arose.
+119183 = During Encoder direction establishment, error arose.
+119184 = Error arose in the midst of read Encoder direction established state.
+119185 = Error arose while read motor state.
+119186 = During current position establishment, error arose.
+119187 = Error arose while read current position.
+119188 = During target position establishment, error arose.
+119189 = Error arose while read target position.
+119190 = Error arose while Amp Enable.
+119191 = Error arose while Amp Disable.
+119192 = During Origin return Fast speed establishment, error arose.
+119193 = During Origin return Slow speed establishment, error arose.
+119194 = During Origin return buffer action, error arose.
+119195 = Among Origin return buffer action completion confirmation, error arose.
+119196 = Origin return operating time was exceeded.
+119197 = Among Origin return action completion confirmation, error arose.
+119198 = It failed Origin return action.
+119199 = Axis ID is abnormality.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Mechanical Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Operation Panel Error(Component Code : 200)
+200001 = It is wrong jog key type.
+200002 = It is wrong jog unit index.
+
+// RFID Error (Component Code : 206)
+206001 = CodeSpec Type Error
+206002 = Data Code Type Error
+206003 = UnKnown Command Error
+206004 = Null Data Error
+
+206007 = Data Write Time Out
+206008 = Wrong Data Length
+206009 = Parity Error
+206010 = Result Framing Error
+206011 = Result Overrun Error
+206012 = FCS Error
+206013 = Result Format Error
+206014 = Result Framing Length Error
+206015 = Result DC Comm Error
+206016 = Result Disagreement Error
+206017 = Result DC Not Present Error
+206018 = Result Command Received
+206019 = Result Command Auto Processing Canceled Before Comm
+206020 = Result Command Auto Processing Canceled After Comm
+206021 = Result Address Too High
+206022 = Result Lower Battery
+206023 = Result Read Write Head Not Connected
+206024 = Result Write Protect Error
+206025 = Result Invalid Error
+
+// Panel Aligner Error (Component Code : 210)
+210001 = It can not read XYT axis fixing coordinate.
+210002 = It can not account for XYT axis fixing coordinate to File.
+210003 = It can not read XYT axis Offset coordinate.
+210004 = It can not account for XYT axis Offset coordinate to File.
+210005 = X-axis is not Origin return state.
+210006 = Y-axis is not Origin return state.
+210007 = T-axis is not Origin return state.
+210008 = It is strange XYT axis position Index .
+210009 = Model Change axis is not Model position.
+210010 = Model Change axis Rail is not Lock state..
+210011 = Plate 2,3 has not narrowed nearly with Plate 1,4.
+210012 = It has not widened as Plate 2,3 is far with Plate 1,4..
+210013 = It can not move to Unload position because Panel is sensed but PickUp Unit is not Down state to next equipment Load Conveyor.
+210014 = Panel is sensed to next equipment Load Conveyor but can not move to Unload position because is adsorbing Panel.
+210015 = It can not move to Unload position because Panel is sensed but PickUp Unit is not Down state to Unload Conveyor.
+210016 = Panel is sensed to Unload Conveyor but can not move to Unload position because is adsorbing Panel.
+210017 = PickUp Unit is not Down state, and can not move to Unload position in Load position by state that Panel Transfer adsorbs Panel.
+210018 = PickUp Unit is not down state, and can not move because there is Panel Transfer by state that adsorb Panel.
+210019 = It can not move being not Plate levitation state.
+210020 = Panel Transfer is not Down state and can not move to Unload position in Load position.
+210021 = Panel Transfer is not Down state and can not move in Load position.
+210022 = It can not move because Panel Transfer is not Down state and Load position is not.
+210023 = Panel Transfer is not Stopper Down state and can not move to Unload position in Load position.
+210024 = Panel Transfer is not Stopper Down state and can not move in Load position.
+210025 = Panel Transfer is not Stopper Down state and can not move by Load, Mark, Press position in Unload position.
+210026 = Panel Transfer is not Stopper Down state and can not move in Unload position.
+210027 = It can not move because Panel Transfer is not Stopper Down state and is not to Load, Unload position.
+210028 = It can not move by Load, Mark, Press position in Load, Mark, Press position because Backup is not Down state.
+210029 = It can not move in Inspection, Unloadposition because Backup is not Down state.
+210030 = It can not move because Backup is not Down state.
+210031 = It can not move in Load, Mark, Press position because Front Backup is not Down state.
+210032 = It can not move by Load, Mark, Press position etc. in Inspection, Unloadposition because Front Backup is not Down state.
+210033 = It can not move because Front Backup is not Down state.
+210034 = It can not move in Load, Mark, Press position because Rear Backup is not Down state.
+210035 = It can not move by Load, Mark, Press position etc. in Inspection, Unloadposition because Rear Backup is not Down state.
+210036 = It can not move because Rear Backup is not Down state.
+210037 = It can not move in Load, Mark, Press position because Tab Mounter is not Up state.
+210038 = It can not move by Load, Mark, Press position etc. in Inspection, Unloadposition because Tab Mounter is not Up state.
+210039 = It can not move because Tab Mounter is not Up state.
+210040 = It can not move in Load, Mark, Press position because Front Tab Mounter is not Up state.
+210041 = It can not move by Load, Mark, Press position etc. in Inspection, Unloadposition because Front Tab Mounter is not Up state.
+210042 = It Can not move because Front Tab Mounter is not Up state.
+210043 = It can not move in Load, Mark, Press position because Rear Tab Mounter is not Up state.
+210044 = It can not move by Load, Mark, Press position etc. in Inspection, Unloadposition because Rear Tab Mounter is not Up state.
+210045 = It can not move because Rear Tab Mounter is not Up state.
+210046 = It can not move to Yr (First)  Inspection position because Panel is sensed but PickUp Unit is not Down state to Unload Conveyor.
+210047 = Panel is sensed to Unload Conveyor but can not move to Yr (First)  Inspection position because is adsorbing Panel.
+210048 = It can not move because Back-Up 1 is not Down state.
+210049 = It can not move because Back-Up 2 is not Down state.
+210050 = It can not move because Carrier Press 1 is not Up state.
+210051 = It can not move because Carrier Press 2 is not Up state.
+210052 = It can not move because Recovery Weight Guide1 is not Up state.
+210053 = It can not move because Recovery Weight Guide 2 is not Up state.
+210054 = It can not move because Recovery ACF Line Gripper 1 is not Up state.
+210055 = It can not move because Recovery ACF Line Gripper 2 is not Up state.
+210056 = It can not move being not Plate absorb cancellation state.
+210057 = It can not move because Panel Fix 1 cylinder is not Up state.
+210058 = It can not move because Panel Fix 2 cylinder is not Up state.
+210059 = Tool 1 Backup is not Up state.
+210060 = Tool 2 Backup is not Up state.
+210061 = There is not in position that Tool 1 secures.
+210062 = There is not in position that Tool 2 secures.
+
+210100 = can not move. [Panel aligner does not absorb panel and pickup unit is up state.]
+210101 = can not move. [Panel Transfer is not down state.]
+210102 = can not move. [Panel Transfer Stopper is not down state.]
+210103 = can not move. [Backup is up state.]
+210104 = can not move. [Front Backup is up state.]
+210105 = can not move. [Rear Backup is up state.]
+210106 = can not move. [TabMounter is not up state.]
+210107 = can not move. [Front TabMounter is not up state.]
+210108 = can not move. [Rear TabMounter is not up state.]
+210109 = Pickup Unit down time limit excess. [More than 3 seconds]
+210110 = can not move. [Panel Transfer is Panel absorbed state.]
+210111 = can not move. [Panel Transfer Pickup is up state.]
+210112 = can not move. [Panel Trnasfer Stopper is up state.]
+210113 = can not move. [Next Load Conveyor has a Panel.]
+
+// Camera Carrier Error (Component Code : 214)
+214000 = Fixing coordinate file read failure
+214001 = Offset coordinate file read failure
+214002 = Offset coordinate file save failure
+214003 = It does not become Origin return action.
+214004 = Fixing coordinate file save failure
+214005 = Transfer prohibition [when move, TabMounter interference occurrence]
+214006 = Transfer prohibition [when move, Pre Camera Carrier interference occurrence : (+) transfer]
+214007 = Transfer prohibition [when move, Pre Camera Carrier interference occurrence : (-) transfer]
+214008 = Transfer prohibition [when move, Next Camera Carrier interference occurrence : (+) transfer]
+214009 = Transfer prohibition [when move, Next Camera Carrier interference occurrence : (-) transfer]
+
+// Tab Feeder Error (Component Code : 215)
+215001 = It failed to load Press Z axis fixing coordinate.
+215002 = It failed to load Press Z axis Offset coordinate.
+215003 = It failed to store Press Z axis fixing coordinate.
+215004 = I failed to store Press Z axis Offset coordinate.
+215005 = It failed to do Bad Tab Y-axis Offset coordinate Load.
+215006 = I failed to store Bad Tab Y-axis Offset coordinate.
+215007 = It failed to load Sprocket T axis Offset coordinate.
+215008 = It failed to store Sprocket T axis Offset coordinate.
+215009 = Press Vacuum is strange.
+215010 = Change Vacuum is strange.
+215011 = Press Z axis does not become Origin return.
+215012 = Sprocket1 T axis does not become Origin return.
+215013 = It failed Reel Encoder Current Pos set.
+215014 = It does not become BadTab Y-axis Origin return.
+215015 = It can not do Mold Fixer Forward/Backward in case of Mold Separator Cyl is not Down.
+215016 = It can not do Mold Separator Up/Down in case of Mold Fixer is not Back.
+215017 = Supply Y axis does not become Origin return.
+215018 = Attach Press is not Up state.
+215019 = Attach Press is not Down state.
+215020 = Attach Reel is not Forward state.
+215021 = Attach Reel is not Backward state.
+215022 = TAB IC Reel exists to Supplier.
+215023 = Sprocket2 T axis does not become Origin return.
+215024 = Sprocket1 Forward Rotation is completed, but Tension Up is still sensed.
+215025 = Sprocket1 Backward Rotation is completed, but Tension Low is still sensed.
+215026 = Sprocket2 Forward Rotation is completed, but Tension Low is still sensed.
+215027 = Sprocket2 Backward Rotation is completed, but Tension Up is still sensed.
+// 080710 이정용 수정 -> Alarm Code 추가
+215028 = Attach Cutting Support(Left) is not Dwon state. 
+215029 = Attach Cutting Support(Right) is not Dwon state. 
+215030 = Attach Reel Cutter is not Dwon state.
+215031 = Supplier Chuck isn't locked.
+
+
+// Tab Carrier Error (Component Code : 217)
+217001 = It failed to do axis fixing coordinate Load.
+217002 = It failed to do axis Offset coordinate Load.
+217003 = It failed to store axis fixing coordinate.
+217004 = It failed to store axis Offset coordinate.
+217005 = Vacuum is strange.
+217006 = It does not become Y-axis Origin return.
+217007 = UD Cyl can not move Carrier as is not down.
+217008 = Up prohibition. [Tab Carrier is not Load position.]
+217009 = It can not progress CW action where TURN position is not.
+217010 = It can not progress CCW action where TURN position is not.
+217011 = It does not become X-axis Origin return.
+217012 = Transfer prohibition. [Tab Mounter is not Up at Load position.]
+217013 = Transfer prohibition. [Tab Mounter is not Up at interference possibility position.]
+217014 = It can not move Carrier as CW/CCW Cyl is not Turn.
+217015 = It can not move Carrier as CW/CCW Cyl is not Return.
+217016 = Adsorbing Tab IC, try to rise.
+
+// MoniTouch Error (Component Code : 218)
+
+
+// TabLoader Error (Component Code : 225)
+
+
+// RollerConveyor Error (Component Code : 226)
+226000 = Inverter is not Ready state.
+226001 = When PanelTransfer adsorbs Panel before LoadConveyor Stopper rises, Panel Tansfer is not in Unloading position.
+226002 = Stopper can't be up. [Panel is detected on conveyor.]
+226003 = Panel Tansfer is not Down State.
+226999 = Error undecided.
+
+
+// Transfer Error (Component Code : 227)
+227001 = It did not read X-axis fixing coordinate.
+227002 = It can not account for X-axis fixing coordinate to File.
+227003 = It did not read X-axis Offset coordinate.
+227004 = It can not account for X-axis Offset coordinate to File.
+227005 = X1 axis does not become Origin return.
+227006 = X2 axis does not become Origin return.
+227007 = It is strange X-axis position Index.
+227008 = Model Change axis is not Model position.
+227009 = Model Change axis's Rail is not Lock state.
+227010 = Plate 2,3 has not narrowed nearly with Plate 1,4.
+227011 = It has not widened as Plate 2,3 is far with Plate 1,4.
+227012 = Panel is sensed to Load Conveyor but can not move to Load position because is adsorbing Panel.
+227013 = PickUp Unit is not Down state.
+227014 = Stopper is not Down state.
+227015 = It can not move being not Plate levitation state.
+227016 = It can not move because Panel Aligner is not Down state.
+227017 = It can not move because Backup is not Down state.
+227018 = It can not move because Front Backup is not Down state.
+227019 = It can not move because Rear Backup is not Down state.
+227020 = It can not move because Tab Mounter is not Up state.
+227021 = It can not move because Front Tab Mounter is not Up state.
+227022 = It can not move because Rear Tab Mounter is not Up state.
+227023 = It can not move because Backup 2 is not Down state.
+227024 = It can not move being not Plate absorb cancellation state.
+227025 = It can not do PickUp Unit Up action because it is not Load position.
+227026 = It can not do Stopper Up action because it is not Load position.
+227027 = It can not do Stopper Up action because Panel Aligner had Panel and is located to levitation Unit.
+227028 = PickUp Unit can not do down because is adsorbing Panel.
+227029 = Stopper can not do Up because is adsorbing Panel in levitation Unit.
+227030 = It can not move because Back-Up1 is not Down state.
+227031 = It can not move because Back-Up2 is not Down state.
+227032 = It can not move because Carrier Press1 is not Up state.
+227033 = It can not move because Carrier Press2 is not Up state.
+227034 = Tool1 Backup is not Up state.
+227035 = Tool2 Backup is not Up state.
+227036 = There is not in position that Tool1 secures.
+227037 = There is not in position that Tool2 secures.
+227038 = Can Not Move.[Panel Aligner is Panel Absorbed State.]
+
+// TabMounter Error (Component Code : 228)
+228000 = It failed to read Offset coordinate file.
+228001 = It failed fixing coordinate doing Load.
+228002 = It failed storing Offset coordinate.
+228003 = It failed storing fixing coordinate.
+228004 = It is Amp Fault state immediately after transfer action. - Error that is not present...
+228005 = It does not become Tab Mounter axis Origin return.
+228006 = Before transfer, it is Amp Fault or Amp Disable state.
+228007 = 
+228008 = There is pre Tab Mounter in collision possibility position.
+228009 = There is next Tab Mounter in collision possibility position.
+228010 = Transfer prohibition. [It is Down state.]
+228011 = Difference of target position and current position passes over Tolerance after transfer.
+228012 = It failed to read Gantry Offset coordinate file.
+228013 = It failed Gantry fixing coordinate doing Load.
+228014 = It failed storing Gantry Offset coordinate.
+228015 = It failed storing Gantry fixing coordinate.
+228016 = It does not become Gantry axis Origin return.
+228017 = Gantry transfer prohibition. [Is not all Tab Mounter Up states of Group.]
+228018 = Transfer prohibition. [Tab Aligner 1 is not Ready position.]
+228019 = Transfer prohibition. [Tab Aligner 2 is not Ready position.]
+228020 = Backup Up prohibition. [There is Tab Mounter that is the second down state among Group's Tab Mounter.]
+228021 = Backup Forward prohibition. [Is not Backup Down state.]
+228022 = Backup Backward prohibition. [It is Backup Up state.]
+228023 = Backup Up prohibition. [Panel Transfer that is not in Unload position is adsorbing Panel.]
+228024 = Transfer prohibition. [When move, interference occurrence with Panel Align Camera2 Carrier]
+228025 = The second down prohibition. [There is Tab Aligner 1 position.]
+228026 = The second down prohibition. [There is Tab Aligner 2 positions.]
+228027 = The second down prohibition. [Is not Backup Up.]
+228028 = The second down prohibition. [There is Load position.]
+228029 = The first down prohibition. [It is TabIC adsorption state at Load position.]
+228030 = The second down prohibition. [Source equipment : There is Remove position.]
+228031 = Down prohibition. [Is not decided Gantry position.]
+228032 = Down prohibition. [Is not Backup Up.]
+228033 = Backup Up prohibition. [Panel Aligner's position is not Press Xu.]
+228034 = Down prohibition. [Invalid Mounter position.]
+228035 = Gantry Axis is not Amp Enable state.
+228036 = Gantry Axis is Amp Fault state.
+228037 = Gantry Axis is not in Load position.
+228038 = Gantry Axis is not in Prealign position.
+228039 = Gantry Axis is not in Inspection position.
+228040 = Gantry Axis is not in Mount position.
+228041 = Invalid Gantry Position ID.
+
+
+// Tab Aligner Error (Component Code : 229)
+229000 = It failed to read Offset coordinate file.
+229001 = It failed to read fixing coordinate file.
+229002 = I failed storing Offset coordinate file.
+229003 = I failed storing fixing coordinate file.
+229004 = It does not become Axis1 axis Origin return.
+229005 = It does not become Axis2 axis Origin return.
+
+// Model Change Error (Component Code : 230)
+230000 = It does not read Y-axis fixing coordinate.
+230001 = It can not account for Y-axis fixing coordinate to File.
+230002 = It did not read Y-axis Offset coordinate.
+230003 = It can not account for Y-axis Offset coordinate to File.
+230004 = It does not become Y-axis Origin return.
+230005 = Position Index of X-axis is strange.
+230006 = Plate Vacuum is On state.
+230007 = Panel Aligner is adsorbing Panel.
+230008 = Panel Transfer is adsorbing Panel.
+230009 = Plate 2,3 has not narrowed nearly with Plate 1,4.
+230010 = It has not widened as Plate 2,3 is far with Plate 1,4.
+230011 = Rail is not Unlock state.
+230012 = Because present width is smaller than small size model, can not do Expand.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Control Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Manage Op Panel Error (component code : 300)
+300001 = Unit Setting was wrong.
+300002 = It is CP TRIP.
+300003 = Doors are open.
+300004 = It is Heater error.
+300005 = It is Air error.
+300006 = It is Vacuum error.
+300007 = E-Stop switch was pressed.
+
+// Teaching Error (component code : 301)
+301001 = User Cancel Error(ERR_HW_USER_CANCEL)
+301002 = Angle of rotation of that find Camera fixing coordinate, It escapes +90 ~ -90 degree extent.
+
+
+// Vision Calibration Error (component code : 302)
+302001 = There is not Vision Calibration's inverse matrix.(ERR_VCALIB_NOT_EXIST_INVERSE_MATRIX)
+
+
+// Control Panel Aligner Error (Component Code : 310)
+310001 = It can not move to Load position because is adsorbing Panel.
+310002 = It can not move to Unload Wait position because is not adsorbing Panel.
+310003 = It can not move to Unload position because is not adsorbing Panel.
+310004 = Before panel align operation, Panel was not adsorbed.
+310005 = Panel fiducial mark recognition is failed.
+310006 = Panel mark auto search operation is failed.
+310007 = Align value exceeded allowable value. (X, Y limit : Within 10 mm, T limit : 5 degree)
+310008 = Panel Mark isn't recognized. [PanelAlign Cam1 : Check panel broken, dust on the Fidu Mark.]
+310009 = Panel Mark isn't recognized. [PanelAlign Cam2 : Check panel broken, dust on the Fidu Mark.]
+310010 = Panel Mark isn't recognized. [PanelAlign Cam1]
+310011 = Panel Mark isn't recognized. [PanelAlign Cam2]
+310012 = Target Position is out of S/W Limit range.
+
+
+//Control Camera Carrier Error (Component Code : 314)
+
+
+//Control Tab Feeder Error (Component Code : 315)
+315001 = It exceeded Limit Count that BadIC number is established to System Data.
+315002 = During Auto Homing action, Stop Button was pressed ..
+315003 = It exceeded Recovery Motor operating time. (Recovery area and Reel state confirmation)
+315004 = During Auto Homing action, It exceeded time limit to find Origin return.
+315005 = During Auto Homing action, Event happened to Sprocket Motor. (Origin return need)
+315006 = During Auto Homing action, It failed to detect IC by BadTab Sensor.
+315007 = It exceeded Mold use limit counts. (More than maximum usage count after Regrinding)
+315008 = It failed to read Mold's RFID Data. (Mold-Head interval (3mm) confirmation)
+315009 = Value (below 1000000)  that whole usage count that read by Mold RFID is not valid. (mold information reentrance need)
+315010 = It failed to write Mold RFID Data. (Mold-Head interval (3mm) confirmation)
+315011 = During Auto Homing action, It cancel action because Stop button is inputted.
+315012 = It exceeded mold use limit counts. (More than Zig maximum usage count)
+315013 = It can not progress TabIC punching work. [That do not become Mold sensing : Sensor confirmation need.]
+315014 = It is not sensed withdrawal device that get unfolded.
+315015 = There is no Reel to New Reel feeder.
+315016 = New Reel Vacuum is not On.
+315017 = BadTab Detect Axis is not Work Position.
+315018 = Supplier Axis is not Work Position.
+315019 = It can't be done Tap Press operation. [TabIC is already absorbed by tab press. Remove TabIC.]
+315020 = Can Not Homing. AttachCuttingSupportRight is Not Down State.
+315021 = Can Not Homing. AttachCuttingSupportLeft is Not Down State.
+315022 = After New Reel Forward, New Reel Vacuum is Not On.
+
+
+//Control Tab Carrier Error (Component Code : 317)
+317001 = Tab Carrier is not Load Pos.
+317002 = It is not adsorbing TabIC after TabIC Loading action.
+317003 = Unload action progress prohibition [that is not adsorbing TabIC]
+317004 = Tab Carrier is not Unload Pos.
+
+
+//Control MoniTouch Error (Component Code : 318)
+
+
+//Control Tab Loader Error (Component Code : 321)
+
+
+//Control Tab Mounter Error (Component Code : 323)
+323000 = When act Tab Load, TabCarrier is not Unload position.
+323001 = can not get id. of TabAligner available.
+323002 = When act Aligner, More than retry limit counts.
+323003 = When act Aligner, TabIC mark position permission position deviation.
+323004 = When act Loading, TabLoader is not DownStr position.
+323005 = 
+323006 = It is not Load position. (When start Tab Load action)
+323007 = During TabIC PreAlign action, Vision Mark realization Error occurrence. [TabAligner1]
+323008 = During TabIC PreAlign action, Vision Mark realization Error occurrence. [TabAligner2]
+323009 = During TabIC PreAlign action, Vision Mark realization Error occurrence. [TabAligner3]
+323010 = During TabIC PreAlign action, Vision Mark realization Error occurrence. [TabAligner4]
+323011 = When start TabIC PreAlign action, do not become TabIC adsorption.
+323012 = When act Aligner TabIC mark position permission position deviation. [Do not become TabAlinger-TabIC close adhesion.]
+323013 = 
+323014 = 
+323015 = Command value and Encoder value disparity of Inspection position exceed Mount Pos Tolerance value.
+323016 = Command value and Encoder value disparity of Mount position exceed Mount Pos Tolerance value.
+323017 = When achieve Backlash action, more than Motion Tolerance for initial objective position .
+
+//Control Inspection Camera Error (Component Code : 324)
+324001 = Inspection Vision Mark realization failure. [Camera 5 : Number of sighted panel mark is not 1.]
+324002 = Inspection Vision Mark realization failure. [Camera 6 : Number of sighted panel mark is not 1.]
+324003 = Inspection Vision Mark realization failure. [Camera 7 : Number of sighted panel mark is not 1.]
+324004 = Inspection Vision Mark realization failure. [Camera 8 : Number of sighted panel mark is not 1.]
+324005 = Inspection Vision Mark realization failure. [Camera 10 : Number of sighted panel mark is not 1.]
+324006 = Inspection Vision Mark realization failure. [Camera 11 : Number of sighted panel mark is not 1.]
+324007 = Inspection Vision Mark realization failure. [Camera 12 : Number of sighted panel mark is not 1.]
+324008 = Inspection Vision Mark realization failure. [Camera 5 : Number of sighted TabIC mark is not 1.]
+324009 = Inspection Vision Mark realization failure. [Camera 6 : Number of sighted TabIC mark is not 1.]
+324010 = Inspection Vision Mark realization failure. [Camera 7 : Number of sighted TabIC mark is not 1.]
+324011 = Inspection Vision Mark realization failure. [Camera 8 : Number of sighted TabIC mark is not 1.]
+324012 = Inspection Vision Mark realization failure. [Camera 10 : Number of sighted TabIC mark is not 1.]
+324013 = Inspection Vision Mark realization failure. [Camera 11 : Number of sighted TabIC mark is not 1.]
+324014 = Inspection Vision Mark realization failure. [Camera 12 : Number of sighted TabIC mark is not 1.]
+324015 = TabIC number mistake. (When start Inspection action)
+324016 = Inspection Vision Mark realization failure. [Camera 5 : Panel Mark recognition score is low.]
+324017 = Inspection Vision Mark realization failure. [Camera 6 : Panel Mark recognition score is low.]
+324018 = Inspection Vision Mark realization failure. [Camera 7 : Panel Mark recognition score is low.]
+324019 = Inspection Vision Mark realization failure. [Camera 8 : Panel Mark recognition score is low.]
+324020 = Inspection Vision Mark realization failure. [Camera 10 : Panel Mark recognition score is low.]
+324021 = Inspection Vision Mark realization failure. [Camera 11 : Panel Mark recognition score is low.]
+324022 = Inspection Vision Mark realization failure. [Camera 12 : Panel Mark recognition score is low.]
+324023 = Inspection Vision Mark realization failure. [Camera 5 : TabIC Mark recognition score is low.]
+324024 = Inspection Vision Mark realization failure. [Camera 6 : TabIC Mark recognition score is low.]
+324025 = Inspection Vision Mark realization failure. [Camera 7 : TabIC Mark recognition score is low.]
+324026 = Inspection Vision Mark realization failure. [Camera 8 : TabIC Mark recognition score is low.]
+324027 = Inspection Vision Mark realization failure. [Camera 10 : TabIC Mark recognition score is low.]
+324028 = Inspection Vision Mark realization failure. [Camera 11 : TabIC Mark recognition score is low.]
+324029 = Inspection Vision Mark realization failure. [Camera 12 : TabIC Mark recognition score is low.]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Process Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Trs AutoManager Error (Component Code : 400)
+400001 = It can not begin automatic operation because E-Stop switch has pressed.
+400002 = It can not begin automatic operation because Door Open is sensed.
+400003 = It is wrong system data establishment.
+400004 = It is wrong model data establishment.
+400005 = It is wrong Unit Index.
+
+
+400010 = It can not begin automatic operation because do not become Panel Aligner's automatic operation initialization.
+400011 =
+400012 = It can not begin automatic operation because do not become Feeder's automatic operation initialization.
+400013 = It can not begin automatic operation because do not become Carrier's automatic operation initialization.
+400014 =
+400015 = It can not begin automatic operation because Feeder1 is not Home state.
+400016 = It can not begin automatic operation because Feeder2 is not Homing state.
+400017 = It can not begin automatic operation because do not become automatic operation initialization of Feeder 2.
+400018 =
+400019 = It can not begin automatic operation because do not become Mounter's automatic operation initialization.
+400020 = Check the safety plug of previous equipment.
+400021 = Check the safety plug of next equipment.
+400022 = It can not begin automatic operation because do not become Panel Transfer's automatic operation initialization.
+400023 = It can not begin automatic operation because do not become Loading Conveyor's automatic operation initialization.
+400024 = It can not begin automatic operation because do not become Unloading Conveyor's automatic operation initialization.
+400025 = It can not begin Idle Run because Panel is sensed.
+
+
+400030 = Among automatic operation, E-Stop switch was been pressed down.
+400031 = Among automatic operation, Door Open was sensed.
+400032 = Among automatic operation, Heater Alarm was sensed.
+400033 = Among automatic operation, Air Error was sensed.
+400034 = Among automatic operation, Vacuum Error was sensed.
+
+
+400040 = It suspends all motors because Melsec communication unconnected with fore-end equipment.
+400041 = It suspends all motors because fore-end equipment is E-Stop state.
+400042 = It suspends all motors because it is state that fore-end equipment Door opens.
+400043 = It suspends all motors because Melsec communication unconnected with back equipment.
+400044 = It suspends all motors because back installment is E-Stop state.
+400045 = I suspend all motors because it is state that back equipment Door opens.
+
+
+400050 = Over Heat perception.
+400051 = Temperature controller 1 overheat perception.
+400052 = Temperature controller 2 overheats perception.
+400053 = Temperature controller 3 overheats perception.
+400054 = Temperature controller 4 overheats perception.
+400055 = Temperature controller 5 overheats perception.
+400056 = Temperature controller 6 overheats perception.
+400057 = Temperature controller 7 overheats perception.
+400058 = Temperature controller 8 overheats perception.
+400059 = Temperature controller 9 overheats perception.
+400060 = Temperature controller 10 overheats perception.
+400061 = Temperature controller 11 overheats perception.
+400062 = Temperature controller 12 overheats perception.
+400063 = That is broken temperature controller 1 line perception.
+400064 = That is broken temperature controller 2 lines perception.
+400065 = That is broken temperature controller 3 lines perception.
+400066 = That is broken temperature controller 4 lines perception.
+400067 = That is broken temperature controller 5 lines perception.
+400068 = That is broken temperature controller 6 lines perception.
+400069 = That is broken temperature controller 7 lines perception.
+400070 = That is broken temperature controller 8 lines perception.
+400071 = That is broken temperature controller 9 lines perception.
+400072 = That is broken temperature controller 10 lines perception.
+400073 = That is broken temperature controller 11 lines perception.
+400074 = That is broken temperature controller 12 lines perception.
+
+
+//Trs Jog Error (Component Code : 401)
+
+
+//Trs Panel Aligner Error (Component Code : 410)
+410000 = Plate can not absorb Panel.
+410001 = After passes and receives Panel from Panel Transfer, Complete signal was not defrosted even if even if 30 seconds pass.
+410002 = Interlock Check : Backup is not down state.
+410003 = It did not receive ReceiveComplete signal for 30 seconds in the midst of pass Panel to next equipment.
+410004 = Interlock Check : TabMounter is not up state.
+410005 = More than Align Panel action limit counts .
+410006 = Model Change axis is not Model position though is adsorbing Panel Aligner A Panel.
+410007 = Plate 2,3 has not narrowed nearly with Plate 1,4.
+410008 = It has not widened as Plate 2,3 is far with Plate 1,4.
+410009 = Model Change axis is not Model position though is adsorbing Panel Transfer A Panel.
+410010 = Panel Scrap Operation can't be done. [Op Mode is Auto Run Mode.]
+
+
+// Trs Camera Carrier Error (Component Code : 414)
+414000 = It is not Tab Inspection work position.
+
+
+//Trs Tab Feeder Error (Component Code : 415)
+415000 = It is not Feeder readiness. Initialize by Feeder Home action.
+415001 = Feeder Recovery Down Detect sensor is sensed. (Change Recovery.)
+415002 = Present TabIC is state that can not do a pressing action. Remove Reel and supply new Reel.
+415003 = Present Mold is state that can not do a pressing action. Remove Mold and supply new Mold.
+415004 = TabIC was not consumed perfectly. Confirms Homing state and progress.
+415005 = Zig was not consumed perfectly. Confirms Homing state and progress.
+415006 = Present TabIC is state that can not do a pressing action. (There is no resources ID)
+415007 = Present Mold is state that can not do a pressing action. (There is no resources ID)
+415008 = Press Vacuum is On state. Remove TabIC.
+
+
+//Trs Tab Carrier Error (Component Code : 417)
+417000 = Feeder #1, #2 does not have TabIC. [Home state confirmation, resources existence confirmation]
+417001 = Feeder #1 does not have TabIC. [Home state confirmation, resources existence confirmation]
+417002 = Feeder #2 does not have TabIC. [Home state confirmation, resources existence confirmation]
+417003 = Action prohibition. [System Type was edited by Soruce and Gate, but is not edited by Feeder1,2 simultaneous application.]
+417004 =
+417005 =
+417006 = Tab Data loss occurrence.
+417007 = It is not adsorbing TabIC after Loading action completion.
+417008 =
+
+
+// Trs Panel Transfer Error (Component Code : 424)
+424000 = It is adsorbing Panel before Panel Loading action.
+424001 = Send Panel Operation was failed. [Panel Aligner could not absorb panel.]
+424002 =
+424003 =
+424004 =
+424005 =
+424006 = It is not adsorption state although Panel is sensed to Levitation Unit.
+424007 =
+
+
+// Trs TabMounter Error (Component Code : 425)
+425000 = It can not get TabIC's Tab No that is doing Loading.
+425001 = For Process work, Panel position change amount measurement failure. [Panel Fidu.Mark state confirmation need]
+425002 = Limit Time Over [Mount Position Offset Movement is not Completed.]
+425003 =
+425004 = It can not get TabIC's Tab position No that do not work.
+425005 = More than TabIC Load Retry limit counts (10 times) [Prealign state, TabCarrier state confirmation need]
+425006 = Panel Fidu Mark realization failure for process work. [Panel Fidu.Mark state confirmation need]
+425007 = Panel Fidu. Mark recognition was failed. [Check Panel Fidu. Mark status.]
+425008 =
+425009 =
+
+
+// Trs Load Conveyor Error (Component Code : 427)
+427000 = During receive Panel from front equipment, deceleration sensor was not sensed for 30 seconds.
+427001 = During receive Panel from front equipment, It did not receive SendStart signal for 30 seconds.
+427002 = During receive Panel from front equipment, stop sensor was not sensed for 30 seconds.
+427003 = During receive Panel from front equipment, SendAble and SendStart signals were not sensed. [Check Melsec Net]
+427004 = It did not receive SendComplete signal for 30 seconds after receive Panel from front equipment.
+427005 = During pass Panel by Panel Transfer, Panel Transfer's deceleration sensor was not sensed for 30 seconds.
+427006 = Conveyor doesn't receive cylinder state signal. [Check Conveyor Separation.]
+427007 =
+427008 =
+427009 =
+427010 =
+427011 = There is no Batch ID to Panel. Remove Panel in Load Conveyor.
+427012 = There is no Device ID to Panel. Remove Panel in Load Conveyor.
+427013 = There is no Panel ID to Panel. Remove Panel in Load Conveyor.
+427014 = Panel ID conforms with one of 5 panels that produced the latest. Remove Panel in Load Conveyor.
+427015 = There is no ID Data that receive from front equipment to Panel. Remove Panel in Load Conveyor.
+
+// Trs Unload Conveyor Error (Component Code : 428)
+428000 = During passes and receives Panel from Panel Aligner, It did not receive SendComplete signal for 30 seconds.
+428001 = After receive passing Panel from Panel Aligner, SendComplete signal was not defrosted for 30 seconds.
+428002 = Panel was not sensed in Stop sensor that pass Panel by Out Conveyor for 30 seconds.
+428003 = Panel is sensed in Stop sensor that pass Panel by Out Conveyor for 30 seconds.
+428004 = During pass Panel by Out Conveyor, It did not receive ReceiveComplete signal for 30 seconds.
+428005 = During pass Panel to next equipments, Panel is sensed continuously in Stop sensor for 30 seconds.
+428006 = During pass Panel to next equipment, It did not receive ReceiveStart signal  for 30 seconds.
+428007 =
+428008 = Panel was not sensed in sensor for 30 seconds after receive passing Panel from Panel Aligner.
+428009 = The Panel is not detected in Unloading Conveyor before send panel to Out Conveyor.
+
+
+[ERROR CHINESE]
+
+
+[ERROR KOREAN]
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Hardware Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Device Net Error(Component Code : 100)
+100001 = IO 모듈 Master 오류 (Fail) 상태 입니다.
+100002 = IO 모듈 Salve 오류(Fail) 상태입니다.
+100003 = Driver Open 작업을 실패했습니다.
+100004 = Board 초기화 작업을 실패했습니다.
+100005 = Board Ready 상태 설정 작업을 실패했습니다.
+100006 = Board Not Ready 상태 설정 작업을 실패했습니다.
+100007 = Board Exit 작업을 실패했습니다.
+100008 = Dirver Close 작업을 실패했습니다.
+100009 = Update 작업을 실패했습니다.
+100010 = Module Fail 이 발생했습니다.
+
+100011 = Explicit Message Data 길이가 제한(239 Byte) 범위를 초과합니다.
+100012 = Explicit Message 를 저장할 Buffer Pointer 가 Null Pointer 입니다.
+100013 = Message Receive 작업이 정상적으로 완료되지 않았습니다.
+100014 = 읽어들인 Receive Message 는 Send Message 에 대한 Response 가 아닙니다.
+100015 = Received Message Data 길이가 제한(239 Byte) 범위를 초과합니다.
+100016 = Received Message 전체 길이가 8 Byte 보다 작습니다.
+100017 = Tx Time Out 이 발생했습니다.
+100018 = Rx Time Out 이 발생했습니다.
+
+100021 = resources unavailable [IO Error: 2] 
+100022 = service not avaliable [IO Eerror: 8] 
+100023 = invalid attribute value [IO Error: 9] 
+100024 = already in request mode [IO Error: 11] 
+100025 = object state conflict [IO Error: 12] 
+100026 = attribute not settable [IO Error: 14] 
+100027 = a permission check failed [IO Error:  15] 
+100028 = state conflict [IO Error: 16] 
+100029 = no response from the network device [IO Error: 17] 
+100030 = not enough data [IO Error: 19] 
+100031 = attribute not supported [IO Error: 20] 
+100032 = too much data [IO Error: 21] 
+100033 = object does not exists [IO Error: 22] 
+100034 = reply data too large [IO Error: 23] 
+100035 = device not configured, Explicit not established [IO Error: 48]
+100036 = format error in response telegram [IO Error: 50] 
+100037 = another get or set command still active [IO Error: 54] 
+100038 = MAC ID out of range [IO Error: 55] 
+100039 = sequence error in fragmented [IO Error: 57] 
+100040 = not confiqured no data base found [IO Error: 200]
+100041 = unknown error
+
+// Cylinder Error(Component Code : 101)
+101001 = Cylinder 동작 시간을 초과하였습니다. [첫번째 동작]
+101002 = Cylinder 동작 시간을 초과하였습니다. [두번째 동작]
+101003 = Cylinder 동작 시간을 초과하였습니다. [세번째 동작]
+101004 = Cylinder 가 불명확한 위치에 있습니다.
+101005 = Cylinder 파라미터 로드에 실패 했습니다.
+101006 = Cylinder 파라미터 저장에 실패 했습니다.
+
+// Vacuum Error(Component Code : 102)
+102000 = Vacuum 입출력 신호가 같지 않습니다.
+102001 = Vacuum On 동작 시간이 초과 되었습니다.
+102002 = Vacuum Off 동작 시간이 초과 되었습니다.
+102003 = Vacuum 파라미터 로드에 실패 했습니다.
+102004 = Vacuum 파리미터 저장에 실패 했습니다.
+
+// Vision Error
+104001 = Application Allocation 실패
+104002 = System Allocation 실패
+104003 = Digitizer Allocation 실패
+104004 = Buffer Allocation 실패
+104005 = DCF File 없음.
+104006 = 사용할 수 없는 System Type 임.
+
+104011 = 사용하는 Camera 번호가 아님
+104012 = 등록된 Mark 가 아님
+104013 = Mark Index 를 얻을 수 없음
+104014 = 사용 가능 Mark 번호 범위 아님
+104015 = Model Display Buffer 생성 실패
+104016 = Multiple Model Search 에 사용할 Mark 번호 오류
+104017 = Pattern Matching 인식 실패 [Mark 인식 개수가 1 개가 아님.]
+104018 = Pattern Matching 인식률 낮음
+104019 = Blob 분석 결과 Score 범위 벗어남
+104020 = Mark 위치 Limit Error [left]
+104021 = Mark 위치 Limit Error [top]
+104022 = Mark 위치 Limit Error [right]
+104023 = Mark 위치 Limit Error [bottom]
+104024 = parameter 값이 사용 범위를 초과함.
+104025 = 지원하는 Operation 이 아님.
+
+104030 = Grab 수행 안됨. [Camera Cable Connection 확인 필요]
+
+// Motion Axis Error(Component Code : 105)
+105001 = Motion Board is not Initialized. (ERR_MOTION_NOT_INITIALIZED)
+105002 = Motion DPRAM Communication Time is Over. (ERR_MOTION_TIMEOUT_ERR)
+105003 = Motion Axis Number is Invalid. (ERR_MOTION_INVALID_AXIS)
+105004 = Analog Channel is out of Range. (ERR_MOTION_ILLEGAL_ANALOG)
+105005 = IO Port is Abnormal. (ERR_MOTION_ILLEGAL_IO)
+105006 = Velocity or Accelaration is 0. (ERR_MOTION_ILLEGAL_PARAMETER)
+105007 = Map is not made. (ERR_MOTION_NO_MAP)
+105008 = AMP is Fault Status. (ERR_MOTION_AMP_FAULT)
+105009 = Motion is Doing. (ERR_MOTION_ON_MOTION)
+105010 = MMC Board is not Exist. (ERR_MOTION_NON_EXIST)
+105011 = It Failed to Read and Write MMC Boot File. (ERR_MOTION_BOOT_OPEN_ERROR)
+105012 = It Failed to Read and Write MMC Checksum File. (ERR_MOTION_CHKSUM_OPEN_ERROR)
+105013 = It Failed to Open MMC Window NT Driver.
+105014 = ERR_MOTION_EVENT_OCCUR_ERROR
+105015 = AMP Power is Off. (ERR_MOTION_AMP_POWER_OFF)
+105016 = It Failed to Open Data Directory. (ERR_MOTION_DATA_DIRECTORY_OPEN_ERROR)
+105017 = CP Motion Group is Invalid. (ERR_MOTION_INVALID_CPMOTION_GROUP)
+105018 = Volocity Parameter is Invalid.(ERR_MOTION_VELOCITY_ILLEGAL_PARAMETER)
+105019 = Accelerator Parameter is Invalid. (ERR_MOTION_ACCEL_ILLEGAL_PARAMETER)
+
+105020 = It's Using Axis ID.
+105021 = Axis Motion is Time Over.
+105022 = Motion Board Number is Over.
+105023 = Motion Axis Number is Over.
+105024 = Motion Library Object is not Exist.
+105025 = Motion Board is not Exist.
+105026 = Motion Axis is not Exist.
+105027 = Motion Pointer of Axis Information Area is not Exist.
+105028 = Pointer is Abnormal.
+105029 = Priority of Origin is Abnormal.
+105030 = Priority of Motion is Abnormal.
+105031 = Motion Board is Invalid.
+105032 = Motion Board Number is Abnormal.
+105033 = Motion Board ID is Abnormal.
+105034 = Axis ID is Abnormal.
+105035 = Axis Number is Abnormal.
+105036 = HOME Switch is Detected. (ERR_MAXES_HOME_SWITCH_AXIS_SOURCE)
+105037 = + Limit Sensor is Detected. (ERR_MAXES_POSITIVE_LIMIT_AXIS_SOURCE)
+105038 = - Limit Sensor is Detected. (ERR_MAXES_NEGATIVE_LIMIT_AXIS_SOURCE)
+105039 = AMP if Fault Status. (ERR_MAXES_AMP_FAULT_AXIS_SOURCE)
+105040 = Acceleration is Bounded in Limit. (ERR_MAXES_ACCELERATE_LIMIT_AXIS_SOURCE)
+105041 = Velocity is Bounded in Limit. (ERR_MAXES_VELOCITY_LIMIT_AXIS_SOURCE)
+105042 = - Axis is Out of Limit Range. (ERR_MAXES_X_NEGATIVE_LIMIT_AXIS_SOURCE)
+105043 = + Axis is Out of Limit Range. (ERR_MAXES_X_POSITIVE_LIMIT_AXIS_SOURCE)
+105044 = Axis is Limit Range.	(ERR_MAXES_ERROR_LIMIT_AXIS_SOURCE)
+105045 = PC Command is Occurred. (ERR_MAXES_PC_COMMAND_AXIS_SOURCE)
+105046 = Frame Number is Exceeded. (ERR_MAXES_OUT_OF_FRAMES_AXIS_SOURCE)
+105047 = (ERR_MAXES_AMP_POWER_ON_OFF_AXIS_SOURCE)
+105048 = (ERR_MAXES_RUN_STOP_COMMAND_AXIS_SOURCE)
+105049 = Axis is Collision Status. (ERR_MAXES_COLLISION_STATE_AXIS_SOURCE)
+105050 = Axis is not Origin.
+105051 = Axis Origin Step is Invalid.
+105052 = Axis Origin Thread is not Executed.
+105053 = Axis Origin Exceeded Limit Time.
+105054 = Motion Funtiion is Abnormal..
+105055 = Motion Axis is not Exist in List.
+105056 = It's Abnormal Source Status.
+105057 = Stop Event is Occurred.
+105058 = E-Stop Event is Occurred.
+105059 = Abort Event is Occurred.
+105060 = Axis Exceeded S/W + Limit.
+105061 = Axis Exceeded S/W - Limit.
+105062 = Axis Origin is Stopped by User.
+105063 = (ERR_MAXES_ABS_COMM_ERROR)
+105064 = (ERR_MAXES_INPOSITION_STATUS)
+105065 = (ERR_MAXES_NOT_ESTOP_STATE_IN_RETURNORIGIN)
+105066 = (ERR_MAXES_INTERLOCK_CHECKED)
+105067 = (ERR_MAXES_NOT_IN_POSITION)
+105068 = (ERR_MAXES_CHECKED_ESTOP_SW)
+105069 = (ERR_MAXES_CHECKED_STOP_SW);
+
+105070 = It's Using ID.
+105071 = Motion DPRAM Address is not Equal to Composition.
+105072 = Motion Board Number is not Equal to Composition.
+105073 = Motion Board is not Initialized.
+105074 = Axises are not on Same Board.
+105075 = kind of WaitDone is Abnormal.
+105076 = Velocity is Abnormal.
+105077 = Kind of Stop is Abnormal.
+105078 = Spline Motion Number is Invalid.
+105079 = Kind of Sensor is Abnormal.
+105080 = Sampling Rate is Abnormal.
+105081 = Resolution Value is Abnormal.
+105082 = Position IO Number is Abnormal.
+105083 = Position Data Number is Abnormal.
+105084 = Position Compare Mode is Abnormal.
+105085 = Position Compare Repeat Time is Abnormal.
+105086 = Position Compare IO Output Time is Abnormal.
+105087 = Position Compare Index Choice Number is Abnormal.
+105088 = Position Compare Index Number is Abnormal.
+105089 = Position Compare Function is Abnormal.
+105090 = Pointer is Abnormal.
+105091 = Origin Wait Time is Abnormal.
+105092 = Kind of Motion is Abnormal.
+105093 = Number of Motion Route is Abnormal.
+105094 = Kind of Motor is Abnormal.
+105095 = Motor Feedback Equipment is Abnormal.
+105096 = Motion Board Numner is Abnormal.
+105097 = Motion Board ID is Abnormal.
+105098 = Numerator Value is Abnormal.
+105099 = IO Port ID is Abnormal.
+105100 = IO Interrupt is Abnormal.
+105101 = IO Bit Number is Abnormal.
+105102 = Motion Start Timing Value is Abnormal.
+105103 = Axis Order is Abnormal.
+105104 = Group Number is Abnormal.
+105105 = Event Valude is Abnormal.
+105106 = Denominator Value is Abnormal.
+105107 = Delay Time is Abnormal.
+105108 = Axis Number is Abnormal.
+105109 = Axis ID is Abnormal.
+105110 = Velocity of Circumference is Abnormal.
+105111 = Channel ID of Analog Input is Abnormal.
+105112 = Acceleration Value is Abnormal.
+105113 = Kind of Absolute Motor is Abnormal.
+105114 = Axis is in Motion.
+105115 = Motion Axis Number is Invalid.
+105116 = Axis Number of Same Board is Invalid.
+105117 = Position Comparison is Already Initialized.
+105118 = It's Failed to Load Parameter.
+105119 = it's Failed to Save parameter.
+105120 = Returning to Origin. Axis is Out of Home Sensor Position.
+
+// MMC Board Error(Component Code : 106)
+106001 = Motion Board is not Initialized. (ERR_MOTION_NOT_INITIALIZED)
+106002 = Motion DPRAM Communication Time is Over. (ERR_MOTION_TIMEOUT_ERR)
+106003 = Motion Axis Number is Invalid. (ERR_MOTION_INVALID_AXIS)
+106004 = Analog Channel is out of Range. (ERR_MOTION_ILLEGAL_ANALOG)
+106005 = IO Port is Abnormal. (ERR_MOTION_ILLEGAL_IO)
+106006 = Velocity or Accelaration is 0. (ERR_MOTION_ILLEGAL_PARAMETER)
+106007 = Map is not made. (ERR_MOTION_NO_MAP)
+106008 = AMP is Fault Status. (ERR_MOTION_AMP_FAULT)
+106009 = Motion is Doing. (ERR_MOTION_ON_MOTION)
+106010 = MMC Board is not Exist. (ERR_MOTION_NON_EXIST)
+106011 = It Failed to Read and Write MMC Boot File. (ERR_MOTION_BOOT_OPEN_ERROR)
+106012 = It Failed to Read and Write MMC Checksum File. (ERR_MOTION_CHKSUM_OPEN_ERROR)
+106013 = It Failed to Open MMC Window NT Driver.
+106014 = ERR_MOTION_EVENT_OCCUR_ERROR
+106015 = AMP Power is Off. (ERR_MOTION_AMP_POWER_OFF)
+106016 = It Failed to Open Data Directory. (ERR_MOTION_DATA_DIRECTORY_OPEN_ERROR)
+106017 = CP Motion Group is Invalid. (ERR_MOTION_INVALID_CPMOTION_GROUP)
+106018 = Volocity Parameter is Invalid.(ERR_MOTION_VELOCITY_ILLEGAL_PARAMETER)
+106019 = Accelerator Parameter is Invalid. (ERR_MOTION_ACCEL_ILLEGAL_PARAMETER)
+
+106020 = It's Using Axis ID.
+106021 = Axis Motion is Time Over.
+106022 = Motion Board Number is Over.
+106023 = Motion Axis Number is Over.
+106024 = Motion Library Object is not Exist.
+106025 = Motion Board is not Exist.
+106026 = Motion Axis is not Exist.
+106027 = Motion Pointer of Axis Information Area is not Exist.
+106028 = Pointer is Abnormal.
+106029 = Priority of Origin is Abnormal.
+106030 = Priority of Motion is Abnormal.
+106031 = Motion Board is Invalid.
+106032 = Motion Board Number is Abnormal.
+106033 = Motion Board ID is Abnormal.
+106034 = Axis ID is Abnormal.
+106035 = Axis Number is Abnormal.
+106036 = HOME Switch is Detected. (ERR_MAXES_HOME_SWITCH_AXIS_SOURCE)
+106037 = + Limit Sensor is Detected. (ERR_MAXES_POSITIVE_LIMIT_AXIS_SOURCE)
+106038 = - Limit Sensor is Detected. (ERR_MAXES_NEGATIVE_LIMIT_AXIS_SOURCE)
+106039 = AMP if Fault Status. (ERR_MAXES_AMP_FAULT_AXIS_SOURCE)
+106040 = Acceleration is Bounded in Limit. (ERR_MAXES_ACCELERATE_LIMIT_AXIS_SOURCE)
+106041 = Velocity is Bounded in Limit. (ERR_MAXES_VELOCITY_LIMIT_AXIS_SOURCE)
+106042 = - Axis is Out of Limit Range. (ERR_MAXES_X_NEGATIVE_LIMIT_AXIS_SOURCE)
+106043 = + Axis is Out of Limit Range. (ERR_MAXES_X_POSITIVE_LIMIT_AXIS_SOURCE)
+106044 = Axis is Limit Range.	(ERR_MAXES_ERROR_LIMIT_AXIS_SOURCE)
+106045 = PC Command is Occurred. (ERR_MAXES_PC_COMMAND_AXIS_SOURCE)
+106046 = Frame Number is Exceeded. (ERR_MAXES_OUT_OF_FRAMES_AXIS_SOURCE)
+106047 = (ERR_MAXES_AMP_POWER_ON_OFF_AXIS_SOURCE)
+106048 = (ERR_MAXES_RUN_STOP_COMMAND_AXIS_SOURCE)
+106049 = Axis is Collision Status. (ERR_MAXES_COLLISION_STATE_AXIS_SOURCE)
+106050 = Axis is not Origin.
+106051 = Axis Origin Step is Invalid.
+106052 = Axis Origin Thread is not Executed.
+106053 = Axis Origin Exceeded Limit Time.
+106054 = Motion Funtiion is Abnormal..
+106055 = Motion Axis is not Exist in List.
+106056 = It's Abnormal Source Status.
+106057 = Stop Event is Occurred.
+106058 = E-Stop Event is Occurred.
+106059 = Abort Event is Occurred.
+106060 = Axis Exceeded S/W + Limit.
+106061 = Axis Exceeded S/W - Limit.
+106062 = Axis Origin is Stopped by User.
+106063 = (ERR_MAXES_ABS_COMM_ERROR)
+106064 = (ERR_MAXES_INPOSITION_STATUS)
+106065 = (ERR_MAXES_NOT_ESTOP_STATE_IN_RETURNORIGIN)
+106066 = (ERR_MAXES_INTERLOCK_CHECKED)
+106067 = (ERR_MAXES_NOT_IN_POSITION)
+106068 = (ERR_MAXES_CHECKED_ESTOP_SW)
+106069 = (ERR_MAXES_CHECKED_STOP_SW);
+
+106070 = It's Using ID.
+106071 = Motion DPRAM Address is not Equal to Composition.
+106072 = Motion Board Number is not Equal to Composition.
+106073 = Motion Board is not Initialized.
+106074 = Axises are not on Same Board.
+106075 = kind of WaitDone is Abnormal.
+106076 = Velocity is Abnormal.
+106077 = Kind of Stop is Abnormal.
+106078 = Spline Motion Number is Invalid.
+106079 = Kind of Sensor is Abnormal.
+106080 = Sampling Rate is Abnormal.
+106081 = Resolution Value is Abnormal.
+106082 = Position IO Number is Abnormal.
+106083 = Position Data Number is Abnormal.
+106084 = Position Compare Mode is Abnormal.
+106085 = Position Compare Repeat Time is Abnormal.
+106086 = Position Compare IO Output Time is Abnormal.
+106087 = Position Compare Index Choice Number is Abnormal.
+106088 = Position Compare Index Number is Abnormal.
+106089 = Position Compare Function is Abnormal.
+106090 = Pointer is Abnormal.
+106091 = Origin Wait Time is Abnormal.
+106092 = Kind of Motion is Abnormal.
+106093 = Number of Motion Route is Abnormal.
+106094 = Kind of Motor is Abnormal.
+106095 = Motor Feedback Equipment is Abnormal.
+106096 = Motion Board Numner is Abnormal.
+106097 = Motion Board ID is Abnormal.
+106098 = Numerator Value is Abnormal.
+106099 = IO Port ID is Abnormal.
+106100 = IO Interrupt is Abnormal.
+106101 = IO Bit Number is Abnormal.
+106102 = Motion Start Timing Value is Abnormal.
+106103 = Axis Order is Abnormal.
+106104 = Group Number is Abnormal.
+106105 = Event Valude is Abnormal.
+106106 = Denominator Value is Abnormal.
+106107 = Delay Time is Abnormal.
+106108 = Axis Number is Abnormal.
+106109 = Axis ID is Abnormal.
+106110 = Velocity of Circumference is Abnormal.
+106111 = Channel ID of Analog Input is Abnormal.
+106112 = Acceleration Value is Abnormal.
+106113 = Kind of Absolute Motor is Abnormal.
+106114 = Axis is in Motion.
+106115 = Motion Axis Number is Invalid.
+106116 = Axis Number of Same Board is Invalid.
+106117 = Position Comparison is Already Initialized.
+106118 = It's Failed to Load Parameter.
+106119 = it's Failed to Save parameter.
+106120 = It's Failed to Read Absolute Motor Encoder.
+106121 = Axis Cannot Complete Stop.
+
+// SERCOS Motion Error(Component Code : 107)
+107000 = no error
+107001 = wrong ring number
+107002 = wrong node number
+107003 = wrong stage nmuber
+107004 = wrong axis number
+107005 = wrong ring configuration
+107006 = wrong stage configuration
+107007 = time out error
+107008 = can not read a node number list
+107009 = can not read a stage count
+107010 = can not change phase 0
+107011 = can not change phase 1
+107012 = can not change phase 2
+107013 = can not change phase 3
+107014 = can not change phase 4
+107015 = There is no nmc board
+107016 = Driver is not ready to operate
+107017 = The first parameter is wrong
+107018 = The second parameter is wrong
+107019 = The third parameter is wrong
+107020 = The fourth parameter is wrong
+107021 = The fifth parameter is wrong
+107022 = The sixth parameter is wrong
+107023 = The seventh parameter is wrong
+107024 = The eighth parameter is wrong
+107025 = The ninth parameter is wrong
+107026 = The tenth parameter is wrong
+107027 = The idn data type is not a two bytes long or four bytes long
+107028 = Drive Cannot servo on
+107029 = Drive Cannot servo off
+107030 = In position event object wait abandoned
+107031 = In position event object wait timeout
+107032 = In position event object wait failed
+107033 = Previous homing operation is running
+107034 = API Parameter range error
+107035 = API cannot be done in this amp state  
+107036 = Undefined switch status
+
+107100 = no ident number
+107101 = wrong access to element 1
+107102 = no name
+107103 = name transmission too short
+107104 = name transmission too long
+107105 = name cannot be changed
+107106 = name write protected at this time
+107107 = attribute transmission too short
+107108 = attribute transmission too long
+107109 = attribute cannot be modified
+107110 = attribute is write protected at this time
+107111 = no units
+107112 = unit transmission too short
+107113 = unit transmission too long
+107114 = unit cannot be changed
+107115 = unit is write protected at this time
+107116 = no minimum value
+107117 = minimum value transmission too short
+107118 = minimum value transmission too long
+107119 = minimum value cannot be changed
+107120 = minimum value is write protected at this time
+107121 = no maximum value
+107122 = maximum value transmission too short
+107123 = maximum value transmission too long
+107124 = maximum value cannot be changed
+107125 = maximum value is write protected at this time
+107126 = data transmission too short
+107127 = data transmission too long
+107128 = data cannot be changed
+107129 = data write protected at this time
+107130 = data smaller than the min. value
+107131 = data greater than the max. value
+107132 = data not correct
+107133 = data write protected by password
+107134 = data cyclic configured at this time
+107135 = data outside the valid number area
+107136 = data can not be changed during homing
+107137 = user motion does not completed
+
+107200 = service channel presently busy
+107201 = problem in service channel
+107202 = drive address not corrrect
+107203 = HS timeout
+107204 = double AT failure
+107205 = fiber optics cable disconnected
+107206 = transmission aborted(higher priority)
+107207 = illegal access(service channel still active)
+107208 = command channel presently not active
+107209 = drive error(class 1 diagnostics, S-0-0011)
+107210 = changeover phase 2->3 not possible
+107211 = changeover phase 3->4 not possible
+107212 = command in drive cannot be executed
+107213 = configuration error(command/actual value channel)
+107214 = error in time slot calculation
+107215 = incorrect phase from NC
+107216 = internal error
+107217 = lifecounter error
+107218 = copy times too long
+107219 = checksum error(Y parameter)
+107220 = double MST failure or input signal SYNCIN failed
+ 
+107300 = (-106): procedure command timeout
+107301 = (-105): invalid data
+107302 = (-104): NC timeout 
+107303 = (-103): MMI timeout 
+107304 = (-102): board not initizlied 
+107305 = (-101): init error 
+107306 = (-100): timeout
+
+107400 = No Homing Error
+107401 = Amp Fault while homing
+107402 = EVENT Status is not cleared
+107403 = EVENT does not set to NO_EVENT
+107404 = Homing User Cancel
+107405 = Short Homing Distance
+107406 = Motion Command Buffer not Empty.
+107407 = Limit Switch disagree with Moving Direction.
+107408 = Not found Marker in 1 turn.
+107409 = Servo off in homing procedure
+107410 = Modulo Setting is Enable
+107411 = Homing Procedure State is abnormal.
+107412 = Not found Switch or abnormal Switch status.
+107413 = Not found Home Switch.
+107414 = Not Servo on.
+107415 = Homing Watch dog time out.
+107416 = Event 상태를 해제해 주세요.
+107417 = Fault Reset 안됨.
+107418 = Velocity Value is Zero.
+
+107800 = Node is not Origin State
+107801 = Exceed Positive Limit
+107802 = Exceed Negative Limit
+107803 = Node is not Amp On State
+107804 = Node is In Motion State
+107805 = POT감지
+107806 = NOT감지
+107807 = Limit Sensor 전원 Off
+107808 = Data 읽기 오류
+107809 = Data 쓰기 오류
+
+107900 = Axis Origin is Stopped by User.
+107901 = Motion Function is Abnormal..
+107902 = E-Stop Event is Occurred.
+107903 = Axis Origin Step is Invalid.
+107904 = Axis Exceeded S/W + Limit.
+107905 = Axis Exceeded S/W - Limit.
+107906 = Axis is not Origin.
+107907 = Axis ID is Abnormal.
+107908 = It's Failed to Load Parameter.
+107909 = it's Failed to Save parameter.
+107910 = (ERR_MAXES_NOT_IN_POSITION)
+107911 = Manager에서 SetPosition이 눌러졌습니다.
+107912 = Phase4 상태가 아닙니다.
+107913 = Servo 드라이브에 Main 전원이 공급되지 않았습니다.
+107914 = DRIVE_STATUS_FAULT 입니다. Drive 상태를 확인하세요.
+107915 = DRIVE_STATUS_SERVO_ON 상태가 아닙니다.
+
+107920 = MMC2 Board를 사용할 수 없습니다.
+107921 = MMC2 System Error를 Clear 할 수 없습니다.
+107922 = Sercos Ring Information을 읽을 수 없습니다.
+107923 = Sercos Phase Number를 읽을 수 없습니다.
+107924 = Sercos Phase Number를 바꿀 수 없습니다.
+
+107999 = Error Code 없음 
+
+// Lighting Component Error(Component Code : 113)
+113000 = On 실패
+113001 = Off 실패
+
+// Inverter Error(Component Code : 116)
+116000 = Stop Bit On 에 실패하였습니다.
+116001 = Stop Bit Off 에 실패하였습니다.
+116002 = Start Bit On 에 실패하였습니다.
+116003 = Start Bit Off 에 실패하였습니다.
+116004 = Clear Fault Bit On 에 실패하였습니다.
+116005 = Clear Fault Bit Off 에 실패하였습니다.
+116006 = 속도 Bit 값이 올바르지 않습니다.
+116007 = Forward Direction Bit On 에 실패하였습니다.
+116008 = Forward Direction Bit Off 에 실패하였습니다.
+116009 = Backward Direction Bit On 에 실패하였습니다.
+116010 = Backward Direction Bit Off 에 실패하였습니다.
+116011 = Inverter가 Fault 상태이고 Fault Clear 실패했습니다.
+116012 = Inverter가 Ready 상태가 아니고 Fault Clear 실패했습니다.
+
+
+// ACS Motion Error(Component Code : 117)
+117000 = PC와 Gantry Controller간 통신 연결이 되지 않았습니다.
+117001 = PC와 Gantry 1 Controller간 통신 연결이 되지 않았습니다.
+117002 = PC와 Gantry 2 Controller간 통신 연결이 되지 않았습니다.
+117003 = Gantry 설정을 위한 ACS Controller Buffer 실행에 실패하였습니다.
+117004 = Gantry 설정 완료 확인에 실패하였습니다.
+117005 = Gantry 설정 완료 확인결과 Gantry 설정이 되지 않았습니다.
+117006 = 현재 사용중인 축 ID 입니다.
+117007 = 축 ID가 비정상입니다.
+117008 = Parameter 읽어오기 실패하였습니다.
+117009 = Parameter 저장하기 실패하였습니다.
+117010 = 원점복귀가 되어있지 않습니다.
+117011 = 이동 Type 설정이 유효하지 않습니다.
+117012 = 동작 제한시간을 초과하였습니다.
+117013 = 동작완료 확인 중 인러락 체크 IO가 감지되었습니다.
+117014 = Amp Fualt 상태입니다.
+117015 = 동작 완료 후 In Position 상태가 아닙니다.
+117016 = 원점 복귀 동작에 실패했습니다.
+117017 = 사용자에 의하여 원점복귀 동작이 중단되었습니다.
+117018 = Motor가 Enable 상태가 아닙니다.
+117019 = (+) SW Limit 값을 초과했습니다.
+117020 = (-) SW Limit 값을 초과했습니다.
+117021 = 속도값 설정중 에러가 발생하였습니다.
+117022 = 가속도값 설정중 에러가 발생하였습니다.
+117023 = 감속도값 설정중 에러가 발생하였습니다.
+117024 = 축 이동 명령을 보냈으나 에러가 발생하였습니다.
+117025 = Fault 상태 확인 중 에러가 발생하였습니다.
+117026 = Spline 이동 속도 설정 중 에러가 발생하였습니다.
+117027 = 원점 복귀 버퍼 동작 정지 중 에러가 발생하였습니다.
+117028 = 정지 동작 중 에러가 발생하였습니다.
+117029 = Jog 정지 동작 중 에러가 발생하였습니다.
+117030 = 급정지(E-STOP) 동작 중 에러가 발생하였습니다.
+117031 = Fault Clear 중 에러가 발생하였습니다.
+117032 = Encoder 방향 설정 중 에러가 발생하였습니다.
+117033 = Encoder 방향 설정 상태를 읽어오던 중 에러가 발생하였습니다.
+117034 = 모터 상태를 읽어오는 도중 에러가 발생하였습니다.
+117035 = 현재 위치 설정 중 에러가 발생하였습니다.
+117036 = 현재 위치를 읽어오는 도중 에러가 발생하였습니다.
+117037 = 목표 위치 설정 중 에러가 발생하였습니다.
+117038 = 목표 위치를 읽어오는 도중 에러가 발생하였습니다.
+117039 = Amp Enable 도중 에러가 발생하였습니다.
+117040 = Amp Disable 도중 에러가 발생하였습니다.
+117041 = 원점복귀 Fast 속도 설정 중 에러가 발생하였습니다.
+117042 = 원점복귀 Slow 속도 설정 중 에러가 발생하였습니다.
+117043 = 원점 복귀 버퍼 동작 중 에러가 발생하였습니다.
+117044 = 원점 복귀 버퍼 동작 완료 확인 중 에러가 발생하였습니다.
+117045 = 원점 복귀 동작 시간이 초과되었습니다.
+117046 = 원점 복귀 동작 완료 확인 중 에러가 발생하였습니다.
+117047 = 원점 복귀 실패하였습니다.
+117048 = Gantry Grouping 버퍼 동작 중 에러가 발생하였습니다.
+117049 = Gantry Grouping 버퍼 동작 완료 확인 중 에러가 발생하였습니다.
+117050 = Gantry Grouping 실패하였습니다.
+117051 = 원점 복귀 중 에러가 발생하였습니다.
+117052 = Amp HW Reset 중 에러가 발생하였습니다.
+
+// CAN Motion Error(Component Code : 119)
+119000 = CMLERR_Error_OK(PreAlign Axis(VCM))                  
+119001 = CMLERR_Error_Unknown(PreAlign Axis(VCM))             
+119002 = CMLERR_AmpError_NodeState(PreAlign Axis(VCM))        
+119003 = CMLERR_AmpError_pvtSegPos(PreAlign Axis(VCM))        
+119004 = CMLERR_AmpError_pvtSegVel(PreAlign Axis(VCM))        
+119005 = CMLERR_AmpError_pvtBufferFull(PreAlign Axis(VCM))    
+119006 = CMLERR_AmpError_badDeviceID(PreAlign Axis(VCM))      
+119007 = CMLERR_AmpError_badHomeParam(PreAlign Axis(VCM))     
+119008 = CMLERR_AmpError_badMoveParam(PreAlign Axis(VCM))     
+119009 = CMLERR_AmpError_InMotion(PreAlign Axis(VCM))         
+119010 = CMLERR_AmpError_GuardError(PreAlign Axis(VCM))       
+119011 = CMLERR_AmpError_Fault(PreAlign Axis(VCM))            
+119012 = CMLERR_AmpError_ShortCircuit(PreAlign Axis(VCM))     
+119013 = CMLERR_AmpError_AmpTemp(PreAlign Axis(VCM))          
+119014 = CMLERR_AmpError_MotorTemp(PreAlign Axis(VCM))        
+119015 = CMLERR_AmpError_OverVolt(PreAlign Axis(VCM))         
+119016 = CMLERR_AmpError_UnderVolt(PreAlign Axis(VCM))        
+119017 = CMLERR_AmpError_EncoderPower(PreAlign Axis(VCM))     
+119018 = CMLERR_AmpError_PhaseErr(PreAlign Axis(VCM))         
+119019 = CMLERR_AmpError_TrackErr(PreAlign Axis(VCM))         
+119020 = CMLERR_AmpError_PosLim(PreAlign Axis(VCM))           
+119021 = CMLERR_AmpError_NegLim(PreAlign Axis(VCM))           
+119022 = CMLERR_AmpError_PosSoftLim(PreAlign Axis(VCM))       
+119023 = CMLERR_AmpError_NegSoftLim(PreAlign Axis(VCM))       
+119024 = CMLERR_AmpError_TrackWarn(PreAlign Axis(VCM))        
+119025 = CMLERR_AmpError_Unknown(PreAlign Axis(VCM))          
+119026 = CMLERR_AmpError_Reset(PreAlign Axis(VCM))            
+119027 = CMLERR_AmpError_Disabled(PreAlign Axis(VCM))         
+119028 = CMLERR_AmpError_QuickStopMode(PreAlign Axis(VCM))   
+119029 = CMLERR_AmpError_NoUserUnits(PreAlign Axis(VCM))      
+119030 = CMLERR_AmpError_Abort(PreAlign Axis(VCM))            
+119031 = CMLERR_AmpError_pvtPosUnavail(PreAlign Axis(VCM))    
+119032 = CMLERR_AmpFault_Memory(PreAlign Axis(VCM))           
+119033 = CMLERR_AmpFault_ADC(PreAlign Axis(VCM))              
+119034 = CMLERR_AmpFault_ShortCircuit(PreAlign Axis(VCM))     
+119035 = CMLERR_AmpFault_AmpTemp(PreAlign Axis(VCM))          
+119036 = CMLERR_AmpFault_MotorTemp(PreAlign Axis(VCM))        
+119037 = CMLERR_AmpFault_OverVolt(PreAlign Axis(VCM))         
+119038 = CMLERR_AmpFault_UnderVolt(PreAlign Axis(VCM))        
+119039 = CMLERR_AmpFault_EncoderPower(PreAlign Axis(VCM))     
+119040 = CMLERR_AmpFault_PhaseErr(PreAlign Axis(VCM))         
+119041 = CMLERR_AmpFault_TrackErr(PreAlign Axis(VCM))         
+119042 = CMLERR_AmpFault_Unknown(PreAlign Axis(VCM))          
+119043 = CMLERR_CanError_BadPortName(PreAlign Axis(VCM))      
+119044 = CMLERR_CanError_NotOpen(PreAlign Axis(VCM))          
+119045 = CMLERR_CanError_AlreadyOpen(PreAlign Axis(VCM))      
+119046 = CMLERR_CanError_BadParam(PreAlign Axis(VCM))         
+119047 = CMLERR_CanError_Driver(PreAlign Axis(VCM))           
+119048 = CMLERR_CanError_BadBaud(PreAlign Axis(VCM))          
+119049 = CMLERR_CanError_Timeout(PreAlign Axis(VCM))          
+119050 = CMLERR_CanError_Overflow(PreAlign Axis(VCM))         
+119051 = CMLERR_CanError_BusOff(PreAlign Axis(VCM))           
+119052 = CMLERR_CanError_InvalidID(PreAlign Axis(VCM))           
+119053 = CMLERR_CanError_Unknown(PreAlign Axis(VCM))             
+119054 = CMLERR_CanError_NoDriver(PreAlign Axis(VCM))            
+119055 = CMLERR_CanError_Alloc(PreAlign Axis(VCM))               
+119056 = CMLERR_CanOpenError_ThreadStart(PreAlign Axis(VCM))     
+119057 = CMLERR_CanOpenError_BadParam(PreAlign Axis(VCM))        
+119058 = CMLERR_CanOpenError_SDO_Busy(PreAlign Axis(VCM))        
+119059 = CMLERR_CanOpenError_SDO_Timeout(PreAlign Axis(VCM))     
+119060 = CMLERR_CanOpenError_SDO_Unknown(PreAlign Axis(VCM))     
+119061 = CMLERR_CanOpenError_SDO_BadMuxRcvd(PreAlign Axis(VCM))  
+119062 = CMLERR_CanOpenError_SDO_BadMsgRcvd(PreAlign Axis(VCM))  
+119063 = CMLERR_CanOpenError_BadNodeID(PreAlign Axis(VCM))       
+119064 = CMLERR_CanOpenError_NotInitialized(PreAlign Axis(VCM))  
+119065 = CMLERR_CanOpenError_Initialized(PreAlign Axis(VCM))     
+119066 = CMLERR_CanOpenError_NotSupported(PreAlign Axis(VCM))    
+119067 = CMLERR_CanOpenError_MonitorRunning(PreAlign Axis(VCM))  
+119068 = CMLERR_CanOpenError_IllegalFieldCt(PreAlign Axis(VCM))  
+119069 = CMLERR_CanOpenError_RcvrNotFound(PreAlign Axis(VCM))    
+119070 = CMLERR_CanOpenError_RcvrPresent(PreAlign Axis(VCM))     
+119071 = CMLERR_CanOpenError_Closed(PreAlign Axis(VCM))          
+119072 = CMLERR_NodeError_GuardTimeout(PreAlign Axis(VCM))       
+119073 = CMLERR_SDO_Error_NoAbortCode(PreAlign Axis(VCM))        
+119074 = CMLERR_SDO_Error_Togglebit(PreAlign Axis(VCM))          
+119075 = CMLERR_SDO_Error_Timeout(PreAlign Axis(VCM))            
+119076 = CMLERR_SDO_Error_Bad_scs(PreAlign Axis(VCM))            
+119077 = CMLERR_SDO_Error_Block_size(PreAlign Axis(VCM))         
+119078 = CMLERR_SDO_Error_Block_seq(PreAlign Axis(VCM))          
+119079 = CMLERR_SDO_Error_Block_crc(PreAlign Axis(VCM))          
+119080 = CMLERR_SDO_Error_Memory(PreAlign Axis(VCM))             
+119081 = CMLERR_SDO_Error_Access(PreAlign Axis(VCM))             
+119082 = CMLERR_SDO_Error_Writeonly(PreAlign Axis(VCM))          
+119083 = CMLERR_SDO_Error_Readonly(PreAlign Axis(VCM))           
+119084 = CMLERR_SDO_Error_Bad_object(PreAlign Axis(VCM))         
+119085 = CMLERR_SDO_Error_Pdo_map(PreAlign Axis(VCM))            
+119086 = CMLERR_SDO_Error_Pdo_length(PreAlign Axis(VCM))         
+119087 = CMLERR_SDO_Error_Bad_param(PreAlign Axis(VCM))          
+119088 = CMLERR_SDO_Error_Incompatible(PreAlign Axis(VCM))       
+119089 = CMLERR_SDO_Error_Hardware(PreAlign Axis(VCM))           
+119090 = CMLERR_SDO_Error_Bad_length(PreAlign Axis(VCM))         
+119091 = CMLERR_SDO_Error_Too_long(PreAlign Axis(VCM))           
+119092 = CMLERR_SDO_Error_Too_short(PreAlign Axis(VCM))          
+119093 = CMLERR_SDO_Error_Subindex(PreAlign Axis(VCM))           
+119094 = CMLERR_SDO_Error_Param_range(PreAlign Axis(VCM))        
+119095 = CMLERR_SDO_Error_Param_high(PreAlign Axis(VCM))         
+119096 = CMLERR_SDO_Error_Param_low(PreAlign Axis(VCM))          
+119097 = CMLERR_SDO_Error_Min_max(PreAlign Axis(VCM))            
+119098 = CMLERR_SDO_Error_General(PreAlign Axis(VCM))            
+119099 = CMLERR_SDO_Error_Transfer(PreAlign Axis(VCM))           
+119100 = CMLERR_SDO_Error_Transfer_Local(PreAlign Axis(VCM))     
+119101 = CMLERR_SDO_Error_Transfer_State(PreAlign Axis(VCM))     
+119102 = CMLERR_SDO_Error_OD_Gen_Fail(PreAlign Axis(VCM))        
+119103 = CMLERR_SDO_Error_Unknown(PreAlign Axis(VCM))           
+119104 = CMLERR_IOError_BadID(PreAlign Axis(VCM))                
+119105 = CMLERR_IOError_BadIOCount(PreAlign Axis(VCM))           
+119106 = CMLERR_PDO_Error_MapFull(PreAlign Axis(VCM))            
+119107 = CMLERR_PDO_Error_BitOverflow(PreAlign Axis(VCM))         
+119108 = CMLERR_PDO_Error_BitSizeError(PreAlign Axis(VCM))        
+119109 = CMLERR_LinkError_BadAmpCount(PreAlign Axis(VCM))         
+119110 = CMLERR_LinkError_NetworkMismatch(PreAlign Axis(VCM))     
+119111 = CMLERR_LinkError_AlreadyInit(PreAlign Axis(VCM))         
+119112 = CMLERR_LinkError_AmpAlreadyLinked(PreAlign Axis(VCM))    
+119113 = CMLERR_LinkError_AxisCount(PreAlign Axis(VCM))           
+119114 = CMLERR_LinkError_AmpTrjOverflow(PreAlign Axis(VCM))      
+119115 = CMLERR_LinkError_AmpTrjInUse(PreAlign Axis(VCM))         
+119116 = CMLERR_LinkError_AmpTrjNotRunning(PreAlign Axis(VCM))    
+119117 = CMLERR_LinkError_NoActiveTrj(PreAlign Axis(VCM))         
+119118 = CMLERR_LinkError_BadMoveLimit(PreAlign Axis(VCM))        
+119119 = CMLERR_LinkError_UnknownAmpErr(PreAlign Axis(VCM))       
+119120 = CMLERR_LinkError_StartMoveTO(PreAlign Axis(VCM))         
+119121 = CMLERR_LinkError_NotSupported(PreAlign Axis(VCM))       
+119122 = CMLERR_ThreadError_Start(PreAlign Axis(VCM))             
+119123 = CMLERR_ThreadError_Running(PreAlign Axis(VCM))           
+119124 = CMLERR_ThreadError_Timeout(PreAlign Axis(VCM))           
+119125 = CMLERR_ThreadError_General(PreAlign Axis(VCM))           
+119126 = CMLERR_ThreadError_BadParam(PreAlign Axis(VCM))          
+119127 = CMLERR_ThreadError_Alloc(PreAlign Axis(VCM))             
+119128 = CMLERR_EventError_AlreadyOwned(PreAlign Axis(VCM))       
+119129 = CMLERR_EventError_NotMapped(PreAlign Axis(VCM))          
+119130 = CMLERR_AmpFileError_format(PreAlign Axis(VCM))           
+119131 = CMLERR_AmpFileError_tooOld(PreAlign Axis(VCM))           
+119132 = CMLERR_AmpFileError_noFileAccess(PreAlign Axis(VCM))     
+119133 = CMLERR_AmpFileError_fileOpen(PreAlign Axis(VCM))         
+119134 = CMLERR_AmpFileError_range(PreAlign Axis(VCM))            
+119135 = CMLERR_ScurveError_BadParam(PreAlign Axis(VCM))          
+119136 = CMLERR_ScurveError_NoCalc(PreAlign Axis(VCM))            
+119137 = CMLERR_ScurveError_InUse(PreAlign Axis(VCM))             
+119138 = CMLERR_ScurveError_NotInUse(PreAlign Axis(VCM))          
+119139 = CMLERR_CanError_Permission(PreAlign Axis(VCM))           
+119140 = CMLERR_FirmwareError_open(PreAlign Axis(VCM))            
+119141 = CMLERR_FirmwareError_read(PreAlign Axis(VCM))            
+119142 = CMLERR_FirmwareError_format(PreAlign Axis(VCM))          
+119143 = CMLERR_FirmwareError_crc(PreAlign Axis(VCM))             
+119144 = CMLERR_FirmwareError_alloc(PreAlign Axis(VCM))           
+119145 = CMLERR_PathError_BadVel(PreAlign Axis(VCM))              
+119146 = CMLERR_PathError_BadAcc(PreAlign Axis(VCM))              
+119147 = CMLERR_PathError_VelNotInit(PreAlign Axis(VCM))          
+119148 = CMLERR_PathError_AccNotInit(PreAlign Axis(VCM))          
+119149 = CMLERR_PathError_BadPoint(PreAlign Axis(VCM))            
+119150 = CMLERR_PathError_Alloc(PreAlign Axis(VCM))               
+119151 = CMLERR_PathError_BadLength(PreAlign Axis(VCM))           
+119152 = CMLERR_PathError_Empty(PreAlign Axis(VCM))               
+119153 = CMLERR_AmpFileError_axis(PreAlign Axis(VCM))             
+119154 = CMLERR_AmpFault_I2TLimit(PreAlign Axis(VCM))             
+119155 = CMLERR_AmpError_VelWin(PreAlign Axis(VCM))               
+119156 = CMLERR_CopleyNodeError_SerialMsgLen(PreAlign Axis(VCM))  
+119157 = CMLERR_CopleyNodeError_SerialError(PreAlign Axis(VCM))   
+119158 = CMLERR_TrjError_NoneAvailable(PreAlign Axis(VCM))        
+119159 = Parameter 읽어오기 실패하였습니다.
+119160 = Parameter 저장하기 실패하였습니다.
+119161 = 원점복귀가 되어있지 않습니다.
+119162 = 이동 Type 설정이 유효하지 않습니다.
+119163 = 동작 제한시간을 초과하였습니다.
+119164 = 동작완료 확인 중 인터락 체크 IO가 감지되었습니다.
+119165 = Amp Fualt 상태입니다.
+119166 = 동작 완료 후 In Position 상태가 아닙니다.
+119167 = 원점 복귀 동작에 실패했습니다.
+119168 = 사용자에 의하여 원점복귀 동작이 중단되었습니다.
+119169 = Motor가 Enable 상태가 아닙니다.
+119170 = (+) SW Limit 값을 초과했습니다.
+119171 = (-) SW Limit 값을 초과했습니다.
+119172 = 속도값 설정중 에러가 발생하였습니다.
+119173 = 가속도값 설정중 에러가 발생하였습니다.
+119174 = 감속도값 설정중 에러가 발생하였습니다.
+119175 = 축 이동 명령을 보냈으나 에러가 발생하였습니다.
+119176 = Fault 상태 확인 중 에러가 발생하였습니다.
+119177 = Spline 이동 속도 설정 중 에러가 발생하였습니다.
+119178 = 원점 복귀 버퍼 동작 정지 중 에러가 발생하였습니다.
+119179 = 정지 동작 중 에러가 발생하였습니다.
+119180 = Jog 정지 동작 중 에러가 발생하였습니다.
+119181 = 급정지(E-STOP) 동작 중 에러가 발생하였습니다.
+119182 = Fault Clear 중 에러가 발생하였습니다.
+119183 = Encoder 방향 설정 중 에러가 발생하였습니다.
+119184 = Encoder 방향 설정 상태를 읽어오던 중 에러가 발생하였습니다.
+119185 = 모터 상태를 읽어오는 도중 에러가 발생하였습니다.
+119186 = 현재 위치 설정 중 에러가 발생하였습니다.
+119187 = 현재 위치를 읽어오는 도중 에러가 발생하였습니다.
+119188 = 목표 위치 설정 중 에러가 발생하였습니다.
+119189 = 목표 위치를 읽어오는 도중 에러가 발생하였습니다.
+119190 = Amp Enable 도중 에러가 발생하였습니다.
+119191 = Amp Disable 도중 에러가 발생하였습니다.
+119192 = 원점복귀 Fast 속도 설정 중 에러가 발생하였습니다.
+119193 = 원점복귀 Slow 속도 설정 중 에러가 발생하였습니다.
+119194 = 원점 복귀 버퍼 동작 중 에러가 발생하였습니다.
+119195 = 원점 복귀 버퍼 동작 완료 확인 중 에러가 발생하였습니다.
+119196 = 원점 복귀 동작 시간이 초과되었습니다.
+119197 = 원점 복귀 동작 완료 확인 중 에러가 발생하였습니다.
+119198 = 원점 복귀 실패하였습니다.
+119199 = 축 ID가 비정상입니다.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Mechanical Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Operation Panel Error(Component Code : 200)
+200001 = 잘못된 조그키 타입 입니다.
+200002 = 잘못된 조그 유닛 인덱스 입니다.
+
+
+// RFID Error (Component Code : 206)
+206001 = CodeSpec Type Error
+206002 = Data Code Type Error
+206003 = UnKnown Command Error
+206004 = Null Data Error
+
+206007 = Data Write Time Out
+206008 = Wrong Data Length
+206009 = Parity Error
+206010 = Result Framing Error
+206011 = Result Overrun Error
+206012 = FCS Error
+206013 = Result Format Error
+206014 = Result Framing Length Error
+206015 = Result DC Comm Error
+206016 = Result Disagreement Error
+206017 = Result DC Not Present Error
+206018 = Result Command Received
+206019 = Result Command Auto Processing Canceled Before Comm
+206020 = Result Command Auto Processing Canceled After Comm
+206021 = Result Address Too High
+206022 = Result Lower Battery
+206023 = Result Read Write Head Not Connected
+206024 = Result Write Protect Error
+206025 = Result Invalid Error
+
+
+// Panel Aligner Error (Component Code : 210)
+210001 = XYT 축 고정좌표를 읽어오지 못했습니다.
+210002 = XYT 축 고정좌표를 File 에 기록할 수 없습니다.
+210003 = XYT 축 Offset 좌표를 읽어오지 못했습니다.
+210004 = XYT 축 Offset 좌표를 File 에 기록할 수 없습니다.
+210005 = X축 원점복귀되어 있지 않습니다.
+210006 = Y축 원점복귀되어 있지 않습니다.
+210007 = T축 원점복귀되어 있지 않습니다.
+210008 = XYT축 위치 Index 가 이상합니다.
+210009 = Model Change 축이 Model 위치가 아닙니다.
+210010 = Model Change 축 Rail이 Lock 상태가 아닙니다.
+210011 = Plate 2,3 번이 Plate 1,4 번과 가깝게 좁혀져 있지 않습니다.
+210012 = Plate 2,3 번이 Plate 1,4 번과 멀게 넓혀져 있지 않습니다.
+210013 = x		다음 설비 Load Conveyor에 Panel이 감지되나 PickUp Unit가 Down 상태가 아니어서 Unload위치로 이동할 수 없습니다.
+210014 = 다음 설비 Load Conveyor에 Panel이 감지되나 Panel을 흡착하고 있어서 Unload위치로 이동할 수 없습니다.
+210015 = x			Unload Conveyor에 Panel이 감지되나 PickUp Unit가 Down 상태가 아니어서 Unload위치로 이동할 수 없습니다.
+210016 = Unload Conveyor에 Panel이 감지되나 Panel을 흡착하고 있어서 Unload위치로 이동할 수 없습니다.
+210017 = x		PickUp Unit가 Down 상태가 아니고, Panel Transfer가 Panel을 흡착한 상태로 Load 위치에 있어서 Unload위치로 이동할 수 없습니다.
+210018 = x		PickUp Unit가 Down 상태가 아니고, Panel Transfer가 Panel을 흡착한 상태로 있어서 이동할 수 없습니다.
+210019 = Plate 부상상태가 아니어서 이동할 수 없습니다.
+210020 = x		Panel Transfer가 Down 상태가 아니고 Load 위치에 있어서 Unload위치로 이동할 수 없습니다.
+210021 = x		Panel Transfer가 Down 상태가 아니고 Load 위치에 있어서 이동할 수 없습니다.
+210022 = x		Panel Transfer가 Down 상태가 아니고 Load 위치가 아니어서 이동할 수 없습니다.
+210023 = x		Panel Transfer가 Stopper Down 상태가 아니고 Load 위치에 있어서 Unload위치로 이동할 수 없습니다.
+210024 = x		Panel Transfer가 Stopper Down 상태가 아니고 Load 위치에 있어서 이동할 수 없습니다.
+210025 = x		Panel Transfer가 Stopper Down 상태가 아니고 Unload 위치에 있어서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210026 = x		Panel Transfer가 Stopper Down 상태가 아니고 Unload 위치에 있어서 이동할 수 없습니다.
+210027 = x		Panel Transfer가 Stopper Down 상태가 아니고 Load, Unload 위치에 있지 않아 이동할 수 없습니다.
+210028 = x		Backup이 Down 상태가 아니어서 Load, Mark, Press 위치에서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210029 = x		Backup이 Down 상태가 아니어서 Inspection, Unload 위치에서 이동할 수 없습니다.
+210030 = x		Backup이 Down 상태가 아니어서 이동할 수 없습니다.
+210031 = x		Front Backup이 Down 상태가 아니어서 Load, Mark, Press 위치에서 이동할 수 없습니다.
+210032 = x		Front Backup이 Down 상태가 아니어서 Inspection, Unload 위치에서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210033 = x		Front Backup이 Down 상태가 아니어서 이동할 수 없습니다.
+210034 = x		Rear Backup이 Down 상태가 아니어서 Load, Mark, Press 위치에서 이동할 수 없습니다.
+210035 = x		Rear Backup이 Down 상태가 아니어서 Inspection, Unload 위치에서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210036 = x		Rear Backup이 Down 상태가 아니어서 이동할 수 없습니다.
+210037 = x		Tab Mounter가 Up 상태가 아니어서 Load, Mark, Press 위치에서 이동할 수 없습니다.
+210038 = x		Tab Mounter가 Up 상태가 아니어서 Inspection, Unload 위치에서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210039 = x		Tab Mounter가 Up 상태가 아니어서 이동할 수 없습니다.
+210040 = x		Front Tab Mounter가 Up 상태가 아니어서 Load, Mark, Press 위치에서 이동할 수 없습니다.
+210041 = x		Front Tab Mounter가 Up 상태가 아니어서 Inspection, Unload 위치에서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210042 = x		Front Tab Mounter가 Up 상태가 아니어서 이동할 수 없습니다.
+210043 = x		Rear Tab Mounter가 Up 상태가 아니어서 Load, Mark, Press 위치에서 이동할 수 없습니다.
+210044 = x		Rear Tab Mounter가 Up 상태가 아니어서 Inspection, Unload 위치에서 Load, Mark, Press 위치로 이동할 수 없습니다.
+210045 = x		Rear Tab Mounter가 Up 상태가 아니어서 이동할 수 없습니다.
+210046 = x		Unload Conveyor에 Panel이 감지되나 PickUp Unit가 Down 상태가 아니어서 Yr(First) Inspection 위치로 이동할 수 없습니다.
+210047 = Unload Conveyor에 Panel이 감지되나 Panel을 흡착하고 있어서 Yr(First) Inspection 위치로 이동할 수 없습니다.
+210048 = Back-Up1이 Down 상태가 아니어서 이동할 수 없습니다.
+210049 = Back-Up2가 Down 상태가 아니어서 이동할 수 없습니다.
+210050 = Carrier Press1이 Up 상태가 아니어서 이동할 수 없습니다.
+210051 = Carrier Press2가 Up 상태가 아니어서 이동할 수 없습니다.
+210052 = Recovery Weight Guide1이 Up 상태가 아니어서 이동할 수 없습니다.
+210053 = Recovery Weight Guide2가 Up 상태가 아니어서 이동할 수 없습니다.
+210054 = Recovery ACF Line Gripper1가 Up 상태가 아니어서 이동할 수 없습니다.
+210055 = Recovery ACF Line Gripper2가 Up 상태가 아니어서 이동할 수 없습니다.
+210056 = Plate 흡착해제상태가 아니어서 이동할 수 없습니다.
+210057 = Panel Fix1 실린더가 Up 상태가 아니어서 이동할 수 없습니다.
+210058 = Panel Fix2 실린더가 Up 상태가 아니어서 이동할 수 없습니다.
+210059 = Tool1 Backup 이 상승상태가 아닙니다.
+210060 = Tool2 Backup 이 상승상태가 아닙니다.
+210061 = Tool1이 안전한 위치에 있지 않습니다.
+210062 = Tool2가 안전한 위치에 있지 않습니다.
+
+210100 = 이동 불가. [Panel 흡착하지 않고 Up 상태임.]
+210101 = 이동 불가. [Panel Transfer가 Down 상태 아님.]
+210102 = 이동 불가. [Panel Transfer Stopper 가 Down 상태 아님.]
+210103 = 이동 불가. [Backup 상승 상태임.]
+210104 = 이동 불가. [전면부 Backup 상승 상태임.]
+210105 = 이동 불가. [후면부 Backup 상승 상태임.]
+210106 = 이동 불가. [TabMounter 하강 상태임.]
+210107 = 이동 불가. [전면부 TabMounter 하강 상태임.]
+210108 = 이동 불가. [후면부 TabMounter 하강 상태임.]
+210109 = Pickup Unit 하강 제한 시간 초과. [3초 초과]
+210110 = 이동 불가. [PanelTransfer 가 Panel 흡착 상태임.]
+210111 = 이동 불가. [PanelTransfer Pickup up 상태임.]
+210112 = 이동 불가. [PanelTransfer Stopper Up 상태임.]
+210113 = 이동 불가. [다음 설비의 Load Conveyor에 Panel이 있음.]
+
+
+// Camera Carrier Error (Component Code : 214)
+214000 = 고정 좌표 파일 읽기 실패
+214001 = Offset 좌표 파일 읽기 실패
+214002 = Offset 좌표 파일 저장 실패
+214003 = 원점 복귀 안됨.
+214004 = 고정 좌표 파일 저장 실패
+214005 = 이동 불가 [이동 시, TabMounter 와 간섭 발생]
+214006 = 이동 불가 [이동 시, Pre Camera Carrier 와 간섭 발생 : (+) 이동]
+214007 = 이동 불가 [이동 시, Pre Camera Carrier 와 간섭 발생 : (-) 이동]
+214008 = 이동 불가 [이동 시, Next Camera Carrier 와 간섭 발생 : (+) 이동]
+214009 = 이동 불가 [이동 시, Next Camera Carrier 와 간섭 발생 : (-) 이동]
+
+
+// Tab Feeder Error (Component Code : 215)
+215001 = Press Z 축 고정좌표 Load 하는데 실패하였습니다.
+215002 = Press Z 축 Offset 좌표 Load 하는데 실패하였습니다.
+215003 = Press Z 축 고정 좌표 저장하는데 실패하였습니다.
+215004 = Press Z 축 Offset 좌표 저장하는데 실패하였습니다.
+215005 = Bad Tab Y축 Offset 좌표 Load하는데 실패하였습니다.
+215006 = Bad Tab Y축  Offset 좌표 저장하는데 실패하였습니다.
+215007 = Sprocket T축 Offset 좌표 Load하는데 실패하였습니다.
+215008 = Sprocket T축 Offset 좌표 저장하는데 실패하였습니다.
+215009 = Press Vacuum이 이상합니다.
+215010 = Change Vacuum이 이상합니다.
+215011 = Press Z 축 원점복귀 되어 있지 않습니다.
+215012 = Sprocket1 T 축 원점복귀 되어 있지 않습니다.
+215013 = Reel Encoder Current Pos 설정을 실패하였습니다.
+215014 = BadTab Y축 원점복귀가 되어 있지 않습니다.
+215015 = Mold Seperator Cyl이 Down이 아닐 경우 Mold Fixer를 전후진할 수 없습니다.
+215016 = Mold Fixer가 Back이 아닐 경우 Mold Seperator를 Up/Down할 수 없습니다.
+215017 = Supply Y축 원점복귀가 되어 있지 않습니다.
+215018 = Attach Press가 Up 상태가 아닙니다.
+215019 = Attach Press가 Down 상태가 아닙니다.
+215020 = Attach Reel이 Forward 상태가 아닙니다.
+215021 = Attach Reel이 Backward 상태가 아닙니다.
+215022 = Supplier에 Reel이 존재 합니다.
+215023 = Sprocket2 T 축 원점복귀 되어 있지 않습니다.
+215024 = Sprocket1 Forward 회전하였으나, Up sensor 벗어나지 못함.
+215025 = Sprocket1 Backward 회전하였으나, Low sensor 벗어나지 못함.
+215026 = Sprocket2 Forward 회전하였으나, Low sensor 벗어나지 못함.
+215027 = Sprocket2 Backward 회전하였으나, Up sensor 벗어나지 못함.
+// 080710 이정용 수정 -> Alarm Code 추가
+215028 = Attach Cutting Support(Left) Down 상태가 아닙니다.
+215029 = Attach Cutting Support(Right) Down 상태가 아닙니다.
+215030 = Attach Reel Cutter Open 상태가 아닙니다.
+215031 = Supplier Chuck Unlock 이 안되어 있습니다.
+
+
+// Tab Carrier Error (Component Code : 217)
+217001 = 축 고정좌표를 Load 하는데 실패 했습니다. 
+217002 = 축 Offset 좌표를 Load 하는데 실패 했습니다. 
+217003 = 축 고정 좌표를 저장하는데 실패 했습니다. 
+217004 = 축 Offset 좌표를 저장하는데 실패 했습니다. 
+217005 = Vacuum이 이상합니다.
+217006 = Y축 원점복귀가 되어 있지 않습니다.
+217007 = UD Cyl가 Down이 아니라서 Carrier를 이동할 수 없습니다.
+217008 = Up 불가. [TabCarrier Load 위치 아님.]
+217009 = TURN 위치가 아닌 곳에서는 CW동작을 진행할 수 없습니다.
+217010 = TURN 위치가 아닌 곳에서는 CCW동작을 진행할 수 없습니다.
+217011 = X축 원점복귀가 되어 있지 않습니다.
+217012 = 이동 불가. [TabMounter 가 Load 위치에서 Up 아님.]
+217013 = 이동 불가. [TabMounter 가 간섭 가능 위치에서 Up 아님.]
+217014 = C/CW Cyl가 Turn 이 아니라서 Carrier를 이동할 수 없습니다.
+217015 = C/CW Cyl가 Return 이 아니라서 Carrier를 이동할 수 없습니다.
+217016 = TabIC 를 흡착한 채, 상승하려 함.
+
+
+// MoniTouch Error (Component Code : 218)
+
+
+// TabLoader Error (Component Code : 225)
+
+
+// RollerConveyor Error (Component Code : 226)
+226000 = Inverter가 Ready 상태가 아닙니다.
+226001 = Load Conveyor Stopper 상승 전 Panel Transfer 가 Panel 흡착상태에서 Unloading 위치에 있지 않습니다.
+226002 = Stopper Up 불가. [Conveyor 에 Panel 감지됨.]
+226003 = Panel Tansfer가 Down 상태가 아닙니다.
+226999 = Error 미정의
+
+
+// Transfer Error (Component Code : 227)
+227001 = X축 고정좌표를 읽어오지 못했습니다.
+227002 = X축 고정좌표를 File 에 기록할 수 없습니다.
+227003 = X축 Offset 좌표를 읽어오지 못했습니다.
+227004 = X축 Offset 좌표를 File 에 기록할 수 없습니다.
+227005 = X1축 원점복귀되어 있지 않습니다.
+227006 = X2축 원점복귀되어 있지 않습니다.
+227007 = X축 위치 Index 가 이상합니다.
+227008 = Model Change 축이 Model 위치가 아닙니다.
+227009 = Model Change 축 Rail이 Lock 상태가 아닙니다.
+227010 = Plate 2,3 번이 Plate 1,4 번과 가깝게 좁혀져 있지 않습니다.
+227011 = Plate 2,3 번이 Plate 1,4 번과 멀게 넓혀져 있지 않습니다.
+227012 = Load Conveyor에 Panel이 감지되나 Panel을 흡착하고 있어서 Load 위치로 이동할 수 없습니다.
+227013 = PickUp Unit가 Down 상태가 아닙니다.
+227014 = Stopper가 Down 상태가 아닙니다.
+227015 = Plate 부상상태가 아니어서 이동할 수 없습니다.
+227016 = Panel Aligner가 Down 상태가 아니어서 이동할 수 없습니다.
+227017 = Backup이 Down 상태가 아니어서 이동할 수 없습니다.
+227018 = Front Backup이 Down 상태가 아니어서 이동할 수 없습니다.
+227019 = Rear Backup이 Down 상태가 아니어서 이동할 수 없습니다.
+227020 = Tab Mounter가 Up 상태가 아니어서 이동할 수 없습니다.
+227021 = Front Tab Mounter가 Up 상태가 아니어서 이동할 수 없습니다.
+227022 = Rear Tab Mounter가 Up 상태가 아니어서 이동할 수 없습니다.
+227023 = Backup2가 Down 상태가 아니어서 이동할 수 없습니다.
+227024 = Plate 흡착해제상태가 아니어서 이동할 수 없습니다.
+227025 = Load 위치가 아니어서 PickUp Unit을 상승할 수 없습니다.
+227026 = 삭제 예정.				Load 위치가 아니어서 Stopper를 상승할 수 없습니다.
+227027 = Panel Aligner가 Panel을 가지고 부상유닛에 있어서 Stopper를 상승할 수 없습니다.
+227028 = Panel을 흡착하고 있어서 PickUp Unit을 하강할 수 없습니다.
+227029 = 부상유닛에서 Panel을 흡착하고 있어서 Stopper를 상승할 수 없습니다.
+227030 = Back-Up1이 Down 상태가 아니어서 이동할 수 없습니다.
+227031 = Back-Up2이 Down 상태가 아니어서 이동할 수 없습니다.
+227032 = Carrier Press1이 Up 상태가 아니어서 이동할 수 없습니다.
+227033 = Carrier Press2이 Up 상태가 아니어서 이동할 수 없습니다.
+227034 = Tool1 Backup 이 상승상태가 아닙니다.
+227035 = Tool2 Backup 이 상승상태가 아닙니다.
+227036 = Tool1이 안전한 위치에 있지 않습니다.
+227037 = Tool2가 안전한 위치에 있지 않습니다.
+227038 = 이동 불가 [Panel Aligner 가 Panel 흡착 상태임.]
+
+
+// TabMounter Error (Component Code : 228)
+228000 = Offset 좌표 파일 읽기를 실패 했습니다.
+228001 = 고정좌표를 Load 하는데 실패 했습니다. 
+228002 = Offset 좌표를 저장하는데 실패 했습니다.
+228003 = 고정 좌표를 저장하는데 실패 했습니다. 
+228004 = 이동 동작 직후 AmpFault 상태입니다. - 현재 없는 Error...
+228005 = TabMounter 축 원점복귀가 되어있지 않습니다.
+228006 = 이동 전, Amp Fault 혹은 Amp Disable 상태임.
+228007 = 
+228008 = 이전 TabMounter가 충돌 가능 위치에 있습니다.
+228009 = 이후 TabMounter가 충돌 가능 위치에 있습니다.
+228010 = 이동 불가. [Down 상태임.]
+228011 = 이동 후 목표위치와 현재위치가 Tolerance 이상입니다. 
+228012 = Gantry Offset 좌표 파일 읽기를 실패 했습니다.
+228013 = Gantry 고정좌표를 Load 하는데 실패 했습니다. 
+228014 = Gantry Offset 좌표를 저장하는데 실패 했습니다.
+228015 = Gantry 고정 좌표를 저장하는데 실패 했습니다. 
+228016 = Gantry 축 원점복귀가 되어있지 않습니다.
+228017 = Gantry 이동 불가. [Group 내 모든 TabMounter Up 상태 아님.]
+228018 = 이동 불가. [TabAligner 1 이 Ready 위치 아님.]
+228019 = 이동 불가. [TabAligner 2 이 Ready 위치 아님.]
+228020 = Backup Up 불가. [Group 내 TabMounter 중 2차 하강 상태인 TabMounter 있음.]
+228021 = Backup Forward 불가. [Backup Down 상태 아님.]
+228022 = Backup Backward 불가. [Backup Up 상태임.]
+228023 = Backup Up 불가. [Unload 위치에 있지 않은 Panel Transfer 가 Panel 흡착하고 있음.]
+228024 = 이동 불가. [이동 시, Panel Align Camera2 Carrier 와 간섭 발생]
+228025 = 2차 하강 불가. [TabAligner 1 위치임.]
+228026 = 2차 하강 불가. [TabAligner 2 위치임.]
+228027 = 2차 하강 불가. [Backup Up 아님.]
+228028 = 2차 하강 불가. [Load 위치임.]
+228029 = 1차 하강 불가. [Load 위치에서 TabIC 흡착 상태임.]
+228030 = 2차 하강 불가. [Source 설비 : Remove 위치임.]
+228031 = 하강 불가. [정해진 Gantry 위치 아님.]
+228032 = 하강 불가. [Backup Up 아님.]
+228033 = Backup Up 불가. [PanelAligner 가 Press Xu 위치 아님.]
+228034 = 하강 불가. [정해진 Mounter 위치 아님.]
+228035 = Gantry Axis 가 Amp Enable 상태 아님.
+228036 = Gantry Axis 가 Amp Fault 상태임.
+228037 = Gantry Axis 가 Load 위치에 멈추지 않았음.
+228038 = Gantry Axis 가 Prealign 위치에 멈추지 않았음.
+228039 = Gantry Axis 가 Inspection 위치에 멈추지 않았음.
+228040 = Gantry Axis 가 Mount 위치에 멈추지 않았음.
+228041 = 사용하지 않는 Gantry Pos ID 임.
+
+
+// Tab Aligner Error (Component Code : 229)
+229000 = Offset 좌표 파일 읽기를 실패 했습니다.
+229001 = 고정좌표를 Load 하는데 실패 했습니다. 
+229002 = 오프셋 좌표를 Save하는데 실패 했습니다.
+229003 = 고정 좌표를 저장하는데 실패 했습니다. 
+229004 = Axis1 축 원점복귀가 되어있지 않습니다.
+229005 = Axis2 축 원점복귀가 되어있지 않습니다.
+
+
+// Model Change Error (Component Code : 230)
+230000 = Y축 고정좌표를 읽어오지 못했습니다.
+230001 = Y축 고정좌표를 File 에 기록할 수 없습니다.
+230002 = Y축 Offset 좌표를 읽어오지 못했습니다.
+230003 = Y축 Offset 좌표를 File 에 기록할 수 없습니다.
+230004 = Y축 원점복귀되어 있지 않습니다.
+230005 = X축 위치 Index 가 이상합니다.
+230006 = Plate Vacuum이 On 상태입니다.
+230007 = Panel Aligner가 Panel을 흡착하고 있습니다.
+230008 = Panel Transfer가 Panel을 흡착하고 있습니다.
+230009 = Plate 2,3 번이 Plate 1,4 번과 가깝게 좁혀져 있지 않습니다.
+230010 = Plate 2,3 번이 Plate 1,4 번과 멀게 넓혀져 있지 않습니다.
+230011 = Rail이 Unlock 상태가 아닙니다.
+230012 = 현재 폭이 소형보다 작아서 Expand 할 수 없습니다.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Control Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Manage Op Panel Error (component code : 300)
+300001 = Unit Setting이 잘못되었습니다.
+300002 = CP TRIP 입니다. 
+300003 = 문이 열린 상태 입니다. 
+300004 = Heater 에러 입니다. 
+300005 = Air 에러 입니다. 
+300006 = Vacuum 에러 입니다. 
+300007 = 비상정지 스위치가 눌러졌습니다.
+
+
+// Teaching Error (component code : 301)
+301001 = User Cancel Error(ERR_HW_USER_CANCEL)
+301002 = Camera 고정좌표 찾기 회전 각도가 -90 ~ 90 도 범위를 벗어납니다.
+
+
+// Vision Calibration Error (component code : 302)
+302001 = Vision Calibration의 역행렬이 없습니다.(ERR_VCALIB_NOT_EXIST_INVERSE_MATRIX)
+
+
+// Control Panel Aligner Error (Component Code : 310)
+310001 = Panel을 흡착하고 있어서 Load 위치로 이동할 수 없습니다.
+310002 = Panel을 흡착하고 있지 않어서 Unload Wait 위치로 이동할 수 없습니다.
+310003 = Panel을 흡착하고 있지 않어서 Unload 위치로 이동할 수 없습니다.
+310004 = Align을 하려는데, Panel이 흡착되어 있지 않습니다.
+310005 = Panel Fiducial Mark 인식에 실패했습니다.
+310006 = Panel Mark Auto Search에 실패했습니다.
+310007 = Align 보정값이 허용치를 초과했습니다. (X,Y 제한값 : 10 mm 이내 , T 제한값 : 5 도)
+310008 = Panel Mark 를 인식할 수 없습니다. [PanelAlign Cam1 : Panel 깨짐, 이물 확인 필요]
+310009 = Panel Mark 를 인식할 수 없습니다. [PanelAlign Cam2 : Panel 깨짐, 이물 확인 필요]
+310010 = Panel Fiducial Mark 인식 실패 [PanelAlign Cam1]
+310011 = Panel Fiducial Mark 인식 실패 [PanelAlign Cam2]
+310012 = 목표 위치 이동 시 S/W Limit 범위를 초과합니다.
+
+
+//Control Camera Carrier Error (Component Code : 314)
+
+
+//Control Tab Feeder Error (Component Code : 315)
+315001 = BadIC 숫자가 System Data에 설정된 Limit Count수를 초과하였습니다.
+315002 = AutoHoming 동작 중 Stop Button이 눌러 졌습니다.. 
+315003 = Recovery Motor 동작 시간을 초과하였습니다. (Recovery부 확인. Reel 상태 확인)
+315004 = AutoHoming 동작 중 원점 찾기 제한 시간을 초과하였습니다. 
+315005 = AutoHoming 동작 중 Sprocket Motor에 Event가 발생했습니다. (원점 복귀 필요)
+315006 = AutoHoming 동작 중 BadTab Sensor로 IC를 검출하는데 실패하였습니다.
+315007 = 금형 사용 제한 횟수를 초과하였습니다. (Regrinding 후 최대 사용횟수 초과)
+315008 = 금형 RFID Data를 읽는데  실패하였습니다. (금형-Head 간격(3mm) 확인, V7 모니터치 동작여부 확인)
+315009 = 금형 RFID로 읽은 총사용 횟수가 유효한 값이(1000000 이하) 아닙니다. (금형 정보 재등록 필요)
+315010 = 금형 RFID Data를 쓰는데 실패하였습니다. (금형-Head 간격(3mm) 확인, V7 모니터치 동작여부 확인)
+315011 = AutoHoming 동작 중 Stop 버튼이 입력되어 동작을 취소합니다.
+315012 = 금형 사용 제한 횟수를 초과하였습니다. (Zig 최대 사용횟수 초과)
+315013 = TabIC 타발 작업을 진행할 수 없습니다. [금형 감지 안됨 : 센서 확인 필요.]
+315014 = 회수 장치 펴짐이 감지되지 않습니다.
+315015 = New Reel 공급장치에 Reel이 없습니다.
+315016 = New Reel Vaccum이 On이 아닙니다.
+315017 = BadTabDetect가 Work Pos에 없습니다.
+315018 = Supplier가 Work Pos에 없습니다.
+315019 = Tap Press 불가. [Press 가 이미 TabIC 흡착하고 있음. 제거 필요.]
+315020 = Homing 동작 불가. AttachCuttingSupportRight Down 상태 아님.
+315021 = Homing 동작 불가. AttachCuttingSupportLeft Down 상태 아님.
+315022 = New Reel이 Forward 상태에서 New Reel Vaccum이 On이 아닙니다.
+
+
+//Control Tab Carrier Error (Component Code : 317)
+317001 = Tab Carrier 가 Load Pos 에 있지 않음.		
+317002 = TabIC Loading 동작 후 TabIC 흡착하고 있지 않음.
+317003 = Unload 동작 진행 불가 [TabIC 를 흡착하고 있지 않음]
+317004 = Tab Carrier 가 Unload Pos 에 있지 않습니다.
+
+
+//Control MoniTouch Error (Component Code : 318)
+
+
+//Control Tab Loader Error (Component Code : 321)
+
+
+//Control Tab Mounter Error (Component Code : 323)
+323000 = Tab Load 동작 시 TabCarrier 가 Unload 위치가 아님.
+323001 = 사용할 수 있는 TabAligner 없음. [TabAligner 사용 Data 확인 필요.]
+323002 = Aligner 동작 시 retry 제한 횟수 초과.
+323003 = Aligner 동작 시 TabIC 마크 위치가 허용 위치를 벗어남.
+323004 = Loading 동작 시 TabLoader가 DownStr 위치가 아닙니다.
+
+323006 = Load 위치가 아님. (Tab Load 동작 시작 시)
+
+323007 = TabIC PreAlign 동작 중 Vision Mark 인식 Error 발생. [TabAligner1]
+323008 = TabIC PreAlign 동작 중 Vision Mark 인식 Error 발생. [TabAligner2]
+323009 = TabIC PreAlign 동작 중 Vision Mark 인식 Error 발생. [TabAligner3]
+323010 = TabIC PreAlign 동작 중 Vision Mark 인식 Error 발생. [TabAligner4]
+323011 = TabIC PreAlign 동작 시작 시, TabIC 흡착 안됨.
+323012 = Aligner 동작 시 TabIC 마크 위치가 허용 위치를 벗어남. [TabAlinger - TabIC 밀착 안됨.]
+
+323015 = Inspection 위치의 Command 값과 Encoder 값 차가 Mount Pos Tolerance 값을 초과함.
+323016 = Mount 위치의 Command 값과 Encoder 값 차가 Mount Pos Tolerance 값을 초과함.
+323017 = Backlash 동작 수행 시, 최초 목표 위치에 대한 Motion Tolerance 초과.
+
+//Control Inspection Camera Error (Component Code : 324)
+324001 = Inspection Vision Mark 인식 실패. [Camera 5 : Panel Mark 인식 개수가 1 개가 아님.]
+324002 = Inspection Vision Mark 인식 실패. [Camera 6 : Panel Mark 인식 개수가 1 개가 아님.]
+324003 = Inspection Vision Mark 인식 실패. [Camera 7 : Panel Mark 인식 개수가 1 개가 아님.]
+324004 = Inspection Vision Mark 인식 실패. [Camera 8 : Panel Mark 인식 개수가 1 개가 아님.]
+324005 = Inspection Vision Mark 인식 실패. [Camera 10 : Panel Mark 인식 개수가 1 개가 아님.]
+324006 = Inspection Vision Mark 인식 실패. [Camera 11 : Panel Mark 인식 개수가 1 개가 아님.]
+324007 = Inspection Vision Mark 인식 실패. [Camera 12 : Panel Mark 인식 개수가 1 개가 아님.]
+324008 = Inspection Vision Mark 인식 실패. [Camera 5 : TabIC Mark 인식 개수가 1 개가 아님.]
+324009 = Inspection Vision Mark 인식 실패. [Camera 6 : TabIC Mark 인식 개수가 1 개가 아님.]
+324010 = Inspection Vision Mark 인식 실패. [Camera 7 : TabIC Mark 인식 개수가 1 개가 아님.]
+324011 = Inspection Vision Mark 인식 실패. [Camera 8 : TabIC Mark 인식 개수가 1 개가 아님.]
+324012 = Inspection Vision Mark 인식 실패. [Camera 10 : TabIC Mark 인식 개수가 1 개가 아님.]
+324013 = Inspection Vision Mark 인식 실패. [Camera 11 : TabIC Mark 인식 개수가 1 개가 아님.]
+324014 = Inspection Vision Mark 인식 실패. [Camera 12 : TabIC Mark 인식 개수가 1 개가 아님.]
+324015 = TabIC 번호 오류. (Inspection 동작 시작 시)
+324016 = Inspection Vision Mark 인식 실패. [Camera 5 : Panel Mark 인식률 낮음.]
+324017 = Inspection Vision Mark 인식 실패. [Camera 6 : Panel Mark 인식률 낮음.]
+324018 = Inspection Vision Mark 인식 실패. [Camera 7 : Panel Mark 인식률 낮음.]
+324019 = Inspection Vision Mark 인식 실패. [Camera 8 : Panel Mark 인식률 낮음.]
+324020 = Inspection Vision Mark 인식 실패. [Camera 10 : Panel Mark 인식률 낮음.]
+324021 = Inspection Vision Mark 인식 실패. [Camera 11 : Panel Mark 인식률 낮음.]
+324022 = Inspection Vision Mark 인식 실패. [Camera 12 : Panel Mark 인식률 낮음.]
+324023 = Inspection Vision Mark 인식 실패. [Camera 5 : TabIC Mark 인식률 낮음.]
+324024 = Inspection Vision Mark 인식 실패. [Camera 6 : TabIC Mark 인식률 낮음.]
+324025 = Inspection Vision Mark 인식 실패. [Camera 7 : TabIC Mark 인식률 낮음.]
+324026 = Inspection Vision Mark 인식 실패. [Camera 8 : TabIC Mark 인식률 낮음.]
+324027 = Inspection Vision Mark 인식 실패. [Camera 10 : TabIC Mark 인식률 낮음.]
+324028 = Inspection Vision Mark 인식 실패. [Camera 11 : TabIC Mark 인식률 낮음.]
+324029 = Inspection Vision Mark 인식 실패. [Camera 12 : TabIC Mark 인식률 낮음.]
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Process Layer Error Message
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Trs AutoManager Error (Component Code : 400)
+400001 = 비상정지 스위치가 눌러져 있어 자동운전을 시작할 수 없습니다.
+400002 = Door Open 이 감지되어 자동운전을 시작할 수 없습니다.
+400003 = 잘못된 시스템 설정 데이타 입니다.
+400004 = 잘못된 모델 설정 데이타 입니다.
+400005 = 잘못된 Unit Index 입니다.
+
+400010 = Panel Aligner가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400011 =
+400012 = Feeder가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400013 = Carrier가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400014 =
+400015 = Feeder1 Home 상태가 아니므로 자동운전을 시작할 수 없습니다.
+400016 = Feeder2 Home 상태가 아니므로 자동운전을 시작할 수 없습니다.
+400017 = Feeder 2가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400018 =
+400019 = Mounter가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400020 = 이전 설비 안전 플러그 확인해 주세요.
+400021 = 다음 설비 안전 플러그 확인해 주세요.
+400022 = Panel Transfer 가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400023 = Loading Conveyor 가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400024 = Unloading Conveyor 가 자동운전 초기화 되어 있지 않아 자동운전을 시작할 수 없습니다.
+400025 = Panel이 감지되어 공운전을 시작할 수 없습니다.
+
+400030 = 자동운전 중 비상정지 스위치가 눌려졌습니다.
+400031 = 자동운전 중 Door Open이 감지 되었습니다.
+400032 = 자동운전 중 Heater Alarm이 감지 되었습니다.
+400033 = 자동운전 중 Air Error가 감지 되었습니다.
+400034 = 자동운전 중 Vacuum Error가 감지 되었습니다.
+
+400040 = 전설비와의 Melsec 통신이 연결되지 않았으므로 모든 모터를 정지합니다.
+400041 = 전설비가 E-Stop 상태이므로 모든 모터를 정지합니다. 
+400042 = 전설비 Door가 열린 상태이므로 모든 모터를 정지합니다. 
+400043 = 후설비와의 Melsec 통신이 연결되지 않았으므로 모든 모터를 정지합니다.
+400044 = 후설비가 E-Stop 상태이므로 모든 모터를 정지합니다. 
+400045 = 후설비 Door가 열린 상태이므로 모든 모터를 정지합니다. 
+
+400050 = Over Heat 감지.
+400051 = 온도 컨트롤러1 과열 감지.
+400052 = 온도 컨트롤러2 과열 감지.
+400053 = 온도 컨트롤러3 과열 감지.
+400054 = 온도 컨트롤러4 과열 감지.
+400055 = 온도 컨트롤러5 과열 감지.
+400056 = 온도 컨트롤러6 과열 감지.
+400057 = 온도 컨트롤러7 과열 감지.
+400058 = 온도 컨트롤러8 과열 감지.
+400059 = 온도 컨트롤러9 과열 감지.
+400060 = 온도 컨트롤러10 과열 감지.
+400061 = 온도 컨트롤러11 과열 감지.
+400062 = 온도 컨트롤러12 과열 감지.
+400063 = 온도 컨트롤러1 단선 감지.
+400064 = 온도 컨트롤러2 단선 감지.
+400065 = 온도 컨트롤러3 단선 감지.
+400066 = 온도 컨트롤러4 단선 감지.
+400067 = 온도 컨트롤러5 단선 감지.
+400068 = 온도 컨트롤러6 단선 감지.
+400069 = 온도 컨트롤러7 단선 감지.
+400070 = 온도 컨트롤러8 단선 감지.
+400071 = 온도 컨트롤러9 단선 감지.
+400072 = 온도 컨트롤러10 단선 감지.
+400073 = 온도 컨트롤러11 단선 감지.
+400074 = 온도 컨트롤러12 단선 감지.
+
+
+//Trs Jog Error (Component Code : 401)
+
+
+//Trs Panel Aligner Error (Component Code : 410)
+410000 = 부상 Plate 가 Panel 을 흡착하지 못함.
+410001 = Panel Transfer로부터 Panel을 넘겨 받은 후 30초 동안 Complete 신호가 해제되지 않았습니다.
+410002 = Interlock Check : Backup Down 안됨.
+410003 = 다음 설비로 Panel을 넘겨주던 중 30초 동안 ReceiveComplete 신호를 받지못하였습니다.
+410004 = Interlock Check : TabMounter Up 안됨.
+410005 = Align Panel 동작 제한 횟수 초과.
+410006 = Panel Aligner 가 Panel 을 흡착하고 있는데 Model Change 축이 Model 위치가 아닙니다.
+410007 = Plate 2,3 번이 Plate 1,4 번과 가깝게 좁혀져 있지 않습니다.
+410008 = Plate 2,3 번이 Plate 1,4 번과 멀게 넓혀져 있지 않습니다.
+410009 = Panel Transfer 가 Panel 을 흡착하고 있는데 Model Change 축이 Model 위치가 아닙니다.
+410010 = Panel Scrap 작업 불가. [Auto Run Mode 임.]
+
+// Trs Camera Carrier Error (Component Code : 414)
+414000 = Tab Inspection 작업 위치 아님.
+
+
+//Trs Tab Feeder Error (Component Code : 415)
+415000 = Feeder 준비상태가 아닙니다. Feeder Home 동작으로 초기화해 주세요.
+415001 = Feeder Recovery Down Detect 센서가 감지됩니다. (Recovery를 교체해 주세요.)
+415002 = 현재 TabIC는 타발을 할 수 없는 상태입니다. Reel을 제거하고 새 Reel을 공급해주세요
+415003 = 현재 금형은 타발을 할 수 없는 상태입니다. 금형을 제거하고 새 금형을 공급해주세요
+415004 = TabIC가 완전히 소모되지 않았습니다. 홈 상태를 확인하시고 진행해 주세요.
+415005 = Zig가 완전히 소모되지 않았습니다. 홈 상태를 확인하시고 진행해 주세요.
+415006 = 현재 TabIC는 타발을 할 수 없는 상태입니다. (자재 ID 없음)
+415007 = 현재 금형은 타발을 할 수 없는 상태입니다. (자재 ID 없음)
+415008 = Press Vacuum이 On 상태입니다. TabIC를 제거해 주세요.
+
+
+//Trs Tab Carrier Error (Component Code : 417)
+417000 = Feeder#1, #2 의 TabIC가 없습니다. [Home 상태 확인, 자재 유무 확인]
+417001 = Feeder#1 의 TabIC가 없습니다. [Home 상태 확인, 자재 유무 확인]
+417002 = Feeder#2 의 TabIC가 없습니다. [Home 상태 확인, 자재 유무 확인]
+417003 = 동작 불가. [System Type 은 Soruce and Gate 로 설정되어 있으나, Feeder1,2 동시 사용으로 설정되지 않음.]
+417004 =
+417005 =
+417006 = Tab Data 유실 발생.
+417007 = Loading 동작 완료 후 TabIC 를 흡착하고 있지 않음.
+417008 =
+
+
+// Trs Panel Transfer Error (Component Code : 424)
+424000 = Panel Loading 동작 전에 Panel을 흡착하고 있습니다.
+424001 = Send Panel 동작 실패 [Panel Aligner 가 Panel 흡착 못함.]
+424002 =
+424003 =
+424004 =
+424005 =
+424006 = 부상유닛에 Panel이 감지되지만 흡착상태가 아닙니다.
+424007 =
+
+
+// Trs TabMounter Error (Component Code : 425)
+425000 = Loading 하고 있는 TabIC 의 Tab 번호를 얻을 수 없음.
+425001 = 공정 작업 중 Panel 위치 변화량 측정 실패. [Panel Fidu. Mark 상태 확인 필요]
+425002 = Mount 위치 최종 Offset 반영 동작이 제한 시간(5초) 내에 처리되지 않았음.
+425003 =
+425004 = 작업하지 않는 TabIC 의 Tab 위치 번호를 얻을 수 없음.
+425006 = TabIC Load Retry 제한 횟수(10회) 초과 [Prealign 상태, TabCarrier 상태 확인 필요]
+425007 = 공정 작업을 위한 Panel Fidu. Mark 인식 실패. [Panel Fidu. Mark 상태 확인 필요]
+425008 =
+425009 =
+
+
+// Trs Load Conveyor Error (Component Code : 427)
+427000 = 이전 설비로부터 Panel을 넘겨받는 중 30초 동안 감속센서가 감지되지 않았습니다.
+427001 = 이전 설비로부터 Panel을 넘겨받는 중 30초 동안 SendStart 신호를 받지 못하였습니다.
+427002 = 이전 설비로부터 Panel을 넘겨받는 중 30초 동안 정지센서가 감지되지 않았습니다.
+427003 = 이전 설비로부터 Panel을 넘겨받는 중 이전 설비의 SendAble, SendStart 신호가 꺼졌습니다. [Melsec Net 확인 필요]
+427004 = 이전 설비로부터 Panel을 넘겨받은 후 30초 동안 SendComplete 신호를 받지 못하였습니다.
+427005 = Panel Transfer로 Panel을 넘겨주는 중 30초 동안 Panel Transfer의 감속센서가 감지되지 않았습니다.
+427006 = Conveyor 로부터 Cylinder 상태 신호를 받지 못함. [Conveyor 분리 여부 확인 필요.]
+427007 =
+427008 =
+427009 =
+427010 =
+427011 = Panel에 Batch ID가 없습니다. Load Conveyor 로부터 Panel 을 제거해 주세요.
+427012 = Panel에 Device ID가 없습니다. Load Conveyor 로부터 Panel 을 제거해 주세요.
+427013 = Panel에 Panel ID가 없습니다. Load Conveyor 로부터 Panel 을 제거해 주세요.
+427014 = Panel ID가 최근 생산된 5개의 패널중 하나와 일치합니다. Load Conveyor 로부터 Panel 을 제거해 주세요.
+427015 = Panel에 이전 설비로부터 넘겨받은 ID Data가 없습니다. Load Conveyor 로부터 Panel 을 제거해 주세요.
+
+
+// Trs Unload Conveyor Error (Component Code : 428)
+428000 = Panel Aligner로부터 Panel을 넘겨 받는 중 30초 동안 SendComplete 신호를 받지 못하였습니다.
+428001 = Panel Aligner로부터 Panel을 넘겨 받은 후 30초 동안 SendComplete 신호가 해제되지 않았습니다.
+428002 = Out Conveyor로 Panel을 넘겨주던 중 30초 동안 정지센서에 Panel이 감지되지 않았습니다.
+428003 = Out Conveyor로 Panel을 넘겨주던 중 30초 동안 정지센서에 Panel이 감지됩니다.
+428004 = Out Conveyor로 Panel을 넘겨주던 중 30초 동안 ReceiveComplete 신호를 받지 못하였습니다.
+428005 = 다음 설비로 Panel을 넘겨주던 중 30초 동안 정지센서에 Panel이 계속 감지됩니다.
+428006 = 다음 설비로 Panel을 넘겨주던 중 30초 동안 ReceiveStart 신호를 받지 못하였습니다.
+428007 =
+428008 = Panel Aligner로부터 Panel을 넘겨 받은 후 30초 동안 센서에 Panel이 감지되지 않았습니다.
+428009 = Out Conveyor로 Panel을 넘겨주기 전 Unloading Conveyor에 panel이 감지되지 않습니다.

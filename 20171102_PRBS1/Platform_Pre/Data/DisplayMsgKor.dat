@@ -1,0 +1,227 @@
+; DisplayMsgKor.dat
+; 1-1000 : Auto 화면( 시스템 설정 포함 )
+[ID1]
+Title=알림
+Message=기본 화면 설정값이 %d x %d 입니다.;화면설정을 %d x %d로 설정바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID2]
+
+
+[ID10]
+Title=System File 설정 Error
+Message=IO File이 존재하지 않습니다.;IO File이름=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID11]
+Title=System File 설정 Error
+Message=위치 정보 File이 존재하지 않습니다.;위치 정보 File = %s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID12]
+Title=System File 설정 Error
+Message=시스템 parameter File이 존재하지 않습니다.;시스템 parameter File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID13]
+Title=System File 설정 Error
+Message=Sheet 설정 File이 존재하지 않습니다.;Sheet 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID14]
+Title=System File 설정 Error
+Message=Vision Calibration File이 존재하지 않습니다.;Vision Calibration File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID15]
+Title=System File 설정 Error
+Message=Motor 설정 File이 존재하지 않습니다.;Motor 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID16]
+Title=System File 설정 Error
+Message=Induction Motor 동작 Time 설정 File이 존재하지 않습니다.;Induction Motor 동작 Time 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID17]
+Title=System File 설정 Error
+Message=Cylinder 동작 Time 설정 File이 존재하지 않습니다.;Cylinder 동작 Time 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID18]
+Title=System File 설정 Error
+Message=Vacuum 동작 Time 설정  File이 존재하지 않습니다.;Vacuum 동작 Time 설정  File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID19]
+Title=System File 설정 Error
+Message=시스템 Product 설정 File이 존재하지 않습니다.;시스템 Product 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID20]
+Title=System File 설정 Error
+Message=위치 설정 Data File이 존재하지 않습니다.;위치 설정 Data File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID21]
+Title=System File 설정 Error
+Message=모델 Directory가 존재하지 않습니다.;모델 Directory=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID22]
+Title=System File 설정 Error
+Message=Panel 설정 File이 존재하지 않습니다.;Panel 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID23]
+Title=System File 설정 Error
+Message=Material 설정 File이 존재하지 않습니다.;Material 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID24]
+Title=System File 설정 Error
+Message=모델별 생산 수량 File이 존재하지 않습니다.;모델별 생산 수량 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID25]
+Title=System File 설정 Error
+Message=위치 Offset 설정 File이 존재하지 않습니다.;위치 Offset 설정 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID26]
+Title=System File 설정 Error
+Message=Display용 Message정의 File이 존재하지 않습니다.;Display용 Message정의 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID27]
+Title=System File 설정 Error
+Message=Error Message정의 File이 존재하지 않습니다.;Error Message정의 File=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID28]
+Title=System File 설정 Error
+Message=모델들이 있는 기본 directory가 존재하지 않습니다.;모델들이 있는 기본 directory=%s;확인하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID29]
+Title=Camera 이동 Cylinder Error
+Message=Model크기에 따른 Camera 위치를 이동시키는 동작이 실패하였습니다.
+YesStr=예
+NoStr=아니오
+[ID30]
+Title=Device B'd Error
+Message=Device Net Board초기화에 실패하였습니다.;Device Net을 확인하시기 바랍니다.
+YesStr=예
+NoStr=아니오
+[ID31]
+Title=IO Read/Write Thread Creation Failure
+Message=Device Net IO를 읽고 쓰는 Thread 생성에 실패하였습니다.; Device Net을 확인하시기 바랍니다.
+YesStr=예
+NoStr=아니오
+[ID32]
+Title=MMC Board Error
+Message=Motion Control Board 파라미터 Setting에 실패하였습니다.;MMC Board를 확인하시기 바랍니다.
+YesStr=예
+NoStr=아니오
+[ID33]
+Title=Serial Port Open Error
+Message=Heater제어를 위한 통신 시리얼 포트를 여는데 실패하였습니다.;Serial Port를 확인하시기 바랍니다.
+YesStr=예
+NoStr=아니오
+[ID34]
+Title=Servo Drive Power On 실패
+Message=Servo Drive Power를 ON 하는데 실패하였습니다.;IO 확인하시기 바랍니다.
+YesStr=예
+NoStr=아니오
+[ID35]
+Title=Safety Invalidation On 실패
+Message=Safety Invalidation을 ON 하는데 실패하였습니다.;IO 확인하시기 바랍니다.
+YesStr=예
+NoStr=아니오
+[ID36]
+Title=System Parameter 설정 Error
+Message=잘못된 System Type설정입니다.;[System = %s];시스템 부팅 후 시스템 설정 데이타를 변경하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID37]
+Title=System Parameter 설정 Error
+Message=System Type과 Model 작업변 설정이 잘못되었습니다.;[System = %s];작업변(모델설정) :%s;시스템 부팅 후 시스템 설정 및 모델 변경을 하시기 바랍니다. 
+YesStr=예
+NoStr=아니오
+[ID38]
+Title=System Object Creation Error
+Message= 생성한 Object 등록에 실패 했습니다. ;Object ID를 확인 하십시요 
+YesStr=예
+NoStr=아니오
+[ID39]
+Title=Simulation Mode Notification
+Message= Simulation Macro가 선언되었습니다. ;Simualtion 모드로 동작 합니다. 
+YesStr=예
+NoStr=아니오
+[ID40]
+Title=System Initialization Error
+Message=System Unit 초기화가 되지 않았습니다.;초기화되지 않은 Unit 번호 : %s 
+YesStr=예
+NoStr=아니오
+
+; 1001 - 2000 : Manual 화면
+[ID1001]
+Title=대기
+Message=단위동작 중입니다.;잠시만 기다려 주세요...
+YesStr=예
+NoStr=아니오
+[ID1002]
+Title=Windows 에러
+Message=Timer가 생성 되지 않았습니다.;이 Timer는 IO 상태를 주기적으로 표시하는 Timer입니다.
+YesStr=예
+NoStr=아니오
+[ID1003]
+Title=확인
+Message=Drawer Unit(%s)을 작업면 앞으로 40mm 전진시키는 동작을 진행하시겠습니까?
+YesStr=예
+NoStr=아니오
+[ID1004]
+Title=확인
+Message=Drawer Unit(%s)을 작업면으로 40mm 후진시키는 동작을 진행하시겠습니까?
+YesStr=예
+NoStr=아니오
+[ID1005]
+Title=확인
+Message=Drawer Unit(%s)을 작업면으로 20mm 전진시키는 동작을 진행하시겠습니까?
+YesStr=예
+NoStr=아니오
+[ID1006]
+Title=확인
+Message=Drawer Unit(%s)을 작업면 뒤로 20mm 후진시키는 동작을 진행하시겠습니까?
+YesStr=예
+NoStr=아니오
+
+;		"Reel1\n전진",			"Reel1\n후진",			"Reel2\n전진",			"Reel2\n후진",
+;		"1차 전진\n(40mm)",		"1차 후진\n(40mm)",		"2차 전진\n(20mm)",		"2차 후진\n(20mm)",
+;		"상승",					"하강",					"회전",					"복귀",
+;		"Gripper\n닫기",		"Gripper\n열기",		"가이드\n상승",			"가이드\n하강",
+;		"Detect Tool\n전진",	"Detect Tool\n후진",	"전진",					"후진",
+;		"Gripper\n닫기",		"Gripper\n열기",		"Cutter\n상승",			"Cutter\n하강",
+;		"Separator\n상승",		"Separator\n하강",		"Backup\n상승",			"Backup\n하강",
+;		"Positioner1\n상승",	"Positioner1\n하강",	"Positioner2\n상승",	"Positioner2\n하강",
+;		"Tape\n흡착",			"Tape\n흡착해제",		"Tool\n상승",			"Tool\n하강",
+;		"Cassette\n상승",		"Cassette\n하강",		"Cassette\n잠금",		"Cassette\n잠금해제",
+;		"Sheet\n회전",			"Sheet\n공회전",		"Backup\n흡착",			"Backup\n흡착해제",
+;		"Shaft\n고정",			"Shaft\n고정해제",		"전진",					"후진",
+;		"Gripper\b닫기",		"Gripper\n열기",		"박리봉\n상승",			"박리봉\n하강",
+;		"Positioner3\n상승",	"Positioner3\n하강",	"Cutter\n상승",			"Cutter\n하강",
+;		"Gripper\n닫기",		"Gripper\n열기",		"회수롤러1\n상승",		"회수롤러1\n하강",
+;		"회수롤러2\n상승",		"회수롤러2\n하강",		"Rotary\nCW",			"Rotary\nCCW",
+;		"회수 Transfer\n전진",	"회수 Transfer\n후진",	"Transfer Gripper\n닫기",	"Transfer Gripper\n열기",
+;		"회수 Transfer\n우행",	"회수 Transfer\n좌행",
+
+; 2001 - 3000 : Data 화면
+
+; 3001 - 4000 : Teach 화면
+
+; 4001 - 5000 : Setup화면
+
+
+
+
+

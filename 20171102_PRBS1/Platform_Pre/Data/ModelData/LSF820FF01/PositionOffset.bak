@@ -1,0 +1,671 @@
+[Panel Aligner XYT]
+Load_X=-1.500338
+Load_Y=0.400004
+Load_T=-0.020121
+FiduMark_Xu_X=0.000000
+FiduMark_Xu_Y=0.000000
+FiduMark_Xu_T=0.000000
+FiduMark_Yl_X=0.000000
+FiduMark_Yl_Y=0.000000
+FiduMark_Yl_T=0.000000
+FiduMark_Yr_X=0.000000
+FiduMark_Yr_Y=0.000000
+FiduMark_Yr_T=0.000000
+SubMark_Xu_X=0.000000
+SubMark_Xu_Y=0.000000
+SubMark_Xu_T=0.000000
+SubMark_Yl_X=0.000000
+SubMark_Yl_Y=0.000000
+SubMark_Yl_T=0.000000
+SubMark_Yr_X=0.000000
+SubMark_Yr_Y=0.000000
+SubMark_Yr_T=0.000000
+Press_Xu_X=0.000000
+Press_Xu_Y=0.000000
+Press_Xu_T=0.000000
+Press_Yl_X=0.000000
+Press_Yl_Y=0.000000
+Press_Yl_T=0.000000
+Press_Yr_X=0.000000
+Press_Yr_Y=0.000000
+Press_Yr_T=0.000000
+Inspect_Xu_X=-0.000203
+Inspect_Xu_Y=0.000000
+Inspect_Xu_T=0.000292
+Inspect_Yl_X=0.000000
+Inspect_Yl_Y=0.000000
+Inspect_Yl_T=0.000000
+Inspect_Yr_X=0.000000
+Inspect_Yr_Y=0.000000
+Inspect_Yr_T=0.000000
+Unload_X=948.000341
+Unload_Y=0.000000
+Unload_T=-0.000005
+Turn_X=0.000000
+Turn_Y=0.000000
+Turn_T=0.000000
+FirstMark_X=0.000000
+FirstMark_Y=0.000000
+FirstMark_T=-0.000002
+SecondMark_X=0.000000
+SecondMark_Y=0.000000
+SecondMark_T=0.000000
+Press_1_X=0.000000
+Press_1_Y=0.000000
+Press_1_T=0.000000
+Press_2_X=0.000000
+Press_2_Y=0.000000
+Press_2_T=0.000000
+Inspection_1_X=0.000000
+Inspection_1_Y=0.000000
+Inspection_1_T=0.000000
+Inspection_2_X=0.000000
+Inspection_2_Y=0.000000
+Inspection_2_T=0.000000
+Inspection_3_X=0.000000
+Inspection_3_Y=0.000000
+Inspection_3_T=0.000000
+[Panel Aligner Z]
+Down_Z=0.000000
+LoadUp_Z=0.000000
+MoveUp_Z=0.000000
+Work_Z=0.000000
+[Inspect Camera1 Y]
+FiduMark_Z=0.000000
+SubMark_Z=0.000000
+LeadMark_Z=-0.000274
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[Inspect Camera2 Y]
+FiduMark_Z=-0.000174
+SubMark_Z=0.000000
+LeadMark_Z=0.000226
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[Inspect Camera3 Y]
+FiduMark_Z=0.000000
+SubMark_Z=0.000000
+LeadMark_Z=-0.000574
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[Inspect Camera4 Y]
+FiduMark_Z=0.000026
+SubMark_Z=0.000000
+LeadMark_Z=-0.000774
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[Backup1 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[Backup2 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[Backup3 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[Backup4 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[Backup Move X]
+Ready_X=0.000000
+Work_X=0.000000
+[Panel Transfer Center X]
+Load_X=0.000000
+Unload_X=0.000000
+[Panel Transfer In X]
+Load_X=0.000000
+Unload_X=0.000000
+Wait_X=0.000000
+[Panel Transfer Out X]
+Load_X=0.000000
+Unload_X=-0.000077
+[TabMounter8 Y]
+Ready_Y=0.000200
+Load_Y=0.000300
+RLoad_Y=0.000000
+Inspection_Y=-0.000174
+Mount_Y=0.000258
+Remove_Y=0.000000
+[TabMounter1 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000300
+RLoad_Y=0.000000
+Inspection_Y=-0.000226
+Mount_Y=0.000258
+Remove_Y=-0.000500
+Spare_Y=0.000000
+Escape_Y=-0.000300
+[TabMounter2 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000300
+RLoad_Y=0.000000
+Inspection_Y=-0.000174
+Mount_Y=0.000258
+Remove_Y=-0.000700
+Spare_Y=0.000000
+Escape_Y=0.000000
+[TabMounter3 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000300
+RLoad_Y=0.000000
+Inspection_Y=-0.000174
+Mount_Y=0.000258
+Remove_Y=-0.000700
+Spare_Y=0.000000
+Escape_Y=0.000000
+[TabMounter4 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000300
+RLoad_Y=0.000000
+Inspection_Y=-0.000174
+Mount_Y=0.000258
+Remove_Y=-0.000700
+Spare_Y=0.000000
+Escape_Y=0.000000
+[TabMounter5 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000700
+RLoad_Y=0.000000
+Inspection_Y=-0.000226
+Mount_Y=0.000258
+Remove_Y=0.000000
+[TabMounter6 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000700
+RLoad_Y=0.000000
+Inspection_Y=-0.000174
+Mount_Y=0.000258
+Remove_Y=0.000000
+[TabMounter7 Y]
+Ready_Y=-0.000300
+Load_Y=-0.000700
+RLoad_Y=0.000000
+Inspection_Y=-0.000174
+Mount_Y=0.000258
+Remove_Y=0.000000
+[TabMounter1 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+Spare_Z=0.000000
+[TabMounter2 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+Spare_Z=0.000000
+[TabMounter3 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+Spare_Z=0.000000
+[TabMounter4 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+Spare_Z=0.000000
+[TabMounter5 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[TabMounter6 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[TabMounter7 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[TabMounter8 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+RLoad_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[F_BadTab Detector X]
+Ready_X=0.000000
+Work_X=19.729521
+[R_BadTab Detector X]
+Ready_X=0.000000
+Work_X=26.955276
+[TabIC Carrier4 XYT]
+Ready_X=-0.000015
+Ready_Y=0.700000
+Ready_T=0.000000
+Load_X=-0.000015
+Load_Y=0.700000
+Load_T=0.000000
+Prealign_X=0.000470
+Prealign_Y=0.000000
+Prealign_T=0.000200
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=495.517500
+LoadStart_Y=-0.000010
+LoadStart_T=0.000100
+[TabIC Carrier3 XYT]
+Ready_X=-0.000015
+Ready_Y=0.000000
+Ready_T=0.000000
+Load_X=-0.000015
+Load_Y=0.000000
+Load_T=0.000000
+Prealign_X=-0.000030
+Prealign_Y=0.000000
+Prealign_T=0.000400
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=335.518000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[TabIC Carrier2 XYT]
+Ready_X=-0.000015
+Ready_Y=0.300000
+Ready_T=0.000000
+Load_X=-0.000015
+Load_Y=0.300000
+Load_T=0.000000
+Prealign_X=-0.000030
+Prealign_Y=-0.000005
+Prealign_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=175.518000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[TabIC Carrier1 XYT]
+Ready_X=-0.000015
+Ready_Y=0.000000
+Ready_T=0.000000
+Load_X=-0.000015
+Load_Y=0.000000
+Load_T=0.000000
+Prealign_X=-0.000030
+Prealign_Y=0.000192
+Prealign_T=0.000400
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=-0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=15.518000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[RTabIC Carrier3 XYT]
+Ready_X=-0.000015
+Ready_Y=0.000000
+Ready_T=0.000000
+Load_X=-0.000015
+Load_Y=0.000000
+Load_T=0.000000
+Prealign_X=-0.000015
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000373
+Unload_Y=0.000330
+Unload_T=0.000440
+TabRemove_X=-0.000015
+TabRemove_Y=-0.000400
+TabRemove_T=0.000000
+[RTabIC Carrier4 XYT]
+Ready_X=-0.000015
+Ready_Y=0.000000
+Ready_T=0.000000
+Load_X=-0.000015
+Load_Y=0.000000
+Load_T=0.000000
+Prealign_X=0.000000
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000373
+Unload_Y=0.000399
+Unload_T=0.000440
+TabRemove_X=-0.000015
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+[RTabIC Carrier2 XYT]
+Ready_X=-0.000015
+Ready_Y=0.000000
+Ready_T=0.000000
+Load_X=0.000000
+Load_Y=0.000000
+Load_T=0.000000
+Prealign_X=-0.000015
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000373
+Unload_Y=0.000460
+Unload_T=0.000440
+TabRemove_X=-0.000015
+TabRemove_Y=-0.000400
+TabRemove_T=1.376807
+[RTabIC Carrier1 XYT]
+Ready_X=-0.000015
+Ready_Y=0.000000
+Ready_T=-0.000439
+Load_X=-0.000015
+Load_Y=0.000000
+Load_T=-0.000439
+Prealign_X=-0.000015
+Prealign_Y=0.000000
+Prealign_T=-0.000439
+Unload_X=0.000373
+Unload_Y=-0.000400
+Unload_T=0.000440
+TabRemove_X=-0.000015
+TabRemove_Y=-0.000400
+TabRemove_T=-0.000439
+[Model Change Y1]
+Init_Y=0.000000
+Model_Y=-0.000301
+PanelAlign_Y=0.000000
+[TabMounter Gantry Y]
+Load1_Y=0.000000
+Load2_Y=0.000000
+Load3_Y=0.000000
+Load4_Y=0.000000
+Inspection_Y=0.000186
+Mount_Y=-0.400000
+TabRemove_Y=0.000000
+[R_TabMounter4 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+Spare_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[R_TabMounter4 Y]
+Ready_Y=0.000000
+Load_Y=-1.000000
+Spare_Y=0.000000
+Inspection_Y=0.000419
+Mount_Y=0.000000
+Remove_Y=0.000000
+Escape_Y=0.000000
+[R_TabMounter3 Y]
+Ready_Y=0.000000
+Load_Y=0.000000
+Spare_Y=0.000000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+Escape_Y=0.000000
+[R_TabMounter2 Y]
+Ready_Y=0.000000
+Load_Y=-1.500000
+Spare_Y=0.000000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+Escape_Y=0.000000
+[R_TabMounter1 Y]
+Ready_Y=0.000000
+Load_Y=-0.500000
+Spare_Y=0.000000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+Escape_Y=0.000000
+[R_TabMounter1 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+Spare_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[R_TabMounter2 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+Spare_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[R_TabMounter3 Z]
+Move_Z=0.000000
+Load_Z=0.000000
+Spare_Z=0.000000
+Inspection_Z=0.000000
+Mount_Z=0.000000
+Remove_Z=0.000000
+[R_TabMounter Gantry Y]
+Load1_Y=0.000000
+Load2_Y=0.000000
+Load3_Y=0.000000
+Load4_Y=0.000000
+Inspection_Y=-0.000299
+Mount_Y=0.000000
+TabRemove_Y=0.000000
+[R_TabIC Carrier4 XYT]
+Ready_X=0.000412
+Ready_Y=-0.000200
+Ready_T=0.000000
+Load_X=0.000003
+Load_Y=-0.000400
+Load_T=-0.000200
+Prealign_X=0.000000
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=0.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_TabIC Carrier3 XYT]
+Ready_X=0.000045
+Ready_Y=-0.000200
+Ready_T=0.000000
+Load_X=0.000000
+Load_Y=-0.000400
+Load_T=-0.000200
+Prealign_X=0.000000
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=0.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_TabIC Carrier2 XYT]
+Ready_X=-0.000046
+Ready_Y=-0.000200
+Ready_T=0.000000
+Load_X=0.000000
+Load_Y=-0.000400
+Load_T=-0.000200
+Prealign_X=0.000000
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=0.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_TabIC Carrier1 XYT]
+Ready_X=-0.000015
+Ready_Y=-0.000400
+Ready_T=0.000000
+Load_X=0.000000
+Load_Y=-0.000200
+Load_T=0.000000
+Prealign_X=0.000000
+Prealign_Y=0.000000
+Prealign_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+TabRemove_X=0.000000
+TabRemove_Y=0.000000
+TabRemove_T=0.000000
+Escape_X=0.000000
+Escape_Y=0.000000
+Escape_T=0.000000
+LoadStart_X=0.000000
+LoadStart_Y=0.000000
+LoadStart_T=0.000000
+[R_Inspect Camera1 Y]
+FiduMark_Y=-0.000355
+SubMark_Y=0.000000
+LeadMark_Y=0.000312
+[R_Inspect Camera2 Y]
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[R_Inspect Camera3 Y]
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[R_Inspect Camera4 Y]
+FiduMark_Y=0.000000
+SubMark_Y=0.000000
+LeadMark_Y=0.000000
+[R_Backup4 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[R_Backup3 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[R_Backup2 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[R_Backup1 Z]
+Down_Z=0.000000
+Vision_Z=0.000000
+Up_Z=0.000000
+[Model Change Y2]
+Init_Y=0.000000
+Model_Y=0.000000
+PanelAlign_Y=0.000327
+[I_Camera1 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[I_Camera2 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[I_Camera3 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[I_Camera4 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[R_I_Camera1 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[R_I_Camera2 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[R_I_Camera3 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[R_I_Camera4 Expand]
+Init_X=0.000000
+Work_X=0.000000
+[C_Camera Expand]
+Init_Y=0.000000
+Work_Y=0.000000
+[R_C_Camera Expand]
+Init_Y=0.000000
+Work_Y=0.000000
+[TabIC Carrier Z]
+Down_Z=0.000000
+Up_Z=0.000000
+[R_TabIC Carrier Z]
+Down_Z=0.000000
+Up_Z=0.000000
+[F_Tab Press Z]
+Up_Z=0.000000
+Ready_Z=0.000000
+Down_Z=0.000000
+[C_Camera Expand2]
+Init_Y=0.000000
+Work_Y=0.000000
+[R_C_Camera Expand2]
+Init_Y=0.000000
+Work_Y=0.000000
+[THandler XT]
+Load_X=0.000000
+Load_Y=0.000000
+Load_T=0.000000
+Unload_X=0.000000
+Unload_Y=0.000000
+Unload_T=0.000000
+[THandler Z]
+Up_Z=0.000000
+Down_Z=0.000000

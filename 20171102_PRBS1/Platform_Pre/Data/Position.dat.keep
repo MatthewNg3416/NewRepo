@@ -1,0 +1,289 @@
+[TabMounter7 Y]
+Ready_Y=0.000000
+Load_Y=0.000000
+Align1_Y=0.000000
+Align2_Y=0.000000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+[TabMounter8 Y]
+Ready_Y=0.000000
+Load_Y=0.000000
+Align1_Y=0.000000
+Align2_Y=0.000000
+Inspection_Y=0.000000
+Mount_Y=0.000000
+Remove_Y=0.000000
+[TabIC Align1 X1X2]
+Ready_X=0.000000
+Ready_T=0.000000
+Align_X=0.000000
+Align_T=0.000000
+Reserved_X=0.000000
+Reserved_T=0.000000
+[Tab Press Z]
+Up_Z=0.000000
+Ready_Z=0.000000
+Down_Z=-137.392822
+[Panel Aligner XYT]
+Load_X=0.000000
+Load_Y=-2.000000
+Load_T=0.000000
+FiduMark_Xu_X=0.000000
+FiduMark_Xu_Y=0.000000
+FiduMark_Xu_T=0.000000
+FiduMark_Yl_X=0.000000
+FiduMark_Yl_Y=0.000000
+FiduMark_Yl_T=0.000000
+FiduMark_Yr_X=0.000000
+FiduMark_Yr_Y=0.000000
+FiduMark_Yr_T=0.000000
+SubMark_Xu_X=0.000000
+SubMark_Xu_Y=0.000000
+SubMark_Xu_T=0.000000
+SubMark_Yl_X=0.000000
+SubMark_Yl_Y=0.000000
+SubMark_Yl_T=0.000000
+SubMark_Yr_X=0.000000
+SubMark_Yr_Y=0.000000
+SubMark_Yr_T=0.000000
+Press_Xu_X=32.000000
+Press_Xu_Y=0.000000
+Press_Xu_T=0.000000
+Press_Yl_X=0.000000
+Press_Yl_Y=0.000000
+Press_Yl_T=0.000000
+Press_Yr_X=0.000000
+Press_Yr_Y=0.000000
+Press_Yr_T=0.000000
+Inspect_Xu_X=0.000000
+Inspect_Xu_Y=0.000000
+Inspect_Xu_T=0.000000
+Inspect_Yl_X=0.000000
+Inspect_Yl_Y=0.000000
+Inspect_Yl_T=0.000000
+Inspect_Yr_X=0.000000
+Inspect_Yr_Y=0.000000
+Inspect_Yr_T=0.000000
+Unload_Wait_X=332.500000
+Unload_Wait_Y=0.000000
+Unload_Wait_T=0.000000
+Unload_X=537.316742
+Unload_Y=-2.000000
+Unload_T=0.000000
+[Panel Transfer X]
+Load_X=0.000000
+Unload_X=-244.902000
+[R_BadTab Detector X]
+Ready_X=0.000000
+Work_X=0.000000
+[R_TabIC Align1 Y1Y2]
+Ready_Y=5.800000
+Ready_Z=5.700000
+Align_Y=8.358500
+Align_Z=8.275000
+Reserved_Y=0.000000
+Reserved_Z=0.000000
+[Feeder Supplier Y]
+Ready_Y=0.000000
+Work_Y=-42.872116
+Supply_Y=-45.142000
+[R_TabIC Carrier XY]
+Turn_X=7.268000
+Turn_Y=474.914551
+Unload_X=85.582733
+Unload_Y=557.752405
+Load1_X=7.768295
+Load1_Y=215.649000
+Load2_X=7.768295
+Load2_Y=215.649000
+Load3_X=7.768295
+Load3_Y=215.649000
+Load4_X=7.768295
+Load4_Y=215.649000
+Load5_X=7.768295
+Load5_Y=215.649000
+Load6_X=7.768295
+Load6_Y=215.649000
+[R_TabMounter Gantry Y]
+Load_Y=9.214395
+Prealign_Y=-63.207725
+Inspection_Y=2.383906
+Mount_Y=-0.000074
+[TabMounter1 X]
+Ready_X=542.448200
+Load_X=26.191700
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=255.454200
+Remove2_X=553.652800
+[R_Tab Press Z]
+Up_Z=85.476929
+Ready_Z=0.000000
+Down_Z=-126.971191
+[R_Feeder Supplier Y]
+Ready_Y=0.000000
+Work_Y=-41.236404
+Supply_Y=-40.236000
+[R_Feeder Sprocket1 T]
+Home_T=0.000000
+[R_Feeder Sprocket2 T]
+Home_T=0.000000
+[TabMounter2 X]
+Ready_X=590.448200
+Load_X=74.191700
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=255.454200
+Remove2_X=553.652800
+[TabMounter3 X]
+Ready_X=638.448200
+Load_X=122.191700
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=255.454200
+Remove2_X=553.652800
+[TabMounter4 X]
+Ready_X=686.448200
+Load_X=170.191700
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=255.454200
+Remove2_X=553.652800
+[TabMounter5 X]
+Ready_X=734.448200
+Load_X=218.191700
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=255.454200
+Remove2_X=553.652800
+[TabIC Align1 Y1Y2]
+Ready_Y=5.700000
+Ready_Z=5.300000
+Align_Y=8.288000
+Align_Z=7.852500
+Reserved_Y=0.000000
+Reserved_Z=0.000000
+[TabIC Align2 Y1Y2]
+Ready_Y=5.193500
+Ready_Z=4.491000
+Align_Y=6.881000
+Align_Z=6.165000
+Reserved_Y=0.000000
+Reserved_Z=0.000000
+[R_TabIC Align2 Y1Y2]
+Ready_Y=6.000000
+Ready_Z=5.500000
+Align_Y=8.545000
+Align_Z=8.046000
+Reserved_Y=0.000000
+Reserved_Z=0.000000
+[PanelAlign2 Camera Y]
+Safety_Y=0.000000
+Panel Mark_Y=0.000000
+Panel Sub Mark_Y=0.000000
+Tab Mark_Y=0.000000
+[PanelAlign1 Camera Y]
+Safety_Y=0.000000
+Panel Mark_Y=0.000000
+Panel Sub Mark_Y=0.000000
+Tab Mark_Y=0.000000
+[TabMounter6 X]
+Ready_X=782.448200
+Load_X=266.191700
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=255.454200
+Remove2_X=553.652800
+[TabMounter Gantry Y]
+Load_Y=18.167000
+Prealign_Y=116.446250
+Inspection_Y=380.373457
+Mount_Y=382.887000
+[TabIC Carrier XY]
+Turn_X=0.000000
+Turn_Y=230.878011
+Unload_X=73.705292
+Unload_Y=527.977113
+Load1_X=16.282000
+Load1_Y=-26.072000
+Load2_X=16.282000
+Load2_Y=-26.072000
+Load3_X=16.282000
+Load3_Y=-26.072000
+Load4_X=16.282000
+Load4_Y=-26.072000
+Load5_X=16.282000
+Load5_Y=-26.072000
+Load6_X=16.282000
+Load6_Y=-26.072000
+[R_TabMounter1 X]
+Ready_X=12.366600
+Load_X=511.937200
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=249.378200
+Remove2_X=540.429800
+[R_TabMounter2 X]
+Ready_X=60.366600
+Load_X=559.937200
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=249.378200
+Remove2_X=540.429800
+[R_TabMounter3 X]
+Ready_X=108.366600
+Load_X=607.937200
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=249.378200
+Remove2_X=540.429800
+[R_TabMounter4 X]
+Ready_X=156.366600
+Load_X=655.937200
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=249.378200
+Remove2_X=540.429800
+[R_TabMounter5 X]
+Ready_X=204.366600
+Load_X=703.937200
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=249.378200
+Remove2_X=540.429800
+[R_TabMounter6 X]
+Ready_X=252.366600
+Load_X=751.937200
+Align1_X=0.000000
+Align2_X=0.000000
+Inspection_X=0.000000
+Mount_X=0.000000
+Remove1_X=249.378200
+Remove2_X=540.429800
+[Model Change Y]
+Model_Y=20.426946
+_Y=0.000000
+Init_Y=0.000000
