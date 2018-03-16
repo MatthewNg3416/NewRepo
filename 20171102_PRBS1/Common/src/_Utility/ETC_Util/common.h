@@ -30,7 +30,7 @@ inline UINT MyMessageBox(CString strSection, CString strTitle, UINT type=M_OK, T
 inline UINT MyMessageBox(TCHAR* message, TCHAR* title, UINT type=M_OK, TCHAR* YesBut=_T("Yes"), TCHAR* NoBut=_T("No"), TCHAR* UserBut = _T("Cancel")) { return MUtilManager::MyMessageBox(message, title, type, YesBut, NoBut, UserBut); }
 // PCB 호환성 유지 함수
 inline UINT MyMessageBox(UINT type, TCHAR* title, TCHAR* YesBut, TCHAR* NoBut, TCHAR* message) { return MUtilManager::MyMessageBox(type, title, YesBut, NoBut, message); }
-
+//test중입니다.
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //*------------------------------- For Common Function --------------------------------------------*//
 //void	SetStatusText(LPCTSTR sText);

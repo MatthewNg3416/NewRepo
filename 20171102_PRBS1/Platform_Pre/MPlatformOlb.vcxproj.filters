@@ -2253,4 +2253,7 @@
       <Filter>Lib\ACS</Filter>
     </Library>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Temp\test.txt" />
+  </ItemGroup>
 </Project>

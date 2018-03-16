@@ -1809,6 +1809,9 @@
     <Library Include="..\Common\LIB\MMC\MMCWHP10.lib" />
     <Library Include="..\Common\LIB\MMC\VC60FP40.LIB" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Temp\test.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
